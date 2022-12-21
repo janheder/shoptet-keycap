@@ -6,7 +6,6 @@
 }
 .top-navigation-bar .container{
     display: flex;
-    max-width: 100%;
 }
 .top-navigation-contacts{
     align-items: center;
@@ -15,7 +14,7 @@
     font-size: 14px;
 }
 .top-navigation-contacts strong{
-    color: $white;
+    color: $gray-1000;
     font-weight: 500;
     font-size: 13px;
     padding-right: 5px;
@@ -34,7 +33,7 @@
     font-weight: 500;
 }
 .top-navigation-menu li a{
-    color: $white;
+    color: $gray-1000;
 }
 .top-navigation-bar-menu{
     margin: 0;
@@ -52,7 +51,7 @@
 }
 .top-nav-button-login{
     font-size: 14px;
-    color: $white;
+    color: $gray-1000;
     padding-left: 10px;
 }
 .top-navigation-contacts {
@@ -64,7 +63,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $white;
+    color: $gray-1000;
     font-weight: 500;
     font-size: 13px;
 
@@ -72,7 +71,7 @@
         content: "";
         width: 16px;
         height: 16px;
-        background-image: url($i-phone-white);
+        background-image: url($i-phone);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -81,7 +80,7 @@
     }
 }
 .top-navigation-contacts .project-email::before{
-    background-image: url($i-envelope-white);
+    background-image: url($i-envelope);
 }
 
 @media screen and (max-width: 991px){

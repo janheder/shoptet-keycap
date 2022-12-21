@@ -5,12 +5,10 @@
 }
 .menu{
     display: flex;
-    //background: $gray-1000;
-    //position: relative;
     z-index: 4;
     border-radius: $border-radius-primary;
-    padding-left: 20px;
     height: 100%;
+    width: 100%;
 }
 .navigationActions{
     display: none;
