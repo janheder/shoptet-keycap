@@ -3,6 +3,7 @@
     height: 36px;
     background: $gray-100;
     /*display: none;*/
+    font-size: 13px;
 }
 .top-navigation-bar .container{
     display: flex;
@@ -11,13 +12,12 @@
     align-items: center;
     display: flex;
     flex-grow: 1;
-    font-size: 14px;
+
 }
 .top-navigation-contacts strong{
     color: $gray-1000;
-    font-weight: 500;
-    font-size: 14px;
     padding-right: 5px;
+    font-weight: 400;
 }
 .top-navigation-contacts a{
     padding-right: 15px;
@@ -29,7 +29,6 @@
 .top-navigation-menu li{
     display: inline-block;
     padding: 0 0 0 15px;
-    font-size: 14px;
 }
 .top-navigation-menu li a{
     color: $gray-1000;
@@ -49,13 +48,11 @@
     display: none;
 }
 .top-nav-button-login{
-    font-size: 14px;
     color: $gray-1000;
     padding-left: 10px;
 }
 .top-navigation-contacts {
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 400;
 }
 .top-navigation-contacts .project-phone, .top-navigation-contacts .project-email{
     position: relative;
@@ -64,7 +61,6 @@
     align-items: center;
     color: $gray-1000;
     font-weight: 400;
-    font-size: 14px;
 
     &::before{
         content: "";

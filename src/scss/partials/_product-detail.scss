@@ -155,7 +155,8 @@
     align-items: center;
     text-align: center;
     color: $white;
-    background: $orange-700;
+    background: $red-500;
+    border-radius: $border-radius-primary;
 }
 .p-image .flag-discount .price-save span{
     padding: 10px;
@@ -412,18 +413,15 @@
 
 }
 .availability-value{
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
     color: $green-500;
     padding: 0;
     display: flex;
     order: 20;
     margin-bottom: 40px;
     width: 100%;
-    border-bottom: 1px solid $gray-300;
-    border-top: 1px solid $gray-300;
-    padding: 20px 0;
+    padding: 0;
 }
 .availability-value .parameter-dependent{
     width: 100%;
@@ -500,7 +498,7 @@
 }
 .variant-list select{
     width: 360px;
-    font-weight: 500;
+    font-weight: 400;
     max-width: 100%;
     background: $white;
     height: 48px;
@@ -631,7 +629,7 @@
     margin-right: 10px;
     position: relative;
     max-width: 140px;
-    border-radius: $border-radius-primary;
+
     overflow: hidden;
 }
 .add-to-cart .amount{
@@ -644,6 +642,7 @@
     text-align: center;
     font-weight: 500;
     border: 1px solid $gray-300;
+    border-radius: $border-radius-primary;
 }
 .add-to-cart .increase, .add-to-cart .decrease{
     position: absolute;
@@ -682,8 +681,9 @@
     }
 }
 .add-to-cart .add-to-cart-button{
-    padding: 0 60px;
-    height: 60px;
+    padding: 0 50px;
+    height: 58px;
+    font-size: 16px;
 }
 .p-short-description{
     order: 10;
