@@ -16,7 +16,7 @@
 .top-navigation-contacts strong{
     color: $gray-1000;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 14px;
     padding-right: 5px;
 }
 .top-navigation-contacts a{
@@ -29,7 +29,7 @@
 .top-navigation-menu li{
     display: inline-block;
     padding: 0 0 0 15px;
-    font-size: 13px;
+    font-size: 14px;
 }
 .top-navigation-menu li a{
     color: $gray-1000;
@@ -63,8 +63,8 @@
     justify-content: center;
     align-items: center;
     color: $gray-1000;
-    font-weight: 500;
-    font-size: 13px;
+    font-weight: 400;
+    font-size: 14px;
 
     &::before{
         content: "";
