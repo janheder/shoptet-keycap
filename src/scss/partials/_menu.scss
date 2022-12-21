@@ -54,7 +54,7 @@
         color: $black;
     }
     b{
-        font-weight: 500;
+        font-weight: 400;
     }
 }
 
@@ -64,8 +64,8 @@
 
     &::before{
         content: "";
-        height: 12px;
-        width: 12px;
+        height: 10px;
+        width: 10px;
         background-image: url($i-arrow-left);
         background-repeat: no-repeat;
         background-position: center;
