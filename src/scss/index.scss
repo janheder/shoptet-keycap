@@ -87,37 +87,33 @@ input[type=number] {
 }
 
 a{
-    color: $red-500;
+    color: $purple-500;
     text-decoration: none;
     transition: 0.3s ease all;
 
     &:hover, &:active, &:focus{
-        color: $gray-1000;
+        color: $purple-600;
     }
 }
 h1{
     font-size: 42px;
     font-family: $font-family-headings;
     font-weight: 500;
-    text-transform: uppercase;
 }
 h2{
     font-size: 36px;
     font-family: $font-family-headings;
     font-weight: 500;
-    text-transform: uppercase;
 }
 h3, .homepage-group-title{
     font-size: 30px;
     font-family: $font-family-headings;
     font-weight: 500;
-    text-transform: uppercase;
 }
 h4{
     font-size: 24px;
     font-family: $font-family-headings;
     font-weight: 500;
-    text-transform: uppercase;
 }
 b, strong {
     font-weight: 500;
@@ -201,9 +197,19 @@ b, strong {
     display: flex;
     flex-direction: column;
 }
+.overall-wrapper .top-navigation-bar {
+    order: 0;
+}
+.overall-wrapper #header {
+    order: 1;
+}
+
 .overall-wrapper>* {
     order: 100;
 }
+
+
+
 .instagram{
 
 }
