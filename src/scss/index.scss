@@ -197,15 +197,15 @@ b, strong {
     display: flex;
     flex-direction: column;
 }
+.overall-wrapper>* {
+    order: 100;
+}
+
 .overall-wrapper .top-navigation-bar {
     order: 0;
 }
 .overall-wrapper #header {
     order: 1;
-}
-
-.overall-wrapper>* {
-    order: 100;
 }
 
 
