@@ -63,14 +63,12 @@
 
 .extended-banner-texts{
     position: absolute;
-    bottom: 40px;
-    left: 40px;
+    left: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: $white;
-    padding: 40px;
+    padding: 0px;
     max-width: 500px;
 }
 .extended-banner-title{
@@ -86,6 +84,7 @@
 .extended-banner-text{
     color: $gray-600; 
     text-align: left;
+    margin-bottom: 20px;
 }
 
 .carousel-control {
