@@ -78,10 +78,8 @@
 .site-name{
     margin: 0;
     display: flex;
-    width: 220px;
     height: 100%;
     position: relative;
-    top: 0;
 }
 
 .site-name a{
@@ -89,11 +87,9 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    background: $red-500;
-    position: absolute;
-    height: 130px;
+    height: 34px;
     width: 100%;
-    padding: 20px;
+    padding: 0px;
     transition: none;
 }
 .site-name img{
