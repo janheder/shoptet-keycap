@@ -214,8 +214,7 @@ $(".menu-helper").click(function(){
     $("#filters").removeClass("filters");
 });
 
-/* move main navigation */
-$("#navigation").insertBefore(".header-top .search");
+
 
 
 
