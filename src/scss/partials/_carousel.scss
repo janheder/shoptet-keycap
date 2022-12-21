@@ -296,9 +296,11 @@
     filter: none;
     padding: 0;
     width: 30px;
+    left: 10px;
 }
 .slider-nav.slider-nav-next{
     right: 10px;
+    left: auto;
 }
 .slider-nav::before{
     background: white;

@@ -7,6 +7,9 @@
 .welcome{
 
 }
+.welcome > h1{
+    display: none;
+}
 .welcome h1{
     font-size: 30px;
     margin-bottom: 20px;
