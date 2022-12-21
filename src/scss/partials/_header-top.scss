@@ -82,7 +82,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    height: 34px;
+    height: 36px;
     width: 100%;
     padding: 0px;
     transition: none;
@@ -180,7 +180,6 @@
 .search{
     height: 50px;
     padding-right: 0px;
-    display: none;
 }
 body.--searchActive .search{
     display: flex;
