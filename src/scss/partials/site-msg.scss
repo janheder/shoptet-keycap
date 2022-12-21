@@ -49,10 +49,13 @@
 
 
 .site-msg.information{
-    background: $green-500;
-    color: $white;
+    background: $purple-100;
+    color: $purple-500;
     padding: 12px;
     font-size: 14px;
+    order: 2;
+    width: calc(100vw - 20px);
+    max-width: 1300px;
 }
 .site-msg.information .container{
     max-width: 100%;

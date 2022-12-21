@@ -197,6 +197,13 @@ b, strong {
 }
 
 
+.overall-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.overall-wrapper>* {
+    order: 100;
+}
 .instagram{
 
 }

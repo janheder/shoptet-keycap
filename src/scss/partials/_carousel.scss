@@ -17,7 +17,7 @@
 
 .carousel {
     position: relative;
-    padding: 20px 0 0 0;
+    margin: 20px 0 0 0;
 }
 .slider-container{
     --swiffy-slider-item-gap: 20px;
@@ -297,7 +297,9 @@
     padding: 0;
     width: 30px;
 }
-
+.slider-nav.slider-nav-next{
+    right: 10px;
+}
 .slider-nav::before{
     background: white;
     border-radius: 0%;
