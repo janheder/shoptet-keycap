@@ -79,11 +79,14 @@
     font-family: $font-family-headings;
     font-weight: 500;
     text-transform: uppercase;
-    color: $gray-900;
+    color: $gray-1000;
     margin-bottom: 10px;
     text-align: left;
 }
-
+.extended-banner-text{
+    color: $gray-600; 
+    text-align: left;
+}
 
 .carousel-control {
     position: absolute;
@@ -183,6 +186,9 @@
         background: rgb(0,0,0);
         background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
         max-width: 100%;
+    }
+    .extended-banner-text{
+        display: none;
     }
     .extended-banner-title{
         font-size: 22px;
