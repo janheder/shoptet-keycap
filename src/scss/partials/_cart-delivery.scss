@@ -1,0 +1,207 @@
+.co-delivery-method, .co-payment-method{
+    padding-bottom: 40px;
+}
+h4.order-delivery, h4.order-payment{
+    padding-bottom: 10px;
+}
+.shipping-billing-table{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+}
+.order-delivery-payment-form .radio-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order-delivery-payment-form .radio-wrapper input {
+    appearance: none;
+    opacity: 0;
+    position: absolute;
+}
+.order-delivery-payment-form .radio-wrapper label {
+    margin: 0;
+    flex-grow: 1;
+    padding: 25px 20px;
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    outline: 1px solid $gray-300;
+    align-items: center;
+    line-height: 1;
+}
+.order-delivery-payment-form .radio-wrapper label::before {
+    content: "";
+    background: transparent;
+    height: 22px;
+    width: 22px;
+    display: flex;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 1px solid $gray-500;
+    flex-shrink: 0;
+}
+.order-delivery-payment-form .radio-wrapper label::after {
+    content: "";
+    background: transparent;
+    height: 12px;
+    width: 12px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.payment-info{
+    order: 10;
+    display: flex;
+    flex-direction: revert;
+    flex-wrap: wrap;
+    flex-direction: column;
+    line-height: 1;
+}
+.shipping-billing-name{
+    font-weight: 500;
+}
+.payment-info .sublabel{
+    font-size: 14px;
+    /*
+    border: 1px solid $gray-1000;
+    padding: 5px 10px;
+    */
+    margin-top: 10px;
+    display: none;
+    line-height: 1.3;
+    align-items: center;
+
+    a{
+        color: $gray-1000;
+        line-height: 1;
+    }
+}
+.radio-wrapper.active .sublabel{
+    display: flex;
+}
+.payment-info .sublabel .chosen{
+    border: 1px solid $gray-1000;
+    padding: 5px 10px;
+    margin-left: 15px;
+}
+.payment-info .sublabel-description {
+    width: 100%;
+}
+.not-possible-info{
+    width: 100%;
+    font-style: normal;
+    margin-top: 8px;
+    font-size: 14px;
+    color: $gray-500;
+    display: none;
+}
+.order-delivery-payment-form .radio-wrapper label.inactive {
+    opacity: 1;
+    background: $gray-100;
+    cursor: not-allowed;
+    filter: grayscale(1);
+}
+.order-delivery-payment-form .radio-wrapper label.inactive .not-possible-info{
+    display: flex;
+}
+.payment-shipping-price {
+    color: $red-500;
+    flex-grow: 1;
+    justify-content: flex-end;
+    display: flex;
+    order: 20;
+    white-space: nowrap;
+}
+.payment-shipping-price.for-free {
+    color: $green-500;
+    font-weight: 500;
+}
+.payment-logo {
+    height: 25px;
+    width: 40px;
+    margin: 0 10px 0 0px;
+    order: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#order-shipping-methods .show-tooltip {
+    padding: 0px;
+    position: relative;
+    background: $green-500;
+    cursor: pointer;
+    border-radius: 50%;
+    color: $white;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CHECKED */
+.order-delivery-payment-form .radio-wrapper input:checked+label::before {
+    border: 2px solid $green-500;
+}
+.order-delivery-payment-form .radio-wrapper input:checked+label::after {
+    background: $green-500;
+}
+.order-delivery-payment-form .radio-wrapper input:checked+label {
+    background: $white;
+    outline: 2px solid $gray-1000;
+    z-index: 2;
+}
+/* ---- */
+
+
+
+#na-postu-wrapper{
+    
+}
+
+
+#na-postu-form table{
+    width: 100%;
+}
+#na-postu-result{
+    order: 99;
+}
+#na-postu-legend{
+    padding: 20px 20px 20px 15px;
+    background: $gray-100;
+    margin-top: 20px;
+}
+#na-postu-legend p{
+    text-align:left;
+    font-weight: 500;
+    padding-left: 5px
+}
+#na-postu-wrapper{
+    padding: 50px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    }
+#na-postu-wrapper .table td{
+    text-align: left;
+    padding: 5px;
+    ;
+}
+
+#na-postu-wrapper .ui-widget-content{
+    position: relative !important;
+    top: 0 !important;
+    list-style: none;
+    padding-left: 0;
+}
+#na-postu-wrapper .ui-widget-content .ui-menu-item{
+    cursor: pointer;
+    text-align:left;
+}

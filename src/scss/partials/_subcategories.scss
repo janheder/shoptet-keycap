@@ -1,0 +1,93 @@
+.subcategories{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0;
+    padding: 0px 0 40px 0;
+    margin-bottom: 0px;
+    background: $gray-100;
+    position: relative;
+}
+.subcategories::before{
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: $gray-100;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+}
+.subcategories li{
+    margin-bottom: 0px;
+    padding: 0;
+    width: 100%;
+}
+.subcategories li a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+    background: $white;
+    border: 1px solid $gray-300;
+    height: 100%;
+
+    &:hover, &:active, &:focus{
+        text-decoration: none;
+    }
+}
+.subcategories li a .image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+}
+.subcategories li a .text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    color: $black;
+    padding-left: 10px;
+    text-align: center;
+}
+@media screen and (max-width: 991px){
+    .subcategories{
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 575px){
+    .subcategories{
+        grid-template-columns: 1fr 1fr;
+        padding: 0 0px 20px 0px;
+        margin-bottom: 0px;
+        grid-gap: 5px;
+    }
+    .subcategories li a {
+        padding: 5px 10px 5px 5px;
+    }
+    .subcategories li a .image {
+        width: 32px;
+    }
+    .subcategories li a .text {
+        font-size: 14px;
+        text-align: left;
+        line-height: 1.1;
+    }
+    .subcategories li {
+        margin-bottom: 0px;
+        padding: 0;
+        width: 100%;
+    }
+}

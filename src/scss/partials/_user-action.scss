@@ -1,0 +1,363 @@
+.user-action{
+
+}
+.user-action .container{
+    max-width: 100%;
+}
+.user-action-in{
+    
+}
+
+.login-window-visible .user-action{
+    background: rgba($black, 0.4);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+
+
+.user-action .login-widget{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 21;
+    padding: 10px;  
+    border-radius: $border-radius-primary;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+body.--navUserActive .menu-helper{
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 20;
+    top: 0;
+}
+body.--navUserActive .user-action .login-widget{
+    opacity: 1;
+    pointer-events: auto;
+}
+.user-action .login-widget .popup-widget-inner{
+    padding: 60px 50px 50px 50px; 
+    background-color: #fff;
+    max-height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    display: flex;
+    max-width: 540px;
+    width: calc(100% - 20px);
+    box-shadow: 0px 4px 15px rgba($black,0.08);
+    flex-direction: column;  
+    position: relative;
+}
+.login-widget h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-bottom: 0px;
+    text-align: center;
+    flex-direction: column;
+}
+.login-widget h2::after{
+    content: "Jako člen sbíráte slevy za každý svůj nákup.";
+    font-size: 14px;
+    font-weight: 400;
+    color: $gray-500;
+    padding-top: 10px;
+    font-family: $font-family-primary;
+    text-transform: none;
+}
+.login-widget .user-action-tabs, #affiliateLogin{
+    display: none;
+}
+.login-widget .form-group{
+    padding: 10px 0;
+    margin: 0;
+}
+.login-widget .btn{
+    width: 100%;
+    margin-bottom: 0px;
+    order: 1;
+    margin-left: 10px;
+    background: $red-500;
+
+    &:hover, &:active, &:focus{
+        color: $white;
+        background: $red-600;
+        text-decoration: none;
+    }
+}
+.login-widget .password .no-display{
+    display: none;
+}
+.login-widget .input-wrapper.password + a{
+    padding: 20px 0 10px 0;
+    display: block;
+    color: $gray-500;
+}
+.login-widget .login-wrapper{
+    display: flex;
+}
+.login-widget .password-helper{
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.login-widget .password-helper a{
+    color: $gray-1000;
+    font-size: 15px;
+    padding: 0 20px;    
+    border: 1px solid $gray-300;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    width: 100%;
+}
+.login-widget .login-close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    background-image: url($i-close);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center center;
+    cursor: pointer;
+}
+
+@media (max-width: 991px){
+    .user-action .login-widget{  
+        position: fixed;
+    }
+}
+@media (max-width: 767px){
+    .login-window-visible .user-action .login-widget::after{
+        content: none;
+    }
+    .login-window-visible .user-action .login-widget-inner{
+        padding: 40px 40px;
+    }
+}
+@media (max-width: 500px){
+    .user-action .login-widget-inner{
+        padding: 30px;    
+    }
+    .user-action .login-widget .popup-widget-inner{
+        padding: 50px 30px 30px 30px;
+    }
+}
+
+
+
+
+
+.user-action-cart{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 40px;
+    right: 0;
+    padding: 20px;
+    z-index: 12;
+    background: $white;
+    transition: 0.3s ease transform;
+}
+
+@media screen and (max-width: 991px){
+    .user-action-cart{
+        position: fixed;
+        padding: 0;
+        top: 0px;
+        right: 0;
+        bottom: 0;
+        width: calc(100% - 52px);
+        max-width: 400px;
+        transform: translate3d(100%, 0, 0);
+        overflow-y: auto;
+    }
+    body.--cartActive .menu-helper{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    body.--cartActive .user-action-cart{
+        transform: translate3d(0%, 0, 0);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .user-action-in{
+        position: relative;
+    }
+    .user-action-cart{
+        max-width: 500px;
+        opacity: 0;
+        pointer-events: none;
+        box-shadow: 0px 4px 15px rgba($black,0.08);
+        transform: translateY(80px);
+    }
+    .user-action-cart::before{
+        content: "";
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        right: 80px;
+        top: -6px;
+        transform: rotate(45deg);
+        background: $white;
+    }
+    .cart-window-visible .user-action-cart{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .cart-window-visible .menu-helper{
+        opacity: 1;
+        z-index: 2;
+        top: 130px;
+        bottom: 0;
+        position: absolute;
+    }
+}
+
+
+.cart-widget-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid $gray-300;
+}
+.cart-widget-product-image{
+    height: 50px;
+    width: 50px;
+    flex-shrink: 0;
+}
+.cart-widget-product-amount{
+    padding: 0 10px;
+    padding-right: 0;
+}
+.cart-widget-product-amount .quantity input{
+    width: 26px;
+    height: 36px;
+    text-align: right;
+    border-radius: 0;
+    border: 0;
+    font-size: 14px;
+    background: transparent;
+    pointer-events: none;
+    font-weight: 500;
+}
+.cart-widget-product-unit{
+    display: flex;
+    padding-right: 0px;
+    padding-left: 3px;
+    font-weight: 500;
+    padding-top: 3px;
+}
+.cart-widget-product-name{
+    display: flex;
+    flex-grow: 1;
+    padding-left: 20px;
+    padding-right: 0px;
+    justify-content: center;
+    align-items: center;
+
+    strong{
+        padding-right: 20px;
+        line-height: 1.2;
+        padding-bottom: 0px;
+
+        a{
+            color: $gray-800;
+            font-size: 14px;
+
+            span{
+                color: $gray-500;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+    span{
+        color: $red-800;
+        font-weight: 500;
+        text-align: right;
+        flex-grow: 1;
+        flex-shrink: 0;
+        font-size: 14px;
+    }
+}
+.cart-widget-product-delete{
+
+}
+.cart-widget-product-delete .inline{
+    display: flex;
+}
+.cart-widget-product-delete .remove-item{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background: $white;
+    border: 0;
+    background-image: url("../icons/close.svg");
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s ease opacity, 0.3s ease transform;
+    font-size: 0;
+
+    &:hover{
+        opacity: 1;
+        transform: rotate(90deg);
+    }
+}
+
+
+
+.user-action-cart .cart-free-shipping{
+    font-size: 14px;
+    font-weight: 600;
+    color: $green-900;
+    margin: 20px;
+    margin-bottom: 0;
+    padding: 10px 20px;
+    display: flex;
+    background: #E5F3E6;
+}
+.user-action-cart .cart-free-shipping strong{
+    color: $green-500;
+    display: flex;
+}
+.user-action-cart .cart-widget-button{
+    display: flex;
+    padding: 20px;
+}
+.user-action-cart .cart-widget-button .btn{
+    flex-grow: 1;
+}
+@media screen and (min-width: 992px){
+    .user-action-cart .cart-free-shipping{
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .user-action-cart .cart-widget-button{
+        padding: 0px;
+        padding-top: 20px;
+    }  
+}

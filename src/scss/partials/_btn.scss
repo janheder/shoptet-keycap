@@ -1,0 +1,48 @@
+.btn{
+    height: 50px;
+    padding: 0 20px;
+    background: $gray-900;
+    color: $white;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease background, 0.3s ease color;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: $border-radius-primary;
+    line-height: 1;
+
+    &:hover, &:active, &:focus{
+        color: $white;
+        background: #282828;
+        text-decoration: none;
+    }
+}
+.btn-conversion{
+    background: $red-500;
+
+    &:hover, &:active, &:focus{
+        color: $white;
+        background: $red-600;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .btn{
+        height: 48px;
+    }
+}
+
+
+.btn.btn-ghost{
+    height: 44px;
+    font-size: 14px;
+    border: 1px solid #F0F0F0;
+    background: white;
+    color: #333;
+}

@@ -1,0 +1,978 @@
+
+<div id="ratingWrapper" class="rate-wrapper unveil-wrapper" data-parent-tab="ratingTab">
+    <div class="rate-wrap row">
+        <div class="rate-average-wrap col-xs-12 col-sm-6">
+            <div class="rate-average-inner">
+                <span class="rate-average">
+                    4,9
+                </span>
+                <span class="rate-star-wrap">
+
+
+                    <span class="stars">
+                        <a class="star star-on"></a>
+                        <a class="star star-on"></a>
+                        <a class="star star-on"></a>
+                        <a class="star star-on"></a>
+                        <a class="star star-half"></a>
+                    </span>
+
+                    <span class="stars-label">
+                        493 hodnocení
+                    </span>
+
+                </span>
+            </div>
+            <div class="add-comment rate-form-trigger" data-unveil="rate-form" aria-expanded="false"
+                aria-controls="rate-form" role="button">
+                <span class="link-like rating-icon">Přidat hodnocení</span>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+            <div class="rate-list" data-score="5">
+                <div class="rate-star stars">
+                    <span class="rate-value">
+                        5
+                    </span>
+                    <span class="star star-off"></span>
+                </div>
+                <div class="rate-block">
+                    <span class="rate-bar" style="width: 97%;">
+                        <span class="rate-count active">477x</span>
+                    </span>
+                </div>
+            </div>
+            <div class="rate-list" data-score="4">
+                <div class="rate-star stars">
+                    <span class="rate-value">
+                        4
+                    </span>
+                    <span class="star star-off"></span>
+                </div>
+                <div class="rate-block">
+                    <span class="rate-bar" style="width: 2%;">
+                        <span class="rate-count active">10x</span>
+                    </span>
+                </div>
+            </div>
+            <div class="rate-list" data-score="3">
+                <div class="rate-star stars">
+                    <span class="rate-value">
+                        3
+                    </span>
+                    <span class="star star-off"></span>
+                </div>
+                <div class="rate-block">
+                    <span class="rate-bar" style="width: 1%;">
+                        <span class="rate-count active">4x</span>
+                    </span>
+                </div>
+            </div>
+            <div class="rate-list" data-score="2">
+                <div class="rate-star stars">
+                    <span class="rate-value">
+                        2
+                    </span>
+                    <span class="star star-off"></span>
+                </div>
+                <div class="rate-block">
+                    <span class="rate-bar" style="width: 0%;">
+                        <span class="rate-count">1x</span>
+                    </span>
+                </div>
+            </div>
+            <div class="rate-list" data-score="1">
+                <div class="rate-star stars">
+                    <span class="rate-value">
+                        1
+                    </span>
+                    <span class="star star-off"></span>
+                </div>
+                <div class="rate-block">
+                    <span class="rate-bar" style="width: 0%;">
+                        <span class="rate-count">1x</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="rate-form" class="vote-form js-hidden">
+        <h3 class="vote-form-title">Přidat hodnocení</h3>
+        <form action="/action/StoreRating/RateStore/" method="post" id="formRating">
+            <input type="hidden" name="score" value="5">
+
+            <div class="row">
+                <div class="form-group js-validated-element-wrapper col-xs-12 col-sm-6">
+                    <input type="text" name="fullName" value="" class="form-control col-xs-12 js-validate-required"
+                        placeholder="Jméno">
+
+                    <span class="no-display">Nevyplňujte toto pole:</span>
+                    <input type="text" name="surname" value="" class="no-display">
+                </div>
+                <div class="form-group js-validated-element-wrapper col-xs-12 col-sm-6">
+                    <input type="email" name="email" value="" class="form-control col-xs-12" placeholder="E-mail">
+                </div>
+                <div class="col-xs-12">
+                    <div class="form-group js-validated-element-wrapper">
+                        <textarea name="description" class="form-control js-validate-required" rows="7"
+                            placeholder="Jak jste spokojení s tímto obchodem?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="star-wrap stars">
+                            <span class="star star-on" data-score="1"></span>
+                            <span class="star star-on" data-score="2"></span>
+                            <span class="star star-on" data-score="3"></span>
+                            <span class="star star-on" data-score="4"></span>
+                            <span class="star star-on current" data-score="5"></span>
+                        </div>
+                    </div>
+                    <div class="form-group js-validated-element-wrapper consents consents-first">
+                        <input type="checkbox" name="consents[]" id="ratingConsents10" value="10"
+                            data-special-message="validatorConsent">
+                        <label for="ratingConsents10" class="whole-width">
+                            Souhlasím ať dle&nbsp;<span style="text-decoration: underline;"><a
+                                    href="https://www.benlemi.cz/ochrana-osobnich-udaju/" target="_blank"
+                                    title="Podmínky ochrany osobních údajů"
+                                    rel="noopener noreferrer">zásad</a></span>&nbsp;užíváte má data jen proto,
+                            abyste mi dělali radost články a slevami.
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Odeslat hodnocení" class="btn btn-sm btn-primary">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+<div class="votes-wrap simple-vote">
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #e74c3c;">
+                    K
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/c32a42efeec42e24765e8d5ef0cf0a4e?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Klára</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        8.7.2022
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Naprostá spokojenost. Postel kvalitní. Poměr kvalita a cena odpovídající
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #e74c3c;">
+                    K
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/56f44ae1496223771bbcf74976a7c9af?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Kristina</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        23.6.2022
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            naprostá spokojenost, skvělá komunikace,kvalitní krásný výrobek.
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #239ceb;">
+                    MN
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/050672e36be389082dab423363412f6f?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Markéta Navrátilová</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        22.6.2022
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Jsme velice spokojeni s postelí i matrací. Co nás nejvíce překvapilo byla doba doručení. První den jsme
+            si psali na online chatu s prodejcem a dotazovali se, za jak dlouho bude postel vyrobena a doručená,
+            jelikož jsme spěchali na dobu doručení a bylo nám oznámeno že za tři týdny nejdříve. Tak jsme postel
+            tedy objednali a přišla za pouhé 4 dny!! ???????? Montáž jednoduchá, matrace skvělá a příjemná a parádní
+            design. Děkujeme určitě u vás nenakupujeme naposled.
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #f15697;">
+                    KK
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/de4949db627a32f8cf9a7c4caaec3d96?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Kateřina Kempfova</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        6.6.2022
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            S obchodem jsem velice spokojená a především můj syn, který má od vás bílou postýlku - domeček. Úžasná a
+            rychlá komunikace. Výrobek je kvalitní a dobře se skládal. Moc a moc doporučuji a určitě jsem u vás
+            nenakupovala naposledy. Jste jistota kvality a krásných výrobků.
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #f15697;">
+                    MS
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/f4a38f62de276628d368f029d50ed616?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Miroslava Sterrová</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        20.4.2022
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Postel je opravdu nádherná, kvalitně zpracovaná. Matrace kterou jsme zakoupily také zde, je příjemná,
+            ideální pro děti jak výškou tak tvrdostí.
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #239ceb;">
+                    M
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar?s=60&amp;d=blank&amp;r=g" class="" width="60" height="60"
+                    alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Monika P.</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        1.4.2022
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Postel je nádherná a krásně bytelná. Komunikace proběhla na jedničku. Při montáži nebyl žádný problém.
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #ff660e;">
+                    L
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/7c693159637c39f151151223f532018a?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Leona</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        1.4.2022
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Jsem maximálně spokojená. Doporučuji
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #239ceb;">
+                    M
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/a4956022d1d7b19907e537fbc8025844?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Michaela R.</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        30.3.2022
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Jsem nadmíru spokojená se vším. Produkty kvalitní, komunikace na 1*. Zkrátka nejlepší z nejlepších! Moc
+            děkuji za nádherný pokojíček pro syna. Všem doporučuji!
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #ff660e;">
+                    L
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar?s=60&amp;d=blank&amp;r=g" class="" width="60" height="60"
+                    alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Lucie F.</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        23.3.2022
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Je skvělé, že se dají dokoupit nohy k posteli ve dvou velikostech, my jsme si vybrali ty kratší. Montáž
+            byla jednoduchá a postel zůstala stabilní, jsme spokojeni.
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #8e44ad;">
+                    V
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/aae78e48d023e1f00198d1001b766ccb?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Veronika Š.</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        22.3.2022
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Jsem nadšená,perfektní přístup a komunikace ze strany firmy.Postel překrásná.Opravdu vřele všem
+            doporučuji a firmě ještě jednou moc děkuji za veškerou péči o naší objednávku.
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #239ceb;">
+                    T
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/11a6aee7177ec7f53542c9f85e4abc86?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Tomáš J.</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        18.12.2021
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Postel je naprosto fantastická, komunikace s paní Terezou perfektní. Trochu jsme se báli, zdali se
+            stihne doručení do Vánoc, ale nakonec se podařilo s týdenním předstihem a syn už na posteli nadšeně
+            rajtuje. Další postel budeme kupovat opět zde.
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #0088bf;">
+                    A
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/445762e8c4e759b8b4b1c662b9c44aa9?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Adéla +Levi</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        20.8.2021
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Je to par dni ,co mame doma novou domeckovou postylku a ja Vam proste musela napsat....Syn mel v
+            cervenci 2 roky a jeste spinkal v miminkovske postylce.Po dlouhem vybirani, jsem mu objednala domeckovou
+            postylku od Vas a kdyz po par tydnech prisla a my ji sestavili,stalo se neco uzasneho.Synovi se
+            rozzarili ocicka a radosti skakal po posteli sem a tam,vriskal, smal se a nechtel z ni slezt.Vetsi
+            radost nemel ani o Vanocich???? Boze, ta detska radost,no dojalo me to az ke slzam, ze jsem mu
+            mohla-diky Vam, udelat takovou radost.
+            Takze Vas chci moc pochvalit, postylka je nadherna, bytelna a ten vosk, to byla jen tresnicka na dortu!
+            Budu Vas doporucovat a chvalit kde to jen pujde! Jsem rada, ze jsou jeste firmy jako jste Vy, kde je
+            videt,ze za vyrobkem stoji poctiva prace a kde nad vsim fakt clovek premyslel. Jste uzasni a jen tak
+            dal!A jeste jednou dekuji i za syna, konecne se tesi vecer do postylky a chodi spinkat s usmevem na
+            tvari a ja, jako matka si nemohu prat vic, nez takhle stastne a spokojene ditko????
+            S pozdravem Adela a Levisek
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #239ceb;">
+                    M
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/51180ebf214885e192a0396a45ceb076?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Martin Š</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        17.8.2021
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Je to OK
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #239ceb;">
+                    T
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/308ea66ed9d93b54860ba1a782d34908?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Tereza H</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        17.6.2021
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Vřele doporučuji!
+            Na základě mé chyby nebyl problém zboží vyměnit. Skvělá a milá komunikace. Rychlé a osobité jednání.
+            Krásná postýlka.
+            Moc děkuji.
+
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #ff660e;">
+                    L
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/5b1e8a27778a9e669461307d4f5faf9f?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Lennik</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        23.5.2021
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Maximálně doporučujeme! Kupovali jsme postýlku již v roce 2018 na první dcerku a v roce 2020 na druhou
+            dcerku, aby měly stejnou a již jsme věděli, že je to zaručeně poctivá a kvalitní postýlka. Maximální
+            spokojenost.
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #0088bf;">
+                    S
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/5fcbe7f8602ca47bf6bf9ed3fee63fdb?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Sára</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        23.4.2021
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Naprostá spokojenost. Perfektní domluva s obchodem.
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #239ceb;">
+                    PL
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/55bd1776eeacf480dae3fbc7e69ca317?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Petr Lindr</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        23.4.2021
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Parádní robustní postel dodána vč. veškerého spojovacího materiálu (něco i navíc) dokonce i vč. bitů k
+            dodaným šroubům.
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #f15697;">
+                    P
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/6c9bb5f8257c8a2b9bcc8d9f9a0fa237?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Petra B.</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        16.4.2021
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Naprostá spokojenost, pěkně opracované dřevo, snadná montáž. Dcera je nadšená z této domečkové postele.
+            Doporučujeme.
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #aacf24;">
+                    N
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/5dd569bfcb516db89a61adb92c8bcad6?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>Nikola</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        28.3.2021
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            Parádní postel, doporučuju!
+        </div>
+
+    </div>
+    <div class="vote-wrap">
+        <div class="vote-header">
+            <span class="vote-pic">
+                <span class="vote-initials" style="background-color: #8e44ad;">
+                    O
+                </span>
+
+                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                    data-src="//www.gravatar.com/avatar/d2d95787763cb8afe344ea0908bd02cd?s=60&amp;d=blank&amp;r=g"
+                    class="" width="60" height="60" alt="Avatar autora">
+
+            </span>
+            <span class="vote-summary">
+                <span class="vote-name vote-name--nowrap">
+                    <span>oo</span>
+                </span>
+
+                <span class="vote-rating">
+                    <span class="stars">
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                        <span class="star star-on"></span>
+                    </span>
+                    <span class="vote-delimeter">|</span>
+                    <span class="vote-time" data-testid="latestContributionDate">
+                        24.2.2021
+                    </span>
+                </span>
+            </span>
+        </div>
+
+        <div class="vote-content">
+            moc super
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="pagination-wrapper">
+    <div class="pagination-top">
+        <a class="pagination-link up js-scroll-top" href="#"></a>
+        <strong class="js-scroll-top">Nahoru</strong>
+    </div>
+
+
+    <div class="pagination">
+
+
+
+
+
+
+
+        <strong class="current">1</strong>
+
+
+        <a class="next pagination-link" href="/hodnoceni-obchodu/strana-2/">
+            <span class="sr-only">Další strana</span>
+        </a>
+
+
+        <a href="/hodnoceni-obchodu/strana-25/">25</a>
+
+    </div>
+
+
+</div>

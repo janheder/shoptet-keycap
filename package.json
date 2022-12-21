@@ -1,0 +1,34 @@
+{
+  "name": "gulp-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-pug-3": "^1.2.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-uglify-es": "^3.0.0",
+    "node-sass": "^6.0.0",
+    "postcss": "^8.3.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "bootstrap": "^5.0.1",
+    "cookiebar": "^1.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-extract-media-queries": "^1.1.0",
+    "gulp-load-plugins": "^2.0.7",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "lazyload": "^2.0.0-beta.2",
+    "siemajs": "^1.5.2"
+  }
+}

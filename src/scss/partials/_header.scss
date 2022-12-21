@@ -1,0 +1,24 @@
+#header{
+    background: $white;
+    //position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $gray-300;
+
+}
+#header .container.navigation-wrapper{
+    max-width: 100%;
+    padding: 0;
+}
+
+@media screen and (max-width: 991px){
+    #header {
+        height: 106px;
+        border: 0;
+        background: $red-500;
+    }
+    #header .container {
+        padding: 0;
+    }
+}
+

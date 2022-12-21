@@ -1,0 +1,72 @@
+.breadcrumbs-wrapper{
+    background: $gray-100;
+    margin-bottom: 0px;
+    max-width: 100%;
+    padding: 0;
+}
+.type-detail .breadcrumbs-wrapper, .type-posts-listing .breadcrumbs-wrapper, .type-post .breadcrumbs-wrapper, .type-page.breadcrumbs-wrapper{
+    background: $white;
+}
+.breadcrumbs{
+    padding: 10px 20px;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+.breadcrumbs > span{
+    font-size: 13px;
+}
+.breadcrumbs > span > a{
+    padding: 5px 10px;
+    color: $gray-500;
+    position: relative;
+
+    &::after{
+        content: "/";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        line-height: 1;
+        transform: translate(50%,-50%);
+    }
+}
+.breadcrumbs > span > span{
+    padding: 5px 10px;
+    color: $gray-500;
+}
+.breadcrumbs > span > .navigation-bullet{
+    display: none;
+}
+.breadcrumbs > span#navigation-first > a{
+    padding-left: 20px;
+    background-image: url($i-home);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px;
+    opacity: 0.5;
+    
+    span{
+        font-size: 0;
+    }
+}
+
+
+@media screen and (max-width: 991px){
+    .breadcrumbs{
+        padding: 8px 10px;
+    }
+    .breadcrumbs-wrapper{
+        background: $gray-100;
+        margin-bottom: 0px;
+    }
+    .type-product .breadcrumbs-wrapper{
+        margin-bottom: 0px;
+        overflow-x: scroll;
+        white-space: nowrap;
+    } 
+}
+
+@media screen and (max-width: 500px){
+    .breadcrumbs-wrapper{
+        
+    }
+}

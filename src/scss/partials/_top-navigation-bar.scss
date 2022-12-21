@@ -1,0 +1,91 @@
+.top-navigation-bar{
+    display: flex;
+    height: 40px;
+    background: $gray-900;
+    /*display: none;*/
+}
+.top-navigation-bar .container{
+    display: flex;
+    max-width: 100%;
+}
+.top-navigation-contacts{
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    font-size: 14px;
+}
+.top-navigation-contacts strong{
+    color: $white;
+    font-weight: 500;
+    font-size: 13px;
+    padding-right: 5px;
+}
+.top-navigation-contacts a{
+    padding-right: 15px;
+}
+.top-navigation-menu{
+    align-items: center;
+    display: flex;
+}
+.top-navigation-menu li{
+    display: inline-block;
+    padding: 0 0 0 15px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.top-navigation-menu li a{
+    color: $white;
+}
+.top-navigation-bar-menu{
+    margin: 0;
+}
+.top-navigation-menu-trigger{
+
+}
+.top-navigation-bar-menu-helper{
+    margin: 0;
+    padding: 0;
+}
+.top-navigation-tools{
+    text-align: right;
+    display: none;
+}
+.top-nav-button-login{
+    font-size: 14px;
+    color: $white;
+    padding-left: 10px;
+}
+.top-navigation-contacts {
+    font-weight: 500;
+    font-size: 14px;
+}
+.top-navigation-contacts .project-phone, .top-navigation-contacts .project-email{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    font-weight: 500;
+    font-size: 13px;
+
+    &::before{
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-image: url($i-phone-white);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        margin-right: 5px;
+    }
+}
+.top-navigation-contacts .project-email::before{
+    background-image: url($i-envelope-white);
+}
+
+@media screen and (max-width: 991px){
+    .top-navigation-bar{
+        display: none;
+    }
+}

@@ -1,0 +1,43 @@
+.pagination-wrapper{
+
+}
+.pagination-top{
+    display: none;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+.pagination a, .pagination strong{
+    height: 42px;
+    width: 42px;
+    font-size: 14px;
+    background: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: $gray-900;
+    margin: 3px;
+}
+.pagination strong{
+    background: $red-500;
+    color: $white;
+}
+.pagination a.hidden{
+    display: none;
+}
+.pagination a.hidden + *{
+    margin-left: 40px;
+    position: relative;
+}
+.pagination a.hidden + *::before{
+    content: "...";
+    height: 46px;
+    width: 40px;
+    position: absolute;
+    left: -43px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}

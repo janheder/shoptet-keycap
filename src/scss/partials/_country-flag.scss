@@ -1,0 +1,143 @@
+
+.country-flags {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 36px;
+    cursor: pointer
+}
+
+.country-flags:not(.active):focus {
+    outline: 0
+}
+
+.country-flags-inner {
+    position: relative;
+    border-style: solid;
+    border-width: 1px
+}
+
+.country-flags.active .country-flags-inner {
+    position: absolute;
+    top: -1px;
+    left: -5px;
+    z-index: 10;
+    width: 300px;
+    height: 360px;
+    padding: 36px 5px 5px;
+    overflow: auto;
+    background: white;
+}
+
+.country-flags.active.turned .country-flags-inner {
+    bottom: 0;
+    top: auto
+}
+
+.country-flag {
+    display: none;
+    align-items: center;
+    height: 36px
+}
+
+.country-flag.selected, .country-flags.active .country-flag {
+    display: flex;
+    margin-left: -5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out
+}
+
+.country-flags.active .country-flag.selected {
+    display: flex;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px
+}
+
+.country-flags.active .country-flag.country-flag-preferred-last {
+    border-bottom-style: solid;
+    border-bottom-width: 1px
+}
+
+.shp-flag-name {
+    display: none;
+    padding-right: 5px
+}
+
+.country-flags.active .shp-flag-name {
+    display: inline-block
+}
+
+.shp-flag,.shp-flag-label {
+    flex-grow: 0;
+    flex-shrink: 0
+}
+
+.shp-flag {
+    width: 24px;
+    height: 24px
+}
+
+.shp-flag-label {
+    display: flex;
+    position: relative;
+    width: calc(100% - 24px);
+    padding-left: 16px;
+    padding-right: 3px;
+    justify-self: flex-end;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    display: none;
+}
+
+.shp-flag-label::before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -3px;
+    border-width: 6px;
+    border-style: solid
+}
+
+.country-flags.active .shp-flag-label {
+    width: calc(100% - 24px);
+    text-align: left
+}
+
+.country-flags.active .shp-flag-label::before {
+    display: none
+}
+
+.phone-combined-input {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap
+}
+
+.phone-combined-input select {
+    display: none
+}
+
+.phone-combined-input input, .phone-combined-input .country-flags {
+    flex-grow: 0
+}
+
+.phone-combined-input input {
+    width: 100%
+}
+
+@media (min-width: 480px) {
+    .phone-combined-input {
+        max-width:217px
+    }
+}

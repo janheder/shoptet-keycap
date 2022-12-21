@@ -1,0 +1,116 @@
+.products-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    grid-gap: 1px;
+    position: relative;
+}
+.in-index .products.products-block{
+    /*grid-template-columns: 1fr 1fr 1fr 1fr !important;*/
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+}
+.in-index .products.products-block > .product:nth-child(n+5){
+    display: none;
+}
+.in-index .products.products-block.swiffy-slider {
+    display: flex;
+}
+.in-index .products.products-block.swiffy-slider .slider-container{
+    --swiffy-slider-item-gap-totalwidth: 0px;
+    grid-gap: 1px;
+    padding: 0;
+    outline: 1px solid $gray-300;
+}
+
+.spinner-visible .products-block::after{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.8);
+}
+
+@media screen and (max-width: 991px){
+    .products-block{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .in-index .products.products-block{
+        overflow-x: auto;
+        padding-left: 1px;
+        padding-top: 1px;
+    }
+    .in-index .products.products-block{
+        
+        .product {
+            width: 280px;
+        }
+    }
+    .in-index .products.products-block.swiffy-slider {
+        margin-left: -10px;
+        margin-right: -10px;
+        width: 100vw;
+        padding: 0;
+    }
+    .in-index .products.products-block.swiffy-slider .slider-container{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: auto;
+        scroll-snap-type: none;
+        outline: none;
+        border: 1px solid $gray-300;
+    }
+}
+@media screen and (max-width: 768px){
+    .products-block{
+        grid-template-columns: 1fr 1fr;
+
+        .product {
+            width: 100%;
+        }
+    }
+    .in-index .products.products-block{
+        
+        .product {
+            width: 280px;
+        }
+    }
+    .in-index .products.products-block.swiffy-slider .slider-container{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: auto;
+        scroll-snap-type: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .products-block{
+        grid-template-columns: 1fr 1fr;
+        margin: 0 -10px;
+
+        .product {
+            width: 100%;
+        }
+    }
+
+    .in-index .products.products-block{
+        display: flex;
+
+        .product {
+            width: 180px;
+            min-width: auto;
+        }
+    }
+
+    .in-index .products.products-block.swiffy-slider .slider-container{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: auto;
+
+        .product {
+            
+        }
+    }
+}

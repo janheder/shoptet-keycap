@@ -1,0 +1,32 @@
+.content-wrapper{
+
+}
+.content-wrapper-in{
+    display: flex;
+    padding: 0px 0;
+    flex-wrap: wrap; /*should be here*/
+}
+
+.content {
+    width: 100%;
+}
+.content-inner{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.sidebar + .content{
+    width: 75%;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 991px){
+    .sidebar + .content{
+        padding-left: 0px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .content-wrapper-in{
+        flex-wrap: wrap;
+    }
+}

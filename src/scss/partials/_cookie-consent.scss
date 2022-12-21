@@ -1,0 +1,219 @@
+.siteCookies{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    max-width: 970px;
+    z-index:9;
+}
+
+.siteCookies__form{
+	display: flex;
+}
+.siteCookies__content {
+    align-items: center;	
+	display: flex;
+}
+.siteCookies__content::before{
+	content: "";
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 15px;
+    background-color: $white;
+    background-image: url("../icons/cookie.svg");
+    background-repeat: no-repeat;
+    background-size: 32px;
+    border-radius: 50%;
+    background-position: center;
+}
+.siteCookies__text{
+	padding-right: 40px;
+	margin: 0;
+	color: $gray-500;
+	font-size: 14px;
+}
+.siteCookies__text a{
+	color: $gray-500;
+	text-decoration: underline;
+}
+.siteCookies__links{
+	margin: 0;
+	display: flex;
+}
+.siteCookies__link, .siteCookies__button{
+    color: $gray-1000;
+    background: $white;
+    border: 1px solid $gray-300;
+    padding: 0 20px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 1;
+}
+.siteCookies__link:hover{
+  background: $gray-300;
+}
+.siteCookies__button{
+	background: $green-500;
+	color: $white;
+	border: 0;
+}
+.siteCookies__button:hover{
+  background: #408b46;
+
+}
+.siteCookies__buttonWrap{
+	display: flex;
+    align-items: center;
+	justify-content: center;
+}
+
+  
+@media screen and (max-width: 991px){
+    .siteCookies{
+		min-width: 80%;
+    }
+    .siteCookies__form {
+        flex-direction: column;
+    }
+    .siteCookies__content {
+        display: flex;
+        flex-direction: column;
+		margin-top: -50px;
+    }
+    .siteCookies__text{
+        padding: 0;
+        padding-bottom: 15px;
+		text-align: center;
+	}
+    .siteCookies__buttonWrap{
+        padding-top: 10px;
+    }
+	.siteCookies__link, .siteCookies__button{
+		margin: 0;
+		width: 100%;
+		text-align: center;
+		max-width: 300px;
+    	align-items: center;
+		justify-content: center;
+	}
+	.siteCookies__links{
+		width: 100%;
+		justify-content: center;
+	}
+	.siteCookies__content::before{
+		height: 62px;
+		width: 62px;
+		margin: 0;
+		margin-bottom: 15px;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+	}
+}
+@media screen and (max-width: 575px){
+    .siteCookies{
+		min-width: 100%;
+		bottom: 0;
+    }
+}
+
+.cookiesSetting{
+	display: none;
+}
+
+
+
+body.cookies-visible {
+    overflow: hidden;
+}
+.cookiesSetting__form{
+  
+}
+.cookiesSetting__title{
+	margin: 0;
+	padding: 20px;
+	padding-top: 40px;
+	font-weight: 500;
+	font-size: 30px;
+}
+.cookiesSetting__perex{
+	padding: 20px;
+	padding-top: 0;
+	margin: 0;
+	color: $gray-500;
+}
+.cookiesSetting__data{
+	background: $white;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1px;
+}
+.cookiesSetting__item{
+	outline: 1px solid $gray-300;
+	background: $white;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+}
+.cookiesSetting__item__col1{
+	text-align: left;
+	padding-right: 20px;
+}
+.cookiesSetting__item__name{
+	color: $gray-1000;
+	font-size: 15px;
+}
+.cookiesSetting__item__text{
+	color: $gray-500;
+	font-size: 14px;
+}
+.cookiesSetting__item__col2{
+  
+}
+.cookiesSetting__item__status{
+	display: flex;
+	align-items: center;
+	border: 1px solid $gray-300;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+.cookiesSetting__item__status *{
+	cursor: pointer;
+}
+.cookiesSetting__item__state{
+	padding-left: 10px;
+}
+.cookiesSetting__bottom{
+	display: flex;
+	padding: 20px;
+	font-size: 14px;
+}
+.cookiesSetting__bottom button{
+	color: $gray-1000;
+	background: $white;
+	border: 1px solid $gray-300;
+	padding: 0 20px;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+.cookiesSetting__bottom .cookiesSetting__uncheck{
+	flex-grow: 1;
+}
+.cookiesSetting__bottom button.cookiesSetting__button{
+	border-color: $gray-1000;
+}
+.cookiesSetting__bottom button.cookiesSetting__button--green{
+	background: $green-500;
+	color: $white;
+	border: 0;
+	margin: 0;
+}
