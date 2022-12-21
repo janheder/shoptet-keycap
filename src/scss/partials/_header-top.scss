@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding: 0px 30px;
-    height: 90px;
+    padding: 0px;
+    height: 80px;
     width: 100%;
 }
 @media screen and (max-width: 1900px){
@@ -69,11 +69,6 @@
     */
 }
 
-.header-top > div:first-child, .header-top .nav-menu-toggle + div{
-    height: 100%;
-    z-index: 6;
-    background: $red-500;
-}
 
 .site-name{
     margin: 0;
