@@ -11,7 +11,7 @@
         flex-grow: 1;
         justify-content: flex-end;
         flex-direction: row;
-        background: $red-500;
+        background: $white;
     }
 }
 .cart-count{
@@ -26,7 +26,7 @@
     padding: 0;
     line-height: 1.2;
     height: 46px;
-    padding: 0 20px 0 55px;
+    padding: 0 20px 0 48px;
     text-align: left;
     margin-left: 10px;
     border-radius: $border-radius-primary;
@@ -37,7 +37,7 @@
         width: 18px;
         position: absolute;
         top: 50%;
-        left: 14px;
+        left: 20px;
         background-image: url($i-shopping-bag-white);
         background-repeat: no-repeat;
         background-size: 100%;

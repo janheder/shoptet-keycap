@@ -94,10 +94,10 @@
     background: $white;
     left: 0;
     width: 100%;
-    padding: 40px 300px;
+    padding: 40px;
     z-index: 5;
     top: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     border-top: 1px solid $gray-300;
     grid-gap: 20px;
 }
