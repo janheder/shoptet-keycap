@@ -92,10 +92,7 @@
     max-height: 100%;
 }
 @media screen and (max-width: 1900px){
-    .site-name a{
-        height: 90px;
 
-    }
 }
 @media screen and (max-width: 991px){
     .site-name-wrapper{
@@ -184,6 +181,9 @@
 .search{
     height: 50px;
     padding-right: 0px;
+    max-width: 700px;
+    flex-grow: 1;
+    margin: 0 20px;
 }
 body.--searchActive .search{
     display: flex;
@@ -349,9 +349,9 @@ body.--searchActive .search{
         transform: translate(-50%, -50%);
         align-items: center;
         justify-content: center;
-      padding: 60px;
-      background: white;
-          height: auto;
+        padding: 60px;
+        background: white;
+        height: auto;
     }
     .search-form {
       height: auto;
@@ -360,8 +360,7 @@ body.--searchActive .search{
       height: auto;
     }
     .search-form fieldset{
-      width: 600px;
-      max-width: 100vw;
+    max-width: 100%;
     }
 }
 
@@ -380,6 +379,7 @@ body.--searchActive .search{
         z-index: -1;
         transform: translateY(0%);
         transition: 0.2s ease transform;
+        max-width: 100%;
     }
     body.--floatSearchActive .search{
         display: flex;
