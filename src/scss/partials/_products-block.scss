@@ -1,9 +1,8 @@
 .products-block{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    grid-gap: 1px;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-gap: 40px 20px;
+    margin: 0;
     position: relative;
 }
 .in-index .products.products-block{
@@ -20,9 +19,8 @@
 }
 .in-index .products.products-block.swiffy-slider .slider-container{
     --swiffy-slider-item-gap-totalwidth: 0px;
-    grid-gap: 1px;
+    grid-gap: 20px;
     padding: 0;
-    outline: 1px solid $gray-300;
 }
 
 .spinner-visible .products-block::after{
@@ -38,7 +36,7 @@
 
 @media screen and (max-width: 991px){
     .products-block{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3,minmax(0,1fr));
     }
     .in-index .products.products-block{
         overflow-x: auto;
@@ -64,7 +62,7 @@
         grid-auto-columns: auto;
         scroll-snap-type: none;
         outline: none;
-        border: 1px solid $gray-300;
+
     }
 }
 @media screen and (max-width: 768px){
@@ -90,8 +88,8 @@
 
 @media screen and (max-width: 500px){
     .products-block{
-        grid-template-columns: 1fr 1fr;
-        margin: 0 -10px;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        grid-gap: 10px;
 
         .product {
             width: 100%;
