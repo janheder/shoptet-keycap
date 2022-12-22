@@ -98,11 +98,17 @@
     }
 }
 @media screen and (max-width: 991px){
+    .site-name-wrapper{
+        height: 100%;
+        background: white;
+    }
     .site-name{
         height: 100%;
         margin: 0px;
         width: auto;
         margin-left: 52px;
+        display: flex;
+        align-items: center;
     }
     .ordering-process .site-name{
         margin-left: 0px;
@@ -409,7 +415,7 @@ body.--searchActive .search{
         position: absolute;
         top: 0;
         right: 0;
-        background: $white;
+        background: $gray-100;
         height: 46px;
         width: 52px;
         border: 0;
