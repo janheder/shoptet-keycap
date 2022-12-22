@@ -24,7 +24,7 @@
     display: flex;
     flex-shrink: 0;
     margin-right: 15px;
-    background-color: $white;
+    background-color: $gray-100;
     background-image: url("../icons/cookie.svg");
     background-repeat: no-repeat;
     background-size: 32px;
@@ -205,6 +205,7 @@ body.cookies-visible {
 	display: flex;
 	align-items: center;
 	margin-right: 10px;
+	border-radius: $border-radius-primary;
 }
 .cookiesSetting__bottom .cookiesSetting__uncheck{
 	flex-grow: 1;

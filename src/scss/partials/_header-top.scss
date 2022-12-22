@@ -111,17 +111,15 @@
         height: 100%;
         position: relative;
         padding: 0 15px;
+        height: 32px;
     }
     .site-name img{
-        height: 24px;
+        
     }
 }
 @media screen and (max-width: 500px){
     .site-name a {
         padding: 0 12px;
-    }
-    .site-name img{
-        height: 20px;
     }
 }
 .header-contacts{
