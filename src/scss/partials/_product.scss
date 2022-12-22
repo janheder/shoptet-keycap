@@ -15,7 +15,7 @@
 .p .image{
     padding-bottom: 75%;
     position: relative;
-    background: $white;
+    background: $gray-100;
     /*background-image: url("../img/loading-symbol.svg");*/
     background-repeat: no-repeat;
     background-size: 80px;
@@ -39,8 +39,8 @@
 }
 .p .flags{
     position: absolute;
-    top: -10px;
-    left: -10px;
+    top: 10px;
+    left: 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
