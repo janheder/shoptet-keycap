@@ -43,25 +43,11 @@ h1.category-title{
     font-size: 14px;
     padding-bottom: 40px;
     order: 0;
-    background: $gray-100;
     position: relative;
     margin-top: -30px;
     z-index: 1;
     color: $gray-500;
     display: block;
-}
-.category-perex::before {
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    height: 100%;
-    background: $gray-100;
-    display: flex;
-    position: absolute;
-    z-index: -1;
 }
 .category-perex > p{
     margin: 0;

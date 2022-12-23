@@ -29,6 +29,7 @@
     padding: 0 20px 0 48px;
     text-align: left;
     margin-left: 10px;
+    font-size: 15px;
     border-radius: $border-radius-primary;
 
     &::before{
@@ -41,7 +42,9 @@
         background-image: url($i-shopping-bag-white);
         background-repeat: no-repeat;
         background-size: 100%;
+        background-size: contain;
         transform: translate(0%, -50%);
+        background-position: center;
     }
 
     &:hover, &:focus, &:active{
