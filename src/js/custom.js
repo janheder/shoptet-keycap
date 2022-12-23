@@ -95,7 +95,7 @@ if ($(".in-index").length){
             document.querySelector('.in-index #newsWrapper').appendChild(body[i]);
         }
     };
-    fetch("https://www.janheder.ga/automoto/")
+    fetch("https://www.janheder.ga/blog/")
         .then((response) => response.text())
         .then(loadNews)
 
