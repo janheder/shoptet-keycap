@@ -134,6 +134,8 @@
     align-items: flex-start;
     flex-direction: column;
     padding-left: 10px;
+    height: 100%;
+    justify-content: center;
 }
 .menu-level-2 > li > div > a{
     display: flex;
@@ -142,7 +144,8 @@
     color: $black;
     margin-top: 0px;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 16px;
+    padding-bottom: 5px;
 
     &:hover, &:active, &:focus{
         text-decoration: none;
