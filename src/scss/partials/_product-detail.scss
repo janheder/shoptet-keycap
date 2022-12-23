@@ -8,7 +8,7 @@
 .p-detail{
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 .p-detail-inner{
     padding: 0px 0 60px 0;
@@ -36,7 +36,7 @@
     order: 0;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     width: 100%;
 }
 .p-detail-inner-header h1{
@@ -44,7 +44,7 @@
     order: 0;
     line-height: 1.2;
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 30px;
 }
 .p-detail-inner-header .p-code{
     display: flex;
@@ -342,6 +342,7 @@
 .p-info-wrapper .detail-parameters{
     width: 100%;
     margin-bottom: 30px;
+    display: none;
 }
 .p-final-price-wrapper{
     order: 30;
@@ -488,7 +489,7 @@
 .variant-list{
     display: flex;
     flex-direction: column;
-    padding: 10px 0;
+    padding: 0px 0 20px 0;
 }
 .variant-list th{
     padding-bottom: 5px;
@@ -685,10 +686,22 @@
     height: 58px;
     font-size: 16px;
 }
+.add-to-cart .add-to-cart-button::before{
+    content: "";
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    background-image: url($i-shopping-bag-white);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: translate(0%, -50%);
+}
 .p-short-description{
     order: 10;
     font-size: 14px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     color: $gray-500;
     font-weight: 400;
 }
@@ -945,6 +958,7 @@
     flex-wrap: wrap;
     order: 0;
     margin-bottom: 60px;
+    flex-direction: column;
 }
 
 
