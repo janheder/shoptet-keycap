@@ -117,7 +117,7 @@
 }
 .menu-level-2 > li .menu-image{
     flex-shrink: 0;
-    height: 60px;
+    height: 80px;
     width: 100px;
     background-image: url("../img/loading-symbol.svg");
     background-position: center;
@@ -128,11 +128,9 @@
     justify-content: center;
 }
 .menu-level-2 > li .menu-image img{
-    height: 60px;
     width: auto;
 }
 .menu-level-2 > li > div{
-    height: 100%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -141,10 +139,11 @@
 .menu-level-2 > li > div > a{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     color: $black;
-    margin-top: 30px;
+    margin-top: 0px;
     font-weight: 500;
+    font-size: 17px;
 
     &:hover, &:active, &:focus{
         text-decoration: none;
