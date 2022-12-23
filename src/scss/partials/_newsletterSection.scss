@@ -4,14 +4,14 @@
   z-index: 1;
   position: relative;
   margin-bottom: 60px;
-  background: #F4F4F4;
+  background: $white;
   padding: 40px 50px;
   margin-top: 40px;
 }
 #newsletterSection::before {
     content: none;
-   height: 1px;
-    background: $gray-300;
+    height: 1px;
+    background: $white;
     bottom: -1px;
     left: 50%;
     transform: translateX(-50%);
