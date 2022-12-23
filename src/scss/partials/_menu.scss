@@ -109,11 +109,10 @@
 }
 
 .menu-level-2 > li{
-    padding: 10px 20px;
+    padding: 0;
     display: flex;
     align-items: flex-start;
     width: 100%;
-    border: 1px solid $gray-300;
 }
 .menu-level-2 > li .menu-image{
     flex-shrink: 0;
@@ -160,11 +159,11 @@
     flex-wrap: wrap;
     padding: 0;
 }
-.menu-level-3 > li{
-    font-size: 13px;
+.menu-level-3 li{
+    font-size: 14px;
     width: 100%;
 }
-.menu-level-3 > li > a{
+.menu-level-3 li a{
     color: $black;
 }
 .backSubmenu{
