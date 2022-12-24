@@ -66,6 +66,8 @@
 }
 @media screen and (max-width: 991px){
     .site-msg.information{
-        margin: 0px auto 0 auto;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
     }
 }
