@@ -17,7 +17,7 @@ $('<h4>Nejprodávanější</h4><div id="productsTop" class="products products-in
 $("#carousel").addClass("swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round ");
 $("#carousel").attr("data-interval" , '');
 $("#carousel").attr("data-slider-nav-autoplay-interval","5000");
-$("#carousel .carousel-inner").removeClass("carousel-inner");
+$("#carousel .carousel-inner").removeClass("carousel-inner").attr("aria-label","Carousel");;
 $("#carousel > div").addClass("slider-container");
 $("#carousel").append('<button type="button" class="slider-nav" aria-label="Previous"></button> <button type="button" class="slider-nav slider-nav-next" aria-label="Next"></button>');
 
