@@ -19,7 +19,7 @@ $("#carousel").attr("data-interval" , '');
 $("#carousel").attr("data-slider-nav-autoplay-interval","5000");
 $("#carousel .carousel-inner").removeClass("carousel-inner");
 $("#carousel > div").addClass("slider-container");
-$("#carousel").append('<button type="button" class="slider-nav"></button> <button type="button" class="slider-nav slider-nav-next"></button>');
+$("#carousel").append('<button type="button" class="slider-nav" aria-label="Previous"></button> <button type="button" class="slider-nav slider-nav-next" aria-label="Next"></button>');
 
 $('#carousel .item').each(function(){
     $(this).find(".extended-banner-texts").append('<p class="extended-banner-text">' + $(this).find("img").attr("alt") + '</p>');
@@ -141,7 +141,7 @@ $(".in-index .products.products-block").each(function() {
     if($(this).find('.product').length > 4){
         $(this).addClass("swiffy-slider slider-item-show4 slider-nav-arrow slider-nav-autopause slider-indicators-round slider-nav-page");
         $(this).wrapInner("<div class='slider-container'></div>");
-        $(this).append('<button type="button" class="slider-nav"></button> <button type="button" class="slider-nav slider-nav-next"></button>');
+        $(this).append('<button type="button" class="slider-nav" aria-label="Previous"></button> <button type="button" class="slider-nav slider-nav-next" aria-label="Next"></button>');
     };
 });
 
