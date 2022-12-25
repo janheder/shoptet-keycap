@@ -22,6 +22,7 @@ $("#carousel > div").addClass("slider-container");
 $("#carousel").append('<button type="button" class="slider-nav" aria-label="Previous"></button> <button type="button" class="slider-nav slider-nav-next" aria-label="Next"></button>');
 
 $('#carousel .item').each(function(){
+    $(this).attr("role","option");
     $(this).find(".extended-banner-texts").append('<p class="extended-banner-text">' + $(this).find("img").attr("alt") + '</p>');
     $(this).find(".extended-banner-texts").append('<div class="btn">Více informací</div>');
 });
