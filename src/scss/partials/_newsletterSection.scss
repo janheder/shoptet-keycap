@@ -59,6 +59,7 @@
 .newsletterSection__formGroup .newsletterSection__btn{
     white-space: nowrap;
     border: 0;
+    padding: 0 20px;
 }
 .newsletterSection__consent{
     font-size: 13px;
@@ -71,7 +72,7 @@
 
 @media screen and (max-width: 991px){
     #newsletterSection {
-        padding: 40px 20px;
+        padding: 40px 10px;
         margin: 0 -10px;
         margin-bottom: 20px;
     }

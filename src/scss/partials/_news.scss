@@ -80,7 +80,6 @@
     }
     .news-item{
         min-width: 340px;
-        padding-bottom: 10px;
     }
     .news-item .image a {
         height: 220px;
@@ -88,10 +87,10 @@
 }
 @media screen and (max-width: 575px){
     .news-item{
-        min-width: 220px;
+        min-width: 280px;
     }
     .news-item .image a {
-        height: 120px;
+
     }
 }
 /*

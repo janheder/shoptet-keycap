@@ -178,19 +178,19 @@
     .extended-banner-texts{
         left: 0;
         bottom: 0;
-        padding: 25px 20px 15px 20px;
+        padding: 35px 20px 15px 20px;
         width: 100%;
         background: transparent;
         text-align: left;
-        background: rgb(0,0,0);
-        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+        background: $black;
+        background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
         max-width: 100%;
     }
     .extended-banner-text{
         display: none;
     }
     .extended-banner-title{
-        font-size: 22px;
+        font-size: 20px;
         color: white;
         margin: 0;
     }
