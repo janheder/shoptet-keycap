@@ -13,6 +13,8 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    border-radius: $border-radius-primary;
+    overflow: hidden;
 }
 .news-item .image{
     position: relative;
@@ -22,7 +24,6 @@
     display: flex;
     overflow: hidden;
     background: $black;
-    border-radius: $border-radius-primary;
 }
 .news-item .image a img{
     object-fit: cover;

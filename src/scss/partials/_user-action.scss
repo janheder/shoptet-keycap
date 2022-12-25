@@ -87,16 +87,6 @@ body.--navUserActive .user-action .login-widget{
 }
 .login-widget .btn{
     width: 100%;
-    margin-bottom: 0px;
-    order: 1;
-    margin-left: 10px;
-    background: $red-500;
-
-    &:hover, &:active, &:focus{
-        color: $white;
-        background: $red-600;
-        text-decoration: none;
-    }
 }
 .login-widget .password .no-display{
     display: none;
@@ -118,13 +108,13 @@ body.--navUserActive .user-action .login-widget{
     color: $gray-1000;
     font-size: 15px;
     padding: 0 20px;    
-    border: 1px solid $gray-300;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 500;
     width: 100%;
+    margin-top: 10px;
 }
 .login-widget .login-close {
     position: absolute;
