@@ -68,14 +68,14 @@
     position: absolute;
     font-style: normal;
     font-size: 11px;
-    background: $red-500;
-    border: 1px solid $white;
-    color: $white;
+    background: $white;
+    border: 1px solid $green-500;
+    color: $gray-1000;
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    left: 30px;
-    top: 55%;
+    left: 28px;
+    top: 50%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -104,10 +104,7 @@
         }
     }
     .cart-count i{
-        left: 25px;
-        background: white;
-        border-color: $red-500;
-        color: $gray-900;
+        left: 22px;
         border-width: 2px;
     }
 }
