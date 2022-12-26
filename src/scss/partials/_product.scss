@@ -321,6 +321,8 @@
     font-size: 14px;
     flex-grow: 1;
     color: $green-500;
+    display: flex;
+    align-items: center;
 }
 .p .availability span{
 
@@ -328,6 +330,16 @@
 .p .availability .availability-amount{
     display: none;
 }
+
+.p .availability[style="color:#sklad"]::before{
+    content: "";
+    background-image: url("../icons/check-circle-green.svg");
+    width: 18px;
+    height: 18px;
+    display: flex;
+    flex-shrink: 0;
+}
+
 .p-code{
     display: none;
 }

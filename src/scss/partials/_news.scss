@@ -15,7 +15,11 @@
     position: relative;
     border-radius: $border-radius-primary;
     overflow: hidden;
-}
+    transition: 0.3s ease transform;
+ }
+ .news-item:hover{
+   transform: translateY(-3px);
+ }
 .news-item .image{
     position: relative;
 }
