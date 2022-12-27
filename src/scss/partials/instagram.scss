@@ -24,8 +24,8 @@
 }
 .instagram-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 .instagram-item{
     padding-bottom: 100%;
@@ -40,6 +40,7 @@
 @media screen and (max-width: 991px){
     .instagram-grid{
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
     }
 }
 @media screen and (max-width: 575px){

@@ -54,15 +54,15 @@
     padding: 0 10px;
     height: 24px;
     background: $white;
-    color: $black;
+    color: $gray-1000;
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 2;
 
     &.flag-action{
-        background: $red-500;
-        color: $white;
+        background: rgba($red-500,0.1);
+        color: $red-500;
     }
     &.flag-new{
         background: rgba($green-500,0.1);
@@ -95,7 +95,7 @@
     align-items: center;
     text-align: center;
     color: $white;
-    background: $red-700;
+    background: $red-500;
     height: auto;
     font-size: 14px;
     padding: 2px 8px;
