@@ -112,17 +112,23 @@
 
 
 .nav-user{
-    width: 50px;
+    width: auto;
     height: 50px;
     flex-shrink: 0;
     border-radius: $border-radius-primary;
     background-image: url($i-user);
     background-repeat: no-repeat;
-    background-size: 24px;
-    background-position: center center;
+    background-size: 16px;
+    background-position: center left 20px;
     margin: 0 10px 0 10px;
     transition: 0.2s ease background-color;
     cursor: pointer;
+    font-size: 15px;
+    color: $gray-1000;
+    padding: 0 20px;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
 
     &:hover, &:active, &:focus{
         background-color: $gray-100;
@@ -149,7 +155,10 @@
         margin: 0;
     }
     .nav-user{
-        background-image: url($i-user-white);
+        background-image: url($i-user);
+        font-size: 0;
+        padding:0;
+        width: 50px;
 
         &:hover, &:active, &:focus{
             background-color: transparent;
