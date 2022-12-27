@@ -686,19 +686,17 @@
     height: 58px;
     font-size: 16px;
     position: relative;
+    flex-direction: row;
 }
 .add-to-cart .add-to-cart-button::before{
     content: "";
     height: 20px;
     width: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50px;
     background-image: url($i-shopping-bag-white);
     background-repeat: no-repeat;
     background-size: 100%;
-    transform: translate(0%, -50%);
     background-size: contain;
+    margin-right: 15px;
 }
 .p-short-description{
     order: 10;
