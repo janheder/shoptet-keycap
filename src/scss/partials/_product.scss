@@ -331,7 +331,7 @@
     display: none;
 }
 
-.p .availability[style="color:#sklad"]::before{
+.p .availability span[style*="color:#sklad"]::before{
     content: "";
     background-image: url("../icons/check-circle-green.svg");
     width: 18px;
