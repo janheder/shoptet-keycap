@@ -320,12 +320,13 @@
 .p .availability{
     font-size: 14px;
     flex-grow: 1;
-    color: $green-500;
+    color: #50AC58;
     display: flex;
     align-items: center;
 }
 .p .availability span{
-
+    display: flex;
+    align-items: center;
 }
 .p .availability .availability-amount{
     display: none;
@@ -338,6 +339,7 @@
     height: 18px;
     display: flex;
     flex-shrink: 0;
+    margin-right: 6px;
 }
 
 .p-code{
