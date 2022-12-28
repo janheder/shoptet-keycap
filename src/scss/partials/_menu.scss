@@ -4,6 +4,9 @@
     flex-grow: 1;
     position: relative;
 }
+.ordering-process #navigation{
+    display: none;
+}
 .menu{
     display: flex;
     z-index: 4;

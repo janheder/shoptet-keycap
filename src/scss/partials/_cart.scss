@@ -301,7 +301,7 @@
     border: 1px solid $gray-300;
 }
 .removeable td{
-    padding: 10px 0;
+
 }
 .removeable .p-price.p-cell .p-label{
     display: none;
@@ -319,11 +319,17 @@
     mix-blend-mode: multiply;
 }
 .cart-table .p-name{
-    padding-left: 20px;
+
 }
 .cart-table .p-name a{
     color: $gray-1000;
+    display: flex;
+    flex-direction: column;
 }
+.cart-table .p-name a .main-link-variant{
+    font-size: 13px;
+    color: $gray-500;
+  }
 .p-availability{
 
 }
@@ -409,12 +415,12 @@
     font-size: 0;
     border: 0;
     background: $gray-100;
-    height: 36px;
-    width: 36px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     background-image: url($i-close);
     background-position: center;
-    background-size: 20px;
+    background-size: 16px;
     background-repeat: no-repeat;
     transition: 0.2s ease transform;
 }
