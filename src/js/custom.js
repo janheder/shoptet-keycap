@@ -612,21 +612,21 @@ if ($(".pagination").length){
 // back to top button
 // =============================================================================
 
-var windowHeight = $(window).height();
-var docHeight = $(document).height();
-var multiplier = 4;
+$(document).ready(function() {
+    var windowHeight = $(window).height();
+    var docHeight = $(document).height();
+    var multiplier = 4;
 
-if((windowHeight * multiplier) < docHeight){
-    $("body").append("<div id='backToTop' aria-label='Scrollovat nahoru'><span></span></div>");
+    if((windowHeight * multiplier) < docHeight){
+        $("body").append("<div id='backToTop' aria-label='Scrollovat nahoru'><span></span></div>");
 
-    document.querySelector('#backToTop').addEventListener('click', e => {
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    },{
-        passive: true
-    });
-}
-
-
+        document.querySelector('#backToTop').addEventListener('click', e => {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        },{
+            passive: true
+        });
+    }
+});
 
 // =============================================================================
 // FOOTER REVEAL CATEGORIES
