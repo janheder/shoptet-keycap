@@ -435,8 +435,6 @@
 
 
 
-
-
 @media screen and (max-width: 991px){
     .removeable {
         flex-wrap: wrap;
@@ -451,7 +449,7 @@
         display: none;
     }
     .p-availability {
-        padding: 5px 20px 5px 0;
+        width: 100%;
     }
     .p-total{
         width: auto;
@@ -461,13 +459,6 @@
         padding-left: 0;
     }
 }
-@media screen and (max-width: 991px){
-    .p-availability {
-        width: 100%;
-    }
-}
-
-
 
 
 
