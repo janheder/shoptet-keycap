@@ -158,7 +158,8 @@
         background-image: url($i-user);
         font-size: 0;
         padding:0;
-        width: 50px;
+        width: 52px;
+        background-position: center;
 
         &:hover, &:active, &:focus{
             background-color: transparent;

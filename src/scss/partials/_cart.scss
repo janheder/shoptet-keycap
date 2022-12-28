@@ -301,7 +301,8 @@
     border: 1px solid $gray-300;
 }
 .removeable td{
-
+    display: flex;
+    align-items:center;
 }
 .removeable .p-price.p-cell .p-label{
     display: none;
@@ -318,7 +319,7 @@
 .removeable .cart-p-image a img{
     mix-blend-mode: multiply;
 }
-.removeable .cart-table .p-name{
+.removeable .p-name{
 
 }
 .removeable .p-name a{
@@ -440,13 +441,8 @@
     .removeable {
         flex-wrap: wrap;
     }
-    .removeable:first-child {
-        border: 0;
-    }
     .p-name {
-        width: calc(100% - 80px);
-        flex-direction: column;
-        justify-content: center;
+
     }
     .p-cell {
         width: auto;
@@ -593,7 +589,6 @@
 }
 .order-summary .order-summary-inner h4{
     font-family: $font-family-headings;
-    text-transform: uppercase;
     font-size: 24px;
     font-weight: 500;
 }
