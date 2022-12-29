@@ -30,12 +30,12 @@
 .menu-level-1 > li.ext{
     &:hover, &:active, &:focus{
         text-decoration: none;
-        background: $white;
-        color: $black;
+        background-color: $white;
+        color: $gray-1000;
 
         a{
-            background: $white;
-            color: $black;
+            background-color: $white;
+            color: $gray-1000;
         }
         a::before{
             background-image: url($i-arrow-left);
@@ -54,8 +54,8 @@
 
     &:hover, &:active, &:focus{
         text-decoration: none;
-        background: $white;
-        color: $black;
+        background-color: $white;
+        color: $gray-1000;
     }
     b{
         font-weight: 400;
@@ -121,10 +121,6 @@
     flex-shrink: 0;
     height: 80px;
     width: 100px;
-    background-image: url("../img/loading-symbol.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
