@@ -64,8 +64,8 @@
 
     &::before{
         content: "";
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
         background-image: url($i-phone);
         background-position: center;
         background-repeat: no-repeat;
@@ -74,8 +74,11 @@
         margin-right: 5px;
     }
 }
+
 .top-navigation-contacts .project-email::before{
     background-image: url($i-envelope);
+    width: 16px;
+    height: 16px;
 }
 
 @media screen and (max-width: 991px){

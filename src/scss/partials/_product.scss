@@ -49,10 +49,10 @@
 .p .flags .flag{
     font-size: 13px;
     font-weight: 400;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
     margin-right: 5px;
-    padding: 0 10px;
-    height: 24px;
+    padding: 0 8px;
+    height: 20px;
     background: $white;
     color: $gray-1000;
     display: flex;
@@ -63,14 +63,17 @@
     &.flag-action{
         background: rgba($red-500,0.1);
         color: $red-500;
+        order: 0;
     }
     &.flag-new{
         background: rgba($green-500,0.1);
         color: $green-500;
+        order: 1;
     }
     &.flag-tip{
         background: $white;
         color: $gray-1000;
+        order: 2;
     }
     &.flag-gift{
         background: $gray-900;

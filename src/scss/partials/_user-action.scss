@@ -1,8 +1,8 @@
 .user-action{
-
+    order: 1 !important;
 }
 .user-action .container{
-    max-width: 100%;
+
 }
 .user-action-in{
     
@@ -46,7 +46,7 @@ body.--navUserActive .user-action .login-widget{
     pointer-events: auto;
 }
 .user-action .login-widget .popup-widget-inner{
-    padding: 60px 50px 50px 50px; 
+    padding: 60px 50px 40px 50px; 
     background-color: #fff;
     max-height: 100vh;
     overflow-y: auto;
@@ -98,6 +98,7 @@ body.--navUserActive .user-action .login-widget{
 }
 .login-widget .login-wrapper{
     display: flex;
+    flex-direction: column;
 }
 .login-widget .password-helper{
     display: flex;
@@ -160,7 +161,7 @@ body.--navUserActive .user-action .login-widget{
     display: flex;
     position: absolute;
     flex-direction: column;
-    top: 40px;
+    top: 0px;
     right: 0;
     padding: 20px;
     z-index: 12;
