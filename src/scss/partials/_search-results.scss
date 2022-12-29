@@ -1,3 +1,15 @@
+.type-search{
+
+}
+.type-search #content > h2{
+    position: relative;
+    display: flex;
+    font-size: 36px;
+    font-weight: 500;
+    padding: 40px 0 40px 0;
+    margin: 0px;
+    color: $gray-1000;
+}
 .search-results-groups{
     padding-top: 60px;
 }
@@ -5,7 +17,7 @@
 
 }
 .search-results-group h4{
-    
+    margin-bottom: 30px;
 }
 .search-results-group-list{
 

@@ -27,6 +27,13 @@
 .benefitBanner__data{
     display: inline-block;
 }
+
+.benefitBanner.position--benefitCategory{
+    margin-bottom: 0;
+    border: 0;
+    border-top: 1px solid $gray-300;
+}
+
 @media screen and (max-width: 991px){
     .benefitBanner{
         grid-template-columns: 1fr 1fr;
