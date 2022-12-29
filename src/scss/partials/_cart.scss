@@ -297,8 +297,16 @@
 .cart-table{
     width: 100%;
 }
+.cart-table > tbody{
+    display: grid;
+    grid-gap: 1px;
+}
 .removeable{
-    border: 1px solid $gray-300;
+    display: grid;
+    grid-template-columns: auto 3fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    outline: 1px solid $gray-300;
 }
 .removeable td{
     display: flex;
@@ -437,8 +445,14 @@
 
 
 @media screen and (max-width: 991px){
-    .removeable {
-        flex-wrap: wrap;
+    .removeable{
+        display: grid;
+        grid-template-columns: auto 1fr 1fr;
+    }
+    .removeable .p-name {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        width: 100%;
     }
     .p-name {
 
