@@ -736,7 +736,7 @@
     font-size: 0;
     display: flex;
     flex-direction: column;
-    background-image: url("https://janheder.github.io/shoptet-theme/dist/icons/user.svg");
+    background-image: url($i-user);
     background-repeat: no-repeat;
     padding-left: 80px;
     background-size: 46px;
@@ -754,11 +754,10 @@
     content: "Nemusíte nic vyplňovat a jednoduše se přihlaste.";
     font-size: 15px;
     font-weight: 400;
-    color: #6F6F6F;
+    color: $gray-500;
 }
 #checkoutContent  .co-contact-information h4 + .form-group a{
     font-size: 0;
-    background: #C40808;
 }
 #checkoutContent  .co-contact-information h4 + .form-group a::before{
     content: "Přihlásit se";
