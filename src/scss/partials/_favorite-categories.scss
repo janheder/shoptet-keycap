@@ -8,7 +8,17 @@
 }
 @media (max-width: 62rem){
     .favoriteCategories .swiffy-slider{
-        --swiffy-slider-item-count: 1;
+        --swiffy-slider-item-count: 3;
+    }
+}
+@media (max-width: 40rem){
+    .favoriteCategories .swiffy-slider{
+        --swiffy-slider-item-count: 2.5;
+    }
+}
+@media (max-width: 30rem){
+    .favoriteCategories .swiffy-slider{
+        --swiffy-slider-item-count: 1.5;
     }
 }
 .favoriteCategories__grid{
