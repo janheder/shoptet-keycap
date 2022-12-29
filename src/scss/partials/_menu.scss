@@ -239,7 +239,8 @@
         order: 0;
         position: relative;
         border-bottom: 1px solid $gray-300;
-
+        line-height: 1;
+        
         &::before{
             content: "Zavřit menu";
             background-image: url($i-close);
@@ -427,5 +428,6 @@
         background-image: url("../icons/eye.svg");
         background-position: right 20px center;
         background-size: 38px;
+        background-repeat: no-repeat;
     }    
 }
