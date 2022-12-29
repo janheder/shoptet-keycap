@@ -10,7 +10,7 @@
     transform: translateX(-50%);
     width: 100vw;
     height: 100%;
-    background: #fdfaf6;
+    background: $gray-100;
     display: flex;
     position: absolute;
     z-index: -1;
@@ -87,12 +87,15 @@
     .favoriteCategories .slider-container{
         scroll-snap-type: none;
     }
+    .favoriteCategories{
+        padding: 60px 0;
+    }
 }
 
 @media (max-width: 575px){
     .favoriteCategories__title{
         font-size: 22px;
-        padding-bottom: 20px;
+
         line-height: 1;
     }
     
