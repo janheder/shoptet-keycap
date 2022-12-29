@@ -28,7 +28,9 @@ input:-webkit-autofill:active{
     width: 100%;
     border-radius: $border-radius-primary; 
 }
-
+.form-group label{
+  padding-bottom: 5px;
+}
 textarea.form-control{
     padding: 20px;
     min-height: 100px;
@@ -57,24 +59,30 @@ textarea.form-control{
     position: relative;
     margin-bottom: 30px;
 
-    label:not([for="login"]), input:not([type="checkbox"]) + label{
-        position: absolute;
-        left: 15px;
-        top: 17px;
-        padding: 0 5px;
-        transition: 0.2s ease all;
-        transform-origin: top left;
-        line-height: 1;
-        pointer-events: none;
-        color: $gray-500;
-    }
-    &.--activeFocus label, &.--activeFilled label, &.populated label{
-        background: white;
-        transform: translateY(-24px);
-        pointer-events: auto;
-        font-size: 12px;
-    }
+
 }
+
+/*
+#checkoutContent .form-group label:not([for="login"]), input:not([type="checkbox"]) + label{
+    position: absolute;
+    left: 15px;
+    top: 17px;
+    padding: 0 5px;
+    transition: 0.2s ease all;
+    transform-origin: top left;
+    line-height: 1;
+    pointer-events: none;
+    color: $gray-500;
+}
+#checkoutContent .form-group.--activeFocus label, #checkoutContent .form-group.--activeFilled label, #checkoutContent .form-group.populated label{
+    background: white;
+    transform: translateY(-24px);
+    pointer-events: auto;
+    font-size: 12px;
+}
+*/
+
+
 .form-group label[for="billCountryId"]{
     display: none;
 }
