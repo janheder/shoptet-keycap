@@ -524,7 +524,10 @@ body.--floatSearchActive .nav-search {
         grid-template-rows: auto auto auto;
         padding: 10px;
     }
-
+    .removeable .cart-p-image{
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
     .removeable .p-name {
         grid-column-start: 2;
         grid-column-end: 4;

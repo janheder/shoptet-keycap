@@ -324,12 +324,12 @@ body.--navUserActive .user-action .login-widget{
 .user-action-cart .cart-free-shipping{
     font-size: 14px;
     font-weight: 600;
-    color: $green-900;
+    color: $green-500;
     margin: 20px;
     margin-bottom: 0;
     padding: 10px 20px;
     display: flex;
-    background: #E5F3E6;
+    background: $green-100;
 }
 .user-action-cart .cart-free-shipping strong{
     color: $green-500;
