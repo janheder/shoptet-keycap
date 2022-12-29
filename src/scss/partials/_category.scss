@@ -32,7 +32,7 @@
 h1.category-title{
     position: relative;
     display: flex;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 500;
     padding: 40px 0 40px 0;
     margin: 0px;
@@ -74,7 +74,7 @@ h1.category-title{
     h1.category-title{
         position: relative;
         display: flex;
-        font-size: 36px;
+        font-size: 28px;
         font-weight: 500;
         padding: 30px 0 20px 0;
     }
@@ -82,7 +82,7 @@ h1.category-title{
 
 @media screen and (max-width: 575px){
     h1.category-title{
-        font-size: 32px;
+        font-size: 26px;
         padding: 20px 0 5px 0;
     }
 }
