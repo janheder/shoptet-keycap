@@ -351,6 +351,7 @@
         margin: 0;
         height: 60px;
         align-items: center;
+        font-weight: 400;
         border-bottom: 1px solid $gray-300;
     }
     .menu-level-2>li .menu-image{
@@ -391,7 +392,7 @@
         display: flex;
         align-items: center;
         padding: 0 20px 0 70px;
-        font-weight: 500;
+        font-weight: 400;
         border-bottom: 1px solid $gray-300;
         background: $white;
         position: relative;
@@ -424,7 +425,11 @@
         align-items: center;
         padding: 20px;
         border-bottom: 1px solid $gray-300;
-        font-weight: 500;
+        font-weight: 400;
         padding-left: 70px;
+        line-height: 1;
+        background-image: url("../icons/eye.svg");
+        background-position: right 20px center;
+        background-size: 38px;
     }    
 }

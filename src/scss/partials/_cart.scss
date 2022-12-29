@@ -946,7 +946,9 @@ body.--floatSearchActive .nav-search {
 .site-msg-custom.step-1 {
     margin-bottom: 30px;
     background: $green-100;
-    padding: 10px 20px;
+    padding: 8px 20px;
+    text-align: center;
+    border-radius: $border-radius-primary;
 }
 
 .site-msg-custom.step-1 p {
