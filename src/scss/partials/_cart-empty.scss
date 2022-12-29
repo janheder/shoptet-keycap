@@ -10,7 +10,6 @@
     justify-content: center;
     font-size: 36px;
     margin-bottom: 60px;
-    text-transform: uppercase;
 }
 .cart-empty .cart-heading::before{
     content: "";
@@ -23,6 +22,10 @@
 }
 
 .empty-cart-boxes{
+    padding-top: 60px;
+    border-top: 1px solid $gray-300;
+}
+.empty-cart-boxes h3{
     
 }
 .empty-cart-boxes ul{
