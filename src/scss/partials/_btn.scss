@@ -1,7 +1,7 @@
 .btn{
     height: 50px;
     padding: 0 25px;
-    background: $green-500;
+    background: $teal-500;
     color: $white;
     display: inline-flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
     }
 }
 .btn-conversion{
-    background: $green-500;
+    background: $teal-500;
 
     &:hover, &:active, &:focus{
         color: $white;

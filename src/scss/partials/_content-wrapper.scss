@@ -1,3 +1,6 @@
+#content{
+    padding-bottom: 80px;
+}
 .content-wrapper{
 
 }
@@ -23,10 +26,16 @@
     .sidebar + .content{
         padding-left: 0px;
     }
+    #content{
+        padding-bottom: 60px;
+    }
 }
 
 @media screen and (min-width: 992px){
     .content-wrapper-in{
         flex-wrap: wrap;
+    }
+    #content{
+        padding-bottom: 40px;
     }
 }

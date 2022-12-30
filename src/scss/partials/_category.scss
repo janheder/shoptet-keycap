@@ -2,7 +2,6 @@
     #content{
         display: flex;
         flex-direction: column;
-        padding-bottom: 80px;
     }
     .category-title{
         order: 0
@@ -66,7 +65,7 @@ h1.category-title{
 }
 
 .perex-showMore{
-    color: $green-500;
+    color: $teal-500;
 }
 .perex-short{
     
@@ -143,7 +142,7 @@ h1.category-title{
         content: "";
         height: 3px;
         width: 100%;
-        background: $green-500;
+        background: $teal-500;
         height: 3px;
         width: 100%;
         position: absolute;
@@ -228,6 +227,7 @@ h1.category-title{
     width: 100%;
     padding: 0;
     padding: 15px;
+    border: 1px solid $gray-300;
 }
 .products-top .product.inactive{
     display: none;

@@ -123,7 +123,7 @@
         color: $white;
     }
     &.flag-new{
-        background: $green-500;
+        background: $teal-500;
         color: $white;
     }
     &.flag-tip{
@@ -415,7 +415,7 @@
 .availability-value{
     font-size: 15px;
     font-weight: 400;
-    color: $green-500;
+    color: $teal-500;
     padding: 0;
     display: flex;
     order: 20;
@@ -603,7 +603,7 @@
         border: 1px solid $gray-400;
 }
 .advanced-parameter-inner.yes-before{
-    border-color: $green-500;
+    border-color: $teal-500;
 }
 .advanced-parameter-inner.yes-before::after{
     content: "";

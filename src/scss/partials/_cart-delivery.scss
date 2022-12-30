@@ -118,7 +118,7 @@ h4.order-delivery, h4.order-payment{
     white-space: nowrap;
 }
 .payment-shipping-price.for-free {
-    color: $green-500;
+    color: $teal-500;
     font-weight: 400;
 }
 .payment-logo {
@@ -134,7 +134,7 @@ h4.order-delivery, h4.order-payment{
 #order-shipping-methods .show-tooltip {
     padding: 0px;
     position: relative;
-    background: $green-500;
+    background: $teal-500;
     cursor: pointer;
     border-radius: 50%;
     color: $white;
@@ -149,14 +149,14 @@ h4.order-delivery, h4.order-payment{
 
 /* CHECKED */
 .order-delivery-payment-form .radio-wrapper input:checked+label::before {
-    border: 2px solid $green-500;
+    border: 2px solid $teal-500;
 }
 .order-delivery-payment-form .radio-wrapper input:checked+label::after {
-    background: $green-500;
+    background: $teal-500;
 }
 .order-delivery-payment-form .radio-wrapper input:checked+label {
     background: $white;
-    outline: 1px solid $green-500;
+    outline: 1px solid $teal-500;
     z-index: 2;
 }
 /* ---- */

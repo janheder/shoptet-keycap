@@ -142,7 +142,7 @@
 
     &:hover, &:active, &:focus{
         text-decoration: none;
-        color: $green-500;
+        color: $teal-500;
     }
     &::before{
         content: "";
@@ -260,7 +260,7 @@ body.--searchActive .search{
         text-decoration: none;
 
         .p-info{
-            color: $green-500;
+            color: $teal-500;
         }
     }
 }

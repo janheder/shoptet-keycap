@@ -35,7 +35,7 @@
     padding: 15px 20px;
     width: 100%;
     margin-bottom: 20px;
-    color: $green-500;
+    color: $teal-500;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +93,7 @@
 
     div{
         position: absolute;
-        background: $green-500;
+        background: $teal-500;
         height: 10px;
     }
 }
@@ -200,7 +200,7 @@
 }
 .extras-product-stock{
     width: 25%;
-    color: $green-500;
+    color: $teal-500;
     align-items: center;
     display: flex;
 }
@@ -364,7 +364,7 @@ body.--advancedModal{
     text-align: center;
     flex-direction: column;
     background: rgba(80, 172, 88, 0.1);
-    color: $green-500;
+    color: $teal-500;
 }
 .advancedModal__content{
     padding: 50px 60px 40px 60px;
@@ -518,7 +518,7 @@ body.--advancedModal{
 .advancedProduct-stock span{
     font-weight: 500;
     padding-left: 10px;
-    color: $green-500;
+    color: $teal-500;
 }
 .advancedProduct-amount{
     display: flex;
