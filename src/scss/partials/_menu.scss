@@ -240,12 +240,12 @@
         position: relative;
         border-bottom: 1px solid $gray-300;
         line-height: 1;
-        
+
         &::before{
             content: "Zavřit menu";
             background-image: url($i-close);
             background-position: 20px center;
-            background-size: 24px;
+            background-size: 20px;
             background-repeat: no-repeat;
             position: absolute;
             left: 0;
@@ -254,7 +254,7 @@
             display: flex;
             align-items: center;
             padding-left: 55px;
-            font-weight: 500;
+            font-weight: 400;
         }
     }
     .menu{
@@ -306,7 +306,7 @@
         transform: translateY(-50%) rotate(180deg);
     }
     .menu-level-1 > li > a > b{
-        font-weight: 500;
+        font-weight: 400;
     }
     .menu-level-2{
         position: relative;
@@ -426,8 +426,8 @@
         padding-left: 70px;
         line-height: 1;
         background-image: url("../icons/eye.svg");
-        background-position: right 20px center;
-        background-size: 38px;
+        background-position: left 28px center;
+        background-size: 20px;
         background-repeat: no-repeat;
     }    
 }
