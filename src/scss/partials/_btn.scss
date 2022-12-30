@@ -18,7 +18,7 @@
 
     &:hover, &:active, &:focus{
         color: $white;
-        background: #282828;
+        background: $gray-1000;
         text-decoration: none;
     }
 }
@@ -27,7 +27,7 @@
 
     &:hover, &:active, &:focus{
         color: $white;
-        background: $green-600;
+        background: $gray-1000;
         text-decoration: none;
     }
 }
