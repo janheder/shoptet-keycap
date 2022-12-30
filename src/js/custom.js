@@ -511,7 +511,7 @@ if ($(".contact-box").length){
 
 
 if ($("#customerLogin").length){
-    $("#customerLogin .password-helper a:last-child").insertAfter(".input-wrapper.password");
+    $("#customerLogin .password-helper a:last-child").insertAfter("#customerLogin .input-wrapper.password");
 }
 
 if ($(".cart-header").length){

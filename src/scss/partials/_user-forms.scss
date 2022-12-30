@@ -106,8 +106,20 @@
     padding: 30px 20px 20px 20px;
 }
 
-.in-registrace #register-form {
+
+#register-form{
     padding: 0;
+}
+#register-form, #formLogin{
+    .btn-login{
+        width: 100%;
+    }
+    .password-helper{
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 991px) {
