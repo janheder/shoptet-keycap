@@ -1,6 +1,7 @@
 #content{
     padding-bottom: 80px;
 }
+
 .content-wrapper{
 
 }
@@ -38,4 +39,8 @@
     #content{
         padding-bottom: 40px;
     }
+}
+
+.in-index #content{
+    padding: 0;
 }

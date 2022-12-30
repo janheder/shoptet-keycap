@@ -17,7 +17,10 @@ input:-webkit-autofill:active {
   box-shadow: 0 0 0 30px white inset !important;
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
-
+.form-group{
+  position: relative;
+  margin-bottom: 30px;
+}
 .form-control {
   font-size: 15px;
   font-weight: 400;
@@ -59,14 +62,6 @@ textarea.form-control {
 }
 
 
-
-
-#checkoutContent .form-group {
-  position: relative;
-  margin-bottom: 30px;
-
-
-}
 
 /*
 #checkoutContent .form-group label:not([for="login"]), input:not([type="checkbox"]) + label{
