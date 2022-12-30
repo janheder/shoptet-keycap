@@ -1,0 +1,141 @@
+.in-zapomenute-heslo .sidebar-left {
+    display: none;
+}
+
+.in-zapomenute-heslo.customer-page .content-wrapper-in {
+    display: flex;
+}
+.in-login #content, 
+.in-zapomenute-heslo #content, 
+.in-registrace #content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 0 100px 0;
+}
+
+.in-login .content-inner,
+.in-zapomenute-heslo .content-inner,
+.in-registrace .content-inner {
+    background: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 60px;
+    width: 100%;
+    max-width: 680px;
+    position: relative;
+}
+
+.in-login .content-inner::before,
+.in-login .content-inner::after,
+.in-zapomenute-heslo .content-inner::before,
+.in-zapomenute-heslo .content-inner::after,
+.in-registrace .content-inner::before,
+.in-registrace .content-inner::after {
+    content: "";
+    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/blob2.svg");
+    height: 300px;
+    width: 300px;
+    display: flex;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    right: -100px;
+    top: -80px;
+    opacity: 1;
+}
+
+.in-login .content-inner::after,
+.in-registrace .content-inner::after,
+.in-zapomenute-heslo .content-inner::after {
+    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/blob1.svg");
+    left: -100px;
+    right: auto;
+    bottom: -80px;
+    top: auto;
+}
+
+.in-zapomenute-heslo .content .content-inner h1 {
+    color: #2E523D;
+    margin-bottom: 30px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(160, 205, 84, 0.1) 50%);
+    line-height: 1.3;
+    margin-top: 5px;
+    display: inline;
+    padding: 0;
+    font-size: 26px;
+}
+
+.in-zapomenute-heslo .content .content-inner h1::after {
+    content: none;
+}
+
+#formForgottenPassword {
+    margin-top: 20px;
+}
+
+#formForgottenPassword fieldset {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#formForgottenPassword p {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#formForgottenPassword h2 {
+    display: none;
+}
+
+#formForgottenPassword .js-validated-element-wrapper {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#formForgottenPassword .login-wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.register-points {
+    background-color: #F7FAF9;
+    border: 0;
+    margin-top: 40px;
+    border: 1px solid #E7EEEC;
+    padding: 30px 20px 20px 20px;
+}
+
+.in-registrace #register-form {
+    padding: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .in-login .content-inner::before,
+    .in-login .content-inner::after,
+    .in-zapomenute-heslo .content-inner::before,
+    .in-zapomenute-heslo .content-inner::after,
+    .in-registrace .content-inner::before,
+    .in-registrace .content-inner::after {
+        content: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .in-login #content,
+    .in-zapomenute-heslo #content, 
+    .in-registrace #content {
+        padding: 10px 0 60px 0;
+    }
+    .in-login .content-inner,
+    .in-zapomenute-heslo .content-inner,
+    .in-registrace .content-inner {
+        box-shadow: none;
+        padding: 10px;
+    }
+}
+
+
+.in-login .content-inner h1, .login-form-register-title{
+    color: #2E523D;
+}
