@@ -1,3 +1,5 @@
+@charset 'utf-8';
+
 /*
  * This theme was created by Jan Heder
  * If you have any questions, drop me a message
@@ -5,19 +7,19 @@
 */
 
 
-/*
-    * Bootstrap 5 grid custom
-*/
+/* ========================================================================== */
+/* BOOTSTRAP */
+/* ========================================================================== */
 
-@import "bootstrap/functions";
-@import "bootstrap/variables";
 
-@import "bootstrap/mixins/breakpoints";
-@import "bootstrap/mixins/container";
-@import "bootstrap/mixins/grid";
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 
-@import "bootstrap/containers";
-@import "bootstrap/grid";
+// Optional
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/grid";
 
 
 /*
@@ -100,7 +102,7 @@ a {
     &:hover,
     &:active,
     &:focus {
-        color: $purple-600;
+        color: $gray-1000;
     }
 }
 
