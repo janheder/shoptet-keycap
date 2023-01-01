@@ -951,13 +951,11 @@
 }
 
 
-@media screen and (min-width: 992px){
+@media screen and (max-width: 991px){
     
     .description-inner {
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-gap: 80px;
+        grid-template-columns:  1fr;
+        grid-gap: 40px;
     }
 }
 .p-detail-tabs-wrapper .tab-content{

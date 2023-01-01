@@ -19,9 +19,7 @@
     position: relative;
     margin: 20px 0 0 0;
 }
-.slider-container{
-    --swiffy-slider-item-gap: 20px;
-}
+
 .carousel-inner {
     position: relative;
     overflow: hidden;
@@ -290,7 +288,8 @@
 
 
 .slider-container{
-    width: 100%;
+    width: 100%;    
+    --swiffy-slider-item-gap: 20px;
 }
 .slider-nav{
     filter: none;
@@ -324,6 +323,11 @@
 }
 .mobile .swiffy-slider .slider-nav{
     display: none;
+}
+@media screen and (max-width: 991px){
+    .slider-container{ 
+        --swiffy-slider-item-gap: 10px;
+    }
 }
 @media screen and (max-width: 575px){
     .swiffy-slider .slider-nav{

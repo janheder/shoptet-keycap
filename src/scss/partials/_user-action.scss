@@ -356,6 +356,9 @@ body.--navUserActive .user-action .login-widget {
         grid-template-rows: auto auto;
         padding: 15px 10px;
     }
+    .cart-widget-product[data-testid="cartTitle"]{
+        display: flex;
+    }
 
     .cart-widget-product-amount {
         grid-column-start: 2;
