@@ -49,15 +49,16 @@
 .p-detail-inner-header .p-code{
     display: flex;
     order: 2;
-    font-size: 13px;
+    font-size: 14px;
     padding: 0 20px 0 0;
+    color: $gray-500;
 }
 .p-detail-inner-header .p-code-label{
     padding-right: 2px;
 }
 .p-detail-inner-header div:nth-child(3){
     order: 3;
-    font-size: 13px;
+    font-size: 14px;
 }
 .p-detail-inner-header .stars-wrapper{
     margin: 0;
@@ -84,6 +85,10 @@
 }
 .product-top{
     position: relative;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-gap: 60px;
 }
 @media screen and (max-width: 991px){
     .product-top{
@@ -191,8 +196,7 @@
     display: flex;
 }
 .p-image-wrapper{
-    padding-right: 30px;
-    width: 60%;
+    width: 100%;
 }
 .p-image{
     border-radius: $border-radius-primary;
@@ -321,8 +325,7 @@
 .p-info-wrapper{
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
-    width: 40%;
+    width: 100%;
     align-items: flex-start;
 }
 @media screen and (max-width: 991px){
@@ -378,6 +381,7 @@
     position: relative;
     font-size: 13px;
     margin-bottom: 5px;
+    display: none;
 }
 .price-code-holder::after {
     z-index: 1;
@@ -393,10 +397,10 @@
 }
 .price-additional{
     font-size: 14px;
-    color: $gray-700;
+    color: $gray-500;
 }
 .price-final-holder{
-    color: $gray-900;
+    color: $red-500;
     font-size: 24px;
     font-weight: 500;
 }
@@ -415,11 +419,11 @@
 .availability-value{
     font-size: 15px;
     font-weight: 400;
-    color: $teal-500;
+    color: $green-500;
     padding: 0;
     display: flex;
     order: 20;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     width: 100%;
     padding: 0;
 }
@@ -628,8 +632,7 @@
 .add-to-cart .quantity{
     margin-right: 10px;
     position: relative;
-    max-width: 140px;
-
+    max-width: 130px;
     overflow: hidden;
 }
 .add-to-cart .amount{
@@ -682,7 +685,6 @@
 }
 .add-to-cart .add-to-cart-button{
     padding: 0 50px;
-    padding-left: 82px;
     height: 58px;
     font-size: 16px;
     position: relative;
@@ -700,7 +702,7 @@
 }
 .p-short-description{
     order: 10;
-    font-size: 14px;
+    font-size: 15px;
     padding-bottom: 30px;
     color: $gray-500;
     font-weight: 400;
