@@ -395,6 +395,9 @@ body.--searchActive .search{
     .search-form {
         height: 46px;
         width: 100%;
+        border: 1px solid $gray-300;
+        border-radius: $border-radius-primary;
+        overflow: hidden;
     }
     .search-form fieldset {
         width: 100%;
@@ -415,7 +418,7 @@ body.--searchActive .search{
         position: absolute;
         top: 0;
         right: 0;
-        background: $gray-100;
+        background: transparent;
         height: 46px;
         width: 52px;
         border: 0;
