@@ -803,6 +803,7 @@
     width: 100%;
     background: $gray-100;
     margin-bottom: 40px;
+    padding: 3px;
 }
 .p-detail-tabs-wrapper .p-detail-tabs{
     list-style: none;
@@ -815,11 +816,13 @@
     position: relative;
 }  
 .p-detail-tabs-wrapper .p-detail-tabs li a{
-    padding: 12px 20px;  
+    padding: 14px 25px;  
     display: flex;
     color: $gray-900;
     font-weight: 500;
     font-size: 15px;
+    text-transform: uppercase;
+
 
     &:hover, &:active, &:focus{
         text-decoration: none;

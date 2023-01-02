@@ -737,7 +737,7 @@ body.--floatSearchActive .nav-search {
 }
 
 #checkoutContent .co-contact-information h4+.form-group {
-    background: #fafafa;
+    background: $gray-100;
     max-width: 100%;
     width: 100%;
     padding: 30px 40px;
@@ -829,6 +829,7 @@ body.--floatSearchActive .nav-search {
 .site-msg-custom.step-1 {
     margin-bottom: 30px;
     background: $green-100;
+    color: $green-800;
     padding: 8px 20px;
     text-align: center;
     border-radius: $border-radius-primary;
