@@ -58,6 +58,7 @@ body.--navUserActive .user-action .login-widget {
     box-shadow: 0px 4px 15px rgba($black, 0.08);
     flex-direction: column;
     position: relative;
+    border-radius: $border-radius-primary;
 }
 
 .login-widget h2 {
@@ -125,15 +126,17 @@ body.--navUserActive .user-action .login-widget {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
+    font-weight: 400;
     width: 100%;
     margin-top: 10px;
+    background-color: $gray-100;
+    border-radius: $border-radius-primary;
 }
 
 .login-widget .login-close {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     right: 0;
     top: 0;
     background-color: transparent;

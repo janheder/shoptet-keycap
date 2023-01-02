@@ -197,6 +197,11 @@ strong {
     padding-right: 10px;
     padding-left: 10px;
 }
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
 
 .container {
     width: 100%;
