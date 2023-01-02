@@ -357,10 +357,10 @@ body.--advancedModal{
     display: flex;
     justify-content: center;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 28px;
     line-height: 1;
     margin: 0 auto;
-    padding: 35px 0px 30px 0;
+    padding: 30px 0px 25px 0;
     text-align: center;
     flex-direction: column;
     background: rgba(80, 172, 88, 0.1);
@@ -378,7 +378,7 @@ body.--advancedModal{
     justify-content: space-between;
 }
 .advancedModal__buttons .btn{
-    background: $red-500;
+
 }
 .advancedModal__buttons .btn.btn-ghost{
     height: 50px;
@@ -395,7 +395,8 @@ body.--advancedModal{
 }
 .advancedModal #productsRelated .advancedModal__relatedTitle{
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
+    padding-bottom: 10px;
 }
 .advancedModal #productsRelated .p-tools{
     display: none;
@@ -496,9 +497,8 @@ body.--advancedModal{
     margin-left: 40px;
 }
 .advancedProduct-name{
-    font-size: 28px;
+    font-size: 24px;
     font-family: $font-family-headings;
-    text-transform: uppercase;
     font-weight: 500;
     border-bottom: 1px solid $gray-300;
     padding-bottom: 30px;
@@ -517,8 +517,7 @@ body.--advancedModal{
 }
 .advancedProduct-stock span{
     font-weight: 500;
-    padding-left: 10px;
-    color: $teal-500;
+    color: $green-500;
 }
 .advancedProduct-amount{
     display: flex;

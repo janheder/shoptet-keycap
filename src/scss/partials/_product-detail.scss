@@ -90,6 +90,9 @@
     grid-template-columns: 7fr 5fr;
     grid-gap: 60px;
 }
+.product-top > .col-xs-12:first-child{
+    display: none;
+}
 @media screen and (max-width: 991px){
     .product-top{
         margin: 0 -10px;
