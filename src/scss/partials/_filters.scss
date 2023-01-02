@@ -8,6 +8,7 @@
     padding: 20px;
     box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.05);
     flex-direction: column;
+    z-index: 1;
 }
 .filters.visible{
     display: flex;
@@ -16,7 +17,7 @@
 
 }
 .filters-unveil-button-wrapper .unveil-button{
-    height: 40px;
+    height: 44px;
     font-size: 14px;
     display: inline-flex;
     flex-direction: row;
