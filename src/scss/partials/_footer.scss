@@ -18,7 +18,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border-top: 1px solid $gray-300;
-    grid-gap: 20px;
+    grid-gap: 0 20px;
     width: 100%;
 }
 .custom-footer > div{

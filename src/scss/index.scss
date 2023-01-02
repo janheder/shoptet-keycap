@@ -368,6 +368,16 @@ strong {
     text-align: center;
 }
 
+
+.tooltip{
+    position: absolute !important;
+    background: black;
+    color: white;
+    font-size: 13px;
+    padding: 2px 8px;
+}
+  
+
 #backToTop {
     display: none;
 }
