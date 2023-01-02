@@ -54,6 +54,10 @@
     display: none;
 }
 
-.cart-empty .col-md-4 .cart-content{
+.cart-empty .col-md-4{
     display: none;
+}
+
+.cart-empty .cart-row{
+    flex-direction: column;
 }
