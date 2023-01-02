@@ -11,7 +11,7 @@
     padding-top: 20px;
 }
 .p-detail-inner{
-    padding: 0px 0 60px 0;
+    padding: 0px;
     height: 100%;
 }
 @media screen and (max-width: 991px){
@@ -664,7 +664,7 @@
 
     &::before, &::after{
         content: "";
-        background: $black;
+        background: $gray-500;
         height: 2px;
         width: 10px;
         position: absolute;
