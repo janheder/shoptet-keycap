@@ -39,7 +39,11 @@
     color: $gray-1000;
     font-size: 16px;
     font-weight: 500;
-    text-align: left;    
+    text-align: left;   
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
 }
 
 .cart-header .step::before {
@@ -100,12 +104,12 @@
 
 .step.completed a::before {
     background: $green-500;
-    color: #fff
+    color: $white;
 }
 
 .step.active strong::before {
     background: $gray-1000;
-    color: #fff
+    color: $white;
 }
 
 @media screen and (max-width: 991px) {
