@@ -7,6 +7,9 @@
     display: flex;
     list-style: none;
 }
+.cart-content .cart-header{
+    display: none;
+}
 
 .cart-header::before {
     content: "";

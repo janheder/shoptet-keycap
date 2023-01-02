@@ -95,6 +95,10 @@ body.--floatSearchActive .nav-search {
 }
 
 @media screen and (max-width: 991px) {
+    .cart-row{
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
     .order-summary {
         position: fixed;
         right: 0;
@@ -591,7 +595,7 @@ body.--floatSearchActive .nav-search {
 
 .order-summary .order-summary-inner .cart-item {
     padding: 20px 0;
-    border-top: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-300;
     padding-left: 55px;
     position: relative;
 }
@@ -632,7 +636,6 @@ body.--floatSearchActive .nav-search {
 }
 
 .order-recapitulation {
-    border-top: 1px solid $gray-300;
     padding-top: 10px;
 }
 
@@ -833,6 +836,7 @@ body.--floatSearchActive .nav-search {
 
 .cart-header.step-0+.content-wrapper-in .site-msg-custom.step-1 {
     margin: 0;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 991px) {
