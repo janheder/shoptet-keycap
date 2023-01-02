@@ -93,6 +93,7 @@
 @media screen and (max-width: 991px){
     .product-top{
         margin: 0 -10px;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -913,7 +914,6 @@
 .basic-description{
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
 }
 
 .basic-description > h3, .basic-description > .rte > h2, .extended-description > h3{
