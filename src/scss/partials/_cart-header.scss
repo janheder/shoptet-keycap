@@ -1,7 +1,11 @@
 
 .cart-header {
     position: relative;
-    background: 0 0
+    background: transparent;
+    padding: 0;
+    margin-bottom: 60px;
+    display: flex;
+    list-style: none;
 }
 
 .cart-header::before {
@@ -16,7 +20,16 @@
     background: $gray-100;
     display: flex;
     position: absolute;
-    z-index: -1
+    z-index: -1;
+}
+.cart-header .step{
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+    flex-basis: 0;
+}
+.cart-header .step::marker{
+    content: none;
 }
 
 
