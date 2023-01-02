@@ -14,6 +14,10 @@ body.--floatSearchActive .nav-search {
     display: flex;
 }
 
+.ordering-process  .content-inner{
+    padding-top: 0;
+}
+
 .ordering-process #header {
     height: 90px;
 }
@@ -50,6 +54,11 @@ body.--floatSearchActive .nav-search {
     grid-template-columns: 7fr 3fr;
     grid-gap: 60px;
 }
+.in-kosik.ordering-process .cart-row {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+}
+
 #checkoutContent{
     padding: 0;
     width: 100%;
@@ -210,162 +219,6 @@ body.--floatSearchActive .nav-search {
 }
 
 
-
-.content-inner .cart-header {
-    display: none;
-}
-
-.cart-header {
-    display: flex;
-    margin: 0px 0 40px 0;
-    list-style: none;
-    padding: 0;
-    background-color: $gray-100;
-    width: 100%;
-    height: 120px;
-    position: relative;
-}
-
-.cart-header::before {
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    height: 100%;
-    background: $gray-100;
-    display: flex;
-    position: absolute;
-    z-index: -1;
-}
-
-.ordering-process .content-wrapper-in::before {
-    content: "";
-    height: 120px;
-    width: 100%;
-    display: flex;
-}
-
-.ordering-process .cart-header+.content-wrapper-in::before {
-    content: none;
-}
-
-.cart-header .step {
-    display: flex;
-    flex-grow: 1;
-    position: relative;
-    flex-basis: 0;
-}
-
-.cart-header .step a {
-    text-align: center;
-    padding: 20px 10px 20px 10px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-    color: $gray-800;
-    position: relative;
-    text-align: left;
-
-    &:hover,
-    &:active,
-    &:focus {
-        text-decoration: none;
-        color: $teal-500;
-    }
-}
-
-.cart-header .step strong {
-    text-align: center;
-    padding: 20px 10px 20px 10px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-    color: $gray-800;
-    flex-shrink: 0;
-}
-
-.step strong::before,
-.step a::before {
-    background: rgba(0, 0, 0, 0.15);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 42px;
-    height: 42px;
-    line-height: 1;
-    color: $white;
-    font-weight: 500;
-    margin-right: 20px;
-    flex-shrink: 0;
-}
-
-.step.step-1 strong::before,
-.step.step-1 a::before {
-    content: "1";
-}
-
-.step.step-2 strong::before,
-.step.step-2 a::before {
-    content: "2";
-}
-
-.step.step-3 strong::before,
-.step.step-3 a::before {
-    content: "3";
-}
-
-.cart-header .step.active::before {
-    background: $gray-800;
-    color: $white;
-}
-
-
-@media screen and (max-width: 991px) {
-    .cart-header {
-        margin: 0 -10px;
-        width: auto;
-        margin-top: 0;
-    }
-
-    .cart-header .step a,
-    .cart-header .step strong {
-        padding: 10px;
-        font-weight: 400;
-        font-size: 14px;
-    }
-
-    .cart-header .step-4 {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .cart-header {
-        height: 86px;
-    }
-
-    .cart-header .step a,
-    .cart-header .step strong {
-        flex-direction: column;
-        font-size: 13px;
-        padding: 10px 5px;
-    }
-
-    .step strong::before,
-    .step a::before {
-        margin: 0;
-        width: 34px;
-        height: 34px;
-        margin-bottom: 5px;
-    }
-}
 
 .cart-table {
     width: 100%;
