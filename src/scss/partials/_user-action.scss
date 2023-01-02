@@ -398,16 +398,16 @@ body.--navUserActive .user-action .login-widget {
 .user-action-cart .cart-free-shipping {
     font-size: 14px;
     font-weight: 600;
-    color: $teal-500;
+    color: $green-500;
     margin: 20px;
     margin-bottom: 0;
     padding: 10px 20px;
     display: flex;
-    background: $green-100;
+    background: rgba($green-500,0.1);
 }
 
 .user-action-cart .cart-free-shipping strong {
-    color: $teal-500;
+    color: $green-500;
     display: flex;
 }
 

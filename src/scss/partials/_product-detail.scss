@@ -966,6 +966,7 @@
 .p-detail-tabs-wrapper .tab-content{
     display: flex;
     flex-direction: column;
+    gap: 80px;
 
     #description{
         order: 10;
