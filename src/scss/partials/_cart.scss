@@ -44,7 +44,27 @@ body.--floatSearchActive .nav-search {
 
 }
 
-
+.cart-row{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-gap: 60px;
+}
+#checkoutContent{
+    padding: 0;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 40px 60px;
+    background: $white;
+    border: 1px solid $gray-300;
+}
+#checkoutSidebar{
+    padding: 0;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 
 .cart-content {
     margin: 0;
