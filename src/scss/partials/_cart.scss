@@ -431,6 +431,8 @@ body.--floatSearchActive .nav-search {
     position: relative;
     display: flex;
     max-width: 110px;
+    border-radius: $border-radius-primary;
+    overflow: hidden;
 
     .increase,
     .decrease {
@@ -447,7 +449,7 @@ body.--floatSearchActive .nav-search {
         &::before,
         &::after {
             content: "";
-            background: $gray-800;
+            background: $gray-500;
             height: 2px;
             width: 10px;
             position: absolute;
