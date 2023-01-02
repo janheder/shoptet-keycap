@@ -33,6 +33,9 @@
     border: 0;
     border-top: 1px solid $gray-300;
 }
+.benefitBanner.position--benefitProduct{
+    border-bottom: 0;
+}
 
 @media screen and (max-width: 991px){
     .benefitBanner{

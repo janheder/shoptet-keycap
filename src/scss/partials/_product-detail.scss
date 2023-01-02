@@ -201,6 +201,7 @@
 }
 .p-image-wrapper{
     width: 100%;
+    padding: 0;
 }
 .p-image{
     border-radius: $border-radius-primary;
@@ -331,6 +332,7 @@
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
+    padding: 0;
 }
 @media screen and (max-width: 991px){
     .p-info-wrapper{
@@ -797,80 +799,67 @@
     }
 }
 
+.p-detail-tabs-wrapper .shp-tabs-holder{
+    width: 100%;
+    background: $gray-100;
+    margin-bottom: 40px;
+}
+.p-detail-tabs-wrapper .p-detail-tabs{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}  
+.p-detail-tabs-wrapper .p-detail-tabs li{
+    position: relative;
+}  
+.p-detail-tabs-wrapper .p-detail-tabs li a{
+    padding: 12px 20px;  
+    display: flex;
+    color: $gray-900;
+    font-weight: 500;
+    font-size: 15px;
 
-.p-detail-tabs-wrapper{
-
-    .shp-tabs-holder{
-        width: 100%;
-        background: $white;
-        border-bottom: 1px solid $gray-300;
-        margin-bottom: 20px;
-    }
-    .p-detail-tabs li{
-        position: relative;
-
-        &.active{
-       
-            
-            a{
-             
-            }
-        }
-    }  
-    .p-detail-tabs a{
-        padding: 12px 20px;  
-        display: flex;
-        color: $gray-900;
-        font-weight: 500;
-        font-size: 15px;
-
-        &:hover, &:active, &:focus{
-            text-decoration: none;
-            color: $gray-800;
-            background: $gray-100;
-        }
-    }
-    .navigation-btn{
-        display: none !important;
-    }
-    ul{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    li{
-
-    }
-    a{
-  
-    }
-
-    .detail-parameters{
-        font-size: 14px;
-        display: table;
-        width: 100%;
-        
-        tr{
-            height: 30px;
-            padding: 5px;
-        }
-        tr:nth-child(odd){
-            background: $gray-100;
-        }
-        th{
-            color: $gray-900;
-            padding-right: 10px;
-            padding: 5px;
-            font-weight: 400;
-        }
-        td{
-            color: $gray-900;
-            padding: 5px;
-        }
+    &:hover, &:active, &:focus{
+        text-decoration: none;
+        color: $gray-800;
+        background: $gray-100;
     }
 }
+.p-detail-tabs-wrapper .p-detail-tabs li.active a{
+    background: $white;
+}
+.p-detail-tabs-wrapper .navigation-btn{
+    display: none !important;
+}
+
+
+
+.extended-description .detail-parameters{
+    font-size: 14px;
+    display: table;
+    width: 100%;
+    
+    tr{
+        height: 30px;
+        padding: 5px;
+    }
+    tr:nth-child(odd){
+        background: $gray-100;
+    }
+    th{
+        color: $gray-900;
+        padding-right: 10px;
+        padding: 5px;
+        font-weight: 400;
+    }
+    td{
+        color: $gray-900;
+        padding: 5px;
+    }
+}
+
 
 
 
