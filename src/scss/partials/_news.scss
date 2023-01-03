@@ -101,6 +101,10 @@
     .news-item .image a {
 
     }
+    .news-item .title{
+        font-size: 18px;
+        padding: 30px 15px 10px 15px;
+    }
 }
 /*
 @media screen and (max-width: 767px){
@@ -189,4 +193,10 @@
     padding-top: 40px;
     justify-content: center;
     width: 100%;
+}
+
+@media screen and (max-width: 575px){
+    .hp-blog{
+        padding: 40px 0;
+    }
 }
