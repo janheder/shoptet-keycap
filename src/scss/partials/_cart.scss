@@ -66,8 +66,7 @@ body.--floatSearchActive .nav-search {
     flex: 0 0 100%;
     max-width: 100%;
     padding: 40px 60px;
-    background: $white;
-    border: 1px solid $gray-300;
+    background: $gray-100;
 }
 #checkoutSidebar{
     padding: 0;
@@ -81,7 +80,7 @@ body.--floatSearchActive .nav-search {
 }
 
 #checkoutSidebar .cart-content {
-    padding-left: 20px;
+
 }
 
 .cart-content .next-step {
@@ -582,11 +581,9 @@ body.--floatSearchActive .nav-search {
 
 
 .order-summary .order-summary-inner {
-    border: 1px solid $gray-300;
-    padding: 20px;
+
     margin-bottom: 40px;
     order: 1;
-    padding-top: 30px;
 }
 
 .order-summary .order-summary-inner h4 {
@@ -680,7 +677,6 @@ body.--floatSearchActive .nav-search {
 .order-summary-item.price {
     background: $gray-100;
     padding: 20px;
-    margin: -20px;
     margin-top: 10px;
 }
 

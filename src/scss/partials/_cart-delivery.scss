@@ -30,6 +30,7 @@ h4.order-delivery, h4.order-payment{
     outline: 1px solid $gray-300;
     align-items: center;
     line-height: 1;
+    background: $white;
 }
 .order-delivery-payment-form .radio-wrapper label::before {
     content: "";
