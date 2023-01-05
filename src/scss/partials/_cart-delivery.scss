@@ -1,5 +1,10 @@
+.order-delivery-payment-form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 .co-delivery-method, .co-payment-method{
-    padding-bottom: 40px;
+
 }
 h4.order-delivery, h4.order-payment{
     padding-bottom: 10px;

@@ -63,7 +63,9 @@
     top: 50%;
     opacity: .5
 }
-
+.cart-header .step:last-child::before{
+    content: none;
+}
 
 .cart-header .step.active strong,.cart-header .step.completed a {
     color: $gray-1000;
