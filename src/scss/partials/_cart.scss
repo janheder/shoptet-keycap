@@ -118,8 +118,10 @@ body.--floatSearchActive .nav-search {
 
     #checkoutSidebarToggle {
         display: flex;
-        width: 100%;
+        margin: 0 -10px;
         margin-bottom: 40px;
+        border-radius: 0;
+
     }
 
     body.--checkoutSidebarActive .order-summary {
@@ -200,13 +202,13 @@ body.--floatSearchActive .nav-search {
 
 @media screen and (max-width: 991px) {
     .header-top .contact-box {
-        color: $white;
+        color: $gray-1000;
         padding-right: 15px;
         padding-left: 42px
     }
 
     .header-top .contact-box::before {
-        background-image: url("../icons/phone-white.svg")
+        background-image: url("../icons/phone.svg")
     }
 
     .header-top .contact-box li {
@@ -215,7 +217,7 @@ body.--floatSearchActive .nav-search {
     }
 
     .header-top .contact-box ul a {
-        color: $white;
+        color: $gray-1000;
     }
 }
 

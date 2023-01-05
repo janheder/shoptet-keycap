@@ -204,7 +204,6 @@ $(".menu-helper").click(function(){
 
 
 
-
 if(window.pageYOffset >= 300) {
     $('body').addClass('--floatSearchActive');
 }
@@ -341,8 +340,6 @@ if ($(".type-index, .type-category").length){
     });
 
 
-
-
     $('.advancedModal').on('click',function(e){
         if (e.target !== this)
         return;
@@ -385,8 +382,6 @@ if ($(".type-detail").length){
     });
 
 }
-
-
 
 
 /* relocate shipping */
@@ -650,7 +645,6 @@ $("#footer .custom-footer > div h4").click(function(){
 });
 
 
-
 // =============================================================================
 // VOTE PAGE MASONRY
 // =============================================================================
@@ -663,7 +657,6 @@ if ($(".votes-wrap").length){
         gutter: 30
     });
 }
-
 
 
 // =============================================================================
@@ -697,7 +690,7 @@ var price = $(".price-final-holder").text();
 var priceFormat = parseInt(price.replace(/\D/g,''));
 var saleNum = 10;
 var priceSale = priceFormat * ((100 - saleNum)*0.01);
-$("<span class='price-code-holder'>" + priceSale + " Kč s kódem PROTEBE</span>").insertBefore(".price-final-holder")
+$("<span class='price-code-holder'>" + priceSale + " Kč s kódem SLEVA</span>").insertBefore(".price-final-holder")
 
 
 
@@ -725,10 +718,12 @@ if ($("#checkoutSidebar .cart-item").length){
 // CHECKOUT SIDEBAR MOBILE
 // =============================================================================
 
+$(document).ready(function() {
 
-$("#checkoutContent").prepend('<div class="btn" id="checkoutSidebarToggle">Rekapitulace objednávky</div>');
+    $("#checkoutContent").prepend('<div class="btn" id="checkoutSidebarToggle">Rekapitulace objednávky</div>');
 
-$("#checkoutSidebarToggle").click(function(){
-    $("body").toggleClass("--checkoutSidebarActive");
+    $("#checkoutSidebarToggle").click(function(){
+        $("body").toggleClass("--checkoutSidebarActive");
+    });
+
 });
-    
