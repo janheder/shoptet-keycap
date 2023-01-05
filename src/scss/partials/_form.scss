@@ -47,18 +47,16 @@ textarea.form-control {
 
 .error-field,
 .js-error-field {
-  border-color: red;
+  border-color: $red-500;
 }
 
 .js-validator-msg.msg-info,
 .js-validator-msg.msg-error {
-  background: yellow;
-  position: absolute;
-  left: 100%;
-  top: 0;
-  display: flex !important;
+  background: rgba($red-500,0.1);
+  color: $red-500;
+  display: inline-flex !important;
   flex-shrink: 0;
-  width: 200px
+  padding: 6px 15px;
 }
 
 
