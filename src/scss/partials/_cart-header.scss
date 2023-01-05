@@ -116,6 +116,9 @@
 }
 
 @media screen and (max-width: 991px) {
+    .cart-header {
+        margin-bottom: 0px;
+    }
     .cart-header .step strong,.cart-header .step a {
         font-size:15px
     }
