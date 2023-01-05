@@ -532,11 +532,7 @@ if ($("#checkoutSidebar .contact-box").length){
 
 /* add 4. step */
 if ($(".ordering-process").length){
-    $(".cart-header").append('<li class="step step-4"><strong><span>' + g_completeOrder + '</span></strong></li>');
-    $(".cart-header .step-2 span").text(g_deliveryAndPayment);
-    $(".cart-header .step-3 span").text(g_contactInfo);
-
-    $("#add-note").prop("checked", true);
+    $(".cart-header").append('<li class="step step-4"><strong><span>Dokončení objednávky</span></strong></li>');
 }
 
 
