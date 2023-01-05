@@ -7,7 +7,7 @@ h4.order-delivery, h4.order-payment{
 .shipping-billing-table{
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1px;
+    grid-gap: 10px;
 }
 .order-delivery-payment-form .radio-wrapper{
     display: flex;
@@ -31,6 +31,7 @@ h4.order-delivery, h4.order-payment{
     align-items: center;
     line-height: 1;
     background: $white;
+    border-radius: $border-radius-primary;
 }
 .order-delivery-payment-form .radio-wrapper label::before {
     content: "";

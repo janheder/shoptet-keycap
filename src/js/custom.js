@@ -520,6 +520,7 @@ if ($(".cart-header").length){
 
 
 /* load faq */
+/*
 if ($("#checkoutSidebar .contact-box").length){
 
     const loadFAQ = (html) => {
@@ -532,7 +533,7 @@ if ($("#checkoutSidebar .contact-box").length){
         .then((response) => response.text())
         .then(loadFAQ)
 }
-
+*/
 
 /* add 4. step */
 if ($(".ordering-process").length){

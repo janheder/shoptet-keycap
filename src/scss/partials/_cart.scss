@@ -675,8 +675,8 @@ body.--floatSearchActive .nav-search {
 }
 
 .order-summary-item.price {
-    background: $gray-100;
-    padding: 20px;
+    border-top: 2px solid $gray-100;
+    padding-top: 20px;
     margin-top: 10px;
 }
 
