@@ -67,7 +67,7 @@ if ($(".id-404").length){
 // =============================================================================
 // LOAD HOMEPAGE BRANDS
 // =============================================================================
-
+/*
 if ($(".in-index").length){
     const loadBrands = (html) => {
         const nodes = new DOMParser().parseFromString(html, 'text/html');
@@ -80,6 +80,7 @@ if ($(".in-index").length){
         .then((response) => response.text())
         .then(loadBrands)
 }
+*/
 
 // =============================================================================
 // LOAD HOMEPAGE NEWS
