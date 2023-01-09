@@ -77,9 +77,7 @@
 @media screen and (max-width: 991px){
     #newsletterSection {
         padding: 40px 10px;
-        margin: 0 -10px;
-        margin-bottom: 0px;
-        box-shadow: none;
+        margin-bottom: 60px;
     }
     .newsletterSection__form {
         justify-content: center;
@@ -93,6 +91,13 @@
     }
     .newsletterSection__consent {
         text-align: center;
+    }
+}
+@media screen and (max-width: 767px){
+    #newsletterSection {
+        margin: 0 -10px;
+        margin-bottom: 0px;
+        box-shadow: none;
     }
 }
 @media screen and (max-width: 575px){
