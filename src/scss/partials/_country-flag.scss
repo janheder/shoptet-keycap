@@ -111,7 +111,8 @@
 
 .country-flags.active .shp-flag-label {
     width: calc(100% - 24px);
-    text-align: left
+    text-align: left;
+    display: flex;
 }
 
 .country-flags.active .shp-flag-label::before {
