@@ -52,6 +52,18 @@
         background: $green-600;
     }
 }
+@media screen and (min-width: 992px){
+
+    /*fix layout shift*/
+    
+    .cart-count{
+        margin-left: 153px;
+    }
+    #js-userToggle + .cart-count{
+        margin-left: 10px;
+    }
+}
+
 .cart-count.full .cart-price{
     display: flex;
 }
