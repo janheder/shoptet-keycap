@@ -21,7 +21,15 @@ body.--floatSearchActive .nav-search {
     padding-top: 0;
     background: $white;
     border-radius: $border-radius-primary;
+    
 }
+
+.in-kosik.ordering-process .cart-inner{
+    padding: 80px 50px;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 .ordering-process .cart-content{
    
 
@@ -83,6 +91,7 @@ body.--floatSearchActive .nav-search {
     flex: 0 0 100%;
     max-width: 100%;
     background: $gray-100;
+    top: 0 !important;
 }
 
 .cart-content {
