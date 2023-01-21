@@ -12,6 +12,7 @@
         justify-content: flex-end;
         flex-direction: row;
         background: $white;
+        flex-wrap: nowrap;
     }
 }
 .cart-count{
