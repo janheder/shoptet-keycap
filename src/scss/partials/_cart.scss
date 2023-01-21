@@ -18,7 +18,7 @@ body.--floatSearchActive .nav-search {
 }
 
 .ordering-process .cart-inner{
-    padding-top: 0;
+    padding: 0;
     background: $white;
     border-radius: $border-radius-primary;
     
@@ -49,10 +49,6 @@ body.--floatSearchActive .nav-search {
 }
 
 
-.cart-inner {
-    padding: 0px 0 40px 0;
-}
-
 .in-kosik .cart-row {
 
     .col-md-8,
@@ -68,7 +64,7 @@ body.--floatSearchActive .nav-search {
     margin: 0;
     display: grid;
     grid-template-columns: 7fr 3.5fr;
-    grid-gap: 60px;
+    grid-gap: 0px;
 }
 .in-kosik.ordering-process .cart-row {
     grid-template-columns: 1fr;
@@ -104,6 +100,7 @@ body.--floatSearchActive .nav-search {
 .cart-content .next-step {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 
@@ -114,7 +111,7 @@ body.--floatSearchActive .nav-search {
 @media screen and (max-width: 991px) {
     .cart-row{
         grid-template-columns: 1fr;
-        grid-gap: 40px;
+        grid-gap: 0px;
     }
     .order-summary {
         position: fixed;
@@ -512,11 +509,15 @@ body.--floatSearchActive .nav-search {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid $gray-300;
+    border: 0;
     padding: 0 20px;
-    color: $black;
+    color: $gray-500;
     font-weight: 500;
     border-radius: $border-radius-primary;
+    order: 2;
+    height: 48px;
+    margin-top: 10px;
+
 }
 
 
@@ -550,7 +551,6 @@ body.--floatSearchActive .nav-search {
     color: $gray-1000;
     font-family: $font-family-headings;
     font-size: 20px;
-    text-transform: uppercase;
     margin-bottom: 20px;
     padding: 0;
     height: auto;
@@ -633,7 +633,7 @@ body.--floatSearchActive .nav-search {
     margin-right: 15px;
     position: absolute;
     left: 0;
-    background: $gray-100;
+    background: $white;
 }
 .order-summary .order-summary-inner .cart-item>a img{
     mix-blend-mode: multiply;
@@ -751,10 +751,9 @@ body.--floatSearchActive .nav-search {
 }
 
 #checkoutContent h4 {
-    border-bottom: 1px solid $gray-300;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 #checkoutContent .co-contact-information {

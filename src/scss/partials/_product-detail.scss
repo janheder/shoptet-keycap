@@ -944,18 +944,17 @@
     display: flex;
     flex-wrap: wrap;
     order: 0;
-    margin-bottom: 60px;
     flex-direction: column;
 }
 
 
 @media screen and (max-width: 991px){
-    
     .description-inner {
         grid-template-columns:  1fr;
         grid-gap: 40px;
     }
 }
+
 .p-detail-tabs-wrapper .tab-content{
     display: flex;
     flex-direction: column;
@@ -972,8 +971,12 @@
         order: 30;
         margin-bottom: 60px;
     }
-  }
-  
+}
+@media screen and (max-width: 991px){
+    .p-detail-tabs-wrapper .tab-content{
+        gap: 40px;
+    }
+}
 
 
 #jsUnavailableCombinationMessage{

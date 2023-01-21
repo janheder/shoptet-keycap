@@ -1,7 +1,7 @@
 .order-delivery-payment-form{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
 }
 .co-delivery-method, .co-payment-method{
 
@@ -137,6 +137,7 @@ h4.order-delivery, h4.order-payment{
     display: flex;
     align-items: center;
     justify-content: center;
+    mix-blend-mode: multiply;
 }
 #order-shipping-methods .show-tooltip {
     padding: 0px;
