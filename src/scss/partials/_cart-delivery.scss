@@ -165,6 +165,7 @@ h4.order-delivery, h4.order-payment{
     background: $white;
     outline: 1px solid $green-500;
     background: rgba($green-500,0.04);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
     z-index: 2;
 }
 /* ---- */

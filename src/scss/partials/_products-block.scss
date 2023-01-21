@@ -85,7 +85,7 @@
 @media screen and (max-width: 500px){
     .products-block{
         grid-template-columns: repeat(2,minmax(0,1fr));
-        grid-gap: 10px;
+        grid-gap: 30px 10px;
 
         .product {
             width: 100%;

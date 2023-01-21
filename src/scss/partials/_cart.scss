@@ -30,9 +30,8 @@ body.--floatSearchActive .nav-search {
     margin: 0 auto;
 }
 
-.ordering-process .cart-content{
-   
-
+.ordering-process .content-inner{
+    padding: 0;
 }
 
 .ordering-process #header {
@@ -68,7 +67,7 @@ body.--floatSearchActive .nav-search {
 .cart-row{
     margin: 0;
     display: grid;
-    grid-template-columns: 7fr 3fr;
+    grid-template-columns: 7fr 3.5fr;
     grid-gap: 60px;
 }
 .in-kosik.ordering-process .cart-row {
@@ -81,7 +80,7 @@ body.--floatSearchActive .nav-search {
     width: 100%;
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 40px 60px;
+    padding: 60px 50px;
     background: $gray-100;
     background: #FFFFFF;
 }
@@ -533,6 +532,7 @@ body.--floatSearchActive .nav-search {
     padding: 30px 20px;
     margin-bottom: 20px;
     order: 2;
+    background: $white;
 }
 
 .order-summary .checkout-box img {

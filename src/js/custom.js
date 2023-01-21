@@ -35,7 +35,7 @@ if ($(".cart-header.step-0").length){
     const load404 = (html) => {
         const nodes = new DOMParser().parseFromString(html, 'text/html');
         const body = nodes.querySelector('.site-msg-custom.step-1');
-        document.querySelector('#content .content-inner').prepend(body);
+        document.querySelector('#content .cart-inner').prepend(body);
 
     };
     fetch("https://www.janheder.ga/objednavka/krok-1/")
@@ -367,7 +367,7 @@ if ($(".type-detail").length){
     $("body").append('<div class="floating-bar"><div class="floating-product-content"><div class="floating-product-name">'+ pname +'</div><div class="floating-product-price">'+ pPrice +'</div></div><button type="submit" form="product-detail-form" class="btn">Do košíku</button></div>');
 
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 500) {
+        if ($(this).scrollTop() > 800) {
         $('body').addClass('--floatBarActive');
         } else {
         $('body').removeClass('--floatBarActive');
