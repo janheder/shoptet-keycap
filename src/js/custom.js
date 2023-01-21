@@ -51,7 +51,7 @@ if ($(".id-404").length){
     const load404 = (html) => {
         const nodes = new DOMParser().parseFromString(html, 'text/html');
         const body = nodes.querySelectorAll('#products-1 .product');
-        for(var i = 0; i <= 3; i++) {
+        for(let i = 0; i <= 3; i++) {
             document.querySelector('#errorProductsWrap').appendChild(body[i]);
         }
     };
@@ -93,7 +93,7 @@ if ($(".in-index").length){
     const loadNews = (html) => {
         const nodes = new DOMParser().parseFromString(html, 'text/html');
         const body = nodes.querySelectorAll('.news-wrapper .news-item:nth-child(-n+3)');
-        for(var i = 0; i <= 2; i++) {
+        for(let i = 0; i <= 2; i++) {
             document.querySelector('.in-index #newsWrapper').appendChild(body[i]);
         }
     };
@@ -112,14 +112,14 @@ if ($(".in-index").length){
 if ($(".in-blog").length){
 
     $('.top-navigation-bar-menu a[target="blank"]').each(function(){
-        var url = $(this).prop("href");
-        var name = $(this).text();
+        let url = $(this).prop("href");
+        let name = $(this).text();
         $('.content-inner article').append('<section class="blog-section --'+ name +'"><h2>'+ name +'</h2><div class="news-wrapper"></div></section>');
 
         const loadNews = (html) => {
             const nodes = new DOMParser().parseFromString(html, 'text/html');
             const body = nodes.querySelectorAll('.news-wrapper .news-item:nth-child(-n+3)');
-            for(var i = 0; i <= 2; i++) {
+            for(let i = 0; i <= 2; i++) {
                 document.querySelector('.content-inner article .blog-section.--'+ name + ' .news-wrapper').appendChild(body[i]);
             }
         };
@@ -228,7 +228,7 @@ $("<div id='speechToggle' onclick='startDictation()'></div>").insertBefore(".sea
 function startDictation() {
     if (window.hasOwnProperty('webkitSpeechRecognition')) {
 
-        var recognition = new webkitSpeechRecognition();
+        let recognition = new webkitSpeechRecognition();
 
         recognition.continuous = false;
         recognition.interimResults = false;
@@ -361,8 +361,8 @@ $(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");
 /* floating bar */
 if ($(".type-detail").length){
 
-    var pname = $(".p-detail-inner-header h1").text();
-    var pPrice = $(".product-top .price-final-holder:not(.noDisplay)").text();
+    const pname = $(".p-detail-inner-header h1").text();
+    const pPrice = $(".product-top .price-final-holder:not(.noDisplay)").text();
 
     $("body").append('<div class="floating-bar"><div class="floating-product-content"><div class="floating-product-name">'+ pname +'</div><div class="floating-product-price">'+ pPrice +'</div></div><button type="submit" form="product-detail-form" class="btn">Do košíku</button></div>');
 
@@ -376,7 +376,7 @@ if ($(".type-detail").length){
 
 
     document.addEventListener('ShoptetSurchargesPriceUpdated', function () {
-        var pPrice = $(".product-top .price-final-holder:not(.noDisplay)").text();
+        const pPrice = $(".product-top .price-final-holder:not(.noDisplay)").text();
         $(".floating-product-price").text(pPrice);
     },{
         passive: true
@@ -472,7 +472,7 @@ $('div.hidden-split-parameter').on('change', function() {
 
 $(".menu-level-1 > li.ext").each(function() {
     $(this).prepend('<div class="menu-item-responsive"></div>');
-    var catLink = $(this).children('a').prop("href");
+    let catLink = $(this).children('a').prop("href");
     $(this).find(".menu-level-2").prepend('<a class="menu-item-more" href="' + catLink + '">Zobrazit vše</a>')
 });
 
@@ -618,9 +618,9 @@ if ($(".pagination").length){
 // =============================================================================
 
 $(document).ready(function() {
-    var windowHeight = $(window).height();
-    var docHeight = $(document).height();
-    var multiplier = 4;
+    let windowHeight = $(window).height();
+    let docHeight = $(document).height();
+    let multiplier = 4;
 
     if((windowHeight * multiplier) < docHeight){
         $("body").append("<div id='backToTop' aria-label='Scrollovat nahoru'><span></span></div>");
@@ -647,8 +647,8 @@ $("#footer .custom-footer > div h4").click(function(){
 // =============================================================================
 
 if ($(".votes-wrap").length){
-    var elem = document.querySelector('.votes-wrap');
-    var msnry = new Masonry( elem, {
+    let elem = document.querySelector('.votes-wrap');
+    let msnry = new Masonry( elem, {
         // options
         itemSelector: '.vote-wrap',
         gutter: 30
@@ -663,7 +663,7 @@ if ($(".votes-wrap").length){
 $(document).ready(function() {
 
     $('#faqSearch').keyup(function(e) {
-        var s = $(this).val().trim();
+        let s = $(this).val().trim();
         if (s === '') {
             $('#FaqResult *').show();
             $('#FaqResult details').attr("open", false);
@@ -683,10 +683,10 @@ $(document).ready(function() {
 // SHOW PRICE WITH CODE
 // =============================================================================
 
-var price = $(".price-final-holder").text();
-var priceFormat = parseInt(price.replace(/\D/g,''));
-var saleNum = 10;
-var priceSale = priceFormat * ((100 - saleNum)*0.01);
+let price = $(".price-final-holder").text();
+let priceFormat = parseInt(price.replace(/\D/g,''));
+let saleNum = 10;
+let priceSale = priceFormat * ((100 - saleNum)*0.01);
 $("<span class='price-code-holder'>" + priceSale + " Kč s kódem SLEVA</span>").insertBefore(".price-final-holder")
 
 
@@ -697,10 +697,10 @@ $("<span class='price-code-holder'>" + priceSale + " Kč s kódem SLEVA</span>")
 
 if ($("#checkoutSidebar .cart-item").length){
     const loadPicImages = (html) => {
-        const nodes = new DOMParser().parseFromString(html, 'text/html');
-        const body = nodes.querySelectorAll('.cart-p-image a');
-        const num = nodes.querySelectorAll('.cart-p-image a').length;
-        for(var i = 0; i < num; i++) {
+        let nodes = new DOMParser().parseFromString(html, 'text/html');
+        let body = nodes.querySelectorAll('.cart-p-image a');
+        let num = nodes.querySelectorAll('.cart-p-image a').length;
+        for(let i = 0; i < num; i++) {
             document.querySelector('#checkoutSidebar .cart-item:nth-child('+ (i+1) +')').prepend(body[i]);
         }
         $("img").unveil();

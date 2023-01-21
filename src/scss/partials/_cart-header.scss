@@ -6,6 +6,7 @@
     margin-bottom: 60px;
     display: flex;
     list-style: none;
+    z-index: 1;
 }
 .cart-content .cart-header{
     display: none;
@@ -20,7 +21,7 @@
     transform: translateX(-50%);
     width: 100vw;
     height: 100%;
-    background: $gray-100;
+    background: $white;
     display: flex;
     position: absolute;
     z-index: -1;

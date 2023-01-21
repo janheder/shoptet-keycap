@@ -200,6 +200,7 @@ body.--navUserActive .user-action .login-widget {
         max-width: 400px;
         transform: translate3d(100%, 0, 0);
         overflow-y: auto;
+        border-radius: $border-radius-primary;
     }
 
     body.--cartActive .menu-helper {

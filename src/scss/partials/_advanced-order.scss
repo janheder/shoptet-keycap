@@ -357,14 +357,14 @@ body.--advancedModal{
     display: flex;
     justify-content: center;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1;
     margin: 0 auto;
     padding: 30px 0px 25px 0;
     text-align: center;
     flex-direction: column;
     background: rgba(80, 172, 88, 0.1);
-    color: $teal-500;
+    color: $green-500;
 }
 .advancedModal__content{
     padding: 50px 60px 40px 60px;
@@ -391,6 +391,7 @@ body.--advancedModal{
     padding: 10px;
     padding-top: 40px;
     margin-top: 0px;
+    padding-bottom: 20px;
     border-top: 2px solid #F9f9f9;
 }
 .advancedModal #productsRelated .advancedModal__relatedTitle{
