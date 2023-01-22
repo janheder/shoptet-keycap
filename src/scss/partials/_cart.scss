@@ -21,7 +21,7 @@ body.--floatSearchActive .nav-search {
     padding: 0;
     background: $white;
     border-radius: $border-radius-primary;
-    
+    overflow: hidden;
 }
 
 .in-kosik.ordering-process .cart-inner{
@@ -39,6 +39,9 @@ body.--floatSearchActive .nav-search {
 }
 
 @media screen and (max-width: 991px) {
+    .ordering-process .overall-wrapper{
+        background-color: $white;
+    }
     .ordering-process #header {
         height: 52px;
     }

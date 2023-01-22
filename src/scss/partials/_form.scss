@@ -56,7 +56,10 @@ textarea.form-control {
   color: $red-500;
   display: inline-flex !important;
   flex-shrink: 0;
-  padding: 6px 15px;
+  padding: 5px 10px;
+  border-radius: $border-radius-primary;
+  font-size: 13px;
+  margin-top: 5px;
 }
 
 
@@ -134,44 +137,6 @@ textarea.form-control {
   flex-shrink: 1;
 }
 
-.country-flags,
-.country-flags-inner {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 0px;
-}
-.country-flags-inner {
-  border: 1px solid $gray-300;
-  border-radius: $border-radius-primary;
-}
-.country-flags.active .country-flags-inner {
-  height: 300px !important;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-top: 10px;
-}
-
-.country-flags.active .country-flag.selected {
-  margin: 0;
-  position: relative;
-  left: 0;
-  right: 0;
-  border-bottom: 0;
-}
-
-.country-flag.selected,
-.country-flags.active .country-flag {
-  margin: 0;
-  width: 100%;
-}
-
-.country-flag {
-  flex-shrink: 0;
-}
 
 
 .form-group-tooltip {

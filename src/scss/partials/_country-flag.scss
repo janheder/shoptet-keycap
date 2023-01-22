@@ -40,24 +40,51 @@
     height: 36px
 }
 
+
+.country-flags,
+.country-flags-inner {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0px;
+}
+.country-flags-inner {
+  border: 1px solid $gray-300;
+  border-radius: $border-radius-primary;
+}
+.country-flags.active .country-flags-inner {
+  height: 300px !important;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+
+
+.country-flag {
+  flex-shrink: 0;
+}
+
 .country-flag.selected, .country-flags.active .country-flag {
     display: flex;
     margin-left: -5px;
     padding-left: 5px;
     padding-right: 5px;
-    -webkit-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out
+    transition: all 0.3s ease-out;
+    margin: 0;
+    width: 100%;
 }
 
 .country-flags.active .country-flag.selected {
     display: flex;
-    position: absolute;
-    left: 5px;
-    right: 5px;
-    top: 0;
     border-bottom-style: solid;
-    border-bottom-width: 1px
+    border-bottom-width: 1px;
+    margin: 0;
+    position: relative;
+    border-bottom: 0;
 }
 
 .country-flags.active .country-flag.country-flag-preferred-last {
