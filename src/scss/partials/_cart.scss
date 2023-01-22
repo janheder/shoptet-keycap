@@ -259,10 +259,13 @@ body.--floatSearchActive .nav-search {
     display: grid;
     grid-template-columns: auto 2fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
-    padding: 20px;
-    outline: 1px solid $gray-300;
+    padding: 20px 0;
+    border-top: 1px solid $gray-300;
+    
 }
-
+.removeable:last-child{
+    border-bottom: 1px solid $gray-300;
+}
 .removeable td {
     display: flex;
     align-items: center;
@@ -489,13 +492,19 @@ body.--floatSearchActive .nav-search {
     padding: 20px 0 40px 0;
 }
 
-.cart-summary h4 {}
+.cart-summary h4 {
+    font-size: 15px;
+    font-weight: 500;
+}
 
 .cart-content.summary-wrapper {}
 
 .cart-content.summary-wrapper .price-wrapper {
     text-align: right;
-    font-size: 20px;
+    font-size: 18px;
+    background: $gray-100;
+    padding: 25px 20px;
+    border-radius: $border-radius-primary;
 }
 
 .cart-content.summary-wrapper .price-wrapper .price {
@@ -764,10 +773,12 @@ body.--floatSearchActive .nav-search {
 }
 
 #checkoutContent .co-contact-information h4+.form-group {
-    background: $gray-100;
+    background: $white;
+    border: 1px solid $gray-300;
+    border-radius: $border-radius-primary;
     max-width: 100%;
     width: 100%;
-    padding: 30px 40px;
+    padding: 30px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
