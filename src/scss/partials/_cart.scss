@@ -29,6 +29,13 @@ body.--floatSearchActive .nav-search {
     max-width: 840px;
     margin: 0 auto;
 }
+.in-kosik.ordering-process .cart-inner::before{
+    content: "Nákupní košík";
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.2;
+    color: $gray-900;
+}
 
 .ordering-process .content-inner{
     padding: 0;
