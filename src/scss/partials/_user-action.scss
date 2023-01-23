@@ -54,7 +54,7 @@ body.--navUserActive .user-action .login-widget {
     box-sizing: border-box;
     display: flex;
     max-width: 540px;
-    width: calc(100% - 20px);
+    width: 100%;
     box-shadow: 0px 4px 15px rgba($black, 0.08);
     flex-direction: column;
     position: relative;
@@ -151,6 +151,9 @@ body.--navUserActive .user-action .login-widget {
     .user-action .login-widget {
         position: fixed;
     }
+    .login-widget h2{
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -161,6 +164,9 @@ body.--navUserActive .user-action .login-widget {
     .login-window-visible .user-action .login-widget-inner {
         padding: 40px 40px;
     }
+    .login-widget h2{
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -169,7 +175,7 @@ body.--navUserActive .user-action .login-widget {
     }
 
     .user-action .login-widget .popup-widget-inner {
-        padding: 50px 30px 30px 30px;
+        padding: 50px 30px 20px 30px;
     }
 }
 

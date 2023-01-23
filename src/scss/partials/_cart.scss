@@ -35,6 +35,11 @@ body.--floatSearchActive .nav-search {
     font-size: 28px;
     line-height: 1.2;
     color: $gray-900;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 .ordering-process .content-inner{
@@ -55,6 +60,10 @@ body.--floatSearchActive .nav-search {
 
     .ordering-process .search {
         display: none !important;
+    }
+    .in-kosik.ordering-process .cart-inner{
+        padding: 0;
+        max-width: 100%;
     }
 }
 
@@ -143,9 +152,7 @@ body.--floatSearchActive .nav-search {
 
     #checkoutSidebarToggle {
         display: flex;
-        margin: 0 -10px;
-        margin-bottom: 20px;
-        border-radius: 0;
+        margin: 20px 0;
 
     }
 

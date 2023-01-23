@@ -123,11 +123,14 @@
         margin-bottom: 0px;
     }
     .cart-header .step strong,.cart-header .step a {
-        font-size:15px
+        font-size:15px;
     }
 
     .cart-header .step::before {
-        content: none
+        content: none;
+    }
+    .cart-header .step.step-4{
+        display: none;
     }
 }
 
