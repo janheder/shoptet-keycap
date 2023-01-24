@@ -172,6 +172,9 @@ body.--floatSearchActive .nav-search {
         padding: 0;
         background: transparent;
     }
+    #checkoutSidebar{
+        margin-top: 40px;
+    }
 }
 
 
@@ -589,6 +592,12 @@ body.--floatSearchActive .nav-search {
         display: none;
     }
 }
+.order-summary .checkout-box .btn-block::after{
+    content: "Rádi vám pomůžeme. Po-Pá 9:00-17:00.";
+    color: $gray-500;
+    font-size: 14px;
+    display: flex;
+}
 
 .order-summary .checkout-box .contact-box strong {
     display: none;
@@ -829,6 +838,8 @@ body.--floatSearchActive .nav-search {
 #checkoutContent .co-contact-information h4+.form-group a {
     font-size: 0;
     height: 46px;
+    background: rgba($purple-500,0.1);
+    color: $purple-500;
     padding: 0 20px;
 }
 
