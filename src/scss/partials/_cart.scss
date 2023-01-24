@@ -681,9 +681,9 @@ body.--floatSearchActive .nav-search {
 .order-summary .order-summary-inner .cart-item-name {}
 
 .order-summary .order-summary-inner .cart-item-name a {
-    color: $gray-1000;
-    font-size: 14px;
-    font-weight: 500;
+    color: $gray-900;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .order-summary .order-summary-inner .cart-item-amount {
@@ -719,7 +719,6 @@ body.--floatSearchActive .nav-search {
 }
 
 .cart-items .recapitulation-single:first-child {
-    border-top: 1px solid $gray-300;
     padding-top: 20px;
 }
 
@@ -743,8 +742,8 @@ body.--floatSearchActive .nav-search {
 }
 
 .order-summary-item.price {
-    border-top: 2px solid rgba($gray-900,0.1);
-    border-bottom: 2px solid rgba($gray-900,0.1);
+    border-top: 4px solid rgba($gray-900,0.05);
+    border-bottom: 4px solid rgba($gray-900,0.05);
     padding: 20px 0;
     margin-top: 10px;
 }
