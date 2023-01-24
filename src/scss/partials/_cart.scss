@@ -583,6 +583,9 @@ body.--floatSearchActive .nav-search {
     margin-bottom: 20px;
     padding: 0;
     height: auto;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
 
     span {
         display: none;
@@ -597,6 +600,8 @@ body.--floatSearchActive .nav-search {
     color: $gray-500;
     font-size: 14px;
     display: flex;
+    font-weight: 400;
+    padding-top: 5px;
 }
 
 .order-summary .checkout-box .contact-box strong {
@@ -738,8 +743,9 @@ body.--floatSearchActive .nav-search {
 }
 
 .order-summary-item.price {
-    border-top: 2px solid $gray-100;
-    padding-top: 20px;
+    border-top: 2px solid rgba($gray-900,0.1);
+    border-bottom: 2px solid rgba($gray-900,0.1);
+    padding: 20px 0;
     margin-top: 10px;
 }
 
@@ -793,6 +799,12 @@ body.--floatSearchActive .nav-search {
 
 #checkoutContent .co-contact-information {
     margin-bottom: 40px;
+}
+
+#checkoutContent .co-contact-information h4,
+#checkoutContent .co-billing-address h4{
+    border-bottom: 1px solid $gray-300;
+    padding-bottom: 20px;
 }
 
 #checkoutContent .co-contact-information h4+.form-group {
