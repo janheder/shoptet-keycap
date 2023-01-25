@@ -941,3 +941,14 @@ body.--floatSearchActive .nav-search {
     font-size: 13px;
     padding-top: 2px;
 }
+
+#submit-order .order-button-text{
+    font-size: 0;
+}
+#submit-order .order-button-text::after{
+    content: "Potvrdit nákup";
+    font-size: initial;
+}
+#submit-order .order-button-suffix{
+    display: none;
+}
