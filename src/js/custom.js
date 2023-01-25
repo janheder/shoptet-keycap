@@ -510,10 +510,12 @@ if ($("#customerLogin").length){
     $("#customerLogin .password-helper a:last-child").insertAfter("#customerLogin .input-wrapper.password");
 }
 
+/* relocate cart header */
+/*
 if ($(".cart-header").length){
     $(".cart-header").insertBefore(".content-wrapper-in");
 }
-
+*/
 
 /* load faq */
 /*

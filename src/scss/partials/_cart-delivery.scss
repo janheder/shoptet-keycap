@@ -173,11 +173,6 @@ h4.order-delivery, h4.order-payment{
 
 
 
-#na-postu-wrapper{
-    
-}
-
-
 #na-postu-form table{
     width: 100%;
 }
@@ -198,7 +193,7 @@ h4.order-delivery, h4.order-payment{
     padding: 50px 30px 30px 30px;
     display: flex;
     flex-direction: column;
-    }
+}
 #na-postu-wrapper .table td{
     text-align: left;
     padding: 5px;
@@ -214,4 +209,10 @@ h4.order-delivery, h4.order-payment{
 #na-postu-wrapper .ui-widget-content .ui-menu-item{
     cursor: pointer;
     text-align:left;
+}
+
+@media screen and (max-width: 991px){
+    #na-postu-wrapper{
+        padding: 0;
+    }
 }
