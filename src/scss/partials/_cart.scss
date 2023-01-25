@@ -36,7 +36,7 @@ body.--floatSearchActive .nav-search {
     font-weight: 500;
     font-size: 28px;
     line-height: 1.2;
-    color: $gray-900;
+    color: $gray-1000;
     text-align: center;
     width: 100%;
     display: flex;
@@ -683,7 +683,7 @@ body.--floatSearchActive .nav-search {
 .order-summary .order-summary-inner .cart-item-name {}
 
 .order-summary .order-summary-inner .cart-item-name a {
-    color: $gray-900;
+    color: $gray-1000;
     font-size: 15px;
     font-weight: 400;
 }
@@ -744,8 +744,8 @@ body.--floatSearchActive .nav-search {
 }
 
 .order-summary-item.price {
-    border-top: 4px solid rgba($gray-900,0.05);
-    border-bottom: 4px solid rgba($gray-900,0.05);
+    border-top: 4px solid rgba($gray-1000,0.05);
+    border-bottom: 4px solid rgba($gray-1000,0.05);
     padding: 20px 0;
     margin-top: 10px;
 }

@@ -314,7 +314,7 @@
 .slider-nav-arrow .slider-nav::after {
     height: 64px;
     width: 100%;
-    background: $gray-900;
+    background: $gray-1000;
     mask-repeat: no-repeat;
     mask-position: center;
 }
@@ -356,7 +356,7 @@
         background: #eee;
     }
     .swiffy-slider.slider-nav-scrollbar ::-webkit-scrollbar-thumb:horizontal {
-        background: $gray-900;
+        background: $gray-1000;
     }
 
     .swiffy-slider.slider-nav-scrollbar .slider-container{

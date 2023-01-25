@@ -76,11 +76,11 @@
         order: 2;
     }
     &.flag-gift{
-        background: $gray-900;
+        background: $gray-1000;
         color: $white;
     }
     &.flag-custom3{
-        background: $gray-900;
+        background: $gray-1000;
         color: $white;
     }
     .price-standard{
@@ -243,8 +243,8 @@
     font-size: 13px;
     transition: 0.3s ease opacity;
     background: $white;
-    border: 1px solid $gray-900;
-    color: $gray-900;
+    border: 1px solid $gray-1000;
+    color: $gray-1000;
     text-transform: uppercase;
     line-height: 1;
     flex-shrink: 0;
@@ -322,7 +322,7 @@
 .p .availability{
     font-size: 14px;
     flex-grow: 1;
-    color: $gray-900;
+    color: $gray-1000;
     display: flex;
     align-items: center;
     line-height: 1;

@@ -100,7 +100,7 @@
 #backToShop{
     margin-right: 20px;
     background: $gray-400;
-    color: $gray-900;
+    color: $gray-1000;
     flex-direction: row;
 
     &:hover, &:active, &:focus{
@@ -509,7 +509,7 @@ body.--advancedModal{
     justify-content: space-between;
     border-bottom: 1px solid $gray-300;
     padding: 12px 0;
-    color: $gray-900;
+    color: $gray-1000;
     font-size: 14px;
     align-items: center;
 }
@@ -538,7 +538,7 @@ body.--advancedModal{
     font-size: 19px;
     font-weight: 500;
     padding-top: 30px;
-    color: $gray-900;
+    color: $gray-1000;
 }
 .advancedProduct-priceTotal span{
     color: $red-500;
