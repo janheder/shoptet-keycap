@@ -33,7 +33,7 @@
 .in-registrace .content-inner::before,
 .in-registrace .content-inner::after {
     content: "";
-    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/blob2.svg");
+    background-image: url("../dist/img/small-dot-grid.png");
     height: 300px;
     width: 300px;
     display: flex;
@@ -49,7 +49,7 @@
 .in-login .content-inner::after,
 .in-registrace .content-inner::after,
 .in-zapomenute-heslo .content-inner::after {
-    background-image: url("https://janheder.github.io/benlemi.cz/theme/dist/icons/blob1.svg");
+    background-image: url("../dist/img/small-dot-grid.png");
     left: -100px;
     right: auto;
     bottom: -80px;
