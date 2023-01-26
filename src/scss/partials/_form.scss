@@ -21,6 +21,10 @@ input:-webkit-autofill:active {
   position: relative;
   margin-bottom: 30px;
 }
+.form-group.submit-wrapper{
+  margin-bottom: 0px;
+}
+
 .form-control {
   font-size: 15px;
   font-weight: 400;
