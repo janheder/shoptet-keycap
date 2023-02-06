@@ -235,6 +235,9 @@ footer {
         display: flex;
         flex-direction: column;
     }
+    .custom-footer h4.--active~*[type="application/ld+json"]{
+        display: none;
+    }
     .custom-footer h4.--active::after{
         transform: rotate(180deg);
     }
