@@ -67,6 +67,11 @@ body.--floatSearchActive .nav-search {
         padding: 0;
         max-width: 100%;
     }
+    .in-kosik.ordering-process .cart-inner::before{
+        font-size: 26px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
 }
 
 
@@ -449,7 +454,7 @@ body.--floatSearchActive .nav-search {
         display: grid;
         grid-template-columns: 80px 20px 1fr;
         grid-template-rows: auto auto auto;
-        padding: 10px;
+        padding: 10px 0;
     }
     .removeable .cart-p-image{
         grid-row-start: 1;
@@ -882,7 +887,7 @@ body.--floatSearchActive .nav-search {
 
     #checkoutContent .co-contact-information h4+.form-group label {
         padding-left: 60px;
-        background-size: 36px;
+        background-size: 28 px;
         margin-bottom: 10px;
     }
 

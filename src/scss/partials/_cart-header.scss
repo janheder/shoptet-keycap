@@ -135,6 +135,9 @@
     .cart-header .step.step-4{
         display: none;
     }
+    .step a::before,.step strong::before {
+        background: $white;
+    }
 }
 
 @media screen and (max-width: 575px) {
