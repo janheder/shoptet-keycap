@@ -41,8 +41,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
-    right: -100px;
-    top: -100px;
+    right: -60px;
+    top: -60px;
     opacity: 1;
 }
 
@@ -50,9 +50,9 @@
 .in-registrace .content-inner::after,
 .in-zapomenute-heslo .content-inner::after {
     background-image: url("../img/small-dot-grid.png");
-    left: -100px;
+    left: -60px;
     right: auto;
-    bottom: -100px;
+    bottom: -60px;
     top: auto;
 }
 
@@ -156,4 +156,6 @@
 .co-registration h4{
     font-size: 20px;
     margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $gray-300
 }
