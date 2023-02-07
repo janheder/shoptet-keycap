@@ -155,7 +155,7 @@
 }
 
 
-.in-hodnoceni-obchodu-2 {
+.in-hodnoceni-obchodu, .in-hodnoceni-obchodu-2 {
 
     .breadcrumbs-wrapper{
         background: #fff;
@@ -171,14 +171,16 @@
         margin-bottom: 40px;
     }
     .content-inner h1::before{
-        content: "Nakoupilo u nás už více jak 50 tisíc automobilových nadšenců.";
-        font-size: 32px;
+        content: "Tohle o nás řekli";
+        font-size: 24px;
+        text-transform: uppercase;
+        color: $gray-500;
         display: flex;
         text-align: center;
         justify-content: center;
     }
     .content-inner h1::after{
-        content: "Tohle o nás řekli";
+        content: "Nakoupilo u nás už více jak 50 tisíc zákazníků.";
         font-size: 32px;
         display: flex;
         text-align: center;
