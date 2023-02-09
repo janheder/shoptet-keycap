@@ -95,7 +95,7 @@ textarea.form-control {
 
 .form-group input[type="checkbox"]{
   position: absolute;
-    top: 5px;
+    top: 4px;
     left: 0;
 }
 
@@ -105,13 +105,16 @@ textarea.form-control {
   transform: none !important;
   font-size: 15px !important;
   pointer-events: auto;
+  padding-bottom: 0;
 }
 
 #shipping-address {
-  width: 520px;
+  width: 100%;
+  max-width: 520px;
   border: 1px solid #F0F0F0;
   padding: 40px;
   padding-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 #shipping-address h4 {
