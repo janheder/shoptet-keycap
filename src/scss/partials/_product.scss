@@ -340,11 +340,12 @@
 .p .availability span[style*="color:#sklad"]::before{
     content: "";
     background-image: url("../icons/check-circle-green.svg");
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     display: flex;
     flex-shrink: 0;
     margin-right: 6px;
+    background-size: 100%;
 }
 
 .p-code{

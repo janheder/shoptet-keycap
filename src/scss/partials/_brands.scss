@@ -19,3 +19,15 @@
 #brandWrapper a img{
     
 }
+
+@media (max-width: 991px){
+    .brandSection{
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 575px){
+    .brandSection{
+        padding: 40px 0;
+    }
+}
