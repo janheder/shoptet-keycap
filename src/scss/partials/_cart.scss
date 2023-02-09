@@ -750,8 +750,8 @@ body.--floatSearchActive .nav-search {
 }
 
 .order-summary-item.price {
-    border-top: 4px solid rgba($gray-1000,0.05);
-    border-bottom: 4px solid rgba($gray-1000,0.05);
+    border-top: 4px solid $gray-300;
+    border-bottom: 4px solid $gray-300;
     padding: 20px 0;
     margin-top: 10px;
 }
