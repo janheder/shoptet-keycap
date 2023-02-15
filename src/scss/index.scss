@@ -447,3 +447,10 @@ strong {
     border-radius: $border-radius-primary;
 
 }
+@media (max-width: 991px) {
+    .homepageCta__banner{
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+}

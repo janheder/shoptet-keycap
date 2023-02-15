@@ -3,6 +3,7 @@
     padding: 60px 0 60px 0;
     position: relative;
     z-index: 0;
+    border-top: 1px solid $gray-300;
 }
 .instagram-footer::before {
     content: "";
