@@ -233,13 +233,16 @@
 .p-thumbnails-inner{
     overflow: hidden;
 }
+
+/*
 .p-thumbnails-inner > div{
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     overflow: hidden;
-
 }
+*/
+
 .p-thumbnails-inner>div .cbox-gal{
     display: none;
 }

@@ -725,3 +725,17 @@ $(document).ready(function() {
     });
 
 });
+
+
+// =============================================================================
+// PRODUCT DETAIL CAROUSEL
+// =============================================================================
+
+$(".p-thumbnails-inner").each(function() {
+
+    if($(this).find('.p-thumbnail').length > 2){
+        $(this).addClass("swiffy-slider slider-item-show2 slider-nav-arrow slider-nav-autopause slider-indicators-round slider-nav-page");
+        $(this).find("div").addClass("slider-container");
+        $(this).append('<button type="button" class="slider-nav" aria-label="Previous"></button> <button type="button" class="slider-nav slider-nav-next" aria-label="Next"></button>');
+    };
+});
