@@ -730,12 +730,19 @@ $(document).ready(function() {
 // =============================================================================
 // PRODUCT DETAIL CAROUSEL
 // =============================================================================
+if ($(".p-thumbnails-inner").length){
 
-$(".p-thumbnails-inner").each(function() {
+    if($('.p-thumbnails-inner .p-thumbnail').length > 2){
 
-    if($(this).find('.p-thumbnail').length > 2){
-        $(this).addClass("swiffy-slider slider-item-show2 slider-nav-arrow slider-nav-autopause slider-indicators-round slider-nav-page");
-        $(this).find("div").addClass("slider-container");
-        $(this).append('<button type="button" class="slider-nav" aria-label="Previous"></button> <button type="button" class="slider-nav slider-nav-next" aria-label="Next"></button>');
+
+        $(".p-thumbnail").each(function() {
+           let a = $(this).html().replace("/related/","/big/");
+            $(".p-image-wrapper .p-image #wrap").append(a);
+        });
+
+
+        $(".p-image-wrapper .p-image").addClass("swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autopause slider-indicators-round slider-nav-page");
+        $(".p-image-wrapper .p-image #wrap").addClass("slider-container");
+        $(".p-image-wrapper .p-image").append('<button type="button" class="slider-nav" aria-label="Previous"></button> <button type="button" class="slider-nav slider-nav-next" aria-label="Next"></button>');
     };
-});
+}
