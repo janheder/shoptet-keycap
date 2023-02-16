@@ -210,8 +210,8 @@
     background: $gray-100;
     padding: 30px 0;
 }
-.p-image >div{
-
+.p-image #wrap{
+    display: none;
 }
 .p-image a{
     background: $gray-100;
