@@ -452,10 +452,17 @@ strong {
         padding: 60px 20px;
         text-align: center;
     }
+    .homepageCta__banner .newsletterSection__formGroup{
+        flex-direction: column;
+    align-items: center;
+    width: auto;
+    }
 
 }
 
-
+#productSlider{
+    transform: translateZ(0);
+}
 #productSlider img{
     mix-blend-mode: multiply;
 }
