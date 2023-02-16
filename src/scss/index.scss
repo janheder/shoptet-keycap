@@ -435,14 +435,14 @@ strong {
     transform: translateX(-50%);
     width: 100vw;
     height: 50%;
-    background: #f8fafc;
+    background: $gray-100;
     display: flex;
     position: absolute;
     z-index: -1;
 }
 .homepageCta__banner{
     background: $gray-900;
-    color: white;
+    color: $white;
     padding: 100px 80px;
     border-radius: $border-radius-primary;
 
