@@ -14,7 +14,7 @@ $('<h4>Nejprodávanější</h4><div id="productsTop" class="products products-in
 // INIT HOMEPAGE CAROUSEL
 // =============================================================================
 
-$("#carousel").addClass("swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round ");
+$("#carousel").addClass("swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autoplay slider-nav-autopause slider-indicators-round");
 $("#carousel").attr("data-interval" , '');
 $("#carousel").attr("data-slider-nav-autoplay-interval","5000");
 $("#carousel .carousel-inner").removeClass("carousel-inner").attr("aria-label","Carousel");;
@@ -742,7 +742,7 @@ if ($(".p-thumbnails-inner").length){
         });
 
 
-        $(".p-image-wrapper .p-image").addClass("swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autopause slider-indicators-round slider-nav-page");
+        $(".p-image-wrapper .p-image").addClass("swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autopause slider-nav-autopause slider-indicators-round");
 
         $(".p-image-wrapper .p-image").append('<button type="button" class="slider-nav" aria-label="Previous"></button> <button type="button" class="slider-nav slider-nav-next" aria-label="Next"></button>');
     };
