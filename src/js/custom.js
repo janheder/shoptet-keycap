@@ -734,7 +734,7 @@ if ($(".p-thumbnails-inner").length){
 
     if($('.p-thumbnails-inner .p-thumbnail').length > 2){
 
-        $(".p-image-wrapper .p-image").append("<div id='productSlider' class='slider-container'></div>");
+        $(".p-image-wrapper .p-image").prepend("<div id='productSlider' class='slider-container'></div>");
 
         $(".p-thumbnail").each(function() {
            let a = $(this).html().replace("/related/","/big/");

@@ -447,6 +447,16 @@ strong {
     border-radius: $border-radius-primary;
 
 }
+.homepageCta__form{
+    margin-top: 40px;
+}
+.homepageCta__form .newsletterSection__formGroup{
+    margin: 0;
+    max-width: 100%;
+}
+.homepageCta__form label{
+    color: white;
+}
 @media (max-width: 991px) {
     .homepageCta__banner{
         padding: 60px 20px;
