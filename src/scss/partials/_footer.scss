@@ -34,8 +34,19 @@ footer {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 20px;
+    padding-bottom: 15px;
     font-family: $font-family-headings;
     color: $gray-1000;
+    position: relative;
+}
+.custom-footer h4::before{
+    content: "";
+    height: 4px;
+    width: 40px;
+    display: inline-flex;
+    background: $purple-100;
+    position: absolute;
+    bottom: 0;
 }
 .custom-footer > div  ul{
     list-style: none;
