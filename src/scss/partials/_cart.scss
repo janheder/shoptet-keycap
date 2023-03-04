@@ -72,6 +72,9 @@ body.--floatSearchActive .nav-search {
         margin-bottom: 20px;
         margin-top: 20px;
     }
+    .ordering-process .header-top .contact-box{
+        display: none;
+    }
 }
 
 
@@ -796,7 +799,7 @@ body.--floatSearchActive .nav-search {
 
 .cart-content .consents {
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 #checkoutContent .form-group {
