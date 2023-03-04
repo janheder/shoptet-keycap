@@ -131,6 +131,11 @@
 
     .cart-header .step::before {
         height: 10px;
+        top: 32px;
+        right: -8px;
+    }
+    .cart-header .step.step-3::before{
+        content: none;
     }
     .cart-header .step.step-4{
         display: none;
