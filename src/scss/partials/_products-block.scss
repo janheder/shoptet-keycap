@@ -57,7 +57,7 @@
         grid-auto-columns: auto;
         scroll-snap-type: none;
         outline: none;
-
+        overflow-y: hidden;
     }
 }
 @media screen and (max-width: 768px){

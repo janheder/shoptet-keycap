@@ -130,7 +130,7 @@
     }
 
     .cart-header .step::before {
-        content: none;
+        height: 10px;
     }
     .cart-header .step.step-4{
         display: none;
@@ -146,7 +146,7 @@
     }
     .cart-header .step a,.cart-header .step strong,.cart-header .step.active strong,.cart-header .step.completed a {
         flex-direction:column;
-        font-size: 14px;
+        font-size: 13px;
         padding: 0;
         line-height: 1.1
     }
