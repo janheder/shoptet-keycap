@@ -1,6 +1,9 @@
-.cart-inner.cart-empty{
+.in-kosik.ordering-process .cart-inner.cart-empty{
     padding: 0 0 110px 0;
-
+    margin: 60px auto;
+}
+.in-kosik.ordering-process .cart-inner.cart-empty::before{
+    content: none;
 }
 .cart-empty .cart-heading{
     text-align: center;
@@ -26,14 +29,16 @@
     border-top: 1px solid $gray-300;
 }
 .empty-cart-boxes h3{
-    
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 22px;
 }
 .empty-cart-boxes ul{
     list-style: none;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 .empty-cart-boxes li{
     width: 100%;
@@ -42,10 +47,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 10px 10px 10px;
     background: $white;
     border: 1px solid $gray-300;
     height: 100%;
+    justify-content: center;
+    text-align: center;
 }
 .empty-cart-boxes .col-md-6{
     width: 100%;
