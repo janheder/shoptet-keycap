@@ -450,19 +450,20 @@
     line-height: 1;
     align-items: center;
     flex-grow: 1;
-    
-    &::before{
-        content: "";
-        display: flex;
-        height: 16px;
-        width: 16px;
-        margin-right: 10px;
-        background-image: url("../icons/check-circle-green.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        align-items: center;
-    }
 }
+.availability-label[style*="color:#sklad"]::before{
+    content: "";
+    display: flex;
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+    background-image: url("../icons/check-circle-green.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+
 .default-variant .availability-label::before{
     content: none;
     color: $green-900;
@@ -710,6 +711,12 @@
     background-size: contain;
     margin-right: 15px;
 }
+
+@media screen and (max-width: 575px){
+ 
+}
+
+
 .p-short-description{
     order: 10;
     font-size: 15px;
