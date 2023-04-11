@@ -123,6 +123,7 @@ h4.order-delivery, h4.order-payment{
     display: flex;
     order: 20;
     white-space: nowrap;
+    padding-left: 10px;
 }
 .payment-shipping-price.for-free {
     color: $green-500;

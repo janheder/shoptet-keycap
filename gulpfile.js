@@ -38,6 +38,7 @@ function scripts() {
 
 function watch() {
     browserSync.init({
+        port: 8080,
         server: {
            baseDir: "./dist/"
         }
