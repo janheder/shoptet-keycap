@@ -734,16 +734,13 @@ if ($(".p-thumbnails-inner").length){
 
     if($('.p-thumbnails-inner .p-thumbnail').length > 2){
 
-        $(".p-image-wrapper .p-image").prepend("<div id='productSlider' class='slider-container'></div>");
+        $(".p-image-wrapper .p-image").prepend("<div id='productSlider' class='swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autopause slider-nav-autopause slider-indicators-round'><div class='slider-container'></div></div>");
 
         $(".p-thumbnail").each(function() {
            let a = $(this).html().replace("/related/","/big/");
            let url = $(this).prop("href").replace("/related/","/big/");
-            $("#productSlider").append('<a href="' + url + '" class="cbox-gal cboxElement" data-gallery="lightbox[gallery]">' + a + '</a>');
+            $("#productSlider .slider-container").append('<a href="' + url + '" class="cbox-gal cboxElement" data-gallery="lightbox[gallery]">' + a + '</a>');
         });
-
-
-        $(".p-image-wrapper .p-image").addClass("swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autopause slider-nav-autopause slider-indicators-round");
 
         $(".p-image-wrapper .p-image").append('<button type="button" class="slider-nav" aria-label="Previous"></button> <button type="button" class="slider-nav slider-nav-next" aria-label="Next"></button>');
     };
