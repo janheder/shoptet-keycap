@@ -737,6 +737,7 @@ if ($(".p-thumbnails-inner").length){
         $(".p-image-wrapper .p-image").prepend("<div id='productSlider' class='swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autopause slider-nav-autopause slider-indicators-round'><div class='slider-container'></div></div>");
 
         var loop = 1;
+        var sliderElement = document.getElementById('productSlider');
 
         $(".p-thumbnail").each(function() {
         
@@ -745,7 +746,7 @@ if ($(".p-thumbnails-inner").length){
             $("#productSlider .slider-container").append('<a href="' + url + '" class="cbox-gal cboxElement" data-gallery="lightbox[gallery]">' + a + '</a>');
             $(this).removeAttr("href");
 
-            const sliderElement = document.getElementById('productSlider');
+            
             $(this).attr("onclick",'swiffyslider.slideTo(sliderElement, "'+ loop +'");');
             loop++;
         });
