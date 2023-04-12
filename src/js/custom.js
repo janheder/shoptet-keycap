@@ -730,6 +730,7 @@ $(document).ready(function() {
 // =============================================================================
 // PRODUCT DETAIL CAROUSEL
 // =============================================================================
+
 if ($(".p-thumbnails-inner").length){
 
     if($('.p-thumbnails-inner .p-thumbnail').length > 2){
@@ -740,7 +741,7 @@ if ($(".p-thumbnails-inner").length){
 
         var loop = 0;
         var sliderElement = document.getElementById('productSlider');
-
+/*
         $(".p-thumbnail").each(function() {
         
             let a = $(this).html().replace("/related/","/big/");
@@ -752,8 +753,7 @@ if ($(".p-thumbnails-inner").length){
             $(this).attr("onclick",'swiffyslider.slideTo(sliderElement, "'+ loop +'");');
             loop++;
         });
-        
-        swiffyslider.init(rootElement = document.body);
+*/
 
     }
 }
