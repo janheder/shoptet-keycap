@@ -743,7 +743,7 @@ if ($(".p-thumbnails-inner").length){
         
             let a = $(this).html().replace("/related/","/big/");
             let url = $(this).prop("href").replace("/related/","/big/");
-            $("#productSlider .slider-container").prepend('<a href="' + url + '" class="cbox-gal cboxElement" data-gallery="lightbox[gallery]">' + a + '</a>');
+            $("#productSlider .slider-container").append('<a href="' + url + '" class="cbox-gal cboxElement" data-gallery="lightbox[gallery]">' + a + '</a>');
             $(this).removeAttr("href");
 
             
