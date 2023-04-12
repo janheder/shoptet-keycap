@@ -210,8 +210,8 @@
     background: $gray-100;
     padding: 30px 0;
 }
-.p-image #productSlider #wrap{
-    display: none;
+.p-image #productSlider + #wrap{
+    display: none !important;
 }
 .p-image a{
     background: $gray-100;

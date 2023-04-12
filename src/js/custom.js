@@ -738,7 +738,8 @@ if ($(".p-thumbnails-inner").length){
 
         $(".p-thumbnail").each(function() {
            let a = $(this).html().replace("/related/","/big/");
-            $("#productSlider").append(a);
+           let url = $(this).prop("src").replace("/related/","/big/");
+            $("#productSlider").append('<a href="' + url + '" class="class="p-main-image">' + a + '</a>');
         });
 
 
