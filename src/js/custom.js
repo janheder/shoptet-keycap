@@ -736,13 +736,18 @@ if ($(".p-thumbnails-inner").length){
 
         $(".p-image-wrapper .p-image").prepend("<div id='productSlider' class='swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autopause slider-nav-autopause slider-indicators-round'><div class='slider-container'></div></div>");
 
+        var loop = 1;
+
         $(".p-thumbnail").each(function() {
         
             let a = $(this).html().replace("/related/","/big/");
             let url = $(this).prop("href").replace("/related/","/big/");
             $("#productSlider .slider-container").append('<a href="' + url + '" class="cbox-gal cboxElement" data-gallery="lightbox[gallery]">' + a + '</a>');
-            $(this).removeProp("href");
+            $(this).removeAttr("href");
 
+            const sliderElement = document.getElementById('productSlider');
+            $(this).attr("onclick",'swiffyslider.slideTo(sliderElement, "'+ loop +'");');
+            loop++;
         });
 
         $("#productSlider").append('<button type="button" class="slider-nav" aria-label="Previous"></button> <button type="button" class="slider-nav slider-nav-next" aria-label="Next"></button>');
