@@ -734,16 +734,16 @@ if ($(".p-thumbnails-inner").length){
 
     if($('.p-thumbnails-inner .p-thumbnail').length > 2){
 
-        $(".p-image-wrapper .p-image").prepend("<div id='productSlider' class='swiffy-slider slider-item-show1 slider-nav-arrow slider-nav-autopause slider-nav-autopause slider-indicators-round'><div class='slider-container'></div></div>");
+        $(".p-image-wrapper .p-image").prepend("<div id='productSlider' class='swiffy-slider slider-item-show1 slider-nav-arrow slider-indicators-round'><div class='slider-container'></div></div>");
 
-        var loop = 1;
+        var loop = 0;
         var sliderElement = document.getElementById('productSlider');
 
         $(".p-thumbnail").each(function() {
         
             let a = $(this).html().replace("/related/","/big/");
             let url = $(this).prop("href").replace("/related/","/big/");
-            $("#productSlider .slider-container").append('<a href="' + url + '" class="cbox-gal cboxElement" data-gallery="lightbox[gallery]">' + a + '</a>');
+            $("#productSlider .slider-container").prepend('<a href="' + url + '" class="cbox-gal cboxElement" data-gallery="lightbox[gallery]">' + a + '</a>');
             $(this).removeAttr("href");
 
             
