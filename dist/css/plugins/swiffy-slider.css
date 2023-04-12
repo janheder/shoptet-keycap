@@ -402,10 +402,14 @@
     cursor: grab;
 }
 
-.slider-nav-mousedrag .slider-container.dragging {
+.slider-nav-mousedrag.dragging .slider-container {
     scroll-snap-type: unset;
     scroll-behavior: unset;
     user-select: none;
+}
+
+.slider-nav-mousedrag.dragging .slider-nav {
+    visibility: hidden;
 }
 
 @media (hover: hover) {
@@ -508,6 +512,9 @@
         --swiffy-slider-item-reveal: 0rem;
         --swiffy-slider-item-count: 1;
         --swiffy-slider-nav-zoom: .875;
+    }
+    .swiffy-slider .slider-item-show2-sm {
+        --swiffy-slider-item-count: 2;
     }
     .slider-item-reveal {
         --swiffy-slider-item-reveal: 4rem;

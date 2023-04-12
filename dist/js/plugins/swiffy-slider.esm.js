@@ -1,4 +1,4 @@
-const swiffyslider = function() {
+export const swiffyslider = function() {
     return {
         version: "1.6.0",
         init(rootElement = document.body) {
@@ -132,16 +132,3 @@ const swiffyslider = function() {
         }
     };
 }();
-
-window.swiffyslider = swiffyslider;
-if (!document.currentScript.hasAttribute("data-noinit")) {
-    if (document.currentScript.hasAttribute("defer")) {
-        swiffyslider.init();
-    } else {
-        document.onreadystatechange = () => {
-            if (document.readyState === 'interactive') {
-                swiffyslider.init();
-            }
-        }
-    }
-}
