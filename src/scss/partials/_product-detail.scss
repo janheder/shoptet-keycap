@@ -228,17 +228,18 @@
     }
 }
 .p-thumbnails-wrapper{
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .p-thumbnails-inner{
     overflow: hidden;
 }
 
 
-.p-thumbnails-inner > div{
+.p-thumbnails-inner>div{
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
     overflow: hidden;
 }
 
@@ -789,6 +790,7 @@
     .p-detail-inner-header h1 {
         font-size: 24px;
         margin: 0;
+        line-height: 1.3;
     }
     .p-short-description{
         display: none;

@@ -173,7 +173,9 @@ h4.order-delivery, h4.order-payment{
 /* ---- */
 
 
-
+#na-postu-form{
+    margin-top: 20px;
+}
 #na-postu-form table{
     width: 100%;
 }
@@ -185,6 +187,7 @@ h4.order-delivery, h4.order-payment{
     background: $white;
     margin-top: 60px;
     border-top: 1px solid $gray-300;
+    text-align: left;
 }
 #na-postu-legend p{
     text-align:left;
@@ -192,13 +195,13 @@ h4.order-delivery, h4.order-payment{
     padding-left: 5px;
 }
 #na-postu-wrapper{
-    padding: 50px 30px 30px 30px;
+    padding: 50px 30px 0px 30px;
     display: flex;
     flex-direction: column;
 }
-#na-postu-wrapper .table td{
-    text-align: left;
-    padding: 5px;
+#na-postu-wrapper .na-postu-logos{
+    display: flex;
+    gap: 15px;
 }
 
 #na-postu-wrapper .ui-widget-content{
@@ -220,10 +223,17 @@ h4.order-delivery, h4.order-payment{
 #na-postu-result .cpost-delivery-point-result-table{
     width: 100%;
 }
+#na-postu-wrapper .cpost-delivery-point-result-table td{
+    text-align: left;
+    padding: 5px;
+}
 #na-postu-wrapper .cpost-delivery-point-result-table .na-postu-symbols{
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
+}
+#na-postu-wrapper .cpost-delivery-point-result-table .cpost-delivery-point-submit{
+    text-align: right;
 }
 #na-postu-wrapper .cpost-delivery-point-opening-hours{
     display: none;
@@ -231,10 +241,7 @@ h4.order-delivery, h4.order-payment{
 #na-postu-wrapper .cpost-delivery-point-opening-hours.active{
     display: block;
 }
-#na-postu-wrapper .cpost-delivery-point-submit{
-    text-align: right;
-}
-#na-postu-wrapper .cpost-delivery-point-submit .btn{
+#na-postu-wrapper .cpost-delivery-point-result-table .cpost-delivery-point-submit .btn{
     height: 44px;
 }
 #na-postu-wrapper .cpost-delivery-point-opening-hours th,

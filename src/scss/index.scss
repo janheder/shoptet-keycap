@@ -444,9 +444,24 @@ strong {
 .homepageCta__banner{
     background: $gray-900;
     color: $white;
-    padding: 100px 80px;
-    border-radius: $border-radius-primary;
-
+    border-radius: $border-radius-primary;;
+    background-image: url("https://janheder.github.io/shoptet-keycap/dist/img/bg-homepageCta.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding: 90px 80px;
+}
+.homepageCta__banner p{
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.homepageCta__banner h3{
+    font-size: 34px;
+}
+.homepageCta__banner .newsletterSection__consent{
+    opacity: 0.8;
+    font-size: 14px;
 }
 .homepageCta__form{
     margin-top: 40px;
