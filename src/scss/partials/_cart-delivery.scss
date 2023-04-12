@@ -181,14 +181,15 @@ h4.order-delivery, h4.order-payment{
     order: 99;
 }
 #na-postu-legend{
-    padding: 20px 20px 20px 15px;
-    background: $gray-100;
+    padding-top: 20px;
+    background: $white;
     margin-top: 20px;
+    border-top: 1px solid $gray-300;
 }
 #na-postu-legend p{
     text-align:left;
     font-weight: 500;
-    padding-left: 5px
+    padding-left: 5px;
 }
 #na-postu-wrapper{
     padding: 50px 30px 30px 30px;
@@ -198,22 +199,47 @@ h4.order-delivery, h4.order-payment{
 #na-postu-wrapper .table td{
     text-align: left;
     padding: 5px;
-    ;
 }
-
+#na-postu-wrapper .table .na-postu-symbols{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
 #na-postu-wrapper .ui-widget-content{
     position: relative !important;
     top: 0 !important;
     list-style: none;
     padding-left: 0;
+    left: 0 !important;
+    margin-top: 20px;
+    border-top: 1px solid $gray-300;
 }
 #na-postu-wrapper .ui-widget-content .ui-menu-item{
     cursor: pointer;
     text-align:left;
+    background: $gray-100;
+    padding: 8px 15px;
 }
-
+#na-postu-result .cpost-delivery-point-result-table{
+    width: 100%;
+}
+#na-postu-wrapper .cpost-delivery-point-opening-hours{
+    display: none;
+}
+#na-postu-wrapper .cpost-delivery-point-opening-hours.active{
+    display: block;
+}
 @media screen and (max-width: 991px){
     #na-postu-wrapper{
         padding: 0;
+    }
+}
+@media screen and (max-width: 575px){
+    #na-postu-form table tr{
+        display: flex;
+        flex-direction: column;
+    }
+    #na-postu-form table tr .btn{
+        width: 100%;
     }
 }
