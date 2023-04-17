@@ -355,7 +355,7 @@ if ($(".type-index, .type-category").length){
 // -----------------------------------------------------------------------------
 
 /* relocate product title */
-/*$(".p-detail-inner-header").insertBefore(".p-final-price-wrapper");*/
+/*$(".p-detail-inner-header").insertAfter(".p-detail-info");*/
 
 
 /* floating bar */
