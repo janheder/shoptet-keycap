@@ -229,10 +229,10 @@
     background: $gray-100;
     padding: 30px 0;
 }
-.p-image #wrap{
+.p-image a{
     display: none !important;
 }
-.p-image #wrap.onlyOne{
+.p-image a.onlyOne{
     display: flex !important;
 }
 .p-image a{
