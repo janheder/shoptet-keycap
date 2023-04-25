@@ -132,8 +132,8 @@
 }
 .p-detail-info .flag{
     margin-bottom: 5px;
-    padding: 0 10px;
-    height: 24px;
+    padding: 0 8px;
+    height: 22px;
     background: $white;
     white-space: nowrap;
     color: $gray-1000;
@@ -141,6 +141,7 @@
     justify-content: center;
     align-items: center;
     font-size: 13px;
+    border-radius: $border-radius-primary;
 
     &.flag-action{
         background: $red-500;
@@ -228,8 +229,11 @@
     background: $gray-100;
     padding: 30px 0;
 }
-.p-image #productSlider + #wrap{
+.p-image #wrap{
     display: none !important;
+}
+.p-image #wrap.onlyOne{
+    display: flex !important;
 }
 .p-image a{
     background: $gray-100;
