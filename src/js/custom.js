@@ -753,6 +753,6 @@ if ($(".p-thumbnails-inner").length){
         });
 
     }else{
-        $(".p-image a").addClass("onlyOne");
+        $(".p-image > a, .p-image #wrap").addClass("onlyOne");
     }
 }
