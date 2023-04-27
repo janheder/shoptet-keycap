@@ -23,6 +23,7 @@
         order: 40;
         display: flex;
         justify-content: space-between;
+        padding-bottom: 40px;
     }
     #filters-default-position{
         display: none;
@@ -366,9 +367,11 @@ h1.category-title{
 .gridSwitch{
     display: flex;
     gap: 10px;
+    height: auto;
+    align-items: center;
 }
 .gridSwitch span{
-    padding: 5px;
+    padding: 5px 10px;
     background: $gray-100;
 }
 
@@ -378,6 +381,23 @@ h1.category-title{
 #products.--inline{
     grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-#products.--inline{
-    
+#products.--inline .p{
+    flex-direction: row;
+    gap: 20px;
+}
+#products.--inline .p .image{
+    flex-shrink: 0;
+}
+#products.--inline .p .p-in{
+    width: 100%;
+    padding: 0;
+}
+#products.--inline .p .p-in-in {
+    height: auto;
+}
+#products.--inline .p .p-tools{
+    display: flex;
+}
+#products.--inline .p .p-desc{
+    display: flex;
 }
