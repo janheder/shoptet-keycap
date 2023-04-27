@@ -21,6 +21,8 @@
     background-position: center;
     border-radius: $border-radius-primary;
     transition: 0s ease all;
+    justify-content: center;
+    align-items: center;
 
     img{
         max-height: 100%;
