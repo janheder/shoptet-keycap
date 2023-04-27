@@ -22,6 +22,10 @@
     #filters-wrapper{
         order: 40;
         display: flex;
+        justify-content: space-between;
+    }
+    #filters-default-position{
+        display: none;
     }
     #products{
         order: 60;
