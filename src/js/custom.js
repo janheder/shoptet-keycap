@@ -764,14 +764,23 @@ if ($("#filters-wrapper").length){
 
 
     $("#gridSwitch-1").click(function(){
+        $(this).addClass("--active");
+        $("#gridSwitch-2, #gridSwitch-3").removeClass("--active");
+
         $("#products").removeClass("--grid3");
         $("#products").removeClass("--inline");
     });
     $("#gridSwitch-2").click(function(){
+        $(this).addClass("--active");
+        $("#gridSwitch-1, #gridSwitch-3").removeClass("--active");
+
         $("#products").addClass("--grid3");
         $("#products").removeClass("--inline");
     });
     $("#gridSwitch-3").click(function(){
+        $(this).addClass("--active");
+        $("#gridSwitch-1, #gridSwitch-2").removeClass("--active");
+
         $("#products").removeClass("--grid3");
         $("#products").addClass("--inline");
     });
