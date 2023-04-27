@@ -373,14 +373,19 @@ h1.category-title{
 .gridSwitch span{
     padding: 0;
     cursor: pointer;
-    background-size: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     filter:  grayscale(1);
+    height: 19px;
+    width: 19px;
 }
 .gridSwitch span.--active{
     filter: none;
 }
 .gridSwitch #gridSwitch-1{
     background-image: url("../icons/grid-ext.svg");
+    width: 29px;
 }
 .gridSwitch #gridSwitch-2{
     background-image: url("../icons/grid.svg");
