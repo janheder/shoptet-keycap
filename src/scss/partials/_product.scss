@@ -13,7 +13,6 @@
     padding: 0px;
 }
 .p .image{
-    padding-bottom: 85%;
     position: relative;
     background: $gray-100;
     /*background-image: url("../img/loading-symbol.svg");*/
@@ -23,10 +22,6 @@
     border-radius: $border-radius-primary;
 
     img{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
         max-height: 100%;
         mix-blend-mode: multiply;
     }

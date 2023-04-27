@@ -363,15 +363,21 @@ h1.category-title{
 }
 
 
-#gridSwitch{
+.gridSwitch{
     display: flex;
     gap: 10px;
 }
-#gridSwitch span{
+.gridSwitch span{
     padding: 5px;
     background: $gray-100;
 }
 
 #products.--grid3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+#products.--inline{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+#products.--inline{
+    
 }

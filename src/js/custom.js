@@ -760,13 +760,19 @@ if ($(".p-thumbnails-inner").length){
 // PRODUCT GRID SWITCH
 // =============================================================================
 if ($("#filters-wrapper").length){
-    $("#filters-wrapper").append('<div class="gridSwitch"><span id="gridSwitch-1">4</span><span id="gridSwitch-2">3</span></div>');
+    $("#filters-wrapper").append('<div class="gridSwitch"><span id="gridSwitch-1">4</span><span id="gridSwitch-2">3</span><span id="gridSwitch-3">Line</span></div>');
 
 
     $("#gridSwitch-1").click(function(){
         $("#products").removeClass("--grid3");
+        $("#products").removeClass("--inline");
     });
     $("#gridSwitch-2").click(function(){
         $("#products").addClass("--grid3");
+        $("#products").removeClass("--inline");
+    });
+    $("#gridSwitch-3").click(function(){
+        $("#products").removeClass("--grid3");
+        $("#products").addClass("--inline");
     });
 }
