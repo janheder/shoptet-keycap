@@ -377,11 +377,13 @@ h1.category-title{
     background-repeat: no-repeat;
     background-position: center;
     filter:  grayscale(1);
+    opacity: 0.5;
     height: 19px;
     width: 19px;
 }
 .gridSwitch span.--active{
     filter: none;
+    opacity: 1;
 }
 .gridSwitch #gridSwitch-1{
     background-image: url("../icons/grid-ext.svg");
@@ -397,8 +399,14 @@ h1.category-title{
 #products.--grid3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+
 #products.--inline{
     grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-gap: 20px;
+}
+#products.--inline .product{
+    padding-bottom: 20px;
+    border-bottom: 1px solid $gray-300;
 }
 #products.--inline .p{
     flex-direction: row;
@@ -431,7 +439,7 @@ h1.category-title{
     padding-bottom: 20px;
 }
 #products.--inline .p .p-tools{
-    width: 50%;
+    width: auto;
     order: 3;
     display: flex;
     justify-content: flex-end;

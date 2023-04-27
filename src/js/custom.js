@@ -760,7 +760,7 @@ if ($(".p-thumbnails-inner").length){
 // PRODUCT GRID SWITCH
 // =============================================================================
 if ($("#filters-wrapper").length){
-    $("#filters-wrapper").append('<div class="gridSwitch"><span id="gridSwitch-1"></span><span id="gridSwitch-2"></span><span id="gridSwitch-3"></span></div>');
+    $("#filters-wrapper").append('<div class="gridSwitch"><span id="gridSwitch-1" class="--active"></span><span id="gridSwitch-2"></span><span id="gridSwitch-3"></span></div>');
 
 
     $("#gridSwitch-1").click(function(){
