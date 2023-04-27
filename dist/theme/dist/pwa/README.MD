@@ -1,20 +1,29 @@
-- EDIT OFFLINE.HTML
+Tento návod není určený pro začátečníky, měli byste mít alespoň základní zkušenost s Cloudflare a znát pojmy jako nameserver, CDN, PWA, CF worker. 
 
-- EDIT MANIFEST.JSON
+Tohle je stručný návod jak na svém shoptet e-shopu zprovoznit PWA.
+Budete potřebovat Cloudflare účet který je propojený s vaším eshopem.
 
-- GENERATE NEW FAVICONS https://www.favicon-generator.org/ 
+Stáhněte si složku na tomto odkazu
 
-- EDIT UPUP.MIN.JS FILE AND REPLACE "service-worker-url" WITH YOURS
+- Upravte OFFLINE.HTML
 
-- IN CLOUDFLARE CREATE 2 NEW WORKERS AND ROUTES
+- Upravte MANIFEST.JSON
 
-FOR UPUP.JS
+- Použijte generátor faviconů https://www.favicon-generator.org/ pro vygenerování faviconů pro váš eshop
+
+- Uvnitř UPUP.MIN.JS upravte "service-worker-url" na vaší url k service workeru ("www.domain.tld/upupsw")
+
+- Nahrajte soubory na ftp e-shopu (např. do složky /pwa)
+
+- V Cloudflare vytvořte 2 workery
+
+Pro UPUP.JS vytvořte
 
 WORKER:
 ```javascript
-const DOMAIN = 'www.domain.tld';    //
-const PROXYPATH = 'upup';                // path to be proxied
-const ORIGIN = 'PATH_TO_UPUP_JS_FILE_ON_FTP';         // where to fetch content from
+const DOMAIN = 'www.domain.tld'; // URL vašeho eshopu
+const PROXYPATH = 'upup'; // neměnit
+const ORIGIN = 'PATH_TO_UPUP_JS_FILE_ON_FTP'; // Reálná cesta k vašemu upup.min.js na ftp
 
 addEventListener('fetch', event => {
   var url = new URL(event.request.url);
@@ -35,6 +44,8 @@ async function handleRequest(event, url) {
     event.respondWith(fetch(originUrl));
 }
 ```
+
+Jako url přiřadit
 
 ROUTE:
 https://www.domain.tld/upup
@@ -43,13 +54,13 @@ https://www.domain.tld/upup
 ------------------------------------------------
 
 
-FOR UPUPSW.JS
+Pro UPUPSW.JS vytvořt
 
 WORKER:
 ```javascript
-const DOMAIN = 'www.domain.tld';    //
-const PROXYPATH = 'upupsw';                // path to be proxied
-const ORIGIN = 'PATH_TO_UPUPSW_JS_FILE_ON_FTP';         // where to fetch content from
+const DOMAIN = 'www.domain.tld'; // URL vašeho eshopu
+const PROXYPATH = 'upupsw'; // neměnit
+const ORIGIN = 'PATH_TO_UPUPSW_JS_FILE_ON_FTP'; // Reálná cesta k vašemu upupsw.min.js na ftp
 
 addEventListener('fetch', event => {
   var url = new URL(event.request.url);
@@ -70,6 +81,7 @@ async function handleRequest(event, url) {
     event.respondWith(fetch(originUrl));
 }
 ```
+Jako url přiřadit
 
 ROUTE:
 https://www.domain.tld/upupsw
@@ -77,7 +89,8 @@ https://www.domain.tld/upupsw
 
 
 
-- INSERT THIS INTO YOUR WEBSITE HEAD
+- Do hlavičky v eshopu vložte (nahraďte za své url)
+
 ```html
 <script src="https://www.domain.tld/upup"></script>
 <script>
@@ -87,4 +100,3 @@ https://www.domain.tld/upupsw
     });
 </script>
 ```
-

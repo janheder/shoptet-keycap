@@ -19,8 +19,9 @@
     #category-header{
         order: 50;
     }
-    .filters-wrapper{
+    #filters-wrapper{
         order: 40;
+        display: flex;
     }
     #products{
         order: 60;
@@ -355,4 +356,18 @@ h1.category-title{
 }
 .empty-content-category .btn{
     margin-top: 40px;
+}
+
+
+#gridSwitch{
+    display: flex;
+    gap: 10px;
+}
+#gridSwitch span{
+    padding: 5px;
+    background: $gray-100;
+}
+
+#products.--grid3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
