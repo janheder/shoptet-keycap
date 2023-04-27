@@ -373,6 +373,7 @@ h1.category-title{
 .gridSwitch span{
     padding: 5px 10px;
     background: $gray-100;
+    cursor: pointer;
 }
 
 #products.--grid3{
@@ -401,6 +402,22 @@ h1.category-title{
 #products.--inline .p .p-tools form{
     width: auto;
 }
+
+
+#products.--inline .p .p-bottom>div{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 #products.--inline .p .p-desc{
     display: flex;
+    order: 1;
+    width: 100%;
+}
+#products.--inline .p .p-tools{
+    width: 50%;
+    order: 3;
+}
+#products.--inline .p .prices{
+    order: 2;
+    width: 50%;
 }
