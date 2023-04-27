@@ -20,6 +20,7 @@
     background-size: 80px;
     background-position: center;
     border-radius: $border-radius-primary;
+    transition: 0s ease all;
 
     img{
         max-height: 100%;
@@ -293,7 +294,7 @@
 }
 
 .p .p-desc{
-    font-size: 13px;
+    font-size: 14px;
     margin: 0;
     padding-top: 10px;
     display: none;

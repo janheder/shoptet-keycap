@@ -398,6 +398,9 @@ h1.category-title{
 #products.--inline .p .p-tools{
     display: flex;
 }
+#products.--inline .p .p-tools form{
+    width: auto;
+}
 #products.--inline .p .p-desc{
     display: flex;
 }
