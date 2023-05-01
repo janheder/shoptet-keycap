@@ -29,7 +29,7 @@ input:-webkit-autofill:active {
   font-size: 15px;
   font-weight: 400;
   background: $white;
-  border: 1px solid $gray-300;
+  border: 1px solid #E5E5E5;
   height: 50px;
   padding: 0 20px;
   width: 100%;
@@ -122,6 +122,9 @@ textarea.form-control {
   display: none;
 }
 
+#note{
+  padding-bottom: 20px;
+}
 .stay-in-touch .form-group#remark{
   margin-bottom: 40px;
 }
