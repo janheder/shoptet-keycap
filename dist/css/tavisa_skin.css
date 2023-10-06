@@ -1,3 +1,6 @@
 .site-name a{
     height: 60px;
 }
+.advancedModal #productsRelated{
+    display: none;
+}
