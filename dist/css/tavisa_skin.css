@@ -4,3 +4,7 @@
 .advancedModal #productsRelated{
     display: none;
 }
+.category-content-wrapper > h4,
+.category-content-wrapper #productsTop{
+  display: none !important;
+}
