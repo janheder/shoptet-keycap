@@ -8,3 +8,6 @@
 .category-content-wrapper #productsTop{
   display: none !important;
 }
+#productsRelated{
+    display: none;
+}
