@@ -1,3 +1,8 @@
+h1, h2, h3, h4, h1.category-title{
+	font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+}
+
 @media screen and (min-width: 992px) {
     #navigation {
         position: relative;
@@ -28,6 +33,9 @@
     .benefitBanner.position--benefitProduct {
         border-bottom: 1px solid #e5e5e5;
         margin-bottom: 20px;
+    }
+    .breadcrumbs-wrapper{
+        margin-top: 10px;
     }
 }
 
