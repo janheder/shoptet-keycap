@@ -1,34 +1,84 @@
-.site-name a{
-    height: 60px;
+@media screen and (min-width: 992px) {
+    #navigation {
+        position: relative;
+    }
+
+    #navigation::before {
+        content: "";
+        top: -1px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: 100%;
+        border-top: 1px solid #f0f0f0;
+        display: flex;
+        position: absolute;
+
+    }
+
+    .header-top {
+        height: 100px;
+    }
+
+    .site-name a {
+        height: 60px;
+    }
+
+    .benefitBanner.position--benefitProduct {
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: 20px;
+    }
 }
-.advancedModal #productsRelated{
-    display: none;
-}
-.category-content-wrapper > h4,
-.category-content-wrapper #productsTop{
-  display: none !important;
-}
-#productsRelated{
+
+
+.advancedModal #productsRelated {
     display: none;
 }
 
-.benefitBanner.position--benefitProduct{
-    border-bottom: 1px solid #e5e5e5;
-    margin-bottom: 20px;
+.category-content-wrapper>h4,
+.category-content-wrapper #productsTop {
+    display: none !important;
 }
 
-.top-navigation-bar{
+#productsRelated {
+    display: none;
+}
+
+.top-navigation-bar {
     background: #4F428F;
 }
-.top-navigation-contacts .project-phone, .top-navigation-contacts .project-email{
+
+.top-navigation-contacts .project-phone,
+.top-navigation-contacts .project-email {
     color: white;
 }
-.top-nav-button-login{
+
+.top-nav-button-login {
     color: white;
 }
-.top-navigation-menu li a{
+
+.top-navigation-menu li a {
     color: white;
 }
-.top-navigation-contacts strong{
+
+.top-navigation-contacts strong {
     color: white;
+}
+
+.cart-count {
+    background: #50AC58;
+}
+
+.top-navigation-contacts .project-phone::before,
+.top-navigation-contacts .project-email::before {
+    filter: invert(1) brightness(5);
+}
+.btn,
+.btn-conversion {
+    background: #50AC58;
+}
+
+.ordering-process .overall-wrapper {
+    background: #B4B0C5;
 }
