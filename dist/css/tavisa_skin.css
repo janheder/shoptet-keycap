@@ -38,7 +38,7 @@ h1, h2, h3, h4, h1.category-title{
         margin-top: 10px;
     }
     .overall-wrapper #header{
-        box-shadow: 0 10px 15px rgba(46,82,61,.03);
+        box-shadow: 0 15px 15px #FBFBFB;
     }
 }
 
