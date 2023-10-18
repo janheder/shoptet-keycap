@@ -11,3 +11,24 @@
 #productsRelated{
     display: none;
 }
+
+.benefitBanner.position--benefitProduct{
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+
+.top-navigation-bar{
+    background: #4F428F;
+}
+.top-navigation-contacts .project-phone, .top-navigation-contacts .project-email{
+    color: white;
+}
+.top-nav-button-login{
+    color: white;
+}
+.top-navigation-menu li a{
+    color: white;
+}
+.top-navigation-contacts strong{
+    color: white;
+}
