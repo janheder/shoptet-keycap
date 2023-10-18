@@ -1,6 +1,11 @@
-h1, h2, h3, h4, h1.category-title{
-	font-family: 'Quicksand', sans-serif;
-  font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h1.category-title,
+.homepage-group-title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
 }
 
 @media screen and (min-width: 992px) {
@@ -34,10 +39,12 @@ h1, h2, h3, h4, h1.category-title{
         border-bottom: 1px solid #e5e5e5;
         margin-bottom: 20px;
     }
-    .breadcrumbs-wrapper{
+
+    .breadcrumbs-wrapper {
         margin-top: 10px;
     }
-    .overall-wrapper #header{
+
+    .overall-wrapper #header {
         box-shadow: 0 15px 15px #FBFBFB;
     }
 }
@@ -85,6 +92,7 @@ h1, h2, h3, h4, h1.category-title{
 .top-navigation-contacts .project-email::before {
     filter: invert(1) brightness(5);
 }
+
 .btn,
 .btn-conversion {
     background: #50AC58;
@@ -94,9 +102,23 @@ h1, h2, h3, h4, h1.category-title{
     background: #B4B0C5;
 }
 
-.advancedModal__title{
+.advancedModal__title {
     font-weight: 600;
-  }
-  .gridSwitch{
+}
+
+.gridSwitch {
     display: none;
-  }
+}
+
+.category-header input:checked+label::after {
+    background: #50AC58;
+}
+
+.p .availability {
+    color: #50AC58;
+}
+
+#products .p {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f3f3f3;
+}
