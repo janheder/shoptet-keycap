@@ -282,7 +282,7 @@ if ($(".type-detail").length){
         $(".advancedModal__content").prepend('<div class="advancedProduct">' +
         '<div class="advancedProduct-img">' + img + '</div>' +
         '<div class="advancedProduct-content">' +
-        '<div class="advancedProduct-name">' + name + '</div>' +
+        '<h4 class="advancedProduct-name">' + name + '</h4>' +
         '<div class="advancedProduct-stock">Dostupnost<span>' + stock + '</span></div>' +
         '<div class="advancedProduct-amount">Počet kusů<span>' + amount + 'x</span></div>' +
         '<div class="advancedProduct-priceTotal">Celková cena<span>' + priceTotal + ' Kč</span></div>' +
