@@ -93,3 +93,10 @@ h1, h2, h3, h4, h1.category-title{
 .ordering-process .overall-wrapper {
     background: #B4B0C5;
 }
+
+.advancedModal__title{
+    font-weight: 600;
+  }
+  .gridSwitch{
+    display: none;
+  }
