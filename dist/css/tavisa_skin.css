@@ -3,7 +3,9 @@ h2,
 h3,
 h4,
 h1.category-title,
-.homepage-group-title {
+.homepage-group-title,
+.order-summary .order-summary-inner h4,
+.in-kosik.ordering-process .cart-inner::before {
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
 }
@@ -47,8 +49,24 @@ h1.category-title,
     .overall-wrapper #header {
         box-shadow: 0 15px 15px #FBFBFB;
     }
+
+    .custom-footer>.extended,
+    .custom-footer>div:nth-child(2) {
+        grid-column: 1/2;
+    }
+
 }
 
+.basic-description>h3,
+.basic-description>.rte>h2,
+.extended-description>h3 {
+    font-weight: 600;
+}
+
+.p-detail-info .flag.flag-new {
+    background: rgba(80, 172, 88, .1);
+    color: #50ac58;
+}
 
 .advancedModal #productsRelated {
     display: none;
@@ -122,6 +140,7 @@ h1.category-title,
     padding-bottom: 20px;
     border-bottom: 2px solid #f3f3f3;
 }
-.p .image{
+
+.p .image {
     padding: 20px 0;
-  }
+}

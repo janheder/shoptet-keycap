@@ -331,7 +331,9 @@ body.--floatSearchActive .nav-search {
     padding-top: 3px;
 }
 
-.removeable .p-availability {}
+.removeable .p-availability {
+    font-size: 14px;
+}
 
 .removeable .p-availability .p-label {
     display: none;
