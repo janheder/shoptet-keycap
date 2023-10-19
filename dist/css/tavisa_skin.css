@@ -122,3 +122,6 @@ h1.category-title,
     padding-bottom: 20px;
     border-bottom: 2px solid #f3f3f3;
 }
+.p .image{
+    padding: 20px 0;
+  }
