@@ -5,7 +5,8 @@ h4,
 h1.category-title,
 .homepage-group-title,
 .order-summary .order-summary-inner h4,
-.in-kosik.ordering-process .cart-inner::before {
+.in-kosik.ordering-process .cart-inner::before,
+.extended-banner-title {
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
 }
@@ -143,4 +144,31 @@ h1.category-title,
 
 .p .image {
     padding: 20px 0;
+}
+
+.favoriteCategories__single h4{
+    font-weight: 600;
+  }
+  .extended-banner-text{
+    display: none;
+  }
+  .extended-banner-title{
+    margin-bottom: 40px;
+    
+  }
+  .pagination strong{
+    background: #6551cc;
+  }
+
+  .search-form fieldset{
+    border: 1px solid #e5e5e5;
+background: transparent;
+}
+.search-form input{
+  background: transparent;
+}
+
+.news-item .title{
+padding-top: 60px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
 }
