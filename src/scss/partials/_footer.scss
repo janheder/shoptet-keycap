@@ -221,6 +221,9 @@ footer {
         line-height: 1;
         position: relative;
     }
+    .custom-footer h4::before{
+        content: none;
+    }
     .custom-footer h4::after{
         content: "";
         position: absolute;
