@@ -291,3 +291,17 @@ h1.category-title,
         font-size: 30px;
     }
 }
+
+@media screen and (max-width: 991px) {
+    .favoriteCategories__grid {
+        grid-gap: 10px;
+    }
+}
+
+.benefitBanner {
+    border-bottom: 0;
+}
+
+.news-item:hover {
+    transform: translateY(0px);
+}
