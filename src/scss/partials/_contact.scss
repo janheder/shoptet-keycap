@@ -8,3 +8,25 @@
     padding: 60px 50px;
     border: 1px solid $gray-300;
 }
+
+#formContact{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+  }
+  #formContact fieldset{
+        background: #fff;
+      box-shadow: 0px 4px 20px rgba(0,0,0,.05);
+      padding: 60px;
+      width: 100%;
+      max-width: 680px;
+      position: relative;
+      border-radius: 6px;
+  }
+  #formContact fieldset::before{
+    content: "Kontaktní formulář";
+    margin-bottom: 30px;
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+  }
