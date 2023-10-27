@@ -305,3 +305,64 @@ h1.category-title,
 .news-item:hover {
     transform: translateY(0px);
 }
+
+.p .flags .flag.flag-new{
+    background: #e9f3ea;
+  }
+  .products-additional + .browse-p{
+    display: none;
+  }
+  .p-detail .products-related-header{
+    order: 30;
+      margin-top: 40px;
+  }
+  .p-detail .products-additional {
+    margin: 30px 0 0 0;
+    order: 40;
+  }
+  
+  .removeable .p-name a.show-related{
+    display: none;
+  }
+  
+  #hideNext, #hideNext + p, #hideNext + p + p{
+    display: none;
+  }
+  
+  .contact-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 30px;
+  }
+  .contact-section .kontaktyTop__col{
+    text-align:center;
+      display:flex;
+    align-items:center;
+    justify-content: center; 
+    flex-direction: column;
+  }
+  .contact-section img{
+    height: 30px;
+  }
+  .contact-section h3{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .contact-section p{
+    margin: 0;
+  }
+  .kontaktyTop__imgWrap{
+    border-radius: 50%;
+      background: #f7f5ff;
+    height: 60px;
+    width: 60px;
+    display:flex;
+    align-items:center;
+    justify-content: center; 
+    margin-bottom: 30px;
+  }
+  
+  
+  #formContact{
+    background: #f7f5ff;
+    padding: 60px 0;
+  }
