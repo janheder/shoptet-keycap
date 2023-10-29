@@ -298,71 +298,138 @@ h1.category-title,
     }
 }
 
-.benefitBanner {
-    border-bottom: 0;
-}
+.benefitBanner {}
 
 .news-item:hover {
     transform: translateY(0px);
 }
 
-.p .flags .flag.flag-new{
+.p .flags .flag.flag-new {
     background: #e9f3ea;
-  }
-  .products-additional + .browse-p{
+}
+
+.products-additional+.browse-p {
     display: none;
-  }
-  .p-detail .products-related-header{
+}
+
+.p-detail .products-related-header {
     order: 30;
-      margin-top: 40px;
-  }
-  .p-detail .products-additional {
+    margin-top: 40px;
+}
+
+.p-detail .products-additional {
     margin: 30px 0 0 0;
     order: 40;
-  }
-  
-  .removeable .p-name a.show-related{
+}
+
+.removeable .p-name a.show-related {
     display: none;
-  }
-  
-  #hideNext, #hideNext + p, #hideNext + p + p{
+}
+
+#hideNext,
+#hideNext+p,
+#hideNext+p+p {
     display: none;
-  }
-  
-  .contact-grid{
+}
+
+.contact-grid {
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 30px;
-  }
-  .contact-section .kontaktyTop__col{
-    text-align:center;
-      display:flex;
-    align-items:center;
-    justify-content: center; 
+}
+
+.contact-section .kontaktyTop__col {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-  }
-  .contact-section img{
+}
+
+.contact-section img {
     height: 30px;
-  }
-  .contact-section h3{
+}
+
+.contact-section h3 {
     font-size: 20px;
     font-weight: 600;
-  }
-  .contact-section p{
+}
+
+.contact-section p {
     margin: 0;
-  }
-  .kontaktyTop__imgWrap{
+}
+
+.kontaktyTop__imgWrap {
     border-radius: 50%;
-      background: #f7f5ff;
+    background: #f7f5ff;
     height: 60px;
     width: 60px;
-    display:flex;
-    align-items:center;
-    justify-content: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
-  }
-  
-  
-  #formContact{
+}
+
+
+#formContact {
     background: #f7f5ff;
     padding: 60px 0;
-  }
+}
+
+.extended-banner-texts {
+    display: none;
+}
+
+.nav-user {
+    font-size: 0;
+}
+
+.nav-user::before {
+    content: "Přihlášení";
+    font-size: 15px;
+}
+
+.homepage-group-title::after,
+.favoriteCategories__title::after,
+.hp-blog h1::after {
+    content: "";
+    height: 4px;
+    width: 60px;
+    display: flex;
+    margin: 10px auto;
+    opacity: 0.6;
+    background: #6551cc;
+}
+
+.product-top .p-image {
+    padding: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+        padding: 20px 0;
+    }
+
+    .contact-section {
+        padding: 40px 20px;
+        margin-bottom: -1px;
+    }
+
+    .news-wrapper {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-user::before {
+        content: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #formContact {
+        background: transparent;
+        padding-bottom: 0;
+    }
+}
