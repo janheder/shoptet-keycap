@@ -202,6 +202,9 @@ h1.category-title,
     .favoriteCategories__grid {
         grid-template-columns: 1fr 1fr;
     }
+    .ordering-process .overall-wrapper {
+        background: white;
+    }
 }
 
 .favoriteCategories__single picture {
