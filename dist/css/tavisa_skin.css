@@ -460,3 +460,26 @@ h1.category-title,
 #checkoutSidebarToggle{
     background: #B4B0C5;
 }
+.content-inner article b, .content-inner article strong{
+    font-weight: 600;
+}
+.content-inner article h3,
+.content-inner article h4{
+  font-weight: 600;
+}
+.ordering-process .header-top .contact-box{
+  display: none;
+}
+.order-summary .checkout-box{
+  display: none;
+}
+#submit-order .order-button-text{
+  font-size: 16px;
+}
+#submit-order .order-button-text::after{
+  content: none;
+}
+#submit-order .order-button-suffix{
+  display: inline-block;
+  padding-top: 5px;
+}
