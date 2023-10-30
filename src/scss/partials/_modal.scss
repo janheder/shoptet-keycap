@@ -59,6 +59,11 @@
         width: 100% !important;
         height: 100% !important;
     }
+    #colorbox > #cboxWrapper .cboxPhoto{
+        height: 100% !important;
+        width: 100% !important;
+        object-fit:contain;
+    }
 }
 
 .content-modal{
