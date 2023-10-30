@@ -415,7 +415,10 @@ body.--navUserActive .user-action .login-widget {
 
 .user-action-cart .cart-free-shipping strong {
     color: $green-500;
-    display: flex;
+    display: inline-block;
+}
+.user-action-cart .cart-free-shipping > div{
+    display: inline-block;
 }
 
 .user-action-cart .cart-widget-button {
