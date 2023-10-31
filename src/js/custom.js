@@ -745,7 +745,7 @@ if ($(".p-thumbnails-inner").length){
         
             let a = $(this).html().replace("/related/","/big/");
             let url = $(this).prop("href").replace("/related/","/big/");
-            $("#productSlider .slider-container").append('<a href="' + url + '" class="cbox-gal cboxElement ' + (loop == 0 ? 'slide-visible': '')  + '" data-gallery="lightbox[gallery]">' + a + '</a>');
+            $("#productSlider .slider-container").append('<a href="' + url + '" class="cbox-gal cboxElement ' + (loop == 0 ? 'slide-visible': '')  + '" data-gallery="lightbox[gallery]"><img src="' + url + '"></a>');
 
             $(this).removeAttr("href");
             $(this).attr("onclick",'swiffyslider.slideTo(sliderElement, "'+ loop +'");');
