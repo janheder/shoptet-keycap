@@ -456,9 +456,6 @@ h1.category-title,
 
 }
 
-.p-image #wrap {
-    display: none !important;
-}
 
 #checkoutSidebarToggle {
     background: #B4B0C5;
@@ -610,3 +607,22 @@ h1.category-title,
         grid-template-columns: 80px 20px 1fr;
     }
 }
+@media screen and (min-width: 992px) {
+    .in-kosik.ordering-process .cart-inner.cart-empty::before{
+      content: "";
+      position: absolute;
+      top: 126px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: white;
+      z-index: 0;
+    }
+    .in-kosik.ordering-process .cart-inner *{
+      z-index: 2;
+      position: relative
+    }
+    }
+    .msg.msg-success{
+      display: none;
+    }
