@@ -493,7 +493,7 @@ h1.category-title,
 }
 
 .product-top .p-image {
-    display: none;
+    display: none !important;
 }
 
 #backToTop {

@@ -754,7 +754,7 @@ if ($(".p-detail-inner").length){
         });
 
     }else{
-        $(".product-top .p-image").css("display","inline-block");
+        $(".product-top .p-image").attr('style', 'display: block !important');
     }
 
 }
