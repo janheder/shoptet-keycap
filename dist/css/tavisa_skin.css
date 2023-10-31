@@ -486,3 +486,40 @@ h1.category-title,
 .product-top .p-image{
     display: none;
   }
+
+  #backToTop{
+    display: none !important;
+  }
+  
+  @media screen and (max-width: 991px){
+    .p-short-description {
+      display: inline-block;
+  }
+  }
+  .removeable {
+      grid-template-columns: auto 2fr 1fr 1fr 1fr;
+  }
+  .removeable td.p-price.p-cell{
+    display: none;
+  }
+  .cart-summary h4{
+    font-weight: 600;
+  }
+  .cart-summary{
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 0;
+     margin-bottom: 20px;
+  }
+  .step.active strong::before{
+    background: #4F428F;
+  }
+  #productSlider img {
+      object-fit: contain;
+  }
+  #productSlider{
+    display: none;
+  }
+  #productSlider.--active{
+    display: block;
+  }

@@ -734,9 +734,7 @@ $(document).ready(function() {
 if ($(".p-thumbnails-inner").length){
 
     if($('.p-thumbnails-inner .p-thumbnail').length >= 1){
-        $(".p-image-wrapper").prepend("<div id='productSlider' class='swiffy-slider slider-nav-arrow slider-indicators-round slider-nav-animation slider-nav-animation-slow'><div class='slider-container'></div></div>");
-
-        $("#productSlider").append('<button type="button" class="slider-nav" aria-label="Previous"></button> <button type="button" class="slider-nav slider-nav-next" aria-label="Next"></button>');
+        $(".p-image-wrapper").prepend("<div id='productSlider' class='swiffy-slider slider-nav-arrow slider-indicators-round slider-nav-animation slider-nav-animation-slow'><div class='slider-container'></div><button type='button' class='slider-nav' aria-label='Previous'></button> <button type='button' class='slider-nav slider-nav-next' aria-label='Next'></button></div>");
 
         var loop = 0;
         var sliderElement = document.getElementById('productSlider');
@@ -751,6 +749,8 @@ if ($(".p-thumbnails-inner").length){
             $(this).attr("onclick",'swiffyslider.slideTo(sliderElement, "'+ loop +'");');
             loop++;
         });
+
+        sliderElement.addClass("--active"); 
 
     }
 }
