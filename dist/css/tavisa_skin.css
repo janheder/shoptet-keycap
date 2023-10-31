@@ -483,3 +483,6 @@ h1.category-title,
   display: inline-block;
   padding-top: 5px;
 }
+.product-top .p-image{
+    display: none;
+  }
