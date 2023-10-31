@@ -750,7 +750,7 @@ if ($(".p-thumbnails-inner").length){
             loop++;
         });
 
-        sliderElement.addClass("--active"); 
+        $("#productSlider").addClass("--active"); 
 
     }
 }
