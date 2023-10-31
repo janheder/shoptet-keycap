@@ -731,7 +731,7 @@ $(document).ready(function() {
 // PRODUCT DETAIL CAROUSEL
 // =============================================================================
 
-if ($(".p-thumbnails-inner").length){
+if ($(".p-detail-inner").length){
 
     if($('.p-thumbnails-inner .p-thumbnail').length >= 1){
         $(".p-image-wrapper").prepend("<div id='productSlider' class='swiffy-slider slider-nav-arrow slider-indicators-round slider-nav-animation slider-nav-animation-slow slider-item-ratio-4x3'><div class='slider-container'></div></div>");
@@ -752,10 +752,11 @@ if ($(".p-thumbnails-inner").length){
 
             loop++;
         });
+        
+    }else{
+        $(".product-top .p-image").css("display","block");
     }
 
-}else{
-    $(".product-top .p-image").css("display","block");
 }
 
 
