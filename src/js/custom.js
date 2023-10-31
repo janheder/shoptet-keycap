@@ -730,11 +730,13 @@ $(document).ready(function() {
 // =============================================================================
 // PRODUCT DETAIL CAROUSEL
 // =============================================================================
-/*
+
 if ($(".p-thumbnails-inner").length){
 
     if($('.p-thumbnails-inner .p-thumbnail').length >= 1){
-        $(".p-image-wrapper").prepend("<div id='productSlider' class='swiffy-slider slider-nav-arrow slider-indicators-round slider-nav-animation slider-nav-animation-slow'><div class='slider-container'></div><button type='button' class='slider-nav' aria-label='Previous'></button> <button type='button' class='slider-nav slider-nav-next' aria-label='Next'></button></div>");
+        $(".p-image-wrapper").prepend("<div id='productSlider' class='swiffy-slider slider-nav-arrow slider-indicators-round slider-nav-animation slider-nav-animation-slow'><div class='slider-container'></div></div>");
+
+        $("#productSlider").append('<button type="button" class="slider-nav" aria-label="Previous"></button> <button type="button" class="slider-nav slider-nav-next" aria-label="Next"></button>');
 
         var loop = 0;
         var sliderElement = document.getElementById('productSlider');
@@ -744,15 +746,16 @@ if ($(".p-thumbnails-inner").length){
             let a = $(this).html().replace("/related/","/big/");
             let url = $(this).prop("href").replace("/related/","/big/");
             $("#productSlider .slider-container").append('<a href="' + url + '" class="cbox-gal cboxElement ' + (loop == 0 ? 'slide-visible': '')  + '" data-gallery="lightbox[gallery]">' + a + '</a>');
-            $(this).removeAttr("href");
 
+            $(this).removeAttr("href");
             $(this).attr("onclick",'swiffyslider.slideTo(sliderElement, "'+ loop +'");');
+            
             loop++;
         });
 
     }
 }
-*/
+
 
 // =============================================================================
 // PRODUCT GRID SWITCH
