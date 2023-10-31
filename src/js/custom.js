@@ -752,9 +752,9 @@ if ($(".p-detail-inner").length){
 
             loop++;
         });
-        
+
     }else{
-        $(".product-top .p-image").css("display","block");
+        $(".product-top .p-image").css("display","inline-block");
     }
 
 }
