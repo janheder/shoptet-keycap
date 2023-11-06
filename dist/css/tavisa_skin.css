@@ -666,3 +666,17 @@ h1.category-title,
         flex-wrap: wrap;
       }
       }
+
+      .hp-blog{
+        border-top: 1px solid #f0f0f0;
+      }
+      .footer-links-icons{
+        padding: 40px 0 0 0;
+      }
+      .footer-links-icons .footer-icon{
+        display: flex;
+        justify-content: center;
+      }
+      .footer-links-icons img{
+        max-width: 500px;
+      }
