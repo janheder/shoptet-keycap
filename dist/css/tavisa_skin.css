@@ -716,3 +716,6 @@ h1.category-title,
     border-radius: 50%;
     margin-left: 10px;
 }
+.removeable td.p-discount.p-cell{
+    display: none;
+  }

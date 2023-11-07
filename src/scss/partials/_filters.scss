@@ -52,3 +52,15 @@ body.filters-visible .menu-helper, body.filters-visible .header-top::before{
     flex-direction: column;
     gap: 40px;
 }
+#filters .slider-wrapper{
+
+}
+#price-filter-form{
+    display: none;
+}
+.filter-section label{
+    padding-left: 15px;
+}
+.filter-section fieldset > div{
+    padding: 8px 0;
+}
