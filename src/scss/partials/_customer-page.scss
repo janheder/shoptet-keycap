@@ -1,0 +1,85 @@
+.customer-page {}
+
+.customer-page .content-wrapper-in {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-gap: 40px;
+    padding-top: 40px;
+}
+
+.customer-page .content-wrapper-in .sidebar {
+    width: 100%;
+    padding: 0;
+}
+
+.customer-page .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-page .sidebar ul li {
+    display: flex;
+
+}
+
+.customer-page .sidebar ul li a {
+    padding: 12px 15px 12px 0;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+}
+
+.customer-page .sidebar ul li a::before {
+    content: "";
+    height: 18px;
+    width: 18px;
+    display: flex;
+    background: url("https://janheder.github.io/shoptet-keycap/dist/icons/list-style.svg");
+    background-size: cover;
+    margin-right: 15px;
+}
+
+.customer-page .sidebar ul li.logout {
+    order: 99;
+}
+
+.customer-page .sidebar ul li.logout .btn {
+    background: #f7f5ff;
+    color: #6551cc;
+    margin-top: 30px;
+    width: 100%;
+    padding: 0;
+}
+
+.customer-page .sidebar ul li.logout .btn::before {
+    content: none;
+}
+
+.customer-page #content {
+    width: 100%;
+    padding: 0;
+}
+
+.customer-page #content .content-inner {
+    padding: 60px;
+    background: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, .05);
+    width: 100%;
+    position: relative;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 991px) {
+    .customer-page .content-wrapper-in {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .customer-page .content-wrapper-in .sidebar {
+        display: flex;
+        order: 9;
+    }
+}
