@@ -725,11 +725,18 @@ h1.category-title,
     /*display: none !important;*/
     background: white;
     max-width: 100%;
-    padding: 0;
+    padding: 20px 0;
+}
+#cboxWrapper ~ .select2-container input[type=search]{
+    height: 44px;
+    width: auto;
+    margin-bottom: 10px;
 }
 #cboxWrapper ~ .select2-container ul{
     list-style: none;
     padding: 0;
+    height: 400px;
+    overflow: scroll;
 }
 .branch-information {
     padding-bottom: 20px;
