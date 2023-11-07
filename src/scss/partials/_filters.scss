@@ -16,6 +16,7 @@
     transition: 0.3s cubic-bezier(0.65, 0.05, 0.36, 1) transform;
     z-index: 11;
     gap: 40px;
+    overflow: auto;
 }
 body.filters-visible #filters{
     transform: translateX(0%);
@@ -53,13 +54,16 @@ body.filters-visible .menu-helper, body.filters-visible .header-top::before{
     gap: 40px;
 }
 #filters .slider-wrapper{
-
+    display: none;
 }
 #price-filter-form{
     display: none;
 }
+.filter-section {
+    padding-bottom: 40px;
+}
 .filter-section label{
-    padding-left: 15px;
+    padding-left: 10px;
 }
 .filter-section fieldset > div{
     padding: 8px 0;
@@ -68,4 +72,5 @@ body.filters-visible .menu-helper, body.filters-visible .header-top::before{
     font-size: 18px;
     font-weight: 600;
     border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px
 }
