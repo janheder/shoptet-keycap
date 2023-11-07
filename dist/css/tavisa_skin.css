@@ -771,6 +771,7 @@ h1.category-title,
     height: 48px;
     padding: 0 10px;
     width: 100%;
+
 }
 
 .branch-picker-wrapper .btn.btn-conversion {
@@ -804,4 +805,13 @@ h1.category-title,
       box-shadow: 0px 4px 9px rgba(52,66,81,.05);
     padding: 20px;
         right: 20px;
+  }
+  #cboxWrapper ~ .select2-container input[type=search]{
+    border: 1px solid #222;
+     width: 100%;
+    padding: 0 10px;
+  }
+  #cboxWrapper ~ .select2-container li{
+    padding: 5px;
+    cursor: pointer;
   }
