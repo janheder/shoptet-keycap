@@ -721,7 +721,7 @@ h1.category-title,
     display: none;
 }
 
-#cboxWrapper~.select2-container {
+#cboxWrapper ~ .select2-container {
     display: none !important;
 }
 
