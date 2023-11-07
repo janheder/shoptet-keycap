@@ -719,3 +719,40 @@ h1.category-title,
 .removeable td.p-discount.p-cell{
     display: none;
   }
+
+  
+.branch-information{
+    padding-bottom: 20px;
+  }
+  .branch-information th,
+  .branch-information td{
+    text-align:left;
+    padding: 5px 10px;
+  }
+  .detail-information{
+    padding-top: 40px;
+    margin-top: 40px;
+    border-top: 1px solid #e5e5e5;
+  }
+  .detail-information h3{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .branch-picker-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+  }
+  .branch-picker-wrapper select{
+    margin: 20px 0;
+    height: 48px;
+    padding: 0 10px;
+    width: 100%;
+  }
+  .branch-picker-wrapper .btn.btn-conversion{
+    height: 46px;
+    padding: 0 15px;
+    margin-top: 20px;
+  }
+  
