@@ -736,7 +736,7 @@ h1.category-title,
     list-style: none;
     padding: 0;
     height: 400px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .branch-information {
     padding-bottom: 20px;
@@ -780,4 +780,28 @@ h1.category-title,
 }
 .availability-amount{
     display: none;
+  }
+  .branch-picker-wrapper select{
+    display: none;
+  }
+  .branch-picker-wrapper .selection{
+    border: 1px solid #e5e5e5;
+    height: 48px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    display: flex;
+    background-image: url(https://janheder.github.io/shoptet-keycap/dist/icons/arrow-down.svg);
+        background-position: right 10px center;
+      background-repeat: no-repeat;
+      background-size: 14px 14px;
+      border-radius: 0;
+  }
+  .branch-picker-wrapper .selection span{
+    width: 100%;
+    text-align: left;
+  }
+  #cboxWrapper ~ .select2-container {
+      box-shadow: 0px 4px 9px rgba(52,66,81,.05);
+    padding: 20px;
+        right: 20px;
   }
