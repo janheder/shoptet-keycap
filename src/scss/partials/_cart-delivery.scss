@@ -90,6 +90,7 @@ h4.order-delivery, h4.order-payment{
 }
 .radio-wrapper.active .sublabel{
     display: flex;
+    width: 100%;
 }
 .payment-info .sublabel .chosen{
     border: 1px solid $gray-1000;
