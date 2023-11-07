@@ -765,3 +765,6 @@ h1.category-title,
     padding: 0 15px;
     margin-top: 20px;
 }
+.availability-amount{
+    display: none;
+  }
