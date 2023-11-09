@@ -51,7 +51,7 @@ body.filters-visible .menu-helper, body.filters-visible .header-top::before{
 .filter-sections{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 0px;
 }
 #filters .slider-wrapper{
     display: none;
@@ -59,14 +59,31 @@ body.filters-visible .menu-helper, body.filters-visible .header-top::before{
 #price-filter-form{
     display: none;
 }
+.filter-section-button{
+    display: none;
+}
 .filter-section {
     padding-bottom: 40px;
 }
 .filter-section label{
     padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.filter-section label .filter-count{
+    margin-left: 10px;
+    background: $gray-100;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $gray-900;
 }
 .filter-section fieldset > div{
     padding: 8px 0;
+    display: flex;
 }
 #filters h4{
     font-size: 18px;

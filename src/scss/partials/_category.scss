@@ -107,6 +107,7 @@ h1.category-title{
 .category-header > form fieldset{
     display: flex;
     margin-bottom: -1px;
+    overflow: auto;
 }
 .category-header div{
     font-size: 14px;
