@@ -779,9 +779,13 @@ h1.category-title,
     padding: 0 15px;
     margin-top: 20px;
 }
-.availability-amount{
-    display: none;
-  }
+.availability-label {
+
+    flex-grow: 0;
+}
+.availability-label .availability-amount{
+    color: #009901;
+}
   .branch-picker-wrapper select{
     display: none;
   }
