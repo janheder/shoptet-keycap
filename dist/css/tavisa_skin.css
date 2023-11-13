@@ -783,7 +783,7 @@ h1.category-title,
 
     flex-grow: 0;
 }
-.availability-label .availability-amount{
+ .availability-amount{
     color: #009901;
 }
   .branch-picker-wrapper select{
