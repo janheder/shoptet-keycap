@@ -838,3 +838,18 @@ h1.category-title,
 .filter-sections {
     gap: 0px;
 }
+.availability-amount{
+    font-weight: 400;
+  }
+  .availability-value .parameter-dependent{
+    align-items:baseline;
+  }
+  .siteCookies__button:hover, .cart-count:hover, .cart-count:focus, .cart-count:active{
+      background: #318d39;
+  }
+  .p-detail-info .flag.flag-black-friday,
+  .p .flags .flag.flag-black-friday{
+    background: #262626 !important;
+    color: yellow;
+  }
+  
