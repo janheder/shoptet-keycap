@@ -87,6 +87,7 @@ if ($(".in-index").length){
 // =============================================================================
 
 if ($(".in-index").length){
+    const domain = document.write(document.location);
 //var a = performance.now();
 // $(".hp-blog .news-wrapper").load("/automoto/ .news-wrapper .news-item:nth-child(-n+3)");
 
@@ -97,7 +98,7 @@ if ($(".in-index").length){
             document.querySelector('.in-index #newsWrapper').appendChild(body[i]);
         }
     };
-    fetch("https://www.janheder.ga/blog/")
+    fetch(domain + "/blog/")
         .then((response) => response.text())
         .then(loadNews)
 
