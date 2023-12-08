@@ -512,10 +512,11 @@ if ($("#customerLogin").length){
 }
 
 /* relocate cart header */
+/*
 if ($(".cart-header").length){
     $(".cart-header").insertBefore(".content-wrapper-in");
 }
-
+*/
 
 /* load faq */
 /*
