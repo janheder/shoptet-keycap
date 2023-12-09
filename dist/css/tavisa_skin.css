@@ -651,7 +651,10 @@ h1.category-title,
     align-items: center;
     height: 100%;
 }
-
+.ordering-process .cart-inner .cart-summary .discount-coupon form .btn{
+    background: rgba(101,81,204,.1);
+       color: #6551cc;
+}
 .ordering-process .cart-inner .cart-summary .extras-wrapper .extra.delivery {
     background: #eaf5eb;
     padding: 10px;
