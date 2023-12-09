@@ -129,11 +129,7 @@
         font-size:15px;
     }
 
-    .cart-header .step::before {
-        height: 10px;
-        top: 32px;
-        right: -8px;
-    }
+
     .cart-header .step.step-3::before{
         content: none;
     }
@@ -155,7 +151,11 @@
         padding: 0;
         line-height: 1.1
     }
-
+    .cart-header .step::before {
+        height: 10px;
+        top: 32px;
+        right: -8px;
+    }
     .step a::before,.step strong::before {
         margin: 0;
         margin-bottom: 5px;
