@@ -167,12 +167,12 @@ h1.category-title,
 }
 
 .search-form {
-    border: 1px solid #e5e5e5;
+    /*border: 1px solid #e5e5e5;*/
     border-radius: 6px;
 }
 
 .search-form fieldset {
-    background: transparent;
+
 }
 
 .search-form input {
@@ -703,18 +703,6 @@ h1.category-title,
 
 .shipping-billing-name {
     line-height: 1.5;
-}
-
-.payment-info .question-tooltip {
-    background: #4F428F;
-    color: white;
-    height: 20px;
-    width: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin-left: 10px;
 }
 
 .removeable td.p-discount.p-cell {

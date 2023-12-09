@@ -100,6 +100,22 @@ h4.order-delivery, h4.order-payment{
 .payment-info .sublabel-description {
     width: 100%;
 }
+.payment-info .question-tooltip {
+    color: white;
+    background: #b4b0c5;
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+@media screen and (max-width: 575px){
+    .payment-info .question-tooltip{
+      display: none;
+    }
+}
 .not-possible-info{
     width: 100%;
     font-style: normal;
