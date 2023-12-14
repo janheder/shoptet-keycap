@@ -533,8 +533,23 @@ if ($("#checkoutSidebar .contact-box").length){
 */
 
 /* add 4. step */
+
+
+/*
+jquery version
 if ($(".ordering-process").length){
     $(".cart-header").append('<li class="step step-4"><strong><span>Dokončení objednávky</span></strong></li>');
+}
+jquery version
+*/
+const cartHeader = document.querySelector('.ordering-process .cart-header');
+if (cartHeader) {
+    cartHeader.append(
+        Object.assign(document.createElement('li'), {
+            className: 'step step-4',
+            innerHTML: `<strong><span>Dokončení objednávky</span></strong>`
+        })
+    );
 }
 
 
@@ -642,10 +657,17 @@ $(document).ready(function() {
 // FOOTER REVEAL CATEGORIES
 // =============================================================================
 
+/*
 $("#footer .custom-footer > div h4").click(function(){
     $(this).toggleClass("--active");
 });
+*/
 
+document.getElementById('footer').addEventListener('click', function(event) {
+    if (event.target.matches('#footer .custom-footer > div h4')) {
+        event.target.classList.toggle('--active');
+    }
+});
 
 // =============================================================================
 // VOTE PAGE MASONRY
