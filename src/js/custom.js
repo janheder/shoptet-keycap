@@ -572,35 +572,40 @@ $(document).ready(function() {
 // =============================================================================
 
 
-if ($(".pagination").length){
+// Check if element with class "pagination" exists
+var pagination = document.querySelector('.pagination');
 
-    function refactorPagi(){ 
-        var current = parseInt($(".pagination .current").text());
-        var max = parseInt($(".pagination > *:last-child").text());
+if (pagination !== null) {
+    function refactorPagi() {
+        var pagination = document.querySelector('.pagination');
+        var current = parseInt(pagination.querySelector('.current').textContent);
+        var max = parseInt(pagination.lastElementChild.textContent);
         var currentUrl = window.location.href;
         var currentUrlS = currentUrl.slice(0, currentUrl.indexOf('/strana'));
 
-        $(".pagination *").remove();
-    
-        for(var i = 1; i <= max ; i++) {
-            if(i == current){
-                $('.pagination').append("<strong class='current'>" + i + "</strong>");
-            }else if( (current - i)>2 || (i - current)>1){
-                if(i == 1  || i == max ){
-                     $('.pagination').append("<a href='"+ currentUrlS +"/strana-" + i + "'>" + i + "</a>");      
-                }else{
-                     $('.pagination').append("<a class='hidden' href='"+ currentUrlS +"strana-" + i + "'>" + i + "</a>");             
+        while (pagination.firstChild) {
+            pagination.removeChild(pagination.firstChild);
+        }
+
+        for (var i = 1; i <= max; i++) {
+            if (i === current) {
+                pagination.insertAdjacentHTML('beforeend', "<strong class='current'>" + i + "</strong>");
+            } else if ((current - i) > 2 || (i - current) > 1) {
+                if (i === 1 || i === max) {
+                    pagination.insertAdjacentHTML('beforeend', "<a href='" + currentUrlS + "/strana-" + i + "'>" + i + "</a>");
+                } else {
+                    pagination.insertAdjacentHTML('beforeend', "<a class='hidden' href='" + currentUrlS + "strana-" + i + "'>" + i + "</a>");
                 }
-    
-            }else{
-                $('.pagination').append("<a href='"+ currentUrlS +"/strana-" + i + "'>" + i + "</a>");  
+            } else {
+                pagination.insertAdjacentHTML('beforeend', "<a href='" + currentUrlS + "/strana-" + i + "'>" + i + "</a>");
             }
         }
-        if(current != max){
-            $(".pagination").append("<a href='"+ currentUrlS +"/strana-" + (current + 1) + "' class='next'>></a>");
+
+        if (current !== max) {
+            pagination.insertAdjacentHTML('beforeend', "<a href='" + currentUrlS + "/strana-" + (current + 1) + "' class='next'>></a>");
         }
-        if(current != 1){
-            $(".pagination").prepend("<a href='"+ currentUrlS +"/strana-" + (current - 1) + "' class='previous'><</a>");
+        if (current !== 1) {
+            pagination.insertAdjacentHTML('afterbegin', "<a href='" + currentUrlS + "/strana-" + (current - 1) + "' class='previous'><</a>");
         }
     }
 
@@ -608,10 +613,9 @@ if ($(".pagination").length){
 
     document.addEventListener('ShoptetDOMPageContentLoaded', function () {
         refactorPagi();
-    },{
+    }, {
         passive: true
     });
-
 }
 
 

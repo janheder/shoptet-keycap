@@ -844,3 +844,108 @@ h1.category-title,
     color: yellow;
   }
   
+
+
+.in-kosik.ordering-process .cart-inner::before{
+  content: none;
+}
+.in-kosik.ordering-process .cart-inner{
+  padding-top: 20px;
+}
+.in-kosik.ordering-process .cart-content.summary-wrapper .next-step{
+  display: flex;
+  flex-direction: row;
+}
+.in-kosik.ordering-process .cart-content.summary-wrapper .next-step-back{
+  order: 0;
+  margin: 0;
+}
+.removeable:first-child{
+  border: 0;
+}
+.ordering-process .content-wrapper::before{
+  content: "";
+  background: #4F428F;
+  height: 340px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+.ordering-process .cart-inner{
+  border-radius: 0 0 6px 6px;
+}
+.cart-header{
+  margin: 0;
+  border-bottom: 1px solid #F0F0F0;
+  background: white;
+  border-radius: 6px 6px 0 0;
+}
+.cart-header::before{
+  content: none;
+}
+.ordering-process .overall-wrapper {
+background: #fbfbfb;
+}
+.ordering-process .content-inner{
+  box-shadow: 0 15px 15px rgba(0,0,0,0.05);
+}
+.ordering-process .content-wrapper-in{
+
+  position: relative;
+}
+  .ordering-process .cart-inner .cart-summary .extras-wrapper {
+    justify-content: space-between;
+}
+.ordering-process .overall-wrapper .top-navigation-bar{
+  display: none;
+}
+.ordering-process .overall-wrapper .search,
+.ordering-process .overall-wrapper .navigation-buttons{
+  display: none;
+}
+.ordering-process .header-top{
+  justify-content:center;
+}
+.ordering-process #header{
+  background: #4F428F;
+  height: 130px;
+  border: 0;
+}
+.ordering-process .site-name img{
+  filter: invert(1) brightness(5);
+}
+.in-kosik.ordering-process .cart-inner{
+  max-width: 100%;
+}
+@media screen and (max-width: 991px){
+  .ordering-process .overall-wrapper {
+    background: white;
+}
+  .site-name-wrapper{
+    background: transparent;
+  }
+.ordering-process .header-top {
+   background: #4F428F;
+   
+}
+  .ordering-process .content-wrapper::before{
+    content: none;
+  }
+  .ordering-process #header, .header-top{
+    height: 60px;
+    box-shadow: none;
+      
+  }
+  .ordering-process #header, .header-top .site-name a,
+  body.ordering-process .header-top::before {
+    height: 60px;
+}
+  .ordering-process .header-top .site-name a{
+    height: 40px;
+  }
+  .ordering-process .content-inner {
+    box-shadow: none;
+}
+}
+
+
