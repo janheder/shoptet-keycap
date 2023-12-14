@@ -38,7 +38,7 @@ if ($(".cart-header.step-0").length){
         document.querySelector('#content .cart-inner').prepend(body);
 
     };
-    fetch("https://www.janheder.ga/objednavka/krok-1/")
+    fetch("/objednavka/krok-1/")
         .then((response) => response.text())
         .then(load404)
 }
@@ -58,7 +58,7 @@ if ($(".id-404").length){
     function loadImg(){
         $("img").unveil();
     };
-    fetch("https://www.janheder.ga/")
+    fetch("/")
         .then((response) => response.text())
         .then(load404)
         .then(loadImg)
@@ -127,8 +127,6 @@ if ($(".in-blog").length){
         fetch(url)
             .then((response) => response.text())
             .then(loadNews)
-    
-
     });
 
 }
@@ -223,32 +221,33 @@ $(window).scroll(function(){
 // VOICE SEARCH
 // =============================================================================
 
-$("#formSearchForm .query-input").attr("id","searchbox");
-$("<div id='speechToggle' onclick='startDictation()'></div>").insertBefore(".search-form .btn");
+document.querySelector('#formSearchForm .query-input').setAttribute('id', 'searchbox');
+
+const speechToggle = document.createElement('div');
+speechToggle.setAttribute('id', 'speechToggle');
+speechToggle.addEventListener('click', startDictation);
+document.querySelector('.search-form .btn').before(speechToggle);
+
 
 function startDictation() {
     if (window.hasOwnProperty('webkitSpeechRecognition')) {
-
         let recognition = new webkitSpeechRecognition();
-
         recognition.continuous = false;
         recognition.interimResults = false;
-
-        recognition.lang = "cs-CZ";
+        recognition.lang = 'cs-CZ';
         recognition.start();
 
-        recognition.onresult = function(e) {
+        recognition.onresult = function (e) {
             document.getElementById('searchbox').value = e.results[0][0].transcript;
             recognition.stop();
             document.getElementById('formSearchForm').submit();
         };
 
-        recognition.onerror = function(e) {
+        recognition.onerror = function (e) {
             recognition.stop();
-        }
+        };
     }
 }
-
 
 // =============================================================================
 // ADVANCED ORCDER SUMMARY
@@ -768,6 +767,7 @@ if ($(".p-detail-inner").length){
 // =============================================================================
 // PRODUCT GRID SWITCH
 // =============================================================================
+
 if ($("#filters-wrapper").length){
     $("#filters-wrapper").append('<div class="gridSwitch"><span id="gridSwitch-1" class="--active"></span><span id="gridSwitch-2"></span><span id="gridSwitch-3"></span></div>');
 
