@@ -921,7 +921,7 @@ background: #fbfbfb;
   .ordering-process .overall-wrapper {
     background: white;
 }
-  .site-name-wrapper{
+.ordering-process .site-name-wrapper{
     background: transparent;
   }
 .ordering-process .header-top {
@@ -931,14 +931,14 @@ background: #fbfbfb;
   .ordering-process .content-wrapper::before{
     content: none;
   }
-  .ordering-process #header, .header-top{
+  .ordering-process #header, .ordering-process .header-top{
     height: 60px;
     box-shadow: none;
       
   }
   .ordering-process #header, 
   .ordering-process .header-top .site-name a,
-  body.ordering-process .header-top::before {
+  .ordering-process .header-top::before {
     height: 60px;
 }
   .ordering-process .header-top .site-name a{
