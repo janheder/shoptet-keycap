@@ -663,7 +663,7 @@ $("#footer .custom-footer > div h4").click(function(){
 });
 */
 const footer = document.getElementById('footer');
-if (cartHeader) {
+if (footer) {
     footer.addEventListener('click', function(event) {
         if (event.target.matches('#footer .custom-footer > div h4')) {
             event.target.classList.toggle('--active');
