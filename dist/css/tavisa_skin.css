@@ -936,7 +936,8 @@ background: #fbfbfb;
     box-shadow: none;
       
   }
-  .ordering-process #header, .header-top .site-name a,
+  .ordering-process #header, 
+  .ordering-process .header-top .site-name a,
   body.ordering-process .header-top::before {
     height: 60px;
 }
