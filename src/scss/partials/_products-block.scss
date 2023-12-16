@@ -41,12 +41,10 @@
         padding-top: 1px;
         padding-bottom: 1px;
         padding-right: 1px;
+        display: flex;
     }
-    .in-index .products.products-block{
-        
-        .product {
-            width: 280px;
-        }
+    .in-index .products.products-block .product{
+        width: 280px;
     }
     .in-index .products.products-block.swiffy-slider {
         width: 100%;
