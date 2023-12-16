@@ -950,3 +950,13 @@ background: #fbfbfb;
 }
 
 
+.p .flags.flags-extra .flag-freeshipping::before{
+    content: "DOPRAVA";
+  }
+  .p .flags.flags-extra .flag-freeshipping{
+    flex-direction: column;
+    line-height: 1;
+    height: 34px;
+    background: #50AC58;
+    color: white;
+  }

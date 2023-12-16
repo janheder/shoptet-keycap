@@ -88,7 +88,13 @@
 .p .flags.flags-extra{
     left: auto;
     right: 10px;
+    align-items:flex-end;
 }
+
+.p .flags.flags-extra .flag{
+    margin-right: 0;
+}
+  
 .p .flags.flags-extra .flag-discount{
     display: flex;
     flex-direction: column;
