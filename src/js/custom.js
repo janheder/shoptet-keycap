@@ -662,12 +662,16 @@ $("#footer .custom-footer > div h4").click(function(){
     $(this).toggleClass("--active");
 });
 */
+const footer = document.getElementById('footer');
+if (cartHeader) {
+    footer.addEventListener('click', function(event) {
+        if (event.target.matches('#footer .custom-footer > div h4')) {
+            event.target.classList.toggle('--active');
+        }
+    });
+}
 
-document.getElementById('footer').addEventListener('click', function(event) {
-    if (event.target.matches('#footer .custom-footer > div h4')) {
-        event.target.classList.toggle('--active');
-    }
-});
+
 
 // =============================================================================
 // VOTE PAGE MASONRY
