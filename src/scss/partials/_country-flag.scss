@@ -71,8 +71,8 @@
 .country-flag.selected, .country-flags.active .country-flag {
     display: flex;
     margin-left: -5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     transition: all 0.3s ease-out;
     margin: 0;
     width: 100%;
