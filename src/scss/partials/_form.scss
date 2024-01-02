@@ -71,9 +71,7 @@ textarea.form-control {
 /* floating label */
 
 
-#checkoutContent .form-group input:not([type="checkbox"]) + label,
-#checkoutContent .form-group label:not([for="mehub-set-registration"]),
-#checkoutContent .form-group label:not([for="login"])
+#checkoutContent .form-group input:not([type="checkbox"]) + label
 {
     position: absolute;
     left: 15px;
