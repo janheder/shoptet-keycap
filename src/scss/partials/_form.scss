@@ -69,10 +69,9 @@ textarea.form-control {
 
 
 /* floating label */
-
-
-#checkoutContent .form-group input:not([type="checkbox"]) + label
-{
+/*
+#checkoutContent .form-group label:not([for="login"]), 
+input:not([type="checkbox"]) + label{
     position: absolute;
     left: 15px;
     top: 17px;
@@ -91,7 +90,7 @@ textarea.form-control {
     pointer-events: auto;
     font-size: 12px;
 }
-
+*/
 /* / floating label */
 
 
