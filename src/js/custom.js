@@ -31,6 +31,7 @@ $('#carousel .item').each(function(){
 // LOAD cart 1 notice
 // =============================================================================
 
+/*
 if ($(".cart-header.step-0").length){
     const load404 = (html) => {
         const nodes = new DOMParser().parseFromString(html, 'text/html');
@@ -42,6 +43,7 @@ if ($(".cart-header.step-0").length){
         .then((response) => response.text())
         .then(load404)
 }
+*/
 
 // =============================================================================
 // LOAD 404 products

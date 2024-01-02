@@ -921,6 +921,12 @@ background: #fbfbfb;
   .ordering-process .overall-wrapper {
     background: white;
 }
+.in-kosik.ordering-process .cart-content.summary-wrapper .next-step{
+    flex-direction: column;
+  }
+  .in-kosik.ordering-process .cart-content.summary-wrapper .next-step-back{
+    order: 1;
+  }
 .ordering-process .site-name-wrapper{
     background: transparent;
   }
@@ -934,6 +940,7 @@ background: #fbfbfb;
   .ordering-process #header, .ordering-process .header-top{
     height: 60px;
     box-shadow: none;
+    position: relative;
       
   }
   .ordering-process #header, 
@@ -959,4 +966,86 @@ background: #fbfbfb;
     height: 34px;
     background: #50AC58;
     color: white;
+  }
+
+  
+.cart-count i{
+    border-color: #50AC58;
+  }   
+  .user-action-cart::before {
+      top: -4px;
+  }
+  
+  #submit-order .order-button-text {
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 2px;
+  }
+  
+  
+  .mehub-bonus-cart-container{
+    border: 1px solid #f0f0f0;
+    padding: 15px 20px;
+    margin-top: 10px;
+          box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  }
+  .mehub-bonus-cart-container h4{
+    display: none;
+  }
+  .mehub-bonus-cart-container .card.elevation-0{
+      background : white;
+  color: #6551cc;
+  display: flex;
+    
+  }
+  .mehub-bonus-cart-container .card .card-title{
+    padding: 0;
+    font-size: 15px;
+    padding-right: 8px;
+  }
+  .mehub-bonus-cart-container .card .card-text{
+      padding: 0;
+      font-size: 15px;
+  }
+  .mehub-bonus-cart-container .card .card-text b{
+        font-size: 100% !important;
+  }
+  
+  .mehub-bonus-checkout-container{
+      border: 1px solid #f0f0f0;
+    padding: 20px 20px;
+    margin: -20px 0 50px 0;
+          box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    border-radius: 6px;
+  }
+  .mehub-bonus-checkout-inner-container h4::before{
+    content: none!important;
+  }
+  .mehub-bonus-checkout-inner-container h4 + div{
+    margin: 0 !important;
+  }
+  .mehub-bonus-checkout-inner-container  .card.elevation-0 {
+      box-shadow: none !important;
+    background: white;
+      padding: 0;
+  }
+  .mehub-bonus-checkout-inner-container  .card {
+        color: #0f172a;
+  }
+  .mehub-bonus-checkout-inner-container  .card .card-title{
+      padding: 0;
+  }
+  .mehub-bonus-checkout-inner-container .card .card-title > div> p {
+          background: #fbfbfb;
+    padding: 10px;
+  }
+  .mehub-bonus-checkout-inner-container  .card .card-text{
+    padding: 0;
+  }
+  .mehub-bonus-checkout-inner-container .card .card-actions{
+    justify-content: flex-start;
+  }
+  .mehub-bonus-checkout-inner-container .card .card-actions .form-group{
+    margin: 0;
   }
