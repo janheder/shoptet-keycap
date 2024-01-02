@@ -70,7 +70,10 @@ textarea.form-control {
 
 /* floating label */
 
-#checkoutContent .form-group label:not([for="login"]), input:not([type="checkbox"]) + label{
+#checkoutContent .form-group label:not([for="login"]), 
+#checkoutContent .form-group input:not([type="checkbox"]) + label,
+#checkoutContent .form-group label:not([for="mehub-set-registration"])
+{
     position: absolute;
     left: 15px;
     top: 17px;
@@ -81,7 +84,9 @@ textarea.form-control {
     pointer-events: none;
     color: $gray-500;
 }
-#checkoutContent .form-group.--activeFocus label, #checkoutContent .form-group.--activeFilled label, #checkoutContent .form-group.populated label{
+#checkoutContent .form-group.--activeFocus label, 
+#checkoutContent .form-group.--activeFilled label, 
+#checkoutContent .form-group.populated label{
     background: white;
     transform: translateY(-24px);
     pointer-events: auto;
