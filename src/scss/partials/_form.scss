@@ -55,7 +55,8 @@ textarea.form-control {
 }
 
 .js-validator-msg.msg-info,
-.js-validator-msg.msg-error {
+.js-validator-msg.msg-error,
+.js-validator-msg.msg-warning {
   background: rgba($red-500,0.1);
   color: $red-500;
   display: inline-flex !important;

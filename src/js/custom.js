@@ -561,23 +561,23 @@ if (cartHeader) {
 
 
 $(".form-group input, .form-group textarea").on("focus",function(){
-    $(this).parent().addClass("--activeFocus");
+    $(this).closest(".form-group").addClass("--activeFocus");
 }).blur(function(){
-    $(this).parent().removeClass("--activeFocus");
+    $(this).closest(".form-group").removeClass("--activeFocus");
 });
 
 $(".form-group input, .form-group textarea").keyup(function(){
     var input = $(this);
     if(input.val() == "") {
-        input.parent().removeClass("--activeFilled");
+        input.closest(".form-group").removeClass("--activeFilled");
     }else{
-        input.parent().addClass("--activeFilled");
+        input.closest(".form-group").addClass("--activeFilled");
     }
 });
 
 $(document).ready(function() {
     if($(".form-group input, .form-group textarea").val() !== "") { 
-        $(".form-group input, .form-group textarea").parent().addClass("--activeFilled");
+        $(".form-group input, .form-group textarea").closest(".form-group").addClass("--activeFilled");
     };
 });
 
