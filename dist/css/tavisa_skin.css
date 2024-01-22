@@ -1049,3 +1049,48 @@ background: #fbfbfb;
   .mehub-bonus-checkout-inner-container .card .card-actions .form-group{
     margin: 0;
   }
+
+  #checkoutContent .form-group{
+    margin-bottom: 25px;
+  }
+  #checkoutContent .form-group label:first-child
+  {
+      position: absolute;
+      left: 15px;
+      top: 17px;
+      padding: 0 5px;
+      transition: 0.2s ease all;
+      transform-origin: top left;
+      line-height: 1;
+      pointer-events: none;
+      color: gray;
+    
+  }
+  #checkoutContent .form-group.--activeFocus label:first-child, 
+  #checkoutContent .form-group.--activeFilled label:first-child, 
+  #checkoutContent .form-group.populated label:first-child{
+      background: white;
+      transform: translateY(-24px);
+      pointer-events: auto;
+      font-size: 12px;
+  }
+  #checkoutContent .form-group label[for="billCountryId"]{
+  display: none;
+  }
+  #checkoutContent .form-group label[for="phone"]{
+    left: 70px;
+  }
+  #checkoutContent .form-group label[for="login"]{
+    position:relative;
+        left: 0px;
+      top: 0px;
+  }
+  .form-control::placeholder{
+    color: white;
+  }
+  .in-znacka #content >h4, .in-znacka #content #productsTop{
+        display: none !important;
+  }
+  .in-znacka #filters-wrapper{
+     display: none !important;
+  }
