@@ -305,6 +305,9 @@ if ($(".type-detail").length){
         $("body").removeClass("--advancedModal");
     });
 
+    $('#advancedModalBack').on('click',function(){
+        $("body").removeClass("--advancedModal");
+    });
 }
 
 
