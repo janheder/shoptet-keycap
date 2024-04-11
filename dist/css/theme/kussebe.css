@@ -8,15 +8,15 @@
     --pop: #FE5F10;
     --sun: #FFC20C;
     --dark: #50222D;
-  }
-  
+}
+
 /* 
 S T O L Z L M E D I U M ( A D O B E )
 W A Y F I N D E R C F H E A V Y ( A D O B E )
 W O R K S A N S R E G U L A R ( G O O G L E )
-*/ 
+*/
 
-body{
+body {
     font-family: 'Work sans', sans-serif;
     font-weight: 400;
 }
@@ -35,3 +35,222 @@ h1.category-title,
     font-family: 'Work sans', sans-serif;
     font-weight: 600;
 }
+
+/*
+
+body {
+    background: #FDFAF7;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #50222D;
+}
+
+.p-in-in .name {
+    color: #50222D;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.p .prices {
+    color: #50222D;
+}
+
+#header {
+    background: #FDFAF7;
+    border: 0;
+
+}
+
+#navigation {
+    background: #F6ECE0;
+    height: 60px;
+}
+
+@media screen and (min-width: 992px) {
+    #navigation {
+        position: relative;
+    }
+
+    #navigation::before {
+        content: "";
+        top: 0px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: 100%;
+        background: #F6ECE0;
+        display: flex;
+        position: absolute;
+
+    }
+
+}
+
+.header-top {
+    height: 120px;
+}
+
+#header .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-navigation-bar {
+    background: #FDFAF7;
+}
+
+.top-navigation-tools {
+    display: flex;
+}
+
+#js-userToggle {
+    display: none;
+}
+
+.overall-wrapper #header {
+    flex-direction: column;
+}
+
+.p {
+    padding: 10px;
+}
+
+.p .image {
+    background: #F6ECE0;
+}
+
+.p-in {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.p-in-in .name {
+    padding: 0;
+}
+
+.p .ratings-wrapper {
+    display: none;
+}
+
+footer {
+    background: #1D4202
+}
+
+.custom-footer h4 {
+    color: #BFAF01;
+    margin: 0;
+}
+
+.custom-footer h4::before {
+    content: none;
+    margin: 0
+}
+
+.custom-footer .news-item-widget h5 a {
+    color: white;
+}
+
+.custom-footer>div ul>li a {
+    color: white;
+}
+
+.footer-bottom {
+    border: 0;
+}
+
+#footer .btn.btn-default {
+    display: none;
+}
+
+.footer-bottom,
+#signature a {
+    color: white;
+}
+
+.footer-bottom .container {
+    display: flex;
+}
+
+.products-block {
+    display: flex;
+    gap: 0px;
+}
+
+.menu-level-1>li.ext>a::before {
+    content: none;
+}
+
+.menu-level-1>li>a b {
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.search-form fieldset,
+.search-form input {
+    background: white;
+}
+
+.products-wrapper {
+    position: relative;
+}
+
+.product-slider-pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.product-slider-pagination .pagination-button {
+    font-size: 0;
+    border: 0;
+    width: 20px;
+}
+
+.product-slider-pagination .pagination-button.active {
+    background: #BFAF01;
+}
+
+.top-navigation-menu-trigger {
+    display: none;
+}
+
+.product-slider-navigation {
+    border: 0;
+    background: white;
+    font-size: 0;
+    height: 48px;
+    width: 48px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -16px;
+
+}
+
+.product-slider-navigation::before {
+    content: "";
+    height: 14px;
+    width: 14px;
+    background-image: url(https://janheder.github.io/shoptet-keycap/dist/icons/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    transform: rotate(0deg);
+
+}
+
+.product-slider-navigation.navigation-next {
+    left: auto;
+    right: -16px;
+    transform: rotate(-180deg);
+}
+*/
