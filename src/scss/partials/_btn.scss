@@ -28,7 +28,7 @@
 
     &:hover, &:active, &:focus{
         color: $white;
-        background: $gray-1000;
+        background: var(--gray-1000);
         text-decoration: none;
     }
 }
