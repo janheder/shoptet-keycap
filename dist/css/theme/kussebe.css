@@ -250,47 +250,59 @@ footer {
     transform: rotate(-180deg);
 }
 
-.extended-banner-texts{
+.extended-banner-texts {
     display: none;
-  }
-  .site-msg.information{
+}
+
+.site-msg.information {
     background: #FE5F10;
     color: white;
-  }
-  .cart-count{
+}
+
+.cart-count {
     background: transparent;
     color: #50222D;
-  }
-  @media screen and (min-width: 992px){
-  .menu-helper {
-      z-index: 2;
-      top: 210px;
-      bottom: 0;
-      height: auto;
-      position: absolute;
-  }
-  }
-  .menu-level-1>li>a{
-    
-  }
-  
-  .btn{
+}
+
+@media screen and (min-width: 992px) {
+    .menu-helper {
+        z-index: 2;
+        top: 210px;
+        bottom: 0;
+        height: auto;
+        position: absolute;
+    }
+}
+
+.menu-level-1>li>a {}
+
+.btn {
     border-radius: 0;
     text-transform: uppercase;
-  }
-  .menu-level-1>li>a{
-        color: #50222D;
-  }
-  .cart-count::before {
-      background-image: url(../icons/shopping-bag.svg);
-  }
-  .cart-count .cart-price, .nav-user{
-          color: #50222D;
-  }
-  .cart-count:hover, .cart-count:focus, .cart-count:active,
-  .nav-user:hover, .nav-user:active, .nav-user:focus{
-   background-color: white;
-  }
+    background: #C9AFDC;
+}
+
+.menu-level-1>li>a {
+    color: #50222D;
+}
+
+.cart-count::before {
+    background-image: url(https://janheder.github.io/shoptet-keycap/dist/icons/shopping-bag.svg);
+}
+
+.cart-count .cart-price,
+.nav-user {
+    color: #50222D;
+}
+
+.cart-count:hover,
+.cart-count:focus,
+.cart-count:active,
+.nav-user:hover,
+.nav-user:active,
+.nav-user:focus {
+    background-color: white;
+}
 
 /****/
 
@@ -435,3 +447,32 @@ footer {
 }
 
 /****/
+
+
+.siteCookies__button {
+    background: #C9AFDC;
+}
+
+.siteCookies__link,
+.siteCookies__button {
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.footer-banners {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.footer-banner {
+    padding: 0;
+}
+
+.latest-contribution-box {
+    display: none;
+}
+
+#newsletterSection {
+    border-radius: 0;
+}
