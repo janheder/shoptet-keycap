@@ -64,62 +64,14 @@ body {
     color: #50222D;
 }
 
-#header {
-    background: #FDFAF7;
-    border: 0;
 
-}
-
-#navigation {
-    background: #F6ECE0;
-    height: 60px;
-}
-
-@media screen and (min-width: 992px) {
-    #navigation {
-        position: relative;
-    }
-
-    #navigation::before {
-        content: "";
-        top: 0px;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100vw;
-        height: 100%;
-        background: #F6ECE0;
-        display: flex;
-        position: absolute;
-
-    }
-
-}
-
-.header-top {
-    height: 120px;
-}
-
-#header .container {
-    display: flex;
-    flex-direction: row;
-}
 
 .top-navigation-bar {
     background: #FDFAF7;
 }
 
-.top-navigation-tools {
-    display: flex;
-}
 
-#js-userToggle {
-    display: none;
-}
 
-.overall-wrapper #header {
-    flex-direction: column;
-}
 
 .p {
     padding: 10px;
