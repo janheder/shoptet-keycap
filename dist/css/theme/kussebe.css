@@ -36,6 +36,14 @@ h1.category-title,
     font-weight: 600;
 }
 
+
+.homepage-group-title{
+    /*font-family: 'Wayfinder-CF', sans-serif; */
+    font-family: 'Stolzl', sans-serif; 
+    font-weight: 600;
+}
+
+
 /*
 
 body {

@@ -18,17 +18,13 @@
 @import "var/fonts";
 @import "var/icons";
 
-:root {
-    --gray-1000: #0f172a;
-}
-
 html {}
 
 html * {}
 
 body {
     font-size: 15px;
-    color: var(--gray-1000);
+    color: $gray-1000;
     background: $white;
     font-family: $font-family-primary;
     overflow-x: hidden;
