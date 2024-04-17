@@ -255,8 +255,9 @@ footer {
 }
 
 .site-msg.information {
-    background: #FE5F10;
+    background: #BFAF01;
     color: white;
+    border-radius: 0;
 }
 
 .cart-count {
@@ -304,6 +305,19 @@ footer {
     background-color: white;
 }
 
+#js-userToggle+.cart-count {
+    background:transparent;
+ }
+ .variant-list select option{
+ padding: 4px 10px;
+ }
+ .btn-conversion{
+       background: #FE5F10;
+ }
+ .variant-list select{
+    padding-right: 40px;
+    background-size: 12px 12px;
+  }
 /****/
 
 .ordering-process .overall-wrapper {
