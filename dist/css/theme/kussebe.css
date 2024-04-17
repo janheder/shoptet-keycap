@@ -54,6 +54,43 @@ body {
     color: #50222D;
 }
 
+#header{
+    border: 0;
+        background: #FDFAF7;
+  }
+  #navigation{
+    
+  }
+  @media screen and (min-width: 992px) {
+      #navigation {
+          position: relative;
+      }
+  
+      #navigation::before {
+          content: "";
+          top: 0px;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100vw;
+          height: 100%;
+          background: #F6ECE0;
+          display: flex;
+          position: absolute;
+  
+      }
+  
+  }
+  .site-name a {
+      height: 80px;
+  }
+  .header-top {
+      height: 120px;
+  }
+  .site-name img{
+    mix-blend-mode: multiply;
+  }
+
 .p-in-in .name {
     color: #50222D;
     font-weight: 500;
@@ -74,7 +111,7 @@ body {
 
 
 .p {
-    padding: 10px;
+
 }
 
 .p .image {
@@ -139,9 +176,6 @@ footer {
     gap: 0px;
 }
 
-.menu-level-1>li.ext>a::before {
-    content: none;
-}
 
 .menu-level-1>li>a b {
     font-weight: 600;
