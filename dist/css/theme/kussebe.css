@@ -209,6 +209,7 @@ footer {
 .menu-level-1>li>a b {
     font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 0.5pt;
 }
 
 .search-form fieldset,
@@ -278,8 +279,8 @@ footer {
 }
 
 .site-msg.information {
-    background: #bfaf01;
-    color: white;
+    background: rgba(254, 95, 16, 0.1);
+    color: #fe5f10;
     border-radius: 0;
 }
 
@@ -826,4 +827,28 @@ iframe {
 
 .p-detail-inner {
     padding-bottom: 60px;
+}
+
+@media screen and (min-width: 992px) {
+    .cart-window-visible .menu-helper {
+        top: 216px;
+    }
+}
+
+.type-category #filters-wrapper {
+    display: none;
+}
+
+.type-category .category-title {
+    text-transform: uppercase;
+    font-family: "Stolzl", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.menu-level-1>li:nth-last-child(3) {
+    flex-grow: 1;
+    justify-content: flex-end;
+    display: flex;
 }
