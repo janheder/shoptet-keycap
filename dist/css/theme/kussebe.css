@@ -204,10 +204,6 @@ footer {
     display: flex;
 }
 
-.products-block {
-    display: flex;
-    gap: 0px;
-}
 
 .menu-level-1>li>a b {
     font-weight: 600;
@@ -676,3 +672,11 @@ iframe {
 .top-navigation-contacts strong {
     color: #50222d;
 }
+.type-category .category-title{
+    text-align: center;
+       width: 100%;
+       justify-content: center;
+   }
+   .category-header input:checked+label::after{
+         background: #0ea798;
+   }    
