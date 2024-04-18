@@ -100,9 +100,7 @@ body {
     background: #fdfaf7;
 }
 
-#newsletterSection::before {
-    background: #fdfaf7;
-}
+
 
 .news-item {
     border-radius: 0px;
@@ -672,11 +670,64 @@ iframe {
 .top-navigation-contacts strong {
     color: #50222d;
 }
-.type-category .category-title{
+
+.type-category .category-title {
     text-align: center;
-       width: 100%;
-       justify-content: center;
-   }
-   .category-header input:checked+label::after{
-         background: #0ea798;
-   }    
+    width: 100%;
+    justify-content: center;
+}
+
+.category-header input:checked+label::after {
+    background: #0ea798;
+}
+
+@media screen and (max-width: 991px) {
+    .category-perex p span {
+        font-size: 14px !important;
+    }
+}
+
+.gridSwitch {
+    display: none;
+}
+
+.p .price-final strong {
+    white-space: nowrap;
+}
+
+.advancedModal__buttons .btn:last-child {
+    background: #fe5f10;
+}
+
+.ordering-process .cart-inner .cart-summary .discount-coupon form .btn {
+    background: #c9afdc;
+    color: white;
+}
+
+.next-step-back {
+    background: #f6ece0;
+    border-radius: 0;
+    color: #50222d;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 991px) {
+    #checkoutSidebarToggle {
+        background: white;
+        color: #50222d;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .ordering-process .header-top {
+        background: #50222d;
+    }
+
+    .search-form {
+        border-radius: 0;
+    }
+}
+
+.search-form fieldset {
+    border-radius: 0;
+}
