@@ -372,6 +372,7 @@ $(".shipping-options").insertAfter(".availability-value .availability-label:last
 
 /* runs on load checking url */
 
+/*
 var urlParams = new URLSearchParams(window.location.search);
 
 $(".detail-parameters select").each(function(){
@@ -406,7 +407,6 @@ $("div.hidden-split-parameter").each(function(){
     
 });
 
-/* runs on option select modifying url */
 
 $('.detail-parameters select').on('change', function() {
     var sName = $(this).attr("data-parameter-name").replace(/\s+/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -440,6 +440,8 @@ $('div.hidden-split-parameter').on('change', function() {
     var newUrl = url.href; 
     window.history.replaceState("string", "Title", newUrl);
 }); 
+
+*/
 
 
 // =============================================================================

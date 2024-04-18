@@ -736,54 +736,94 @@ iframe {
     border-radius: 0;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .custom-footer h4 {
-        border-top: 1px solid rgba(255,255,255,0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
-.footer-logos{
+
+.footer-logos {
     display: flex;
     gap: 10px;
     flex-direction: column;
-    align-items:flex-start;;
+    align-items: flex-start;
+    ;
     justify-content: center;
-  }
-  .footer-logos img{
+}
+
+.footer-logos img {
     max-height: 140px;
     width: auto;
-  }
-  .footer-bottom {
-      margin-top: 20px;
-  }
-  .p .image{
-    border-radius: 0;
-  }
-  .slider-nav::before{
-    border-radius: 0;
-  }
+}
 
-  #checkoutSidebar {
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.p .image {
+    border-radius: 0;
+}
+
+.slider-nav::before {
+    border-radius: 0;
+}
+
+#checkoutSidebar {
     background: white;
     border-left: 1px solid #f0f0f0;
 }
-.site-msg-custom.step-1{
-      background: #bfaf01;
+
+.site-msg-custom.step-1 {
+    background: #bfaf01;
     color: white;
-  border-radius: 0;
+    border-radius: 0;
 }
-@media screen and (min-width: 992px){
-  .ordering-process  .site-name a{
-  justify-content: center;
+
+@media screen and (min-width: 992px) {
+    .ordering-process .site-name {
+        justify-content: center;
+    }
 }
-}
-#checkoutContent h4, .order-summary .order-summary-inner h4{
-      font-family: "Stolzl", sans-serif;
+
+#checkoutContent h4,
+.order-summary .order-summary-inner h4 {
+    font-family: "Stolzl", sans-serif;
     font-weight: 600;
-     text-transform: uppercase;
+    text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 18px;
 }
+
 .step.completed a::before {
     background: #bfaf01;
     color: #fff;
+}
+
+.benefitBanner__data {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+    #newsletterSection {
+        background: #fff;
+    }
+}
+
+.p-detail-info .flag {
+    border-radius: 0;
+}
+
+#description>.description-inner {}
+
+.description-inner {
+    grid-template-columns: 1fr;
+
+}
+
+.description-inner #content-wrapper {
+    padding: 0;
+}
+
+.p-detail-inner {
+    padding-bottom: 60px;
 }
