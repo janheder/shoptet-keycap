@@ -550,8 +550,13 @@ footer {
     z-index: 2;
     position: relative;
   }
+  .carousel .item {
+    height: 480px;
 }
-
+}
+iframe{
+    max-width: 100%;
+  }
 .ordering-process .cart-inner .cart-summary .extras-wrapper {
   display: flex;
   gap: 20px;
@@ -649,5 +654,5 @@ footer {
   align-items: center;
 }
 .hp-about-content {
-    
+
 }
