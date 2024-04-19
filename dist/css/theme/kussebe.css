@@ -167,9 +167,9 @@ body {
 }
 
 footer {
-    background: #1d4202;
+    background: #f6ece0;
 }
-
+/*
 .custom-footer h4 {
     color: #bfaf01;
     margin: 0;
@@ -204,7 +204,7 @@ footer {
 .footer-bottom .container {
     display: flex;
 }
-
+*/
 
 .menu-level-1>li>a b {
     font-weight: 600;
