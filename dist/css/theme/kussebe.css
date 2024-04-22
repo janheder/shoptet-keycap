@@ -663,7 +663,9 @@ iframe {
 .p .flags .flag.flag-new {
     background: white;
 }
-
+.homepage-box.welcome-wrapper {
+    background: #dbe1dd;
+}
 .hp-about {
     padding: 80px 0;
     display: flex;
