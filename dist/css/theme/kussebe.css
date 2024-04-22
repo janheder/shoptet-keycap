@@ -102,9 +102,6 @@ body {
     font-family: "Wayfinder-CF", sans-serif;
 }
 
-.homepage-box.welcome-wrapper {
-    background: #fdfaf7;
-}
 
 
 
@@ -663,9 +660,7 @@ iframe {
 .p .flags .flag.flag-new {
     background: white;
 }
-.homepage-box.welcome-wrapper {
-    background: #dbe1dd;
-}
+
 .hp-about {
     padding: 80px 0;
     display: flex;
@@ -1016,4 +1011,21 @@ color: #c3b409;
     to {
       transform: translateX(-50%);
     }
+  }
+
+  .hp-about{
+    position: relative;
+  }
+  .hp-about::after {
+      content: "";
+      top: 0px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    background: #D9DFDB;
+      width: 100vw;
+      height: 100%;
+      display: flex;
+      position: absolute;
+      z-index: -1;
   }
