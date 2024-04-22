@@ -167,12 +167,12 @@ body {
 }
 
 footer {
-    background: #f6ece0;
+    background: #1D4202;
 }
 #footer .btn.btn-default {
     display: none;
 }
-/*
+
 .custom-footer h4 {
     color: #bfaf01;
     margin: 0;
@@ -205,7 +205,7 @@ footer {
 .footer-bottom .container {
     display: flex;
 }
-*/
+
 
 .menu-level-1>li>a b {
     font-weight: 600;
