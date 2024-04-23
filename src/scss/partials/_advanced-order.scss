@@ -438,6 +438,12 @@ body.--advancedModal{
     .advancedModal__buttons {
         padding: 20px;
         padding-top: 10px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .advancedModal__buttons .btn.btn-ghost{
+        margin: 0;
+        order: 1;
     }
     .advancedModal__buttons .btn {
         padding: 0 15px;

@@ -1108,3 +1108,8 @@ footer .js-cookies-settings {
         filter: invert(1);
     }
 }
+
+.p-detail-info .flag.flag-new {
+    background: #50ac58;
+    color: white;
+}
