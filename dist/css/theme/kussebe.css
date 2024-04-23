@@ -780,6 +780,15 @@ footer .js-cookies-settings {
     max-height: 50px;
     width: auto;
 }
+@media screen and (max-width: 768px) {
+    .footer-logos {
+        gap: 20px;
+        padding: 40px 0;
+        border-bottom: 0px solid rgba(255,255,255,0.1);
+        margin-bottom: 0px;
+    }
+    
+}
 
 .footer-bottom {
     margin-top: 20px;
@@ -948,6 +957,17 @@ background-size: 100px;
 }
 .benefitBanner__title{
 color: #c3b409;
+}
+@media screen and (max-width: 991px) {
+    .benefitBanner.position--benefitHomepage .benefitBanner__item{
+        width: 50%;
+        padding: 30px;
+        }
+}
+@media screen and (max-width: 768px) {
+    .benefitBanner.position--benefitHomepage .benefitBanner__item{
+        width: 100%;
+        }
 }
 .welcome .hp-about h1 {
     font-family: "Wayfinder-CF", sans-serif;
