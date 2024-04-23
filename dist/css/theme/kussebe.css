@@ -170,6 +170,7 @@ body {
 footer {
     background: #1D4202;
 }
+
 #footer .btn.btn-default {
     display: none;
 }
@@ -441,19 +442,23 @@ footer {
 .in-kosik.ordering-process .cart-inner {
     max-width: 100%;
 }
+
 .ordering-process .site-name a {
     margin-top: 0px;
-  }
-.empty-cart-boxes{
-  padding: 50px 20px  20px 20px;
 }
-.cart-empty .cart-heading{
-  text-transform: uppercase;
-  font-size: 32px;
+
+.empty-cart-boxes {
+    padding: 50px 20px 20px 20px;
 }
-.in-kosik.ordering-process .cart-inner.cart-empty{
-  padding-top: 60px;
-  margin: 0;
+
+.cart-empty .cart-heading {
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.in-kosik.ordering-process .cart-inner.cart-empty {
+    padding-top: 60px;
+    margin: 0;
 }
 
 @media screen and (max-width: 991px) {
@@ -668,9 +673,9 @@ iframe {
     align-items: center;
 }
 
-.hp-about-content{
+.hp-about-content {
     max-width: 500px;
-  }
+}
 
 @media screen and (max-width: 991px) {
     .hp-about {
@@ -762,7 +767,8 @@ footer .js-cookies-settings {
     }
 }
 
-.custom-footer>.extended, .custom-footer>div:nth-child(3) {
+.custom-footer>.extended,
+.custom-footer>div:nth-child(3) {
     grid-column: 1 / 5;
 }
 
@@ -772,7 +778,7 @@ footer .js-cookies-settings {
     align-items: center;
     justify-content: center;
     padding-bottom: 60px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 40px;
 }
 
@@ -780,14 +786,16 @@ footer .js-cookies-settings {
     max-height: 50px;
     width: auto;
 }
+
 @media screen and (max-width: 768px) {
     .footer-logos {
         gap: 20px;
         padding: 40px 0;
-        border-bottom: 0px solid rgba(255,255,255,0.1);
+        border-bottom: 0px solid rgba(255, 255, 255, 0.1);
         margin-bottom: 0px;
+        flex-wrap: wrap;
     }
-    
+
 }
 
 .footer-bottom {
@@ -879,6 +887,7 @@ footer .js-cookies-settings {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 @media screen and (min-width: 992px) {
     .menu-level-1>li:nth-last-child(3) {
         flex-grow: 1;
@@ -887,110 +896,125 @@ footer .js-cookies-settings {
     }
 }
 
-.hp-blog{
-    background:white;
+.hp-blog {
+    background: white;
     position: relative;
     z-index: 1
-  }
-  .hp-blog::after{
+}
+
+.hp-blog::after {
     content: "";
-      top: 0px;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100vw;
-      height: 100%;
-      background: #fff;
-      display: flex;
-      position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    position: absolute;
     z-index: -1;
-  }
-  .empty-cart-boxes li a{
+}
+
+.empty-cart-boxes li a {
     color: #50222d;
-  }
-  .cookiesSetting__bottom button.cookiesSetting__button--green{
+}
+
+.cookiesSetting__bottom button.cookiesSetting__button--green {
     background: #fe5f10;
 }
-.p-detail-inner-header h1{
+
+.p-detail-inner-header h1 {
     font-family: "Wayfinder-CF", sans-serif;
-font-size: 40px;
+    font-size: 40px;
 }
 
-.benefitBanner.position--benefitHomepage{
-background: #fafaf5;
-position: relative;
-display: flex;
-flex-wrap: wrap;
-gap: 0;
+.benefitBanner.position--benefitHomepage {
+    background: #fdfaf8;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
     padding: 80px 0;
-border: 0;
+    border: 0;
 }
-.benefitBanner.position--benefitHomepage .benefitBanner__item{
-width: 25%;
-padding: 30px;
+
+.benefitBanner.position--benefitHomepage .benefitBanner__item {
+    width: 25%;
+    padding: 30px;
 }
-.benefitBanner.position--benefitHomepage::before{
-content: "Naše hodnoty";
-width: 100%;
+
+.benefitBanner.position--benefitHomepage::before {
+    content: "Naše hodnoty";
+    width: 100%;
     font-family: "Stolzl", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 24px;
-text-align:center;
-padding-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 20px;
 }
+
 .benefitBanner.position--benefitHomepage::after {
-  content: "";
-  top: 0px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  height: 100%;
-  background-color:white;
-background-image: url("https://cdn.myshoptet.com/usr/www.kussebe.cz/user/documents/upload/pattern-square.svg");
-background-size: 100px;
-  display: flex;
-  position: absolute;
-  z-index: -1;
+    content: "";
+    top: 0px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+    background-image: url("https://cdn.myshoptet.com/usr/www.kussebe.cz/user/documents/upload/pattern-square.svg");
+    background-size: 100px;
+    display: flex;
+    position: absolute;
+    z-index: -1;
 }
-.benefitBanner__title{
-color: #c3b409;
+
+.benefitBanner__title {
+    color: #c3b409;
+    font-size: 20px;
 }
+
 @media screen and (max-width: 991px) {
-    .benefitBanner.position--benefitHomepage .benefitBanner__item{
+    .benefitBanner.position--benefitHomepage .benefitBanner__item {
         width: 50%;
         padding: 30px;
-        }
-}
-@media screen and (max-width: 768px) {
-    .benefitBanner.position--benefitHomepage .benefitBanner__item{
-        width: 100%;
-        }
-}
-.welcome .hp-about h1 {
-    font-family: "Wayfinder-CF", sans-serif;
-  text-transform: none;
-  font-size: 40px;
-  letter-spacing: 0px;
-  margin-bottom: 20px;
+    }
 }
 
-#footer #newsletterSection .btn.btn-default{
-  display: flex;
+@media screen and (max-width: 768px) {
+    .benefitBanner.position--benefitHomepage .benefitBanner__item {
+        width: 100%;
+    }
 }
+
+.welcome .hp-about h1 {
+    font-family: "Wayfinder-CF", sans-serif;
+    text-transform: none;
+    font-size: 40px;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+}
+
+#footer #newsletterSection .btn.btn-default {
+    display: flex;
+}
+
 .m-scroll {
     display: flex;
     position: relative;
-    width: 100%;
+    width: auto;
     height: 100px;
     margin: auto;
     background-color: #c3b301;
     overflow: hidden;
     z-index: 1;
-  }
-  .m-scroll__title {
+    margin: 0 -10px;
+}
+
+.m-scroll__title {
     display: flex;
     position: absolute;
     top: 0;
@@ -1002,50 +1026,57 @@ color: #c3b409;
     white-space: nowrap;
     transition: all 1s ease;
     color: #1d4202;
-  }
-  .m-scroll__title > div {
+}
+
+.m-scroll__title>div {
     display: flex;
     -webkit-animation: scrollText 33s infinite linear;
-            animation: scrollText 33s infinite linear;
-  }
-  .m-scroll__title span {
-  font-family: "Stolzl", sans-serif;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      font-size: 24px;
-    padding-right: 30px;
-  }
-  @-webkit-keyframes scrollText {
-    from {
-      transform: translateX(0%);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
-  @keyframes scrollText {
-    from {
-      transform: translateX(0%);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
+    animation: scrollText 33s infinite linear;
+}
 
-  .hp-about{
+.m-scroll__title span {
+    font-family: "Stolzl", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 24px;
+    padding-right: 30px;
+}
+
+@-webkit-keyframes scrollText {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.hp-about {
     position: relative;
-  }
-  .hp-about::after {
-      content: "";
-      top: 0px;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
+}
+
+.hp-about::after {
+    content: "";
+    top: 0px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background: #D9DFDB;
-      width: 100vw;
-      height: 100%;
-      display: flex;
-      position: absolute;
-      z-index: -1;
-  }
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+}
