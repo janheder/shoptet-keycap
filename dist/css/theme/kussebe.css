@@ -796,6 +796,9 @@ footer .js-cookies-settings {
         flex-wrap: wrap;
     }
 
+    .footer-logos img {
+        max-height: 40px;
+    }
 }
 
 .footer-bottom {
@@ -1079,4 +1082,29 @@ footer .js-cookies-settings {
     display: flex;
     position: absolute;
     z-index: -1;
+}
+
+#newsletterSection {
+    padding: 0;
+}
+
+#formNewsletterWidget {
+    padding: 50px 50px;
+    background: #ffefe7;
+}
+
+.newsletterSection__title {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    #formNewsletterWidget {
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .custom-footer h4::after {
+        filter: invert(1);
+    }
 }
