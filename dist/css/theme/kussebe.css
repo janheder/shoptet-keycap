@@ -767,6 +767,15 @@ footer .js-cookies-settings {
     .search-form {
         border-radius: 0;
     }
+    .p-info-wrapper{
+        padding-top: 0;
+    }
+    .p-detail-inner{
+        padding-bottom: 40px;
+    }
+    .p-image{
+        padding: 0;
+       }
 }
 
 .search-form fieldset {
@@ -776,6 +785,7 @@ footer .js-cookies-settings {
 @media screen and (max-width: 768px) {
     .custom-footer h4 {
         border-top: 1px solid rgba(255, 255, 255, 0.1);
+        color: white;
     }
 }
 
