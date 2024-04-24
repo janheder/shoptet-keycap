@@ -1014,7 +1014,7 @@ footer .js-cookies-settings {
     background-color: #c3b301;
     overflow: hidden;
     z-index: 1;
-    margin: 0 -10px;
+    margin: 0;
 }
 
 .m-scroll__title {
@@ -1140,28 +1140,3 @@ footer .js-cookies-settings {
         background-image: url(https://janheder.github.io/shoptet-keycap/dist/icons/search.svg);
     }
 }
-/*
-.m-scroll{
-    z-index: 9;
-    overflow: visible;
-  }
-  body.mobile.m-scroll{
-    overflow: hidden;
-  }
-  .m-scroll:before{
-  content: "";
-      top: 0px;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100vw;
-      height: 100%;
-      background: #c3b301;
-      display: flex;
-      position: absolute;
-    
-  }
-  .m-scroll__title{
-    background-color: #c3b301;
-  }
-  */
