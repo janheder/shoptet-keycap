@@ -1113,3 +1113,30 @@ footer .js-cookies-settings {
     background: #50ac58;
     color: white;
 }
+
+.newsletterSection__formGroup .validator-msg-holder .form-control {
+    border: 0;
+}
+
+#footer #newsletterSection .btn.btn-default {
+    background: #fe5f10;
+}
+
+@media screen and (max-width: 991px) {
+
+    .header-top,
+    .search,
+    .navigation-buttons,
+    .site-name-wrapper,
+    .nav-menu-toggle {
+        background: #f6ece0;
+    }
+
+    .search-form {
+        border: 0;
+    }
+
+    .nav-search {
+        background-image: url(../icons/search.svg);
+    }
+}
