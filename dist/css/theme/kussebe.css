@@ -1033,8 +1033,8 @@ footer .js-cookies-settings {
 
 .m-scroll__title>div {
     display: flex;
-    -webkit-animation: scrollText 33s infinite linear;
-    animation: scrollText 33s infinite linear;
+    -webkit-animation: scrollText 45s infinite linear;
+    animation: scrollText 45s infinite linear;
 }
 
 .m-scroll__title span {
