@@ -25,6 +25,10 @@ a {
     color: #fe5f10;
 }
 
+::selection {
+    background: rgba(254, 95, 16, 0.1);
+}
+
 h1,
 h2,
 h3,
@@ -683,10 +687,13 @@ iframe {
         padding: 80px 0;
         flex-direction: column;
     }
-    .ordering-process .cart-inner .cart-summary .extras-wrapper{
+
+    .ordering-process .cart-inner .cart-summary .extras-wrapper {
         flex-direction: column;
     }
-    .step a::before, .step strong::before{
+
+    .step a::before,
+    .step strong::before {
         background: #f6ece0;
     }
 }
@@ -747,13 +754,16 @@ footer .js-cookies-settings {
     font-weight: 500;
     text-transform: uppercase;
 }
-#speechToggle{
+
+#speechToggle {
     display: none !important;
 }
+
 @media screen and (max-width: 991px) {
-    #checkoutSidebar{
+    #checkoutSidebar {
         border: 0;
     }
+
     #checkoutSidebarToggle {
         background: white;
         color: #50222d;
@@ -767,15 +777,18 @@ footer .js-cookies-settings {
     .search-form {
         border-radius: 0;
     }
-    .p-info-wrapper{
+
+    .p-info-wrapper {
         padding-top: 0;
     }
-    .p-detail-inner{
+
+    .p-detail-inner {
         padding-bottom: 40px;
     }
-    .p-image{
+
+    .p-image {
         padding: 0;
-       }
+    }
 }
 
 .search-form fieldset {
@@ -1161,4 +1174,24 @@ footer .js-cookies-settings {
     .nav-search {
         background-image: url(https://janheder.github.io/shoptet-keycap/dist/icons/search.svg);
     }
+}
+
+#register-form .btn-login,
+#formLogin .btn-login {
+    background: #fe5f10;
+}
+
+.site-msg-custom.step-1 {
+    background: rgba(254, 95, 16, 0.1);
+    color: #fe5f10;
+    border-radius: 0;
+}
+
+.order-summary .order-summary-inner .cart-item>a {
+    background: whitesmoke;
+}
+
+.newsletterSection__consent,
+.newsletterSection__consent a {
+    color: #50222d;
 }
