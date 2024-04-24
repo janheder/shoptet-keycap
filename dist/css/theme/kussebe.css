@@ -468,6 +468,7 @@ footer {
 
     .in-kosik.ordering-process .cart-content.summary-wrapper .next-step {
         flex-direction: column;
+        gap: 20px;
     }
 
     .in-kosik.ordering-process .cart-content.summary-wrapper .next-step-back {
@@ -682,6 +683,12 @@ iframe {
         padding: 80px 0;
         flex-direction: column;
     }
+    .ordering-process .cart-inner .cart-summary .extras-wrapper{
+        flex-direction: column;
+    }
+    .step a::before, .step strong::before{
+        background: #f6ece0;
+    }
 }
 
 footer .js-cookies-settings {
@@ -740,8 +747,13 @@ footer .js-cookies-settings {
     font-weight: 500;
     text-transform: uppercase;
 }
-
+#speechToggle{
+    display: none !important;
+}
 @media screen and (max-width: 991px) {
+    #checkoutSidebar{
+        border: 0;
+    }
     #checkoutSidebarToggle {
         background: white;
         color: #50222d;

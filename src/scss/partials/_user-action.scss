@@ -362,7 +362,7 @@ body.--navUserActive .user-action .login-widget {
 @media screen and (max-width: 991px) {
     .cart-widget-product {
         display: grid;
-        grid-template-columns: 50px 30px auto auto auto;
+        grid-template-columns: 50px 30px auto auto 1fr;
         grid-template-rows: auto auto;
         padding: 15px 10px;
     }
@@ -387,7 +387,7 @@ body.--navUserActive .user-action .login-widget {
 
     .cart-widget-product-name {
         grid-column-start: 2;
-        grid-column-end: 5;
+        grid-column-end: 6;
         grid-row-start: 1;
         grid-row-end: 2;
         padding-left: 15px;
