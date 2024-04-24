@@ -1145,6 +1145,9 @@ footer .js-cookies-settings {
     z-index: 9;
     overflow: visible;
   }
+  body.mobile.m-scroll{
+    overflow: hidden;
+  }
   .m-scroll:before{
   content: "";
       top: 0px;
