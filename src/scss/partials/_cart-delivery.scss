@@ -115,6 +115,9 @@ h4.order-delivery, h4.order-payment{
     .payment-info .question-tooltip{
       display: none;
     }
+    .order-delivery-payment-form .radio-wrapper label {
+        padding: 18px 20px;
+    }
 }
 .not-possible-info{
     width: 100%;
