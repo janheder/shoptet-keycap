@@ -1137,6 +1137,27 @@ footer .js-cookies-settings {
     }
 
     .nav-search {
-        background-image: url(../icons/search.svg);
+        background-image: url(https://janheder.github.io/shoptet-keycap/dist/icons/search.svg);
     }
 }
+
+.m-scroll{
+    z-index: 9;
+    overflow: visible;
+  }
+  .m-scroll:before{
+  content: "";
+      top: 0px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      height: 100%;
+      background: #c3b301;
+      display: flex;
+      position: absolute;
+    
+  }
+  .m-scroll__title{
+    background-color: #c3b301;
+  }
