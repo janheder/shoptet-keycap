@@ -415,6 +415,57 @@ footer {
     margin-top: 20px;
 }
 
+.recapitulation-wrapper .order-summary-item,
+.recapitulation-wrapper .order-complete-links {
+    text-align: center;
+}
+
+.in-dekujeme.ordering-process .content-inner .order-summary-heading {
+    font-family: "Stolzl", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 26px;
+}
+
+.in-dekujeme.ordering-process .content-inner h4 {
+    font-family: "Stolzl", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table tr {
+    display: flex;
+    align-items: center;
+}
+
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table tr td.p-name {
+    flex-grow: 1;
+}
+
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper td.cart-p-image {
+    background: #f5f5f5;
+}
+
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table tr td {
+    padding: 0 15px;
+}
+
+.in-dekujeme.ordering-process .table.recapitulation-table {
+    width: 100%;
+}
+
+.in-dekujeme.ordering-process .table.recapitulation-table tr {
+    border: 1px solid #e5e5e5;
+}
+
+.in-dekujeme.ordering-process .table.recapitulation-table tr th {
+    padding: 10px;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 991px) {
     .in-dekujeme.ordering-process .overall-wrapper .content-inner {
         padding: 40px 20px;
@@ -426,8 +477,8 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .removeable {
-        grid-template-columns: 80px 20px 1fr;
+    .in-dekujeme.ordering-process .table.recapitulation-table tr td {
+        text-align: right;
     }
 }
 
@@ -556,6 +607,14 @@ footer {
 .in-kosik.ordering-process .cart-inner.cart-empty {
     padding-top: 60px;
     margin: 0;
+}
+
+.payment-info .sublabel.zasilkovna-choose {
+    border: 2px solid #e5e5e5;
+    padding: 8px;
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
 }
 
 @media screen and (max-width: 991px) {
