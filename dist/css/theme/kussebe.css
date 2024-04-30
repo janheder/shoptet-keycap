@@ -763,9 +763,9 @@ iframe {
 }
 
 .ordering-process .cart-inner .cart-summary .extras-wrapper .extra.delivery {
-    background: #eaf5eb;
+    background: #D9DFDB;
     padding: 10px 15px;
-    color: #318d39;
+    color: #1D4202;
     text-align: center;
     border-radius: 0px;
 }
@@ -900,13 +900,15 @@ footer .js-cookies-settings {
 }
 
 .next-step-back {
-    background: #f6ece0;
+    background: #fdfaf7;
     border-radius: 0;
     color: #50222d;
     font-weight: 500;
     text-transform: uppercase;
 }
-
+.messages .msg.msg-success{
+    background: #1D4202; 
+  }
 #speechToggle {
     display: none !important;
 }
