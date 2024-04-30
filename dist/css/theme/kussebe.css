@@ -1297,7 +1297,7 @@ footer .js-cookies-settings {
 }
 
 .p-detail-info .flag.flag-new {
-    background: #50ac58;
+    background: #BFAF01;
     color: white;
 }
 
@@ -1346,4 +1346,56 @@ footer .js-cookies-settings {
 .newsletterSection__consent,
 .newsletterSection__consent a {
     color: #50222d;
+}
+
+#backToTop {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    bottom: 15px;
+    right: 15px;
+    background: #f6ece0;
+    color: white;
+    font-size: 11px;
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    transition: 0.3s ease opacity;
+}
+#backToTop   span {
+        border: solid black;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-135deg);
+        margin-top: 4px;
+ }
+body.--floatSearchActive #backToTop {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+body.--floatSearchActive #chat-application~#backToTop {
+    bottom: 75px;
+}
+.custom-footer>div:last-child{
+    grid-column: 1 / 5;
+padding: 50px 0 0 0;
+}
+.footer-logos-payments{
+text-align:center;
+}
+.custom-footer>div:last-child img{
+  width: 600px;
+  max-width: 100%;
+}
+.advancedModal__title {
+    background: #F6ECE0;
+    color: #50222D;
+  text-transform: uppercase;
+  font-weight: 600;
 }
