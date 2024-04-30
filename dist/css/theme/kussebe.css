@@ -337,7 +337,7 @@ footer {
     background-color: white;
 }
 
-#js-userToggle+.cart-count {
+.cart-count {
     background: transparent;
 }
 
