@@ -615,6 +615,7 @@ if (pagination !== null) {
 // back to top button
 // =============================================================================
 
+/*
 $(document).ready(function() {
     let windowHeight = $(window).height();
     let docHeight = $(document).height();
@@ -630,6 +631,7 @@ $(document).ready(function() {
         });
     }
 });
+*/
 
 // =============================================================================
 // FOOTER REVEAL CATEGORIES
