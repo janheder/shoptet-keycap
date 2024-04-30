@@ -1426,3 +1426,13 @@ text-align:center;
 #content #content{
     padding-bottom: 0px;
 }
+.btn-conversion:hover{
+    background: #df5814;
+  }
+  .plus-gallery-item a{
+    background: #fdfaf7;
+  }
+  .plus-gallery-item a img {
+      -o-object-fit: contain;
+      object-fit: contain;
+  }
