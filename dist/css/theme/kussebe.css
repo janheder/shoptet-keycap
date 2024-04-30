@@ -1312,6 +1312,9 @@ footer .js-cookies-settings {
     #formNewsletterWidget {
         padding: 30px 0;
     }
+    .custom-footer>div:last-child{
+        padding-top: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1435,4 +1438,10 @@ text-align:center;
   .plus-gallery-item a img {
       -o-object-fit: contain;
       object-fit: contain;
+  }
+
+  .footer-logos-payments{
+    padding: 30px 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
   }
