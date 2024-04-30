@@ -610,7 +610,7 @@ footer {
 }
 
 .payment-info .sublabel.zasilkovna-choose {
-    border: 2px solid #e5e5e5;
+    border: 1px solid #fe7733;
     padding: 8px;
     margin-top: 10px;
     display: flex;
@@ -666,6 +666,28 @@ footer {
 }
 
 /****/
+
+
+.cart-content.summary-wrapper .price-wrapper{
+    background: #fdfaf7;
+  }
+  .p .flags .flag.flag-new{
+    color: #c3b301;
+  }
+  .order-delivery-payment-form .radio-wrapper input:checked+label{
+    border-color: #c3b301;
+    background: #FDFAF7;
+  }
+  .order-delivery-payment-form .radio-wrapper input:checked+label::before{
+    border: 2px solid #c3b301;
+  }
+  .order-delivery-payment-form .radio-wrapper input:checked+label::after{
+    background: #c3b301;
+  }
+  .payment-shipping-price.for-free{
+     color: #c3b301;
+  }
+
 
 .siteCookies__button {
     background: #c9afdc;
