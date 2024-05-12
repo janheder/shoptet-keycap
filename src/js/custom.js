@@ -778,13 +778,22 @@ let necessaryVariantData = shoptet.variantsSplit.necessaryVariantData;
 
 // Function to update the bigImageURL and slide to the corresponding image in the slider
 function updateImageURL() {
-    // Get all elements with the class .hidden-split-parameter
-    let divs = document.querySelectorAll('.hidden-split-parameter');
-
     // Initialize an array to store the parts of parameterId
     let parameterIdParts = [];
 
-    // Loop through each div element
+    // Handle <select> elements
+    let selectDivs = document.querySelectorAll('.variant-list .hidden-split-parameter');
+    selectDivs.forEach(function(selectDiv) {
+        // Get the parameter ID from the selectDiv
+        let parameterId = selectDiv.getAttribute("data-parameter-id");
+        // Get the selected option value
+        let selectedOptionValue = selectDiv.querySelector('select').value;
+        // Combine parameterId and selectedOptionValue and add to parameterIdParts array
+        parameterIdParts.push(parameterId + "-" + selectedOptionValue);
+    });
+
+    // Handle <div> elements with radio inputs
+    let divs = document.querySelectorAll('.hidden-split-parameter:not(.variant-list .hidden-split-parameter)');
     divs.forEach(function(div) {
         // Get the parameter ID from the div element
         let parameterId = div.getAttribute("data-parameter-id");
@@ -830,5 +839,11 @@ document.querySelectorAll('.hidden-split-parameter input[type="radio"]').forEach
     input.addEventListener("change", updateImageURL);
 });
 
+// Add event listener to each select element to listen for changes
+document.querySelectorAll('.variant-list .hidden-split-parameter select').forEach(function(select) {
+    select.addEventListener("change", updateImageURL);
+});
+
 // Call the function initially to set the initial image URL and slide to the corresponding image
 // updateImageURL();
+
