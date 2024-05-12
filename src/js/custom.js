@@ -774,3 +774,61 @@ if ($("#filters-wrapper").length){
 // =============================================================================
 
 
+let necessaryVariantData = shoptet.variantsSplit.necessaryVariantData;
+
+// Function to update the bigImageURL and slide to the corresponding image in the slider
+function updateImageURL() {
+    // Get all elements with the class .hidden-split-parameter
+    let divs = document.querySelectorAll('.hidden-split-parameter');
+
+    // Initialize an array to store the parts of parameterId
+    let parameterIdParts = [];
+
+    // Loop through each div element
+    divs.forEach(function(div) {
+        // Get the parameter ID from the div element
+        let parameterId = div.getAttribute("data-parameter-id");
+        // Find all input elements within the div
+        let inputs = div.querySelectorAll('input[type="radio"]:checked');
+        // Get the selected option value from the checked input element
+        let selectedOptionValue = inputs.length > 0 ? inputs[0].value : "";
+        // Combine parameterId and selectedOptionValue and add to parameterIdParts array
+        parameterIdParts.push(parameterId + "-" + selectedOptionValue);
+    });
+
+    // Construct the key by joining the parameterIdParts array with "-"
+    let key = parameterIdParts.join("-");
+
+    // Accessing the variant object using the constructed key
+    let variant = necessaryVariantData[key];
+
+    // Accessing the "big" image URL
+    let bigImageURL = variant.variantImage.big;
+
+    // Get all <a> elements within the slider container
+    let sliderLinks = document.querySelectorAll('.slider-container a');
+
+    // Loop through each <a> element
+    for (let i = 0; i < sliderLinks.length; i++) {
+        // Get the href attribute of the current <a> element
+        let href = sliderLinks[i].getAttribute('href');
+
+        // Check if the href matches the bigImageURL
+        if (href === bigImageURL) {
+            // If a match is found, slide to the corresponding image index
+            swiffyslider.slideTo(sliderElement, i);
+            break; // Exit the loop since we found the matching image
+        }
+    }
+
+    // Now you can use the bigImageURL variable which contains the URL to the big image of the selected variant
+    console.log(bigImageURL);
+}
+
+// Add event listener to each input element within the .hidden-split-parameter divs to listen for changes
+document.querySelectorAll('.hidden-split-parameter input[type="radio"]').forEach(function(input) {
+    input.addEventListener("change", updateImageURL);
+});
+
+// Call the function initially to set the initial image URL and slide to the corresponding image
+// updateImageURL();
