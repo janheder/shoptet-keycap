@@ -7,26 +7,95 @@ h1.category-title,
 .homepage-group-title,
 .order-summary .order-summary-inner h4,
 .in-kosik.ordering-process .cart-inner::before,
-.extended-banner-title, 
+.extended-banner-title,
 .welcome h1,
 #formContact fieldset::before {
     font-family: 'Kanit', sans-serif;
     font-weight: 400;
+    color: #393C43;
 }
-#header{
+
+#header {
     border: 0;
-  }
-  .btn{
+}
+
+.btn {
     background: #C4000A;
     border-radius: 0;
-  }
-  .p-final-price-wrapper{
-     background: #FBFBFB;
+}
+
+.p-final-price-wrapper {
+    background: #FBFBFB;
     padding: 30px;
     padding-bottom: 0;
     width: 100%
-  
-  }.add-to-cart{
+}
+
+.add-to-cart {
     background: #FBFBFB;
     padding: 30px;
-  }
+}
+
+@media screen and (min-width: 992px) {
+    #navigation::before {
+        content: "";
+        top: -1px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: 100%;
+        background: #EEEEEE;
+        display: flex;
+        position: absolute;
+    }
+}
+
+.cart-count i {
+    border: 1px solid #C4000A;
+    color: #0f172a;
+}
+
+.cart-count:hover,
+.cart-count:focus,
+.cart-count:active {
+    background: #91070e;
+}
+
+.header-top {
+    height: 90px;
+    width: 100%;
+}
+
+.site-name a {
+    height: 26px;
+}
+
+.top-navigation-bar {
+    display: none;
+}
+
+.search-form fieldset,
+.search-form input {
+    background: white;
+}
+
+.search-form fieldset input {
+    border: 1px solid #EAEAEA;
+}
+
+.p-detail-inner-header h1 {
+    font-weight: 500;
+    color: #5D5C5C
+}
+
+.p .flags .flag {
+    background: white !important;
+}
+
+.homepage-group-title {
+    text-align: left;
+    color: #5D5C5C;
+    font-weight: 500;
+    font-size: 32px;
+}
