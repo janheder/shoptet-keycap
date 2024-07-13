@@ -78,9 +78,10 @@ h1.category-title,
 .search-form fieldset,
 .search-form input {
     background: white;
+    border-radius: 0;
 }
 
-.search-form fieldset input {
+.search-form fieldset {
     border: 1px solid #EAEAEA;
 }
 
