@@ -100,122 +100,162 @@ h1.category-title,
     font-weight: 500;
     font-size: 32px;
 }
-.form-control{
+
+.form-control {
     border-radius: 0;
-  }
-  .p-detail-info .flag{
+}
+
+.p-detail-info .flag {
     border-radius: 0;
-  }
-  .add-to-cart .add-to-cart-button{
+}
+
+.add-to-cart .add-to-cart-button {
     width: 100%;
-  }
-  @media screen and (min-width: 992px) {
-      .menu-helper {
-          z-index: 2;
-          top: 144px;
-          bottom: 0;
-          height: auto;
-          position: absolute;
-      }
-  }
-  .menu-level-2{
+}
+
+@media screen and (min-width: 992px) {
+    .menu-helper {
+        z-index: 2;
+        top: 144px;
+        bottom: 0;
+        height: auto;
+        position: absolute;
+    }
+}
+
+.menu-level-2 {
     border: 0;
-  }
-  .variant-list select{
+}
+
+.variant-list select {
     background-size: 10px;
-  }
-  .homepage-group-title.homepage-products-heading-3{
+}
+
+.homepage-group-title.homepage-products-heading-3 {
     position: relative;
     z-index: 1;
     padding-top: 60px;
-  }
-  .homepage-group-title.homepage-products-heading-3::before,
-  .in-index .products.products-block#products-3::before {
-          content: "";
-          top: -1px;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 100vw;
-          height: 100%;
-          background: #F4F4F4;
-          display: flex;
-          position: absolute;
+}
+
+.homepage-group-title.homepage-products-heading-3::before,
+.in-index .products.products-block#products-3::before {
+    content: "";
+    top: -1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: #F4F4F4;
+    display: flex;
+    position: absolute;
     z-index: -1;
-      }
-  .in-index .products.products-block#products-3{
-      padding-bottom: 60px;
+}
+
+.in-index .products.products-block#products-3 {
+    padding-bottom: 60px;
     margin: 0;
-  }
-  .p {
-      border-bottom: 1px solid #EEEEEE;
+}
+
+.p {
+    border-bottom: 1px solid #EEEEEE;
     padding-bottom: 20px;
-  }
-  footer {
-      background: #393C43;
-   color: white;
-  }
-  
-  footer a, #signature a{
-     color: white;
-  }
-  .footer-bottom{
-    border-top: 1px solid rgba(255,255,255,0.1);
-  }
-  .news-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 30px;
-      width: 100%;
-  }
-  .news-item{
+}
+
+footer {
+    background: #393C43;
+    color: white;
+}
+
+footer a,
+#signature a {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.news-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    width: 100%;
+}
+
+.news-item {
     border-radius: 0;
-  }
-  #newsletterSection::before{
+}
+
+#newsletterSection::before {
     content: none;
-  }
-  #newsletterSection{
+}
+
+#newsletterSection {
     border-radius: 0;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     color: white;
     margin-top: 60px;
-  }
-  #newsletterSection h3{
-      color: white;
-  }
-  .newsletterSection__subTitle{
-        color: white;
-  }
-  .custom-footer h4{
+}
+
+#newsletterSection h3 {
+    color: white;
+}
+
+.newsletterSection__subTitle {
+    color: white;
+}
+
+.custom-footer h4 {
     color: white;
     margin: 0;
     opacity: 0.6;
-  }
-  .custom-footer h4::before{
+}
+
+.custom-footer h4::before {
     content: none;
-  }
-  .custom-footer>div ul>li a, .newsletterSection__consent, .newsletterSection__consent a{
-      color: white;
-  }
-  #contactSection{
+}
+
+.custom-footer>div ul>li a,
+.newsletterSection__consent,
+.newsletterSection__consent a {
+    color: white;
+}
+
+#contactSection {
     background: #C4000A;
     padding: 40px 0;
-    position:relative;
+    position: relative;
     z-index: 1;
-  }
-  #contactSection::before{
-            content: "";
-          top: 0px;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 100vw;
-          height: 100%;
-          background: #C4000A;
-          display: flex;
-          position: absolute;
-     z-index: -1;
-  }
-  #contactSection h2{
+}
+
+#contactSection::before {
+    content: "";
+    top: 0px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: #C4000A;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+}
+
+#contactSection h2 {
     color: white;
-  }
+    margin: 0;
+}
+
+a {
+    color: #C4000A;
+}
+
+@media screen and (min-width: 768px) {
+
+    .custom-footer>.extended,
+    .custom-footer>div:nth-child(2) {
+        grid-column: 1 / 2;
+    }
+}
