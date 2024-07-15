@@ -279,7 +279,7 @@ a {
   .category-content-wrapper{
     display: grid;
     grid-template-columns: 280px auto;
-    grid-gap: 30px;
+    grid-gap: 50px;
   }
   .type-category #category-header{
     grid-column-start: 2;
@@ -347,7 +347,7 @@ a {
   .slider-nav::before{
       height: 40px;
     box-shadow: none;
-  
+  border-radius: 0;
   }
   .slider-nav-arrow .slider-nav::after{
       height: 22px;
@@ -357,3 +357,84 @@ a {
     background: #fbfbfb;
     color: #50AC58;
   }
+  .add-to-cart .amount {
+    border-radius: 0px;
+}
+.variant-list th{
+  padding-bottom: 8px;
+  color: #393C43;
+}
+.variant-list select{
+    border: 1px solid #e5e5e5;
+}
+.variant-list select{
+  width: 400px;
+}
+.type-category .breadcrumbs-wrapper{
+  position: relative;
+  
+}
+.type-category .breadcrumbs-wrapper a,
+.type-category .breadcrumbs-wrapper span{
+  z-index: 1;
+  position: relative;
+}
+.type-category .breadcrumbs-wrapper::before{
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: 100%;
+        background: #FAFAFA;
+        display: flex;
+        position: absolute;
+    }
+
+.type-category .category-top{
+    position: relative;
+  margin-bottom: 40px;
+}
+.type-category .category-top:before{
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        height: 100%;
+        background: #FAFAFA;
+        display: flex;
+        position: absolute;
+}
+.type-category .category-title{
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+    #filters {
+        padding: 0;
+    }
+}
+#filters h4{
+  font-weight: 500;
+  font-size: 16px;
+  border: 0;
+  
+}
+.filter-section-count{
+  display: none;
+}
+.filter-section{
+  border-bottom: #E5E5E5 1px solid;
+  margin-bottom: 20px;
+  padding-bottom: 20px; 
+}
+.availability-label{
+  flex-grow: 0;
+}
+.availability-value .parameter-dependent{
+  align-items:baseline;
+}
+  
+
