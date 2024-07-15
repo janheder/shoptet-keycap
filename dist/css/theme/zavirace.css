@@ -438,3 +438,18 @@ a {
 }
   
 
+.p-in-in .ratings-wrapper{
+    display: none;
+  }
+  .products-related-header{
+    font-size: 0;
+    margin: 0;
+  }
+  .products-related-header:after{
+    content: "Nezbytné příslušenství";
+      font-size: 32px;
+  }
+  .products-block.products-related.products-additional{
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 60px;
+  }
