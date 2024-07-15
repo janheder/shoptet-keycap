@@ -353,4 +353,7 @@ a {
       height: 22px;
   }
   
-  
+  .p-detail-info .flag.flag-new{
+    background: #fbfbfb;
+    color: #50AC58;
+  }
