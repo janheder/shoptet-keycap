@@ -578,14 +578,16 @@ a {
 
   .header-phone-custom{
     display: flex;
-    padding: 0 20px;
+    padding: 0 0px 0 30px;
     color: #5D5C5C;
     border-left: 1px solid #e5e5e5;
-    margin-left: 20px;
+    margin-left: 30px;
+    align-items:center;
   }
   .header-phone-custom-content{
     flex-direction: column;
     display: flex;
+    padding-left: 10px;
   }
   .header-phone-custom span{
     font-size: 18px;
