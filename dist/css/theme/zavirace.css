@@ -706,3 +706,36 @@ font-weight: 500;
       align-self: start;
   }
 }
+
+.hp-blog{
+  position: relative;
+}
+.hp-blog::before{
+      content: "";
+    top: -1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: #F4F4F4;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+}
+.hp-blog-top{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.hp-blog-top h2{
+  color: #5D5C5C;
+  font-size: 32px;
+}
+.hp-blog-top .btn{
+  border: 1px solid #5D5C5C;
+  background: transparent;
+  color:  #5D5C5C;
+  padding: 0 15px;
+  height: 44px;
+}
