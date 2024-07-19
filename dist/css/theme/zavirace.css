@@ -592,6 +592,13 @@ a {
     font-weight: 500;
     line-height: 1;
   }
+  .header-phone-custom::before{
+    content: "";
+    height: 24px;
+    width: 24px;
+    background-image:url("https://660989.myshoptet.com/user/documents/upload/header-phone.svg");
+    background-repeat: no-repeat;
+  }
   .search{
     justify-content: center;
     display: flex;
