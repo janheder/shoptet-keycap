@@ -314,6 +314,7 @@ a {
       grid-column-end: 3;
         grid-template-columns: repeat(3, minmax(0, 1fr));
       grid-row: 2 / auto;
+      align-self:start;
   }
   .filters-wrapper{
     width: 100%;
