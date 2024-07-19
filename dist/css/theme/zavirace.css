@@ -15,6 +15,19 @@ h1.category-title,
     color: #393C43;
 }
 
+h1,
+h2,
+h3,
+h4,
+h1.category-title,
+.homepage-group-title,
+.order-summary .order-summary-inner h4,
+.in-kosik.ordering-process .cart-inner::before,
+.extended-banner-title,
+.welcome h1 {
+    font-weight: 500;
+}
+
 #header {
     border: 0;
 }
@@ -281,7 +294,7 @@ a {
   .category-content-wrapper{
     display: grid;
     grid-template-columns: 280px auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: 80px auto;
     grid-gap: 50px;
   }
   .type-category #category-header{
@@ -561,4 +574,26 @@ a {
           background-image: url(../icons/search.svg);
   
       }
+  }
+
+  .header-phone-custom{
+    flex-direction: column;
+    display: flex;
+    padding: 0 20px;
+    color: #5D5C5C;
+    border-left: 1px solid #e5e5e5;
+    margin-left: 20px;
+  }
+  .header-phone-custom span{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+  }
+  .search{
+    justify-content: center;
+    display: flex;
+  }
+  .search form{
+      max-width: 400px;
+      width: 100%;
   }
