@@ -219,6 +219,7 @@ footer a,
 
 .newsletterSection__subTitle {
     color: white;
+    font-weight: 400;
 }
 
 .custom-footer h4 {
@@ -455,9 +456,7 @@ a {
 }
   
 
-.p-in-in .ratings-wrapper{
-    display: none;
-  }
+
   .products-related-header{
     font-size: 0;
     margin: 0;
@@ -617,4 +616,93 @@ a {
 }
 .type-category .category-title{
   color: #5D5C5C;
+}
+
+.basic-description>h3, .extended-description>h3{
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  position: relative;
+}
+.basic-description>h3::after, .extended-description>h3::after{
+  content: "";
+  background: #C4000A;
+  height: 2px;
+  width: 90px;
+  display: flex;
+position: absolute;
+  bottom: 0;
+}
+
+#manufacturer-filter h4 span{
+  font-size: 0;
+}
+#manufacturer-filter h4 span::before{
+  content:"Výrobce";
+  font-size: 16px;
+}
+
+.subcategories li a .text{
+  font-size: 15px;
+  color: #393C43;
+}
+.p .availability span {
+    display: flex;
+    align-items: center;
+    color: #50AC58 !important;
+}
+.category-header input:checked+label{
+  color: #C4000A;
+}
+.category-header label{
+  font-size: 15px;
+  height: 46px;
+}
+
+.custom-footer>div ul>li a {
+  font-weight: 400;
+  font-size: 15px;
+}
+.newsletterSection__formGroup .newsletterSection__btn{
+background: transparent;
+border: 2px solid #fff;
+}
+#contactSection{
+display: flex;
+  align-items:center;
+}
+#contactSection h2{
+font-weight: 400;
+flex-grow: 1;
+line-height: 1;
+  padding-right: 20px;
+}
+.contactSection-content{
+  display: flex;
+gap: 60px;
+}
+.contactSection-single{
+display: flex;
+gap: 12px;
+align-items:center;
+}
+.contactSection-single a{
+display: flex;
+flex-direction: column;
+
+}
+.contactSection-single a:hover{
+color: white;
+}
+.contactSection-single a span{
+font-size: 17px;
+font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .type-category .pagination-wrapper{
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row: 3 / auto;
+      align-self: start;
+  }
 }
