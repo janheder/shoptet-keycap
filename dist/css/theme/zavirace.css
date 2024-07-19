@@ -597,3 +597,23 @@ a {
       max-width: 400px;
       width: 100%;
   }
+  #filters{gap: 30px}
+#filters::before{
+  content: "Filtry";
+  border-bottom: 1px solid #6D6D6D;
+  color: #393C43;
+  font-size: 17px;
+  padding: 10px 0;
+}
+.menu-level-1>li>a {
+    color: #393C43;
+}
+.filter-section label .filter-count{
+  display: none;
+}
+.subcategories li a{
+  outline: none;;
+}
+.type-category .category-title{
+  color: #5D5C5C;
+}
