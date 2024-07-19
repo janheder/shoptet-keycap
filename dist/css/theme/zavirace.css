@@ -739,3 +739,31 @@ font-weight: 500;
   padding: 0 15px;
   height: 44px;
 }
+
+.homepage-group-title{
+  margin-top: 60px;
+}
+.welcome p {
+    font-weight: 400;
+}
+.hp-about{
+  display: flex;
+  padding: 80px 0;
+  gap: 60px;
+  align-items:center;
+}
+.hp-about-content{
+  max-width: 520px;
+}
+.hp-about-content h2, .hp-about-content p{
+  color: #5D5C5C;
+}
+.hp-about-content h2{
+  margin-bottom: 40px;
+}
+.hp-about-content p{
+  font-weight: 400;
+}
+.hp-about-img{
+  
+}
