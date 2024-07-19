@@ -779,3 +779,32 @@ font-weight: 500;
 .hp-about-img{
   
 }
+
+.removeable .p-name a.show-related{
+  display: none;
+}
+.ordering-process .cart-inner {
+    border-radius: 0px;
+}
+.order-delivery-payment-form .radio-wrapper label {
+    border-radius: 0px;
+}
+.cart-header::before {
+  border-top: 1px solid #EAEAEA;
+}
+.ordering-process .header-top .contact-box{
+  display: none;
+}
+.ordering-process .overall-wrapper {
+    background-color: #EEEEEE;
+}
+.in-kosik.ordering-process .cart-inner {
+
+    max-width: 1020px;
+}
+.btn:hover,.btn:active,.btn:focus{
+   background: #9d0008;
+}
+.btn-conversion:hover, .btn-conversion:active, .btn-conversion:focus{
+  background: #9d0008;
+}
