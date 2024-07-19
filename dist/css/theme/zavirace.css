@@ -808,3 +808,42 @@ font-weight: 500;
 .btn-conversion:hover, .btn-conversion:active, .btn-conversion:focus{
   background: #9d0008;
 }
+
+
+.news-item .image a {
+  height: 280px;
+}
+.news-item .text{
+   background: white;
+padding: 20px;
+}
+.news-item .title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #292D32;
+  padding:  0px;
+padding-bottom: 20px;
+  position: relative;
+  line-height: 1.3;
+  background: white;
+font-size: 18px;
+}
+.news-item time{
+border-radius: 0;
+background: rgba(0, 0, 0, 0.8);
+}
+.news-item .description {
+  font-size: 13x;
+  order: 1;
+  color: #4b5563;
+font-weight: 400;
+  display: flex;
+flex-direction: column;
+height: 30px;
+
+}
+.news-item .description p{
+    font-size: 13px;
+  order: 1;
+  color: #4b5563;
+}
