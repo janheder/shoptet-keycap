@@ -577,12 +577,15 @@ a {
   }
 
   .header-phone-custom{
-    flex-direction: column;
     display: flex;
     padding: 0 20px;
     color: #5D5C5C;
     border-left: 1px solid #e5e5e5;
     margin-left: 20px;
+  }
+  .header-phone-custom-content{
+    flex-direction: column;
+    display: flex;
   }
   .header-phone-custom span{
     font-size: 18px;
