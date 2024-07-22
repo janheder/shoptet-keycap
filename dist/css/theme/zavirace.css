@@ -1000,6 +1000,10 @@ a {
   .search-form fieldset {
     border: 0;
   }
+  .ordering-process .overall-wrapper {
+    background-color: #fff;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
