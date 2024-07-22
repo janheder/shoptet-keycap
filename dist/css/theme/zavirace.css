@@ -763,6 +763,7 @@ font-weight: 500;
   padding: 80px 0;
   gap: 60px;
   align-items:center;
+  justify-content: space-between;
 }
 .hp-about-content{
   max-width: 520px;
@@ -833,14 +834,14 @@ border-radius: 0;
 background: rgba(0, 0, 0, 0.8);
 }
 .news-item .description {
-  font-size: 13x;
+  font-size: 13px;
   order: 1;
   color: #4b5563;
 font-weight: 400;
   display: flex;
 flex-direction: column;
-height: 30px;
-
+height: 40px;
+overflow: hidden;
 }
 .news-item .description p{
     font-size: 13px;
@@ -878,5 +879,27 @@ height: 30px;
     }
   #contactSection h2{
     font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hp-about {
+    max-width: 100%;
+    width: 100%;
+    flex-direction: column;
+    gap: 40px;
+}
+  .hp-about-content{
+    max-width: 100%
+  }
+  .contactSection-content{
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .contactSection-content{
+    flex-direction: column;
+            align-items: center;
+        gap: 10px;
   }
 }
