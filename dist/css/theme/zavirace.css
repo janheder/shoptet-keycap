@@ -565,10 +565,11 @@ a {
   align-items: center;
   justify-content: space-between;
   margin-top: 30px;
+  gap: 10px;
 }
 
 .item-bottom a.btn {
-  height: 52px;
+  height: 48px;
   font-size: 15px;
 }
 
@@ -599,7 +600,7 @@ a {
   }
 
   .item-custom-content h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .item-bottom {
@@ -624,7 +625,7 @@ a {
   }
 
   .item-custom-content h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .item-bottom {
@@ -1053,4 +1054,48 @@ a {
   .news-item .image a {
     height: 180px;
   }
+}
+
+@media screen and (max-width: 991px) {
+  .in-index .products.products-block {
+      overflow-x: hidden;
+      padding-left: 1px;
+      padding-top: 1px;
+      padding-bottom: 1px;
+      padding-right: 1px;
+      display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .in-index .products.products-block .product {
+      width: 100%;
+  }
+.hp-blog-top h2 {
+margin: 0;
+  font-size: 26px;
+}
+#newsletterSection{
+  margin-top: 0;
+}
+.hp-about-content h2{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.hp-about{
+  padding: 60px 0;
+  gap: 10px;
+}
+.hp-blog {
+  padding: 60px 0;
+}
+.homepage-group-title {
+  font-weight: 500;
+  font-size: 26px;
+}
+.hp-about-img {
+  height: 280px;
+  overflow: hidden;
+}
 }
