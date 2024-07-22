@@ -686,7 +686,7 @@ display: flex;
 font-weight: 400;
 flex-grow: 1;
 line-height: 1;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 .contactSection-content{
   display: flex;
@@ -859,6 +859,9 @@ overflow: hidden;
     padding: 30px 0;
     text-align:center;
   }
+  #contactSection h2{
+      padding-right: 0px;
+    }
 }
 @media screen and (max-width: 991px) {
 .search form {
