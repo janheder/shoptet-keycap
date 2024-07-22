@@ -847,3 +847,36 @@ height: 30px;
   order: 1;
   color: #4b5563;
 }
+
+@media screen and (max-width: 1200px) {
+  .header-phone-custom{
+     display: none
+  }
+  #contactSection{
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+    text-align:center;
+  }
+}
+@media screen and (max-width: 991px) {
+.search form {
+    max-width: 100%;
+    width: 100%;
+}
+}
+@media screen and (max-width: 768px) {
+    .custom-footer h4 {
+        margin: 0px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        padding: 25px 0;
+        line-height: 1;
+        position: relative;
+    }
+  .custom-footer h4::after {
+        filter: invert(1) brightness(5);
+    }
+  #contactSection h2{
+    font-size: 22px;
+  }
+}
