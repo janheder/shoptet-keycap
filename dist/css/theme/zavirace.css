@@ -552,6 +552,9 @@ a {
       .item-custom-content h2 {
         font-size: 32px;
     }
+    .item-bottom{
+      margin: 0;
+    }
     }
   @media screen and (max-width: 550px){
       .item-custom .img-desktop{
