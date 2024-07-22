@@ -544,6 +544,15 @@ a {
     .item-custom .img-mobile{
       display: none;
     }
+    @media screen and (max-width: 991px){
+      .item-custom-content {
+        padding: 20px;
+        color: #5D5C5C;
+    }
+      .item-custom-content h2 {
+        font-size: 32px;
+    }
+    }
   @media screen and (max-width: 550px){
       .item-custom .img-desktop{
       display: none;
