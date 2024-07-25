@@ -1263,3 +1263,47 @@ a {
     grid-column-start: 2;
   }
 }
+
+
+@media screen and (min-width: 992px) {
+  .site-msg  ~ #header .menu-helper {
+        z-index: 2;
+        top: 181px;
+        bottom: 0;
+        height: auto;
+        position: absolute;
+    }
+  #filters {
+        z-index: 1;
+    }
+}
+
+#productsRelated{
+  display: none;
+}
+.advancedModal__title{
+  background: #EEEEEE;
+  color: #393C43;
+}
+.advancedProduct-priceTotal{
+  color: #5D5C5C;
+}
+.advancedProduct-name{
+  font-weight: 600;
+  
+}
+.in-blog .news-item .text,
+.in-blog .news-item  .title{
+  background: #FAFAFA;
+}
+
+.hp-blog-top .btn:hover{
+  background: white;
+}
+#filters h4 {
+    padding: 0;
+  margin-bottom: 20px;
+}
+.advanced-filters-wrapper{
+  display: none !important;
+}
