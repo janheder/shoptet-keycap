@@ -1564,3 +1564,22 @@ color: #5D5C5C;
   background: white;
   color: #5D5C5C;
 }
+
+@media screen and (min-width: 992px) {
+  .nav-user{
+    font-size: 0;
+  }
+
+.nav-user::after{
+  content: "Můj účet";
+      font-size: 15px;
+}
+}
+
+.p .p-tools>.btn {
+    font-size: 0px;
+}
+.p .p-tools>.btn::after {
+  content: "Zobrazit";
+    font-size: 14px;
+}
