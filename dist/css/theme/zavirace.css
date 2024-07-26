@@ -1650,3 +1650,14 @@ tr {
   content: "Zobrazit";
   font-size: 14px;
 }
+
+.menu-level-2>li>div>a {
+  color: #5D5C5C !important;
+}
+.empty-content-category {
+  grid-column: 1 / span 2;
+
+}
+.empty-content-category h2{
+color: #5D5C5C;
+}
