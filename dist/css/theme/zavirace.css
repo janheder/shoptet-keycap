@@ -1485,3 +1485,82 @@ tbody, td, tfoot, th, thead, tr {
         position: relative
     }
 }
+
+.in-kosik.ordering-process .cart-inner.cart-empty{
+  padding: 100px 40px;
+}
+
+.in-kosik.ordering-process .cart-inner.cart-empty .cart-row{
+display: none;
+}
+.cart-empty .cart-heading{
+margin: 0;
+    color: #5D5C5C;
+font-size: 30px;
+}
+
+
+.news-item .text{
+  padding: 30px 20px;
+}
+.news-item .text{
+  align-items:flex-start;
+}
+.news-item .text::after{
+  content: "Číst celý článek";
+  display: inline;
+  order: 2;
+  color: #C4000A;
+  border-bottom: 1px solid #C4000A;
+  margin-top: 10px;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+.appended-category{
+  display: none !important;
+}
+.search-whisperer .search-whisperer-products a:hover .p-info, .search-whisperer .search-whisperer-products a:active .p-info, .search-whisperer .search-whisperer-products a:focus .p-info {
+    color: #C4000A;
+}
+.products-related-header {
+color: #5D5C5C;
+    margin-bottom: -20px;
+}
+.p .p-tools{
+  display: flex;
+  padding: 0;
+}
+.p .p-bottom>div{
+  flex-direction: row;
+  align-items:center;
+}
+.p .p-tools>.btn {
+    height: 34px;
+  padding: 0 15px;
+  border: 0;
+  background: #F4F4F4;
+  text-transform: none;
+  font-size: 14px;
+  color: #5D5C5C;
+}
+
+.hp-about-velko{
+  display: flex;
+  background: #F4F4F4;
+  padding: 20px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.hp-about-velko p{
+    display: flex;
+  flex-direction: column;
+  margin: 0;
+    font-size: 15px;
+}
+.hp-about-velko p span{
+  font-size: 18px;
+}
+.hp-about-velko .btn{
+  background: white;
+  color: #5D5C5C;
+}
