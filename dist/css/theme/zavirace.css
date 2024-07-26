@@ -1661,3 +1661,35 @@ tr {
 .empty-content-category h2{
 color: #5D5C5C;
 }
+
+
+#category-filter-hover{
+  display: flex;
+  flex-direction: column;
+}
+.filter-section-boolean{
+  order: 10;
+}
+#category-filter-hover .filter-section{
+  order: 20;
+}
+#category-filter-hover .filter-section-count {
+    display: flex;
+  order: 0;
+}
+#category-filter-hover .filter-section-count .filter-total-count{
+  display: none;
+}
+#clear-filters{
+   width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+  display: flex;
+}
+#clear-filters a{
+      background: rgba(214, 24, 24, .1);
+    color: #d61818;
+  padding: 5px 20px;
+  width: 100%;
+  text-align:center;
+}
