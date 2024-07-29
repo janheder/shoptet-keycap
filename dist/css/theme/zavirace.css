@@ -1693,3 +1693,56 @@ color: #5D5C5C;
   width: 100%;
   text-align:center;
 }
+
+.filter-section input[type="checkbox"] {
+  display: none;
+}
+.filter-section label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+.filter-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0px; 
+}
+.filter-label:hover::before {
+  background-color: #fff;
+border: 1px solid #000;
+}
+input[type="checkbox"]:checked + .filter-label::before {
+  background-color: #d61818;
+  border-color: #d61818;
+}
+.filter-label::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+input[type="checkbox"]:checked + .filter-label::after {
+  display: block;
+}
+.filter-label::after {
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.filter-section input:disabled + label::before{
+background: #eee;
+}
+.filter-section input:disabled + .filter-label:hover::before{
+ border: 1px solid #ccc;;
+}
