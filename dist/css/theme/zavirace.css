@@ -1752,3 +1752,18 @@ background: #eee;
 .filter-section input:disabled + .filter-label:hover::before{
  border: 1px solid #ccc;;
 }
+
+.in-registrace fieldset.co-registration{
+  margin-bottom: 40px;
+}
+.in-registrace fieldset.co-registration .form-group{
+  background: #F4F4F4;
+  padding: 12px 20px;
+  margin-bottom: 2px;
+  display: flex;
+}
+.in-registrace fieldset.co-registration .form-group label{
+  padding: 0;
+  padding-left: 10px;
+  width: 100%;
+}
