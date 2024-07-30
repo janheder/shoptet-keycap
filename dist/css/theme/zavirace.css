@@ -1499,6 +1499,12 @@ tr {
   .removeable {
     grid-template-columns: 80px 20px 1fr;
   }
+  .type-category .category-top{
+    margin-bottom: 20px;
+  }
+  .type-category #category-header{
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 992px) {
