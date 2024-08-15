@@ -85,10 +85,13 @@ if ($(".in-index").length){
             document.querySelector('.in-index #newsWrapper').appendChild(body[i]);
         }
     };
+    function loadImg(){
+        $("img").unveil();
+    };
     fetch("/blog/")
         .then((response) => response.text())
         .then(loadNews)
-
+        .then(loadImg)
 
 //var b = performance.now();
 //alert('It took ' + (b - a) + ' ms.');
