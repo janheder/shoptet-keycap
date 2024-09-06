@@ -12,7 +12,7 @@ h1.category-title,
 #formContact fieldset::before {
   font-family: 'Kanit', sans-serif;
   font-weight: 400;
-  color: #393C43;
+  color: #5D5C5C;
 }
 
 h1,
@@ -183,7 +183,7 @@ h1.category-title,
 }
 
 footer {
-  background: #393C43;
+  background: #5D5C5C;
   color: white;
 }
 
@@ -403,7 +403,7 @@ a {
 
 .variant-list th {
   padding-bottom: 8px;
-  color: #393C43;
+  color: #5D5C5C;
 }
 
 .variant-list select {
@@ -694,13 +694,13 @@ a {
 #filters::before {
   content: "Filtry";
   border-bottom: 1px solid #6D6D6D;
-  color: #393C43;
+  color: #5D5C5C;
   font-size: 17px;
   padding: 10px 0;
 }
 
 .menu-level-1>li>a {
-  color: #393C43;
+  color: #5D5C5C;
 }
 
 .filter-section label .filter-count {
@@ -745,7 +745,7 @@ a {
 
 .subcategories li a .text {
   font-size: 15px;
-  color: #393C43;
+  color: #5D5C5C;
 }
 
 .p .availability span {
@@ -1188,7 +1188,7 @@ a {
 
 
 .site-msg.information {
-  background: #393C43;
+  background: #5D5C5C;
   color: #fff;
   padding: 8px 12px;
   font-size: 14px;
@@ -1216,7 +1216,7 @@ a {
 }
 
 .shipping-billing-name {
-  color: #393C43;
+  color: #5D5C5C;
   font-size: 16px;
 }
 
@@ -1285,7 +1285,7 @@ a {
 
 .advancedModal__title {
   background: #EEEEEE;
-  color: #393C43;
+  color: #5D5C5C;
 }
 
 .advancedProduct-priceTotal {
@@ -1482,7 +1482,7 @@ tr {
 
 .in-dekujeme.ordering-process .content-inner .recapitulation-wrapper td.p-name span {
   font-size: 16px;
-  color: #393C43;
+  color: #5D5C5C;
 }
 
 @media screen and (max-width: 991px) {
@@ -1791,7 +1791,7 @@ background: #eee;
 }
 .kontaktyTop__notice{
  text-align:center; 
-      background: #393C43;
+      background: #5D5C5C;
     border-radius: 0;
   color: white;
   padding: 10px 0;
