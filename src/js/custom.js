@@ -575,11 +575,12 @@ if (pagination !== null) {
         var pagination = document.querySelector('.pagination');
         var current = parseInt(pagination.querySelector('.current').textContent);
         var max = parseInt(pagination.lastElementChild.textContent);
-        
-        // Rozdělení URL na hlavní část a query parametry
+
+        // Získání aktuální URL a odstranění případné části '/strana-X'
         var currentUrl = window.location.href;
         var queryIndex = currentUrl.indexOf('?');
         var baseUrl = queryIndex === -1 ? currentUrl : currentUrl.slice(0, queryIndex);
+        baseUrl = baseUrl.replace(/\/strana-\d+$/, ''); // Odstranění '/strana-X' na konci URL
         var queryParams = queryIndex === -1 ? '' : currentUrl.slice(queryIndex);
 
         // Vyčištění obsahu paginace
