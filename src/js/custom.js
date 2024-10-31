@@ -576,11 +576,11 @@ if (pagination !== null) {
         var current = parseInt(pagination.querySelector('.current').textContent);
         var max = parseInt(pagination.lastElementChild.textContent);
 
-        // Získání aktuální URL a odstranění případné části '/strana-X'
+        // Získání aktuální URL a odstranění všech případných výskytů '/strana-X'
         var currentUrl = window.location.href;
         var queryIndex = currentUrl.indexOf('?');
         var baseUrl = queryIndex === -1 ? currentUrl : currentUrl.slice(0, queryIndex);
-        baseUrl = baseUrl.replace(/\/strana-\d+$/, ''); // Odstranění '/strana-X' na konci URL
+        baseUrl = baseUrl.replace(/\/strana-\d+/g, ''); // Odstranění všech '/strana-X' v URL
         var queryParams = queryIndex === -1 ? '' : currentUrl.slice(queryIndex);
 
         // Vyčištění obsahu paginace
@@ -620,6 +620,7 @@ if (pagination !== null) {
         refactorPagi();
     }, { passive: true });
 }
+
 
 
 // =============================================================================
