@@ -1,0 +1,33 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h1.category-title,
+.homepage-group-title,
+.order-summary .order-summary-inner h4,
+.in-kosik.ordering-process .cart-inner::before,
+.extended-banner-title,
+.welcome h1,
+#formContact fieldset::before {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #202249;
+}
+
+h1,
+h2,
+h3,
+h4,
+h1.category-title,
+.homepage-group-title,
+.order-summary .order-summary-inner h4,
+.in-kosik.ordering-process .cart-inner::before,
+.extended-banner-title,
+.welcome h1 {
+  font-weight: 600;
+}
+
+::selection {
+  background: rgba(214, 24, 24, .1);
+}
