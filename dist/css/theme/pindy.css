@@ -80,7 +80,7 @@ h1.category-title,
     border-radius: 50%;
     border: 1px solid rgba(255,255,255,0.1);
         background-position: center center;
-        background-image: url(../icons/user-white.svg);
+        background-image: url(../../icons/user-white.svg);
   }
   
   .next-to-carousel-banners{
@@ -275,7 +275,7 @@ h1.category-title,
       height: 18px;
       width: 18px;
       display: flex;
-     background-image: url(../icons/shopping-bag-white.svg);
+     background-image: url(../../icons/shopping-bag-white.svg);
       background-size: 100%;
       margin-right: 10px;
   }
