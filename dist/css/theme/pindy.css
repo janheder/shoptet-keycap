@@ -31,3 +31,255 @@ h1.category-title,
 ::selection {
   background: rgba(214, 24, 24, .1);
 }
+
+.btn{
+    background: #202249;
+  }
+  .top-navigation-bar{
+    display: none;
+  }
+  #header{
+    background: #202249;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .in-index #header{
+    background: transparent;
+    z-index: 9;
+  }
+  .header-top{
+    height: 140px;
+  }
+  .header-top + #navigation{
+    display: none;
+  }
+  .cart-count{
+    background: #E72085;
+    border-radius: 31px;
+    height: 62px;
+    padding: 0 30px 0 60px;
+  }
+  .cart-count::before{
+    left: 30px;
+  }
+  .site-name a{
+    height: 91px;
+  }
+  .search{
+    display: none;
+  }
+  #footer{
+    background: #202249;
+    color: white;
+  }
+  .nav-user{
+  font-size: 0;
+    padding: 0;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.1);
+        background-position: center center;
+        background-image: url(../icons/user-white.svg);
+  }
+  
+  .next-to-carousel-banners{
+    margin: 0;
+    position: relative;
+    padding: 0;
+    margin-top: -150px;
+  }
+  .next-to-carousel-banners::before {
+      content: "";
+      top: 0px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      height: 100%;
+     background: #202249;
+      display: flex;
+      position: absolute;
+      z-index: -1;
+      background-image: url("https://684008.myshoptet.com/user/documents/upload/hero.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+  }
+  .next-to-carousel-banners .banner-wrapper{
+    width: 100%;
+    padding: 0;
+  }
+  .hero{
+    padding: 300px 0 150px 0;
+    text-align:left;
+  
+  }
+  .hero h1{
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .hero p{
+    color: white;
+      font-size: 26px;
+    max-width: 560px;
+  }
+  .menu-level-1{
+    justify-content:center;
+  }
+  .menu-level-1>li>a{
+    color: white;
+  }
+  .menu-level-1>li>a:hover, .menu-level-1>li>a:active, .menu-level-1>li>a:focus{
+    background: transparent;
+    color: #E72085;
+  }
+  .news-item{
+    border-radius: 20px;
+  }
+  .news-item .text{
+    position:absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+       background:white;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .news-item .title{
+      position: relative;
+     background:transparent;
+    color: #202249;
+    order: 1;
+      padding: 0;
+    font-size: 16px;
+  }
+  .news-item time{
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    background:transparent;
+      color: #202249;
+    order: 0;
+    padding: 0;
+  }
+  
+  .introSection{
+      border-radius: 20px;
+    background: rgb(231,32,133);
+  background: linear-gradient(45deg, rgba(231,32,133,1) 0%, rgba(67,71,158,1) 100%);
+    padding: 80px 0;
+      display: flex;
+    justify-content:center;
+   align-items: center;
+    flex-direction: column;
+  }
+  .introSection h2{
+    color: white;
+    text-align:center;
+    margin-bottom: 40px;
+    max-width: 660px;
+    line-height: 1.5;
+    font-size: 32px;
+  }
+  .introSection-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+  .introSection-link{
+     background:white;
+    height: 60px;
+    padding: 0 20px;
+      display: flex;
+     justify-content:center;
+  align-items: center;
+    border-radius: 8px;
+  }
+  .hp-blog{
+        display: flex;
+      flex-direction: column;
+       justify-content:center;
+  align-items: center;
+  }
+  .hp-blog-top{
+    text-align:center;
+    margin-bottom: 30px;
+  }
+  .hp-blog .news-wrapper{
+    margin-bottom: 40px;
+  }
+  #signature a{
+    color: white;
+  }
+  
+  .products-block {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-gap: 40px 40px;
+      margin: 0;
+      position: relative;
+  }
+  .product{
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    padding: 24px;
+  }
+  .p-in{
+    padding-top: 25px;
+  }
+  .p .ratings-wrapper{
+      display: none;
+  }
+  .p .availability{
+    display: none;
+  }
+  .p-in-in .name{
+    text-align:center;
+  }
+  .p .prices{
+     text-align:center;
+  }
+  .p .price-final {
+      display: flex;
+      align-items: center;
+      font-size: 17px;
+      text-align: center;
+      justify-content: center;
+  }
+  .p .p-tools{
+    display: flex;
+  }
+  .p .image{
+    background: white;
+    border-radius: 10px;
+  }
+  .p .p-tools form {
+      display: flex;
+      width: auto;
+  }
+  .p .p-tools .btn{
+    border: 0;
+    background: #E72085;
+    color: white;
+  }
+  .homepage-group-title{
+    font-size: 32px;
+  }
+  .p .p-tools .btn::before {
+      content: "";
+      height: 18px;
+      width: 18px;
+      display: flex;
+     background-image: url(../icons/shopping-bag-white.svg);
+      background-size: 100%;
+      margin-right: 10px;
+  }
+  .footer-bottom {
+    
+      border-top: 1px solid rgba(255,255,255,0.1);
+  }
