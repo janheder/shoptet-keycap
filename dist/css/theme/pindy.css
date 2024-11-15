@@ -197,7 +197,7 @@ h1.category-title,
     border-radius: 20px;
     background: rgb(231, 32, 133);
     background: linear-gradient(45deg, rgba(231, 32, 133, 1) 0%, rgba(67, 71, 158, 1) 100%);
-    padding: 80px 0;
+    padding: 80px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -528,7 +528,7 @@ h1.category-title,
     }
 }
 
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 767px) {
 
     .custom-footer__banner2 {
         margin-bottom: 30px;
@@ -574,7 +574,12 @@ h1.category-title,
         border-radius: 0;
     }
     .cart-count{
-        margin: 0
+        margin: 0;
         border-radius: 0;
     }
-}
+    .news-wrapper {
+        overflow: none;
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+  }
