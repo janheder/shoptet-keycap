@@ -561,3 +561,20 @@ h1.category-title,
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
   }
+
+  .in-index .products.products-block>.product:nth-child(n+5){
+    display: flex;
+  }
+
+  @media screen and (max-width: 991px) {
+    body.--floatSearchActive .nav-search {
+        display: none;
+    }
+    .nav-user{
+        border-radius: 0;
+    }
+    .cart-count{
+        margin: 0
+        border-radius: 0;
+    }
+}
