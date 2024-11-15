@@ -567,6 +567,10 @@ h1.category-title,
   }
 
   @media screen and (max-width: 991px) {
+    .hero {
+        padding: 200px 0 80px 0;
+        text-align: left;
+    }
     body.--floatSearchActive .nav-search {
         display: none;
     }
@@ -582,4 +586,24 @@ h1.category-title,
         display: grid;
         grid-template-columns: 1fr; 
     }
+    .next-to-carousel-banners::before {
+        background-size: cover;
+    }
   }
+
+
+  @media screen and (max-width: 991px) {
+    .in-index .products.products-block .product {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .in-index .products.products-block .product {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .in-index .products.products-block .product {
+        width: 100%;
+    }
+}
