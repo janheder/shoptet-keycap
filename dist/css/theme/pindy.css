@@ -632,7 +632,7 @@ h1.category-title,
     }
         .site-name {
         
-          margin-left: 62px;
+          margin-left: 52px;
          
       }
     .site-name a{
@@ -664,6 +664,12 @@ h1.category-title,
     .menu-level-1>li>a{
       color: black;
     }
+    .ordering-process #header {
+        height: 80px;
+    }
+    .ordering-process .header-top{
+        height: 80px;
+    }
   }
   
   @media screen and (max-width: 575px) {
@@ -678,4 +684,9 @@ h1.category-title,
       font-size: 26px;
     }
   }
+  .footerContacts__single:hover{
+    color: white;
+    background: rgba(255,255,255,0.1);
+  }
+  
   
