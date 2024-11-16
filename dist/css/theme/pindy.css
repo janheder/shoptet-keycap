@@ -607,3 +607,75 @@ h1.category-title,
         width: 100%;
     }
 }
+
+.gridSwitch{
+    display: none;
+  }
+  .type-category #filters-wrapper{
+    display: none;
+  }
+  @media screen and (max-width: 991px) {
+      .cart-count {
+          margin: 0;
+          border-radius: 0;
+        padding: 0;
+        width: 62px;
+        
+     
+      }
+    .products-block{
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .nav-user{
+      border: 0;
+    }
+        .site-name {
+        
+          margin-left: 62px;
+         
+      }
+    .site-name a{
+      height: 56px;
+    }
+    .in-index .products.products-block{
+      gap: 20px;
+    }
+        .news-item .image a {
+          height: 420px;
+      }
+    .footereLogos{
+      flex-wrap: wrap;
+      align-items:center;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+    .hero p{
+      font-size: 18px;
+    }
+    .nav-menu-toggle{
+      background: transparent;
+      
+    }
+    .menu-level-1{
+      justify-content: flex-start;
+    }
+    .menu-level-1>li>a{
+      color: black;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+   .in-index .products.products-block{
+      gap: 10px;
+    }
+  
+    .product {
+      box-shadow: none;
+  }
+    .homepage-group-title, .hp-blog-top h2{
+      font-size: 26px;
+    }
+  }
+  
