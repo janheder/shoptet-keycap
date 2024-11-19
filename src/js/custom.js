@@ -297,7 +297,7 @@ if ($(".type-index, .type-category").length){
         var name = $(this).closest(".p").find(".name").html();
         var stock = $(this).closest(".p").find(".availability").html();
 
-        var amount = parseFloat($(this).closest(".p").find(".amount").val());
+        var amount = parseFloat($(this).closest(".p").find("input[name='amount']").val());
 
         var priceSingle = $(this).closest(".p").find(".price-final strong").html();
         var priceTotal = parseFloat(priceSingle.replace(/ /g, ''))*amount;
