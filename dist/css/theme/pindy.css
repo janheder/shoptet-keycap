@@ -759,3 +759,69 @@ h1.category-title,
     }
 
 }
+
+@media screen and (max-width: 768px) {
+    .custom-footer h4 {
+        border-top: 1px solid rgba(255,255,255,0.1);
+      color: white;
+  }
+          .custom-footer h4::after {
+        filter: brightness(5) invert(5);
+    }
+  .custom-footer>.extended, .custom-footer>div:nth-child(2) {
+    text-align: center;
+    
+}
+}
+
+.introSection{
+  margin-bottom: 60px;
+}
+
+.contact-grid {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 30px;
+}
+
+.contact-section .kontaktyTop__col {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-section img {
+    height: 30px;
+}
+
+.contact-section h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-section p {
+    margin: 0;
+}
+
+.kontaktyTop__imgWrap {
+    border-radius: 50%;
+    background: #f7f5ff;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#hideNext,
+#hideNext+p,
+#hideNext+p+p {
+    display: none;
+}
+
+#formContact {
+    background: #f7f5ff;
+    padding: 60px 0;
+}
