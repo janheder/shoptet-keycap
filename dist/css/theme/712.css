@@ -215,8 +215,14 @@ h1.category-title,
 
 body.--searchActive .search {
     display: flex;
+    width: 100%;
 }
-
+@media screen and (min-width: 992px) {
+    .search-form {
+        height: auto;
+        width: 100%;
+    }
+}
 .cart-count i {
     border-color: #313231;
 }
@@ -251,3 +257,113 @@ body.--searchActive .search {
     background: #313231;
     color: white;
 }
+.cart-count .cart-price{
+    font-weight: 500;
+    text-transform: initial;
+  }
+  .next-to-carousel-banners{
+    padding: 0;
+  }
+  .next-to-carousel-banners .banner-wrapper{
+    padding: 0;
+    width: 100%;
+  }
+  .points{
+    position:relative;
+    height: 150px;
+      display: flex;
+    align-items: center;
+  }
+  .points::before {
+      content: "";
+      top: 0px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      height: 100%;
+      background: #FAFAFA;
+      display: flex;
+      position: absolute;
+      z-index: -1;
+  }
+  .points-content{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  
+  .homepage-box.before-carousel .points .container,
+  .homepage-box.before-carousel .homeCategories .container{
+    max-width: 1340px;
+  }
+  .homeCategories{
+    padding: 60px 0 0 0;
+    background: white;
+  }
+  .homeCategories-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .next-to-carousel-banners .banner-wrapper a.homeCategories-single{
+    height: 280px;  
+    background-color: #313231;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+      font-family: "Playfair display";
+    color: white;
+    border-radius: 0;
+    background-size:cover;
+    
+  }
+  .next-to-carousel-banners .banner-wrapper a.homeCategories-single.--saty{
+    background-image: url("https://www.712.cz/user/documents/upload/cat-saty.png");
+  }
+  .next-to-carousel-banners .banner-wrapper a.homeCategories-single.--overaly{
+    background-image: url("https://www.712.cz/user/documents/upload/cat-overaly.png");
+  }
+  .next-to-carousel-banners .banner-wrapper a.homeCategories-single.--komplety{
+    background-image: url("https://www.712.cz/user/documents/upload/cat-komplety.png");
+  }
+  .hp-about{
+    position:relative;
+  }
+  .hp-about::before {
+      content: "";
+      top: 0px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      height: 100%;
+      background: #FAFAFA;
+      display: flex;
+      position: absolute;
+      z-index: -1;
+  }
+  .footer-bottom{
+    border: 0;
+    position: relative;
+  }
+  .footer-bottom::before {
+      content: "";
+      top: 0px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      height: 100%;
+      background: #2B2B2B;
+      display: flex;
+      position: absolute;
+      z-index: 1;
+  }
+  .footer-bottom * {
+    z-index: 2;
+  }
