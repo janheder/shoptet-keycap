@@ -32,6 +32,11 @@ h1.category-title,
 .btn {
     background: #313231;
     border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.btn:hover, .btn:focus, .btn:active {
+    background: #474847;
 }
 .mousetrap{
     display: none;
@@ -185,3 +190,18 @@ h1.category-title,
   .cart-count:hover, .cart-count:focus, .cart-count:active {
       background: #474847;
   }
+
+  @media screen and (min-width: 992px) {
+    .user-action-cart {
+        top: 20px;
+    }
+
+    .cart-window-visible .menu-helper,
+    .menu-helper {
+        top: 141px;
+    }
+}
+
+.user-action .container{
+  max-width: 1920px;
+}
