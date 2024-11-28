@@ -582,3 +582,34 @@ body.--searchActive .search {
   border: 1px solid #e5e5e5;
   border-radius: 0;
 }
+
+.slider-nav::before {
+  background: #fff;
+  border-radius: 0%;
+  height: 52px;
+ width: 52px;
+  padding: 0;
+  width: 100%;
+  border-radius: 0px;
+}
+.category-header label{
+border: 0;
+text-transform: uppercase;
+font-weight: 400;
+}
+.category-header>form{
+background: #fafafa;
+border: 0;
+padding: 4px;
+}
+.category-header input:checked+label::after{
+content: none;
+}
+.subcategories li a .text{
+  text-transform: uppercase;
+font-weight: 500;
+font-size: 15px;
+}
+.pagination strong{
+background: #313231;
+}
