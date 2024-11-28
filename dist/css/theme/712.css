@@ -95,9 +95,11 @@ h1.category-title,
 .menu-level-1>li>a b {
     font-weight: 500;
 }
-
-.carousel .item {
+@media screen and (min-width: 992px) {
+  .carousel .item {
     height: 680px;
+}
+
 }
 
 .carousel {
@@ -116,6 +118,7 @@ h1.category-title,
 .nav-user {
     font-size: 0;
     width: 50px;
+    background-position: center;
     padding: 0;
 }
 
@@ -249,7 +252,7 @@ body.--searchActive .search {
 
     .cart-window-visible .menu-helper,
     .menu-helper {
-        top: 141px;
+        top: 146px;
     }
 }
 
@@ -388,6 +391,7 @@ body.--searchActive .search {
       padding: 60px 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       margin-bottom: 60px;
+      gap: 20px;
   }
   .custom-footer>.extended, .custom-footer>div:nth-child(2) {
       grid-column: 1 / 1;
@@ -413,7 +417,7 @@ body.--searchActive .search {
 
   @media screen and (min-width: 992px) {
     .menu-level-2{
-        top: 77px;
+        top: auto;
       }
 }
 
@@ -493,7 +497,7 @@ body.--searchActive .search {
       margin-left: 60px;
     }
   .nav-user {
-          background-image: url(../icons/user-white.svg);
+          background-image: url(../../icons/user-white.svg);
       }
   
       .site-name  a{
@@ -612,4 +616,58 @@ font-size: 15px;
 }
 .pagination strong{
 background: #313231;
+}
+
+@media screen and (max-width: 575px) {
+.next-to-carousel-banners .banner-wrapper a.homeCategories-single{
+  height: 180px;
+}
+}
+
+@media screen and (max-width: 991px) {
+  .hp-about{
+    flex-direction: column;
+
+  }
+  .hp-about-content{
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .custom-footer__banner1{
+    display: none;
+  }
+  .custom-footer>.extended, .custom-footer>div:nth-child(3) {
+    grid-column: 1 / 5;
+}
+  .custom-footer>.extended, .custom-footer>div:nth-child(4) {
+    grid-column: 1 / 5;
+}
+  .footerContactsMail {
+    justify-content: center;
+    display: flex;
+padding: 30px 0;
+}
+.footer-links {
+    padding-bottom: 0px;
+}
+  .custom-footer h4 {
+        margin: 0px;
+        border-top:1px solid rgba(255, 255, 255, 0.1);
+        padding: 25px 0;
+        line-height: 1;
+        position: relative;
+    }
+  .footereLogos{
+    flex-direction:column;
+    margin: 0;
+    padding: 30px 0;
+    border: 0;
+  }
+  .custom-footer h4::after{
+    filter: invert(1) brightness(5);
+  }
+  .footerContacts{
+    justify-content: center;
+  }
 }
