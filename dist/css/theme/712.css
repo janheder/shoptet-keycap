@@ -320,7 +320,7 @@ body.--searchActive .search {
     color: white;
     border-radius: 0;
     background-size:cover;
-    
+    position: relative;
   }
   .next-to-carousel-banners .banner-wrapper a.homeCategories-single.--saty{
     background-image: url("https://www.712.cz/user/documents/upload/cat-saty.png");
