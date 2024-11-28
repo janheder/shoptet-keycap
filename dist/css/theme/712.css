@@ -163,6 +163,7 @@ h1.category-title,
 
 .hp-about-content {
     max-width: 420px;
+    padding-bottom: 60px;
 }
 
 
@@ -178,7 +179,10 @@ h1.category-title,
     color: #8A8A8A;
     font-size: 18px;
 }
-
+.hp-about-img{
+  height: 100%;
+  align-self: self-end;
+}
 
 .cart-empty .cart-row {
     display: none;
@@ -536,8 +540,7 @@ body.--searchActive .search {
   }
   @media screen and (max-width: 991px) {
       body.--floatSearchActive .search {
-          display: none;
-  ;
+          display: none;;
           transform: translateY(0);
       }
     body.--searchActive .search {
@@ -549,6 +552,9 @@ body.--searchActive .search {
   }
     #speechToggle{
       display: none;
+    }
+    .homeCategories-content{
+      grid-template-columns: 1fr;
     }
   }
   .ordering-process .overall-wrapper {
