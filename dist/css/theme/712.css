@@ -476,6 +476,8 @@ body.--searchActive .search {
 
 .newsletterSection__formGroup {
   background: white;
+  max-width: 100%;
+  width: 100%;
 }
 
 .newsletterSection__formGroup .form-control {
@@ -724,6 +726,11 @@ body.--searchActive .search {
     grid-column: 1 / 5;
   }
 
+  .custom-footer>.extended,
+  .custom-footer>div:nth-child(5) {
+    grid-column: 1 / 5;
+  }
+
   .footerContactsMail {
     justify-content: center;
     display: flex;
@@ -782,5 +789,107 @@ body.--searchActive .search {
 
   body.ordering-process .header-top {
     justify-content: center;
+  }
+}
+
+.price-final {
+  white-space: nowrap;
+}
+
+.add-to-cart .amount {
+  border-radius: 0;
+}
+
+.menu-level-2>li>div {
+  justify-content: flex-start;
+}
+
+.hp-about {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.custom-footer__instagram {
+  position: relative;
+  z-index: 1;
+  padding: 80px 0;
+
+}
+
+.custom-footer__instagram::before {
+  content: "";
+  top: 0px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background: #FAFAFA;
+  display: flex;
+  position: absolute;
+  z-index: -1;
+}
+
+.custom-footer__instagram h4 {
+  pointer-events: none;
+}
+
+.custom-footer__instagram h4::after {
+  content: "Z našeho Instagramu";
+  font-size: 30px;
+  font-family: "Playfair Display";
+  text-transform: initial;
+  color: #24272E;
+}
+
+.custom-footer__instagram h4 span {
+  display: none;
+}
+
+.custom-footer__instagram .instagram-widget {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.custom-footer__instagram .instagram-widget .instagram-follow-btn {
+  display: none;
+}
+
+.custom-footer__instagram .instagram-widget a {
+  aspect-ratio: 1/1;
+  display: flex;
+}
+
+.custom-footer__instagram .instagram-widget a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .custom-footer h4.--active~* {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+
+
+  .cart-count .cart-price {
+    display: none;
+  }
+
+  .cart-count {
+    padding: 0 32px 0 25px;
+
+
+  }
+
+  .cart-count.full {
+    padding: 0 20px 0 48px;
   }
 }
