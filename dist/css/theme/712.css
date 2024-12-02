@@ -476,8 +476,6 @@ body.--searchActive .search {
 
 .newsletterSection__formGroup {
   background: white;
-  max-width: 100%;
-  width: 100%;
 }
 
 .newsletterSection__formGroup .form-control {
@@ -897,22 +895,42 @@ body.--searchActive .search {
 
 @media screen and (max-width: 991px) {
   .custom-footer__instagram .instagram-widget {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
   }
-    .custom-footer__instagram{
-      padding: 20px 0 40px 0;
-    }
+
+  .custom-footer__instagram {
+    padding: 20px 0 40px 0;
   }
-  
-  @media screen and (max-width: 768px){
-    .custom-footer__instagram h4::after{
-      position: relative;
-      top: 0;
-      right: auto;
-      width: 100%;
-      height: 100%;
-      background: transparent;
-      font-size: 22px;
-    }
+}
+
+@media screen and (max-width: 768px) {
+  .custom-footer__instagram h4::after {
+    position: relative;
+    top: 0;
+    right: auto;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    font-size: 22px;
   }
+}
+
+@media screen and (max-width: 991px) {
+  .custom-footer>div ul {
+    margin-bottom: 20px;
+  }
+
+  .newsletterSection__titleWrap {
+    padding-bottom: 0px;
+  }
+}
+
+.footerContacts__single {
+  display: flex;
+  gap: 10px;
+}
+
+.footerContacts__single.--large img {
+  width: 20px;
+}
