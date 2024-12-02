@@ -452,12 +452,12 @@ body.--searchActive .search {
 
 
 .custom-footer>.extended,
-.custom-footer>div:nth-child(3) {
+.custom-footer>div:nth-child(4) {
   grid-column: 2 / 3;
 }
 
 .custom-footer>.extended,
-.custom-footer>div:nth-child(4) {
+.custom-footer>div:nth-child(5) {
   grid-column: 3 / 5;
 }
 
