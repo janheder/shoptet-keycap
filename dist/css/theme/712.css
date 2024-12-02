@@ -99,17 +99,15 @@ h1.category-title,
   font-weight: 500;
 }
 
-@media screen and (min-width: 992px) {
-  .carousel .item {
-    height: 680px;
-  }
 
-}
 
 .carousel {
   margin: 0;
 }
-
+.carousel .item {
+  text-align: center;
+  aspect-ratio: 24 / 9;
+}
 #footer {
   background: #313231;
   color: white;
