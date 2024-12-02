@@ -51,7 +51,9 @@ h1.category-title,
 .homepage-box.before-carousel .container {
   max-width: 1920px;
 }
-
+.top-navigation-contacts strong{
+  display: none;
+}
 .header-top {
   height: 110px;
 }
