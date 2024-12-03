@@ -478,6 +478,7 @@ body.--searchActive .search {
 
 .newsletterSection__formGroup {
   background: white;
+  padding: 2px;
 }
 
 .newsletterSection__formGroup .form-control {
@@ -486,7 +487,6 @@ body.--searchActive .search {
 
 .newsletterSection__formGroup .newsletterSection__btn {
   background: #7E7E7E;
-  border: 2px solid white;
 }
 
 .newsletterSection__title {
@@ -589,6 +589,9 @@ body.--searchActive .search {
 
   .navigation-buttons {
     flex-grow: 0;
+  }
+  .newsletterSection__formGroup .form-control{
+    height: 48px;
   }
 }
 
