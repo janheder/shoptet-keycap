@@ -936,3 +936,23 @@ body.--searchActive .search {
 .footerContacts__single.--large img {
   width: 20px;
 }
+
+.cart-count .cart-price{
+  letter-spacing: 0; 
+ }
+ @media screen and (max-width:767px) {
+   .points{
+     height: auto;
+   }
+ }
+ .points-content{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ }
+ .hp-about{
+   padding-top: 30px;
+ }
+ .hp-about-content{
+   padding-bottom: 0px;
+ }
+ 
