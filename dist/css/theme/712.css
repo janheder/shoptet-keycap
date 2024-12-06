@@ -986,3 +986,29 @@ body.--searchActive .search {
   position: absolute;
   z-index: -1;
 }
+
+.points-single{
+  display: flex;
+  gap: 15px;
+  align-items:center;
+}
+.points-single__icon img{
+  height: 66px;
+  width: 66px;
+}
+@media screen and (max-width: 767px) {
+.points-single{
+  flex-direction: column;
+}
+}
+.next-to-carousel-banners {
+    margin: 0;
+}
+.carousel {
+    padding: 0;
+}
+@media screen and (max-width: 991px) {
+  .homeCategories .container{
+    padding: 0;
+  }
+}
