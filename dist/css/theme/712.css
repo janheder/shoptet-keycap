@@ -1000,6 +1000,11 @@ body.--searchActive .search {
 @media screen and (max-width: 767px) {
 .points-single{
   flex-direction: column;
+  gap: 10px;
+}
+.points-single__icon img{
+  height: 58px;
+  width: 58px;
 }
 }
 .next-to-carousel-banners {
@@ -1012,4 +1017,7 @@ body.--searchActive .search {
   .homeCategories .container{
     padding: 0;
   }
+  .carousel {
+    padding-top: 10px;
+}
 }
