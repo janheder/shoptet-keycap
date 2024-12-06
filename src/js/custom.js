@@ -789,24 +789,27 @@ let necessaryVariantData = shoptet.variantsSplit.necessaryVariantData;
 
 // Function to update the bigImageURL and slide to the corresponding image in the slider
 function updateImageURL() {
+    // Initialize an array to store the parts of parameterId
     let parameterIdParts = [];
 
-    // Collect parameter ID parts from select elements
-    document.querySelectorAll('select.hidden-split-parameter').forEach(function(select) {
+    // Handle <select> elements with class .hidden-split-parameter
+    let selectsWithClass = document.querySelectorAll('select.hidden-split-parameter');
+    selectsWithClass.forEach(function(select) {
         let parameterId = select.getAttribute("data-parameter-id");
-        let selectedOptionValue = select.value || "";
+        let selectedOptionValue = select.value;
         parameterIdParts.push(parameterId + "-" + selectedOptionValue);
     });
 
-    // Collect parameter ID parts from div elements
-    document.querySelectorAll('div.hidden-split-parameter').forEach(function(div) {
+    // Handle <div> elements with class .hidden-split-parameter containing radio inputs
+    let divsWithClass = document.querySelectorAll('div.hidden-split-parameter');
+    divsWithClass.forEach(function(div) {
         let parameterId = div.getAttribute("data-parameter-id");
-        let checkedInput = div.querySelector('input[type="radio"]:checked');
-        let selectedOptionValue = checkedInput ? checkedInput.value : "";
+        let inputs = div.querySelectorAll('input[type="radio"]:checked');
+        let selectedOptionValue = inputs.length > 0 ? inputs[0].value : "";
         parameterIdParts.push(parameterId + "-" + selectedOptionValue);
     });
 
-    // Generate all permutations of the parameter parts
+    // Generate all permutations of parameterIdParts
     function generatePermutations(array) {
         if (array.length === 1) return [array];
         let permutations = [];
@@ -823,7 +826,7 @@ function updateImageURL() {
     let permutations = generatePermutations(parameterIdParts);
     let possibleKeys = permutations.map(permutation => permutation.join("-"));
 
-    // Find a matching key in the necessaryVariantData
+    // Find the first matching key in necessaryVariantData
     let variant = null;
     for (let possibleKey of possibleKeys) {
         if (necessaryVariantData[possibleKey]) {
@@ -833,13 +836,15 @@ function updateImageURL() {
     }
 
     if (!variant) {
-        console.error(`No matching variant found for any key: ${possibleKeys}`);
+        console.error("No matching variant found for keys:", possibleKeys);
         return;
     }
 
+    // Access the "big" image URL
     let bigImageURL = variant.variantImage.big;
     console.log(`Found big image URL: ${bigImageURL}`);
 
+    // Get all <a> elements within the slider container
     let sliderElement = document.querySelector('.slider-container');
     if (!sliderElement) {
         console.error("Slider element not found.");
@@ -850,11 +855,10 @@ function updateImageURL() {
     for (let i = 0; i < sliderLinks.length; i++) {
         if (sliderLinks[i].getAttribute('href') === bigImageURL) {
             swiffyslider.slideTo(sliderElement, i);
-            break;
+            break; // Exit the loop once the matching image is found
         }
     }
 }
-
 
 // Add event listener to each input element within the .hidden-split-parameter divs to listen for changes
 document.querySelectorAll('div.hidden-split-parameter input[type="radio"]').forEach(function(input) {
@@ -865,6 +869,7 @@ document.querySelectorAll('div.hidden-split-parameter input[type="radio"]').forE
 document.querySelectorAll('select.hidden-split-parameter').forEach(function(select) {
     select.addEventListener("change", updateImageURL);
 });
+
 
 // Call the function initially to set the initial image URL and slide to the corresponding image
 // updateImageURL();
