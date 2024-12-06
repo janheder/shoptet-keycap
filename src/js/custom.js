@@ -851,13 +851,22 @@ function updateImageURL() {
         return;
     }
 
-    let sliderLinks = sliderElement.querySelectorAll('a');
-    for (let i = 0; i < sliderLinks.length; i++) {
-        if (sliderLinks[i].getAttribute('href') === bigImageURL) {
-            swiffyslider.slideTo(sliderElement, i);
-            break; // Exit the loop once the matching image is found
+ 
+
+    let sliderLinks = document.querySelectorAll('.slider-container a');
+      // Loop through each <a> element
+      for (let i = 0; i < sliderLinks.length; i++) {
+            // Get the href attribute of the current <a> element
+            let href = sliderLinks[i].getAttribute('href');
+
+            // Check if the href matches the bigImageURL
+            if (href === bigImageURL) {
+                // If a match is found, slide to the corresponding image index
+                swiffyslider.slideTo(sliderElement, i);
+                break; // Exit the loop since we found the matching image
+            }
         }
-    }
+
 }
 
 // Add event listener to each input element within the .hidden-split-parameter divs to listen for changes
