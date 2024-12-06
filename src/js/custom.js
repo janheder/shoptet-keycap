@@ -844,12 +844,7 @@ function updateImageURL() {
     let bigImageURL = variant.variantImage.big;
     console.log(`Found big image URL: ${bigImageURL}`);
 
-    // Get all <a> elements within the slider container
-    let sliderElement = document.querySelector('.slider-container');
-    if (!sliderElement) {
-        console.error("Slider element not found.");
-        return;
-    }
+
 
  
 
