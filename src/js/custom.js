@@ -789,61 +789,72 @@ let necessaryVariantData = shoptet.variantsSplit.necessaryVariantData;
 
 // Function to update the bigImageURL and slide to the corresponding image in the slider
 function updateImageURL() {
-    // Initialize an array to store the parts of parameterId
     let parameterIdParts = [];
 
-    // Handle <select> elements with class .hidden-split-parameter
-    let selectsWithClass = document.querySelectorAll('select.hidden-split-parameter');
-    selectsWithClass.forEach(function(select) {
-        // Get the parameter ID from the select element
+    // Collect parameter ID parts from select elements
+    document.querySelectorAll('select.hidden-split-parameter').forEach(function(select) {
         let parameterId = select.getAttribute("data-parameter-id");
-        // Get the selected option value
-        let selectedOptionValue = select.value;
-        // Combine parameterId and selectedOptionValue and add to parameterIdParts array
+        let selectedOptionValue = select.value || "";
         parameterIdParts.push(parameterId + "-" + selectedOptionValue);
     });
 
-    // Handle <div> elements with class .hidden-split-parameter containing radio inputs
-    let divsWithClass = document.querySelectorAll('div.hidden-split-parameter');
-    divsWithClass.forEach(function(div) {
-        // Get the parameter ID from the div element
+    // Collect parameter ID parts from div elements
+    document.querySelectorAll('div.hidden-split-parameter').forEach(function(div) {
         let parameterId = div.getAttribute("data-parameter-id");
-        // Find all input elements within the div
-        let inputs = div.querySelectorAll('input[type="radio"]:checked');
-        // Get the selected option value from the checked input element
-        let selectedOptionValue = inputs.length > 0 ? inputs[0].value : "";
-        // Combine parameterId and selectedOptionValue and add to parameterIdParts array
+        let checkedInput = div.querySelector('input[type="radio"]:checked');
+        let selectedOptionValue = checkedInput ? checkedInput.value : "";
         parameterIdParts.push(parameterId + "-" + selectedOptionValue);
     });
 
-    // Construct the key by joining the parameterIdParts array with "-"
-    let key = parameterIdParts.join("-");
-    console.log(key);
-    // Accessing the variant object using the constructed key
-    let variant = necessaryVariantData[key];
-    console.log(key);
-    // Accessing the "big" image URL
-    let bigImageURL = variant.variantImage.big;
-    console.log(key);
-    // Get all <a> elements within the slider container
-    let sliderLinks = document.querySelectorAll('.slider-container a');
+    // Generate all permutations of the parameter parts
+    function generatePermutations(array) {
+        if (array.length === 1) return [array];
+        let permutations = [];
+        for (let i = 0; i < array.length; i++) {
+            let rest = [...array.slice(0, i), ...array.slice(i + 1)];
+            let restPermutations = generatePermutations(rest);
+            for (let permutation of restPermutations) {
+                permutations.push([array[i], ...permutation]);
+            }
+        }
+        return permutations;
+    }
 
-    // Loop through each <a> element
-    for (let i = 0; i < sliderLinks.length; i++) {
-        // Get the href attribute of the current <a> element
-        let href = sliderLinks[i].getAttribute('href');
+    let permutations = generatePermutations(parameterIdParts);
+    let possibleKeys = permutations.map(permutation => permutation.join("-"));
 
-        // Check if the href matches the bigImageURL
-        if (href === bigImageURL) {
-            // If a match is found, slide to the corresponding image index
-            swiffyslider.slideTo(sliderElement, i);
-            break; // Exit the loop since we found the matching image
+    // Find a matching key in the necessaryVariantData
+    let variant = null;
+    for (let possibleKey of possibleKeys) {
+        if (necessaryVariantData[possibleKey]) {
+            variant = necessaryVariantData[possibleKey];
+            break;
         }
     }
 
-    // Now you can use the bigImageURL variable which contains the URL to the big image of the selected variant
-    console.log(bigImageURL);
+    if (!variant) {
+        console.error(`No matching variant found for any key: ${possibleKeys}`);
+        return;
+    }
+
+    let bigImageURL = variant.variantImage.big;
+    console.log(`Found big image URL: ${bigImageURL}`);
+
+    let sliderElement = document.querySelector('.slider-container');
+    if (!sliderElement) {
+        console.error("Slider element not found.");
+        return;
+    }
+
+    let sliderLinks = sliderElement.querySelectorAll('a');
+    for (let i = 0; i < sliderLinks.length; i++) {
+        if (sliderLinks[i].getAttribute('href') === bigImageURL) {
+            swiffyslider.slideTo(sliderElement, i);
+            break;
+        }
+    }
 }
+
 
 // Add event listener to each input element within the .hidden-split-parameter divs to listen for changes
 document.querySelectorAll('div.hidden-split-parameter input[type="radio"]').forEach(function(input) {
