@@ -818,7 +818,7 @@ function updateImageURL() {
 
     // Construct the key by joining the parameterIdParts array with "-"
     let key = parameterIdParts.join("-");
-
+    console.log(key);
     // Accessing the variant object using the constructed key
     let variant = necessaryVariantData[key];
 
