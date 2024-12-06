@@ -956,6 +956,7 @@ body.--searchActive .search {
 @media screen and (max-width:767px) {
   .points {
     height: auto;
+    padding: 25px 0;
   }
 
   .points-content {
