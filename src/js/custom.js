@@ -821,10 +821,10 @@ function updateImageURL() {
     console.log(key);
     // Accessing the variant object using the constructed key
     let variant = necessaryVariantData[key];
-
+    console.log(key);
     // Accessing the "big" image URL
     let bigImageURL = variant.variantImage.big;
-
+    console.log(key);
     // Get all <a> elements within the slider container
     let sliderLinks = document.querySelectorAll('.slider-container a');
 
