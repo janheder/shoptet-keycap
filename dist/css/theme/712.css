@@ -797,6 +797,7 @@ body.--searchActive .search {
 
   body.ordering-process .header-top::before {
     height: 60px;
+    position: relative;
   }
 
   body.ordering-process .header-top {
@@ -1082,26 +1083,31 @@ body.--searchActive .search {
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
+
 @media screen and (max-width: 991px) {
   #navigation {
     left: -1px;
   }
 }
+
 @media screen and (max-width: 575px) {
-  .homeCategories{
+  .homeCategories {
     padding-top: 30px;
   }
-  .hp-about-content h2{
+
+  .hp-about-content h2 {
     font-size: 24px;
   }
 }
 
-.menu-level-2{
-  border: 0;
-  padding: 60px 0;
-}
-.menu-level-2::before{
-  content: "";
+@media screen and (min-width: 992px) {
+  .menu-level-2 {
+    border: 0;
+    padding: 60px 0;
+  }
+
+  .menu-level-2::before {
+    content: "";
     top: 0px;
     bottom: 0;
     left: 50%;
@@ -1112,5 +1118,33 @@ body.--searchActive .search {
     display: flex;
     position: absolute;
     z-index: -1;
-  border-top: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+  }
+
+  .user-action-cart::after {
+    content: "";
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    top: -22px;
+
+  }
+}
+.messages .msg.msg-success{
+  background: #50ac58;
+}
+.content-inner article p a{
+text-decoration: underline;
+}
+.order-summary .checkout-box .btn-block{
+  letter-spacing: 0px;
+}
+.order-summary .checkout-box .contact-box li .instagram{
+  display: none;
+}
+@media screen and (max-width: 575px) {
+  #checkoutContent .co-contact-information h4+.form-group {
+      display: none;
+  }
 }
