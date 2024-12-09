@@ -1095,3 +1095,22 @@ body.--searchActive .search {
     font-size: 24px;
   }
 }
+
+.menu-level-2{
+  border: 0;
+  padding: 60px 0;
+}
+.menu-level-2::before{
+  content: "";
+    top: 0px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+  border-top: 1px solid #f0f0f0;
+}
