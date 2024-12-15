@@ -138,7 +138,38 @@ h1.category-title,
   #navigation {
     height: 56px;
   }
+  .nav-user{
+    border: 1px solid #eee;
+  }
+    .cart-count{
+      background: transparent;
+    }
+    .cart-count::before{
+      filter: invert(1);
+      left: 15px;
+    }
   
+    .cart-count .cart-price {
+      display: none;
+    }
+  
+    .cart-count {
+      padding: 0 25px 0 25px;
+    border: 1px solid #eee;
+  
+    }
+  
+    .cart-count.full {
+      padding: 0 20px 0 48px;
+      background: #50AC58;
+    }
+      .cart-count.full::before{
+      filter: none;
+      left: 18px;
+    }
+    .cart-count i{
+      border-color: #50AC58;
+    }
 }
 
 .carousel .item {
