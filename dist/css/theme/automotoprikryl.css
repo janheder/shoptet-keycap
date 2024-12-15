@@ -23,6 +23,7 @@ h1.category-title,
   font-family: 'Mohave', sans-serif;
   font-weight: 500;
   color: #0C1116;
+  text-transform: uppercase;
 }
 
 ::selection {
@@ -49,9 +50,7 @@ h1.category-title,
   background: #E94400;
   color: #fff;
 }
-.top-navigation-contacts strong {
-  display: none;
-}
+
 
 .header-top {
   height: 110px;
@@ -59,6 +58,7 @@ h1.category-title,
 
 .in-index #header {
   border: 0;
+  border-bottom: 1px solid #EEEEEE;
 }
 
 .top-navigation-bar {
@@ -69,7 +69,9 @@ h1.category-title,
 .top-navigation-menu li a {
   color: white;
 }
-
+.top-navigation-contacts .project-phone::before, .top-navigation-contacts .project-email::before{
+  filter: invert(1) brightness(5);
+}
 .top-navigation-contacts .project-phone,
 .top-navigation-contacts .project-email {
   color: white;
@@ -84,7 +86,7 @@ h1.category-title,
 }
 
 #navigation {
-  height: 100%;
+  height: 56px;
 }
 
 #navigation .navigation-in .menu-level-1 {
@@ -109,6 +111,23 @@ h1.category-title,
 
 .carousel .item {
   text-align: center;
-  aspect-ratio: 24 / 9;
+  aspect-ratio: 17 / 9;
   height: auto;
+}
+
+
+.banners-row{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 20px;
+}
+.banners-row .next-to-carousel-banners{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.next-to-carousel-banners .banner-wrapper{
+  width: 100%;
+  padding: 0;
+  aspect-ratio: 17 / 9;
 }
