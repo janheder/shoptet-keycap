@@ -128,3 +128,56 @@ h1.category-title,
       top: 194px;
   }
 }
+.carousel .item {
+  text-align: center;
+  aspect-ratio: 17 / 9;
+  height: auto;
+}
+
+.before-carousel .banners-row{
+  margin-top: 20px;
+}
+.banners-row{
+  display: flex;
+      flex-wrap: nowrap;
+    aspect-ratio: 26 / 9;
+  margin-top: 20px;
+  gap: 10px;
+}
+.banners-row .col-sm-8{
+      aspect-ratio: 17 / 9;
+  width: auto;
+}
+.banners-row .col-sm-4{
+    width: auto;
+  aspect-ratio: 44/45
+}
+.banners-row .next-to-carousel-banners{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+  height: 100%;
+}
+.next-to-carousel-banners .banner-wrapper{
+  width: 100%;
+  padding: 0;
+  aspect-ratio: 2 /1;
+}
+
+.next-to-carousel-banners .banner-wrapper {
+  overflow: hidden;
+  position:relative;
+}
+.next-to-carousel-banners .banner-wrapper a{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width: 991px) {
+    .carousel {
+        padding: 0;
+        margin: 0;
+    }
+}
