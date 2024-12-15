@@ -29,7 +29,7 @@ h1.category-title,
 }
 
 .btn {
-  background: #313231;
+  background: #50AC58;
   border-radius: 0;
   text-transform: uppercase;
   font-weight: 500;
@@ -39,7 +39,7 @@ h1.category-title,
 .btn:hover,
 .btn:focus,
 .btn:active {
-  background: #474847;
+  background: #46A14E;
 }
 
 .mousetrap {
@@ -60,7 +60,7 @@ h1.category-title,
 }
 
 .top-navigation-bar {
-  background: #313231;
+  background: #0B3159;
 }
 
 .top-navigation-contacts strong,
