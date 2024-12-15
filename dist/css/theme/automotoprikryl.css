@@ -76,10 +76,12 @@ h1.category-title,
 }
 
 .site-name a {
-  height: 72px;
+  height: 58px;
 }
 
-
+.gridSwitch{
+  display: none;
+}
 
 #navigation {
   height: 100%;
