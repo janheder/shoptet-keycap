@@ -796,6 +796,7 @@ if ($("#filters-wrapper").length){
         $("#products").addClass("--inline");
     });
 }
+    
 
 // =============================================================================
 // PRODUCT GRID carousel variants

@@ -46,7 +46,7 @@ h1.category-title,
   display: none;
 }
 
-.site-msg.information{
+.site-msg.information {
   background: #E94400;
   color: #fff;
 }
@@ -70,9 +70,12 @@ h1.category-title,
 .top-navigation-menu li a {
   color: white;
 }
-.top-navigation-contacts .project-phone::before, .top-navigation-contacts .project-email::before{
+
+.top-navigation-contacts .project-phone::before,
+.top-navigation-contacts .project-email::before {
   filter: invert(1) brightness(5);
 }
+
 .top-navigation-contacts .project-phone,
 .top-navigation-contacts .project-email {
   color: white;
@@ -82,12 +85,14 @@ h1.category-title,
   height: 58px;
 }
 
-.gridSwitch{
+.gridSwitch {
   display: none;
 }
+
 .product-top .p-image {
   display: none !important;
 }
+
 #navigation {
   height: 56px;
 }
@@ -105,7 +110,7 @@ h1.category-title,
   font-weight: 500;
 }
 
-.search-form input{
+.search-form input {
   background: #F7F7F8;
 }
 
@@ -113,46 +118,53 @@ h1.category-title,
   margin: 0;
 }
 
-.p .ratings-wrapper{
+.p .ratings-wrapper {
   order: 10;
 }
-.p-in-in .name{
+
+.p-in-in .name {
   order: 0;
 }
-.p .stars-wrapper{
+
+.p .stars-wrapper {
   display: none;
 }
 
 @media screen and (min-width: 992px) {
   .menu-helper {
-      top: 194px;
+    top: 194px;
   }
 }
+
 .carousel .item {
   text-align: center;
   aspect-ratio: 17 / 9;
   height: auto;
 }
 
-.before-carousel .banners-row{
+.before-carousel .banners-row {
   margin-top: 20px;
 }
-.banners-row{
+
+.banners-row {
   display: flex;
-      flex-wrap: nowrap;
-    aspect-ratio: 26 / 9;
+  flex-wrap: nowrap;
+  aspect-ratio: 26 / 9;
   margin-top: 20px;
   gap: 10px;
 }
-.banners-row .col-sm-8{
-      aspect-ratio: 17 / 9;
+
+.banners-row .col-sm-8 {
+  aspect-ratio: 17 / 9;
   width: auto;
 }
-.banners-row .col-sm-4{
-    width: auto;
+
+.banners-row .col-sm-4 {
+  width: auto;
   aspect-ratio: 44/45
 }
-.banners-row .next-to-carousel-banners{
+
+.banners-row .next-to-carousel-banners {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -160,7 +172,8 @@ h1.category-title,
   gap: 10px;
   height: 100%;
 }
-.next-to-carousel-banners .banner-wrapper{
+
+.next-to-carousel-banners .banner-wrapper {
   width: 100%;
   padding: 0;
   aspect-ratio: 2 /1;
@@ -168,16 +181,111 @@ h1.category-title,
 
 .next-to-carousel-banners .banner-wrapper {
   overflow: hidden;
-  position:relative;
+  position: relative;
 }
-.next-to-carousel-banners .banner-wrapper a{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
+
+.next-to-carousel-banners .banner-wrapper a {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
+
 @media screen and (max-width: 991px) {
-    .carousel {
-        padding: 0;
-        margin: 0;
-    }
+  .carousel {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.category-perex * {
+  font-size: 14px !important;
+}
+
+.subcategories li a .text {
+  font-size: 15px;
+}
+
+#category-filter-hover .filter-section form {
+  max-height: 270px;
+  overflow: auto;
+}
+
+.pagination-loader {
+  padding-bottom: 0;
+}
+
+.category-header>form fieldset {
+  gap: 30px;
+}
+
+.category-header label {
+  text-transform: uppercase;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  color: #6F6F6F;
+  font-weight: 500;
+}
+
+.category-header input:checked+label {
+  color: #0C1116;
+}
+
+.category-header input:checked+label::after {
+  top: auto;
+  bottom: 0;
+  height: 2px;
+  background: #E94400;
+}
+
+@media screen and (min-width: 768px) {
+  #filters {
+    position: relative;
+    transform: none;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    z-index: 1;
+  }
+
+  #filters-wrapper .filters-unveil-button-wrapper {
+    display: none;
+  }
+
+  .category-content-wrapper {
+    display: grid;
+    grid-template-columns: 280px auto;
+    grid-template-rows: 80px auto auto;
+    grid-gap: 50px;
+  }
+
+  .type-category #filters-wrapper {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1 / span 2;
+    grid-row-end: 4;
+    padding: 0;
+  }
+
+  .type-category #products.products-block {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-row: 2 / 2;
+    align-self: start;
+    margin-bottom: 150px;
+  }
+
+  .type-category .pagination-wrapper {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    order: 0;
+    margin: 0;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: end;
+  }
 }
