@@ -119,16 +119,21 @@ h1.category-title,
   height: auto;
 }
 
-
+.before-carousel .banners-row{
+  margin-top: 20px;
+}
 .banners-row{
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin-top: 20px;
+  gap: 10px;
 }
 .banners-row .next-to-carousel-banners{
   display: flex;
   flex-direction: column;
   margin: 0;
+  padding: 0;
+  gap: 10px;
 }
 .next-to-carousel-banners .banner-wrapper{
   width: 100%;
@@ -143,4 +148,10 @@ h1.category-title,
 }
 .p .stars-wrapper{
   display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .menu-helper {
+      top: 194px;
+  }
 }
