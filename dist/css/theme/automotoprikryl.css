@@ -1,0 +1,110 @@
+body {
+  font-family: "Sofia Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+a {
+  color: #313231;
+}
+
+h1,
+h2,
+h3,
+h4,
+h1.category-title,
+.homepage-group-title,
+.order-summary .order-summary-inner h4,
+.in-kosik.ordering-process .cart-inner::before,
+.extended-banner-title,
+.welcome h1,
+#formContact fieldset::before {
+  font-family: 'Mohave', sans-serif;
+  font-weight: 400;
+  color: #313231;
+}
+
+::selection {
+  background: rgba(214, 24, 24, .1);
+}
+
+.btn {
+  background: #313231;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background: #474847;
+}
+
+.mousetrap {
+  display: none;
+}
+
+
+.top-navigation-contacts strong {
+  display: none;
+}
+
+.header-top {
+  height: 110px;
+}
+
+.in-index #header {
+  border: 0;
+}
+
+.top-navigation-bar {
+  background: #313231;
+}
+
+.top-navigation-contacts strong,
+.top-navigation-menu li a {
+  color: white;
+}
+
+.top-navigation-contacts .project-phone,
+.top-navigation-contacts .project-email {
+  color: white;
+}
+
+.site-name a {
+  height: 72px;
+}
+
+
+
+#navigation {
+  height: 100%;
+}
+
+#navigation .navigation-in .menu-level-1 {
+  justify-content: center;
+}
+
+.menu-level-1>li>a {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.menu-level-1>li>a b {
+  font-weight: 500;
+}
+
+
+
+.carousel {
+  margin: 0;
+}
+
+.carousel .item {
+  text-align: center;
+  aspect-ratio: 24 / 9;
+  height: auto;
+}
