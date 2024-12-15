@@ -113,5 +113,18 @@ h1.category-title,
   margin: 0;
 }
 
+.p .ratings-wrapper{
+  order: 10;
+}
+.p-in-in .name{
+  order: 0;
+}
+.p .stars-wrapper{
+  display: none;
+}
 
+@media screen and (min-width: 992px) {
+  .menu-helper {
+      top: 194px;
+  }
 }
