@@ -2,10 +2,11 @@ body {
   font-family: "Sofia Sans", sans-serif;
   font-weight: 400;
   font-size: 15px;
+  color: #0C1116;
 }
 
 a {
-  color: #313231;
+  color: #E94400;
 }
 
 h1,
@@ -20,8 +21,8 @@ h1.category-title,
 .welcome h1,
 #formContact fieldset::before {
   font-family: 'Mohave', sans-serif;
-  font-weight: 400;
-  color: #313231;
+  font-weight: 500;
+  color: #0C1116;
 }
 
 ::selection {
@@ -30,10 +31,8 @@ h1.category-title,
 
 .btn {
   background: #50AC58;
-  border-radius: 0;
-  text-transform: uppercase;
+  border-radius: 4px;
   font-weight: 500;
-  letter-spacing: 2px;
 }
 
 .btn:hover,
@@ -46,7 +45,10 @@ h1.category-title,
   display: none;
 }
 
-
+.site-msg.information{
+  background: #E94400;
+  color: #fff;
+}
 .top-navigation-contacts strong {
   display: none;
 }
