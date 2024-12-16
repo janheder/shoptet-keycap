@@ -1273,7 +1273,9 @@ a {
     height: auto;
     position: absolute;
   }
-
+  body.--advancedModal .menu-helper {
+    top: 0;
+}
   #filters {
     z-index: 1;
   }
