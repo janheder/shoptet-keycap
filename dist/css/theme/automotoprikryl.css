@@ -337,7 +337,7 @@ h1.category-title,
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-row: 2 / 2;
     align-self: start;
-    margin-bottom: 150px;
+    margin-bottom: 160px;
   }
 
   .type-category .pagination-wrapper {
@@ -520,4 +520,13 @@ h1.category-title::before {
 
 #checkoutContent {
   border: 1px solid #eee;
+}
+.p-detail .browse-p{
+  display: none;
+}
+.pagination strong{
+  background: #46A14E;
+}
+.type-category #content{
+  padding-bottom: 20px;
 }
