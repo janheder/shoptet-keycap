@@ -174,7 +174,13 @@ h1.category-title,
     }
     
 #navigation .navigation-in .menu-level-1 {
-  justify-content: center;
+  justify-content: space-between;
+}
+.menu-level-1>li.ext>a::before{
+  content: none;
+}
+.menu-level-1>li.ext>a {
+    padding: 0 18px 0 18px;
 }
 }
 
