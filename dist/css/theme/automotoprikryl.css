@@ -356,3 +356,76 @@ h1.category-title::before{
     border: 0;
   }
 }
+.p-in-in .name span{
+  font-size: 16px;
+}
+
+.hp-blog .news-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    width: 100%;
+}
+.hp-blog .news-item:nth-child(4){
+  display: none;
+}
+.hp-blog-top{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+margin-bottom: 30px;
+}
+.hp-blog-top h2{
+  margin: 0;
+}
+.hp-blog-top .btn{
+    background: #F7F7F8;
+  color: #0C1116;
+  padding:0 18px;
+  height: 42px;
+
+}
+.p .image{
+  background: #F7F7F8;
+      padding: 10px 0;
+}
+.p-in-in .name span .category-appendix{
+  padding-top: 5px;
+}
+.p .p-tools{
+  display: flex;
+  padding: 0;
+}
+.p .p-bottom>div{
+  flex-direction: row;
+  align-items:center;
+}
+.p .prices {
+    color: #0C1116;
+ 
+}
+.p .price-final{
+     font-size: 18px;
+}
+.p .p-tools .btn{
+  background: #50AC58;
+  border: 0;;
+    color: white;
+  height: 44px;
+  padding: 0 16px;
+  text-transform: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+.p .p-tools .btn:hover,
+.p .p-tools .btn:focus,
+.p .p-tools .btn:active{
+    background: #46A14E;
+}
+.p .p-tools .btn::before {
+  filter: invert(1) brightness(5);
+      background-size: 14px;
+    margin-right: 8px;
+  height: 15px;
+    width: 14px;
+}
