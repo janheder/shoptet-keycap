@@ -629,3 +629,28 @@ display: none;
 background: #F7F7F8;
 border-radius: 4px;
 }
+
+
+#navigation .top-navigation-bar-menu{
+  display: none;
+}
+.top-navigation-bar-menu-helper{
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  #navigation .top-navigation-bar-menu{
+  display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0
+}
+#navigation .top-navigation-bar-menu a{
+      padding: 10px 20px;
+      display: flex;
+  }
+      .menu {
+       flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
