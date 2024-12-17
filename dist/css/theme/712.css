@@ -1156,13 +1156,13 @@ text-decoration: underline;
   display: none;
 }
 @media screen and (max-width: 991px) {
-  .top-navigation-bar-menu{
+  #navigation .top-navigation-bar-menu{
   display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0
 }
-    .top-navigation-bar-menu a{
+#navigation .top-navigation-bar-menu a{
       padding: 10px 20px;
       display: flex;
   }
