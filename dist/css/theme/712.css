@@ -1149,7 +1149,10 @@ text-decoration: underline;
   }
 }
 
-.top-navigation-bar-menu{
+#navigation .top-navigation-bar-menu{
+  display: none;
+}
+.top-navigation-bar-menu-helper{
   display: none;
 }
 @media screen and (max-width: 991px) {
@@ -1167,7 +1170,5 @@ text-decoration: underline;
        flex-direction: column;
         justify-content: space-between;
     }
-  .top-navigation-bar-menu-helper{
-    display: none;
-  }
+
 }
