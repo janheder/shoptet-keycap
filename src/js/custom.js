@@ -699,24 +699,33 @@ if ($(".votes-wrap").length){
 // FAQ
 // =============================================================================
 
-$(document).ready(function() {
+$(document).ready(function () {
+    $('#faqSearch').on('keyup', function () {
+        let searchQuery = $(this).val().trim().toLowerCase();
 
-    $('#faqSearch').keyup(function(e) {
-        let s = $(this).val().trim();
-        if (s === '') {
+        if (searchQuery === '') {
+            // Reset: Show all and close all details
             $('#FaqResult *').show();
             $('#FaqResult details').attr("open", false);
-            return true;
+            return;
         }
-        $('#FaqResult details:not(:contains(' + s + '))').hide();
-        $('#FaqResult h2:not(:contains(' + s + '))').hide();
-        $('#FaqResult details:contains(' + s + ')').show();
-        $('#FaqResult details:contains(' + s + ')').attr("open", true);
-        return true;
+
+        // Escape special characters for regex
+        let escapedQuery = searchQuery.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+        let regex = new RegExp(escapedQuery, 'i'); // Case-insensitive matching
+
+        $('#FaqResult details').each(function () {
+            let detailsText = $(this).text().toLowerCase();
+            let matches = regex.test(detailsText);
+
+            if (matches) {
+                $(this).show().attr("open", true); // Show and expand matching details
+            } else {
+                $(this).hide().attr("open", false); // Hide non-matching details
+            }
+        });
     });
-
 });
-
 
 // =============================================================================
 // SHOW PRICE WITH CODE

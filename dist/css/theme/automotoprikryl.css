@@ -717,3 +717,148 @@ h1.category-title::before {
     margin: 0;
   }
 }
+
+footer {
+  background: #F7F7F8;
+}
+.custom-footer{
+display: flex;
+flex-direction: column;
+}
+
+#footerLinks{
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0 20px;
+  width: 100%;
+}
+.custom-footer h4{
+font-family: "Mohave";
+color: #0C1116;
+font-size: 20px;
+padding-bottom: 20px;
+}
+.custom-footer h4::before{
+   background: #E94400;
+opacity: 0.5;
+}
+.custom-footer>div ul>li a{
+font-size: 15px;
+}
+.footereLogos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  gap: 20px;
+}
+.footereLogos h3{
+font-size: 20px;
+margin-bottom: 20px;
+  font-weight: 500;
+}
+
+#newsletterSection::before {
+  content: none;
+}
+.copyright strong{
+padding-left: 3px;
+}
+
+#socialSection{
+padding: 60px 0;
+position: relative;
+ display: flex;
+  justify-content: space-between;
+align-items: center;
+}
+#socialSection::before {
+  content: "";
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 1px;
+  background: #eee;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+}
+#socialSection h2{
+margin: 0;
+font-size: 24px;
+font-weight: 500;
+
+}
+.socialSection__wrap{
+display: flex;
+flex-grow: 1;
+justify-content: center;
+gap: 60px;
+}
+.socialSection__wrap a{
+color: #0C1116;
+font-size: 16px;
+}
+.socialSection__wrap a img{
+margin-right: 15px;
+}
+#contactSection{
+position: relative;
+}
+#contactSection::before {
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 50%;
+  background: #fff;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+}
+
+.contactSection__inner{
+background: #E94400;
+z-index: 2;
+ position: relative;
+border-radius: 6px;
+display: flex;
+align-items:center;
+justify-content: space-around;
+  padding: 40px 20px;
+}
+.contactSection__inner h2{
+margin: 0;
+color: white;
+font-size: 28px;
+  max-width: 360px;
+line-height: 1.4;
+}
+.contactSection-content{
+ display: flex; 
+gap: 40px;
+}
+.contactSection-single{
+   display: flex; 
+}
+.contactSection-content a{
+color: white;
+display: flex;
+flex-direction: column;
+justify-content:center;
+padding-left: 15px;
+}
+.contactSection-content a span{
+  font-size: 18px;
+line-height: 1.5;
+}
+.faqHeader::before{
+content: none;
+}
+#FaqResult section:last-child{
+padding: 0;
+}
