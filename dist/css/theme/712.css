@@ -1148,3 +1148,26 @@ text-decoration: underline;
       display: none;
   }
 }
+
+.top-navigation-bar-menu{
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .top-navigation-bar-menu{
+  display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0
+}
+    .top-navigation-bar-menu a{
+      padding: 10px 20px;
+      display: flex;
+  }
+      .menu {
+       flex-direction: column;
+        justify-content: space-between;
+    }
+  .top-navigation-bar-menu-helper{
+    display: none;
+  }
+}
