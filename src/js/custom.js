@@ -191,6 +191,7 @@ $(".cart-count").on('touchstart', function() {
 $(".menu-helper").click(function(){
     $("body").removeClass("--menuActive --navUserActive --searchActive --cartActive --advancedModal filters-visible --checkoutSidebarActive");
     $("#filters").removeClass("filters");
+    $("#filters").removeClass("visible");
 });
 
 
