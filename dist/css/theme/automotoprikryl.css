@@ -1192,4 +1192,8 @@ h3,
 .benefitBanner__data{
   font-weight: 300;
 }
+
+.description-inner{
+  padding-top: 80px;
+}
 }
