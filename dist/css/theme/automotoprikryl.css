@@ -181,6 +181,9 @@ h1.category-title,
   }
 
 
+  #checkoutContent {
+    border: 1px solid #eee;
+  }
 
   #navigation .navigation-in .menu-level-1 {
     justify-content: space-between;
@@ -192,6 +195,10 @@ h1.category-title,
 
   .menu-level-1>li.ext>a {
     padding: 0 18px 0 18px;
+  }
+
+  .ordering-process #header{
+    height: 100px;
   }
 }
 
@@ -521,9 +528,7 @@ h1.category-title::before {
   display: none;
 }
 
-#checkoutContent {
-  border: 1px solid #eee;
-}
+
 
 .p-detail .browse-p {
   display: none;
@@ -632,7 +637,8 @@ h1.category-title::before {
 .cart-summary .extras-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 100%
+  width: 100%;
+  align-items: center;
 }
 
 .discount-coupon form {
@@ -1217,4 +1223,22 @@ border: 1px solid #eee;
 #checkoutContent .co-contact-information h4+.form-group a{
 background: #E94400;
 color: white;
+}
+
+.extras-wrapper .extra.delivery{
+  display: flex;
+  align-items:center;
+  height: 100%;
+  color: #50AC58 !important;
+}
+.removeable .p-name a{
+  font-size: 16px;
+}
+
+@media screen and (max-width: 500px) {
+.cart-summary .extras-wrapper{
+  flex-direction: column;
+
+  gap: 20px;
+  }
 }
