@@ -592,7 +592,7 @@ h1.category-title::before {
   display: flex;
   justify-content: center;
   font-family: 'Mohave', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   color: #0C1116;
   text-transform: uppercase;
   font-size: 30px;
@@ -1196,4 +1196,25 @@ h3,
 .description-inner{
   padding-top: 80px;
 }
+}
+.cart-table>tbody {
+  grid-gap: 10px;
+}
+.order-delivery-payment-form .radio-wrapper label{
+border-radius: 4px;
+}
+#checkoutSidebar{
+border: 1px solid #eee;
+  border-radius: 6px;
+}
+#checkoutContent{
+  border-radius: 6px;
+}
+.cart-row {
+
+  grid-gap: 10px;
+}
+#checkoutContent .co-contact-information h4+.form-group a{
+background: #E94400;
+color: white;
 }
