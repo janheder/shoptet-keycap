@@ -195,6 +195,9 @@ $(".menu-helper").click(function(){
     $("#filters-wrapper .filters-unveil-button-wrapper > a").text("Otevřít filtr");
 });
 
+$("#filters-wrapper .filters-unveil-button-wrapper > a").click(function(){
+    $("#filters-wrapper .filters-unveil-button-wrapper > a").text("Zavřít filtr");
+});
 
 
 
