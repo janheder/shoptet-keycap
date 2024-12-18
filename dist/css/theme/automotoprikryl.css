@@ -862,3 +862,65 @@ content: none;
 #FaqResult section:last-child{
 padding: 0;
 }
+
+.news-item {
+  background: #0B3159;
+}
+
+.homeCategories {
+padding: 60px 0 0 0;
+background: white;
+}
+.homeCategories h2{
+margin-bottom: 30px;
+}
+.homeCategories-content {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+gap: 20px;
+}
+.homeCategories-single{
+background: #0B3159;
+border-radius: 6px;
+padding: 20px;
+aspect-ratio: 7/10;
+display: flex;
+align-items:flex-end;
+justify-content: center;
+position: relative;
+overflow: hidden;
+}
+.homeCategories-single img{
+position: absolute;
+top: 0;
+left: 0;
+object-fit:cover;
+height: 100%;
+width: 100%;
+}
+.homeCategories-single span{
+background: white;
+color: #0C1116;
+padding: 12px 20px;
+border-radius: 4px;
+font-size: 16px;
+z-index: 1;
+}
+
+@media screen and (max-width: 991px) {
+.homeCategories-content {
+display: flex;
+overflow: auto;
+}
+.homeCategories-single{
+  width: 240px;
+  flex-shrink: 0;
+}
+}
+
+.user-action .login-widget{
+  display: none;
+}
+body.--navUserActive .user-action .login-widget{
+  display: flex;
+}
