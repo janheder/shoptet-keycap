@@ -961,6 +961,9 @@ body.--navUserActive .user-action .login-widget {
   width: 42px;
   height: 42px;
 }
+.top-navigation-menu-trigger{
+display: none;
+}
 
 @media screen and (max-width: 991px) {
   .footereLogos {

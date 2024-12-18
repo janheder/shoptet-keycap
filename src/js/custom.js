@@ -192,6 +192,7 @@ $(".menu-helper").click(function(){
     $("body").removeClass("--menuActive --navUserActive --searchActive --cartActive --advancedModal filters-visible --checkoutSidebarActive");
     $("#filters").removeClass("filters");
     $("#filters").removeClass("visible");
+    $("#filters-wrapper .filters-unveil-button-wrapper > a").text("Otevřít filtr");
 });
 
 
