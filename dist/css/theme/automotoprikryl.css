@@ -870,7 +870,7 @@ padding: 0;
 }
 
 .homeCategories {
-padding: 60px 0 0 0;
+padding: 60px 0 80px 0;
 background: white;
 }
 .homeCategories h2{
@@ -917,6 +917,7 @@ overflow: auto;
 .homeCategories-single{
   width: 240px;
   flex-shrink: 0;
+  aspect-ratio: 9 / 10;
 }
 }
 
@@ -986,4 +987,14 @@ margin-bottom: 10px;
     padding: 0;
     text-align:center;
   }
+  .contactSection__inner{
+    padding: 25px 20px;
+    gap: 20px;
+  }
+}
+.homepage-group-title{
+  margin-top: 0;
+}
+h3, .homepage-group-title{
+  font-size: 30px;
 }
