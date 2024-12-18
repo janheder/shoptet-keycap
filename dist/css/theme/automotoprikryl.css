@@ -21,7 +21,7 @@ h1.category-title,
 .welcome h1,
 #formContact fieldset::before {
   font-family: 'Mohave', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   color: #0C1116;
   text-transform: uppercase;
 }
