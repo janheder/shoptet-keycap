@@ -109,7 +109,7 @@ h1.category-title,
 }
 
 .search-form input {
-  background: #F7F7F8;
+  background: #F7F7F8 !important;
 }
 
 .carousel {
@@ -984,6 +984,7 @@ body.--navUserActive .user-action .login-widget {
   .contactSection__inner h2 {
     max-width: 100%;
     text-align: center;
+    font-size: 24px;
   }
 
   #socialSection {
@@ -1006,12 +1007,20 @@ body.--navUserActive .user-action .login-widget {
   }
 
   .socialSection__wrap a {
-    flex-direction: column;
+    flex-direction: column;  
+    font-size: 15px;
   }
 
   #newsletterSection {
     background: white;
   }
+  .socialSection__wrap a img{
+    margin: 0;
+    gap: 10px;
+  }
+  #socialSection {
+    gap: 20px;
+}
 }
 
 @media screen and (max-width: 575px) {
@@ -1025,7 +1034,9 @@ body.--navUserActive .user-action .login-widget {
     padding: 0;
     text-align: center;
   }
-
+  .contactSection-content a span{
+    font-size: 17px;
+  }
   .contactSection__inner {
     padding: 25px 20px;
     gap: 20px;
