@@ -1492,3 +1492,7 @@ h3,
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
+
+.category__secondDescription{
+  display: none;
+}
