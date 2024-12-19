@@ -1038,11 +1038,13 @@ body.--navUserActive .user-action .login-widget {
 
 @media screen and (max-width: 575px) {
   .contactSection-single {
-    flex-direction: column;
     align-items: center;
     gap: 10px;
   }
-
+  .contactSection-content{
+    flex-direction: column;
+    gap: 20px;
+  }
   .contactSection-content a {
     padding: 0;
     text-align: center;
@@ -1056,6 +1058,9 @@ body.--navUserActive .user-action .login-widget {
     padding: 25px 20px;
     gap: 20px;
   }
+  .p-detail-inner-header h1 {
+    font-size: 26px;
+}
 }
 
 .homepage-group-title {
