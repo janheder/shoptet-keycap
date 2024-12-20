@@ -131,7 +131,8 @@ h1.category-title,
 @media screen and (min-width: 992px) {
   #productSlider img {
     padding: 20px 0;
-}
+  }
+
   .menu-helper {
     top: 194px;
   }
@@ -1258,11 +1259,7 @@ h3,
     justify-content: center;
   }
 
-  .benefitBanner__content {
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-  }
+
 
   .benefitBanner__data {
     font-weight: 300;
@@ -1270,6 +1267,14 @@ h3,
 
   .description-inner {
     padding-top: 80px;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .benefitBanner__content {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -1632,21 +1637,62 @@ summary {
 .p .flags .flag.flag-new {
   background: #E94400;
   color: white;
-  
+
 }
-.p .flags .flag{
+
+.p .flags .flag {
   border-radius: 3px;
 }
 
-.categoryBanner{
+.categoryBanner {
   height: 100%;
- }
- .categoryBanner img{
-     object-fit:cover;
-   height: 100%;
-   width: 100%;
- }
+}
 
- .homeCategories-single span{
+.categoryBanner img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.homeCategories-single span {
   box-shadow: 0 3px 7px rgba(0, 0, 0, .08);
+}
+
+@media (max-width: 767px) {
+  .contactSection__inner {
+    border-radius: 0;
+    margin: 0 -10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .in-index .products.products-block {
+    display: grid;
+    overflow-x: hidden;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0;
+  }
+
+  .in-index .products.products-block .product {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .in-index .products.products-block {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  h3,
+  .homepage-group-title,
+  .homeCategories h2 {
+    font-size: 26px;
+  }
+}
+
+.p .image {
+  text-align: center;
 }
