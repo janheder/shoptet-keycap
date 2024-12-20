@@ -932,7 +932,7 @@ footer {
 }
 
 .homeCategories-single {
-  background: #14406D;
+  background: #eee;
   border-radius: 6px;
   padding: 20px;
   aspect-ratio: 7/10;
@@ -955,7 +955,7 @@ footer {
 .homeCategories-single span {
   background: white;
   color: #0C1116;
-  padding: 12px 20px;
+  padding: 12px 20px 10px 20px;
   border-radius: 4px;
   font-size: 16px;
   z-index: 1;
@@ -1161,6 +1161,8 @@ h3,
 }
 
 .filter-section label .filter-count {
+  width: auto;
+  min-width: 16px;
   font-size: 13px;
 }
 
@@ -1621,4 +1623,13 @@ summary {
   white-space: normal;
   font-size: 24px !important;
   height: 100%;
+}
+
+.p .flags .flag.flag-new {
+  background: #E94400;
+  color: white;
+  
+}
+.p .flags .flag{
+  border-radius: 3px;
 }
