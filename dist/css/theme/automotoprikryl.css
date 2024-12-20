@@ -1091,7 +1091,7 @@ h3,
   height: 16px;
   width: 16px;
   margin-right: 8px;
-  background: url("../../icons/check-circle-green.svg");
+  background: url("../../icons/check-circle-blue.svg");
   background-size: contain;
 }
 
@@ -1103,7 +1103,7 @@ h3,
   height: 16px;
   width: 16px;
   margin-right: 8px;
-  background: url("../../icons/check-circle-green.svg");
+  background: url("../../icons/check-circle-blue.svg");
   background-size: contain;
 }
 
@@ -1559,4 +1559,23 @@ padding-bottom: 60px;
 .subcategories li a .text{
 text-align:left;
 line-height: 1.2
+}
+
+
+
+
+.empty-content-category h2{
+  font-size: 24px !important;
+
+}
+.empty-content-category{
+  padding: 0px;
+  grid-column: 1 / 3;
+}
+.category-perex.empty-content-category>p{
+      text-overflow: inherit;
+    overflow: initial;
+    white-space: normal;
+ font-size: 24px !important;
+    height: 100%;
 }
