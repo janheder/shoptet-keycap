@@ -1521,4 +1521,17 @@ h3,
     .news-item {
       min-width: 100%;
   }
+  .hp-blog .news-wrapper{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hp-blog-top{
+    flex-direction: column;
+    gap: 10px;
+  }
+.hp-blog-top h2{
+  font-size: 26px;
+}
 }
