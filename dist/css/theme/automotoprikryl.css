@@ -1134,11 +1134,11 @@ h3,
   background-size: contain;
 }
 
-.product-top .availability-label[style="color:#009901"] {
+.product-top .availability-label[style="color: #009901"] {
   color: #14406D !important;
 }
 
-.product-top .availability-label[style="color:#009901"]::before {
+.product-top .availability-label[style="color: #009901"]::before {
   content: "";
   height: 16px;
   width: 16px;
@@ -1724,4 +1724,17 @@ summary {
   color: #D61818;
   font-size: 24px;
   font-weight: 600;
+}
+.p-info-wrapper>p {
+  display: flex;
+order: 11;
+margin: 0;
+  font-size: 14px;
+}
+.p-short-description{
+padding-bottom: 0;
+font-size: 14px;
+}
+.availability-value{
+padding-top: 40px;
 }
