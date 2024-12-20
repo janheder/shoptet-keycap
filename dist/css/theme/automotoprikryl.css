@@ -566,7 +566,7 @@ h1.category-title::before {
 }
 
 .p .flags.flags-extra .flag-discount {
-  background: #B51500;
+  background: #14406D;
   border-radius: 3px;
   height: 30px;
 }
@@ -942,13 +942,16 @@ footer {
 @media screen and (max-width: 991px) {
   .homeCategories-content {
     display: flex;
-    overflow: auto;
+   flex-direction: column;
   }
 
   .homeCategories-single {
     width: 240px;
     flex-shrink: 0;
     aspect-ratio: 9 / 10;
+  }
+  .homeCategories-single:nth-child(5){
+    display: none;
   }
 }
 
@@ -1534,4 +1537,24 @@ h3,
 .hp-blog-top h2{
   font-size: 26px;
 }
+}
+summary {
+  color: #0C1116;
+}
+
+.in-vyhledavani #content{
+display: flex;
+flex-direction: column;
+}
+.in-vyhledavani #content .search-results-groups{
+order: 10
+}
+.search-results{
+padding: 0;
+padding-bottom: 60px;
+}
+
+.subcategories li a .text{
+text-align:left;
+line-height: 1.2
 }
