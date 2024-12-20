@@ -778,7 +778,7 @@ footer {
 }
 
 .custom-footer>div ul>li a {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .footereLogos {
@@ -1773,4 +1773,26 @@ padding-top: 40px;
 }
 .breadcrumbs>span {
   font-size: 13px;
+}
+.p-detail-inner-header h1 {
+  display: flex;
+  flex-direction: column;
+}
+.p-detail-inner-header h1 .product-appendix{
+
+  font-size: 14px;
+  width: 100%;
+  order: 0;
+  display: flex;
+
+}
+.user-action-cart .cart-free-shipping{
+      color: #14406D;
+    background: rgba(20, 64, 109, .1);
+}
+.user-action-cart .cart-free-shipping strong{
+        color: #14406D;
+}
+.extras-wrapper .extra.delivery {
+      color: #14406D !important;
 }
