@@ -20,7 +20,7 @@ h1.category-title,
 .extended-banner-title,
 .welcome h1,
 #formContact fieldset::before {
-  font-family: 'Mohave', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 500;
   color: #0C1116;
   text-transform: uppercase;
@@ -627,7 +627,7 @@ h1.category-title::before {
   content: "Podobné produkty";
   display: flex;
   justify-content: center;
-  font-family: 'Mohave', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 500;
   color: #0C1116;
   text-transform: uppercase;
@@ -766,7 +766,7 @@ footer {
 }
 
 .custom-footer h4 {
-  font-family: "Mohave";
+  font-family: "Bebas Neue";
   color: #0C1116;
   font-size: 20px;
   padding-bottom: 20px;
@@ -1154,7 +1154,7 @@ h3,
 #filters::before {
   content: "Filtr produktů";
   font-size: 22px;
-  font-family: "Mohave";
+  font-family: "Bebas Neue";
   text-transform: uppercase;
   font-weight: 500;
 }
