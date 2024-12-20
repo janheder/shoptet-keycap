@@ -1646,3 +1646,7 @@ summary {
    height: 100%;
    width: 100%;
  }
+
+ .homeCategories-single span{
+  box-shadow: 0 3px 7px rgba(0, 0, 0, .08);
+}
