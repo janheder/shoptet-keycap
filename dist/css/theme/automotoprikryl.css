@@ -1764,3 +1764,13 @@ padding-top: 40px;
   background: url("../../icons/check-circle-blue.svg");
   background-size: contain;
 }
+.p-detail-inner-header h1 .product-appendix{
+  font-size: 14px;
+  width: 100%;
+  order: 0;
+  display: none;
+
+}
+.breadcrumbs>span {
+  font-size: 13px;
+}
