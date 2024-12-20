@@ -274,10 +274,12 @@ h1.category-title,
 .subcategories li a .text {
   font-size: 15px;
 }
-
+@media screen and (min-width: 992px) {
 #category-filter-hover .filter-section form {
-  max-height: 270px;
-
+  max-height: 290px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 }
 #filters{
   overflow-x: hidden;
