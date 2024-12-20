@@ -100,7 +100,7 @@ h1.category-title,
 
 
 .menu-level-1>li>a {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -882,7 +882,7 @@ footer {
 .contactSection__inner h2 {
   margin: 0;
   color: white;
-  font-size: 28px;
+  font-size: 32px;
   max-width: 360px;
   line-height: 1.4;
 }
@@ -1272,7 +1272,7 @@ h3,
 
 @media screen and (min-width: 575px) {
   .benefitBanner__content {
-    font-size: 16px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
   }
@@ -1737,4 +1737,30 @@ font-size: 14px;
 }
 .availability-value{
 padding-top: 40px;
+}
+.homeCategories h2{
+  text-align:center;
+}
+.p-detail-inner-header .p-code{
+  display: none;
+}
+.p-detail-inner-header h1{
+  margin: 0;
+}
+.p .p-tools .btn{
+  font-size: 14px;
+}
+.top-navigation-bar {
+    font-size: 13px;
+}
+.removeable .p-availability .availability-label[style="color: #009901"]{
+     color: #14406D !important;
+}
+.removeable .p-availability .availability-label[style="color: #009901"]::before {
+  content: "";
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;
+  background: url("../../icons/check-circle-blue.svg");
+  background-size: contain;
 }
