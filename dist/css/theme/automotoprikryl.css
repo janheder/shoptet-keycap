@@ -934,11 +934,11 @@ footer {
 .homeCategories-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 1px;
+  background-color: #eee;
 }
 
 .homeCategories-single {
-  background: #eee;
   border-radius: 6px;
   padding: 20px;
   aspect-ratio: 7/10;
@@ -947,15 +947,14 @@ footer {
   justify-content: center;
   position: relative;
   overflow: hidden;
+  flex-direction: column;
+  background: white;
+      align-items: center;
 }
 
 .homeCategories-single img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
+  height: 110px;
+  width: auto;
 }
 
 .homeCategories-single span {
@@ -1665,9 +1664,6 @@ summary {
   width: 100%;
 }
 
-.homeCategories-single span {
-  box-shadow: 0 3px 7px rgba(0, 0, 0, .08);
-}
 
 @media (max-width: 767px) {
   .contactSection__inner {
