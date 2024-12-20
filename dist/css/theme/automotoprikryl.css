@@ -1702,6 +1702,9 @@ summary {
   height: auto;
   background: #FC9D03;
   color: white;
+  padding: 5px;
+  line-height: 1;
+  gap: 5px;
 }
 
 .flag-freeshipping .icon-van {
@@ -1709,6 +1712,8 @@ summary {
   height: 16px;
   width: 21px;
   background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .flag-freeshipping .icon-van .sr-only {
