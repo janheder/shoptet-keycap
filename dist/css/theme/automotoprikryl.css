@@ -403,7 +403,7 @@ h1.category-title {
 
 h1.category-title::before {
   content: "";
-  background: rgba(233, 68, 0, 0.2);
+  background: #E94400;
   width: 6px;
   height: 100%;
   position: absolute;
@@ -1696,12 +1696,27 @@ summary {
 .p .image {
   text-align: center;
 }
-.flag-freeshipping .icon-van{
-  background: url(../../free-delivery-white.svg);
-   height: 16px;
-     width: 21px;
-   background-size: contain;
- }
- .flag-freeshipping .icon-van .sr-only{
-   display: none;
- }
+
+.p .flags .flag.flag-freeshipping {
+  flex-direction: column;
+  height: auto;
+  background: #FC9D03;
+  color: white;
+}
+
+.flag-freeshipping .icon-van {
+  background: url(../../icons/free-delivery-white.svg);
+  height: 16px;
+  width: 21px;
+  background-size: contain;
+}
+
+.flag-freeshipping .icon-van .sr-only {
+  display: none;
+}
+
+.price-final-holder {
+  color: #D61818;
+  font-size: 24px;
+  font-weight: 600;
+}
