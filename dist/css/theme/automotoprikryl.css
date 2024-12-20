@@ -1696,3 +1696,12 @@ summary {
 .p .image {
   text-align: center;
 }
+.flag-freeshipping .icon-van{
+  background: url(../../free-delivery-white.svg);
+   height: 16px;
+     width: 21px;
+   background-size: contain;
+ }
+ .flag-freeshipping .icon-van .sr-only{
+   display: none;
+ }
