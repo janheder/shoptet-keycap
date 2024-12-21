@@ -944,17 +944,17 @@ footer {
   padding: 20px;
   aspect-ratio: 1/1;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
   position: relative;
   overflow: hidden;
   flex-direction: column;
   background: white;
       align-items: center;
+      gap: 20px;
 }
 
 .homeCategories-single img {
-  height: 110px;
+  height: 100px;
   width: auto;
 }
 
@@ -1910,4 +1910,13 @@ font-size: 13px;
   .related{
   display: none;
   }
+}
+
+@media screen and (max-width: 991px) {
+  .banners-row {
+      margin-top: 10px;
+  }
+  .before-carousel .banners-row {
+    margin-top: 10px;
+}
 }
