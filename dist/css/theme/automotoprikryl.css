@@ -421,7 +421,8 @@ h1.category-title::before {
 }
 
 .p-in-in .name span {
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 .hp-blog .news-wrapper {
@@ -487,7 +488,7 @@ h1.category-title::before {
 .p .p-tools .btn {
   background: #E94400;
   border: 0;
-  ;
+  transition: .3s ease background;
   color: white;
   height: 44px;
   padding: 0 16px;
@@ -1949,4 +1950,11 @@ font-size: 13px;
     border: 0;
       padding: 0px 0 40px 0;
   }
+}
+
+.p .price-final strong{
+  font-size: 16px;
+}
+.p .prices .price-additional{
+    font-size: 12px;
 }
