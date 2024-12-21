@@ -731,10 +731,12 @@ h1.category-title::before {
 @media screen and (max-width: 991px) {
   .banners-row {
     flex-direction: column;
+    gap: 2px;
   }
 
   .banners-row .next-to-carousel-banners {
     flex-direction: row;
+    gap: 2px;
   }
 
   .banners-row .col-sm-4 {
