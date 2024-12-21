@@ -1943,3 +1943,10 @@ font-size: 13px;
     padding: 40px 0;
   }
 }
+
+@media screen and (max-width: 575px) {
+  .hp-blog {
+    border: 0;
+      padding: 0px 0 40px 0;
+  }
+}
