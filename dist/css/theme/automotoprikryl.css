@@ -463,6 +463,7 @@ h1.category-title::before {
 
 .p-in-in .name span .category-appendix {
   padding-top: 5px;
+  display: none;
 }
 
 .p .p-tools {
@@ -1115,6 +1116,12 @@ body.--navUserActive .user-action .login-widget {
 }
 .p .availability {
   font-size: 14px;
+}
+.p .p-tools .btn {
+  font-size: 0;
+}
+.p .p-tools .btn::before {
+  margin-right: 0px;
 }
 }
 @media screen and (max-width: 991px) {
