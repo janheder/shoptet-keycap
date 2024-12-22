@@ -223,6 +223,11 @@ h1.category-title,
     text-decoration: underline;
   }
 
+  .menu-level-2>li>div>a{
+    font-size: 18px;
+  font-family: 'Bebas Neue';
+}
+
 }
 
 .cart-count i {
