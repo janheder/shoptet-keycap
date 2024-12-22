@@ -428,6 +428,7 @@ h1.category-title::before {
 .p-in-in .name span {
   font-size: 15px;
   line-height: 1.5;
+  font-weight: 500;
 }
 
 .hp-blog .news-wrapper {
@@ -2118,3 +2119,9 @@ summary {
 }
  }
  
+ .filter-section label{
+  font-size: 14px;
+}
+.filter-section label .filter-count {
+    font-size: 11px;
+}
