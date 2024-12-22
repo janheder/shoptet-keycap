@@ -614,7 +614,7 @@ h1.category-title::before {
 }
 
 .p .availability {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .products-block .p {
@@ -2042,7 +2042,7 @@ summary {
 }
 
 .p-short-description {
-  height: 48px;
+  height: 44px;
   overflow: hidden;
 }
 
@@ -2076,4 +2076,16 @@ summary {
 
 .p-detail-info {
   padding-bottom: 15px;
+}
+.basic-description * {
+  font-family: "Space Grotesk" !important;
+
+}
+.basic-description h3{
+    font-family: 'Bebas Neue'  !important;
+}
+@media screen and (max-width: 991px) {
+  .menu-level-2>li>div>a {
+    font-size: 15px;
+  }
 }
