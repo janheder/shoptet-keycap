@@ -1117,12 +1117,7 @@ body.--navUserActive .user-action .login-widget {
 .p .availability {
   font-size: 14px;
 }
-.p .p-tools .btn {
-  font-size: 0;
-}
-.p .p-tools .btn::before {
-  margin-right: 0px;
-}
+
 }
 @media screen and (max-width: 991px) {
   .p-short-description {
@@ -1962,6 +1957,12 @@ font-size: 13px;
     border: 0;
       padding: 0px 0 40px 0;
   }
+  .p .p-tools .btn {
+    font-size: 0;
+  }
+  .p .p-tools .btn::before {
+    margin-right: 0px;
+  }
 }
 
 .p .price-final strong{
@@ -1970,3 +1971,4 @@ font-size: 13px;
 .p .prices .price-additional{
     font-size: 12px;
 }
+
