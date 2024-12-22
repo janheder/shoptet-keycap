@@ -964,8 +964,8 @@ footer {
 .homeCategories-single span {
   background: white;
   color: #0C1116;
-  padding: 12px 20px 10px 20px;
-  border-radius: 4px;
+  padding: 12px 0px 0px 0px;
+  border-radius: 0px;
   font-size: 16px;
   z-index: 1;
   text-align: center;
@@ -986,7 +986,12 @@ footer {
     display: none;
   }
 }
-
+@media screen and (max-width: 500px) {
+  .homeCategories-single span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
 .user-action .login-widget {
   display: none;
 }
