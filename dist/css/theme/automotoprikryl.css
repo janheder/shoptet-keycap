@@ -2028,13 +2028,9 @@ summary {
     padding: 0px 0 40px 0;
   }
 
-  .p .p-tools .btn {
-    font-size: 0;
-  }
 
-  .p .p-tools .btn::before {
-    margin-right: 0px;
-  }
+
+
 
   .p .prices .price-additional {
     display: none;
@@ -2096,3 +2092,16 @@ summary {
          white-space: nowrap;
      }
  }
+ @media screen and (max-width: 575px) {
+  .products-block  .p .p-bottom>div{
+     flex-direction: column;
+   }
+ .products-block   .p-in-in .name span{
+     text-align:center;
+   }
+ .products-block  .p .ratings-wrapper .availability{
+     text-align:center;
+     justify-content: center;
+   }
+ }
+ 
