@@ -1159,7 +1159,7 @@ h3,
   content: "";
   height: 16px;
   width: 16px;
-  margin-right: 8px;
+  margin-right: 6px;
   background: url("../../icons/check-circle-blue.svg");
   background-size: contain;
 }
