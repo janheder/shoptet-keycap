@@ -2108,6 +2108,13 @@ summary {
    }
    .type-category .category-title{
     margin-bottom: 20px;
+    padding-bottom: 0;
    }
+   .subcategories {
+    grid-gap: 0
+}
+.subcategories li a {
+  border-radius: 0px;
+}
  }
  
