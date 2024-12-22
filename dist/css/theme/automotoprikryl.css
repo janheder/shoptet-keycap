@@ -1963,6 +1963,9 @@ font-size: 13px;
   .p .p-tools .btn::before {
     margin-right: 0px;
   }
+  .p .prices .price-additional{
+    font-size: 11px;
+  }
 }
 
 .p .price-final strong{
