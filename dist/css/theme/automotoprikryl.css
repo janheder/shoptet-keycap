@@ -2103,5 +2103,11 @@ summary {
      text-align:center;
      justify-content: center;
    }
+   .category-perex{
+    display: none;
+   }
+   .type-category .category-title{
+    margin-bottom: 20px;
+   }
  }
  
