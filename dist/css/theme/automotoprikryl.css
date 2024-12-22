@@ -2089,3 +2089,10 @@ summary {
     font-size: 15px;
   }
 }
+@media screen and (max-width: 991px) {
+  .breadcrumbs-wrapper {
+         margin-bottom: 0px;
+         overflow-x: scroll;
+         white-space: nowrap;
+     }
+ }
