@@ -789,7 +789,7 @@ footer {
   opacity: 0.5;
 }
 
-.custom-footer>div ul>li a {
+.custom-footer>div ul>li , .custom-footer>div ul>li a {
   font-size: 14px;
 }
 
