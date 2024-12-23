@@ -513,9 +513,20 @@ if ($("#customerLogin").length){
 }
 
 /* relocate cart header */
-if ($(".cart-header").length){
+function relocateCartHeader(){
+   if ($(".cart-header").length){
     $(".cart-header").insertBefore(".cart-inner");
+    } 
 }
+
+relocateCartHeader();
+
+/* call functions after order modal loaded */
+document.addEventListener('ShoptetCartUpdated', function () {
+    relocateCartHeader();
+},{
+    passive: true
+});
 
 
 /* load faq */
