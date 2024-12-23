@@ -917,8 +917,9 @@ footer {
 }
 
 .contactSection-content a span {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
+  font-weight: 500;
 }
 
 .faqHeader::before {
@@ -2124,4 +2125,60 @@ summary {
 }
 .filter-section label .filter-count {
     font-size: 11px;
+}
+.radio-wrapper.active .sublabel{
+  padding-top: 5px;
+}
+
+.select2-container{
+  display: none;
+}
+
+#do-balikovny-legend{
+   padding-top: 20px;
+  text-align:left;
+}
+.cpost-delivery-point-choose-post{
+  width: 100%;
+}
+#do-balikovny-wrapper .ui-menu{
+text-align:left;
+  background: white;
+  list-style: none;
+  max-height: 300px;
+  overflow-y: scroll;
+  padding: 15px;
+  border: 1px solid #eee;;
+}
+#do-balikovny-wrapper .ui-menu li{
+text-align:left;
+  cursor: pointer;
+  padding: 5px 0;
+  cursor: pointer;
+}
+#do-balikovny-wrapper .ui-menu li:nth-child(odd){
+  background: #fbfbfb;
+}
+.cpost-delivery-point-result-table-wrap{
+      padding: 15px;
+  border: 1px solid #eee;
+  margin-top: 20px;
+  text-align:left;
+}
+.cpost-delivery-point-result-table{
+  width: 100%;
+
+}
+.cpost-delivery-point-opening-hours{
+  display: none;
+  font-size: 13px;
+}
+.cpost-delivery-point-opening-hours.active{
+  display: block;
+}
+  .cpost-delivery-point-submit{
+    text-align:right;
+  }
+.cpost-delivery-point-submit input{
+  height: 48px;
 }
