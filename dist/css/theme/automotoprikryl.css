@@ -327,7 +327,7 @@ h1.category-title,
   background: transparent;
   padding: 0;
   margin: 0;
-  font-size: 15px;
+  font-size: 14px;
   color: #6F6F6F;
   font-weight: 500;
 }
@@ -1069,7 +1069,7 @@ body.--navUserActive .user-action .login-widget {
     flex-direction: column;
     font-size: 14px;
     text-align: center;
-    gap: 5px;
+    gap: 10px;
   }
 
   #newsletterSection {
@@ -1650,7 +1650,7 @@ summary {
   line-height: 1.2
 }
 .subcategories li a .text {
-  font-size: 15px;
+  font-size: 14px;
 }
 @media screen and (max-width: 575px) {
   .subcategories li a .text {
@@ -2187,4 +2187,21 @@ text-align:left;
   }
 .cpost-delivery-point-submit input{
   height: 48px;
+}
+.siteCookies__button {
+  background: #E94400;
+  color: #fff;
+  border: 0;
+}
+.siteCookies__button:hover{
+background: #B51500;
+}
+.siteCookies__link, .siteCookies__button{
+border-radius: 4px;
+}
+@media screen and (max-width: 991px) {
+  .p .flags.flags-extra {
+      top: 5px;
+      right: 5px;
+  }
 }
