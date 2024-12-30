@@ -218,7 +218,7 @@ h1.category-title,
   }
 
   .menu-level-3 li {
-    font-size: 14px;
+    font-size: 13px;
     width: auto;
     text-decoration: underline;
   }
@@ -402,6 +402,7 @@ h1.category-title {
   margin-top: 30px;
   position: relative;
   padding-left: 25px;
+  padding-top: 10px;
 }
 
 h1.category-title::before {
@@ -411,6 +412,7 @@ h1.category-title::before {
   height: 100%;
   position: absolute;
   left: 0;
+  top: 0;
 }
 
 .category-perex {
