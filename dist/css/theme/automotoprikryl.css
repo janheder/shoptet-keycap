@@ -2132,6 +2132,7 @@ summary {
   .type-category .category-title {
     margin-bottom: 20px;
     padding-bottom: 0;
+    margin-top: 15px;
   }
 
   .subcategories {
@@ -2281,4 +2282,19 @@ summary {
 h1.category-title{
   padding-bottom: 30px;
 }
+}
+.products-top .product::before{
+  top: 5px;
+  left: 5px;
+}
+@media screen and (max-width: 991px) {
+    .products-top .product {
+        outline: 0;
+        border-bottom: 1px solid #f0f0f0;
+        padding: 10px 0;
+      gap: 0;
+    }
+  .products-top{
+    grid-gap: 0;
+  }
 }
