@@ -1660,6 +1660,7 @@ summary {
 @media screen and (max-width: 575px) {
   .subcategories li a .text {
     font-size: 14px;
+
   }
 }
 
@@ -2139,6 +2140,7 @@ summary {
 
   .subcategories li a {
     border-radius: 0px;
+    padding: 8px 10px 8px 5px;
   }
 }
 
@@ -2261,4 +2263,22 @@ summary {
   .products-block .p .image {
     background: transparent;
   }
+}
+.pagination-loader .btn{
+  font-size: 14px;
+  height: 48px;
+}
+.p-image .flag-discount .price-save span{
+  padding: 0;
+  background:transparent;
+}
+
+@media screen and (max-width: 991px) {
+  .category-perex {
+      margin-top: -20px;
+      padding-bottom: 40px;
+  }
+h1.category-title{
+  padding-bottom: 30px;
+}
 }
