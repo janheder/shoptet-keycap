@@ -513,7 +513,7 @@ h1.category-title::before {
 
 .p .p-tools .btn::before {
   filter: invert(1) brightness(5);
-  background-size: 14px;
+  background-size: contain;
   margin-right: 8px;
   height: 15px;
   width: 14px;
