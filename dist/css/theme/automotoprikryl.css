@@ -20,7 +20,7 @@ h1.category-title,
 .extended-banner-title,
 .welcome h1,
 #formContact fieldset::before {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Mohave', sans-serif;
   font-weight: 500;
   color: #0C1116;
   text-transform: uppercase;
@@ -225,7 +225,7 @@ h1.category-title,
 
   .menu-level-2>li>div>a {
     font-size: 18px;
-    font-family: 'Bebas Neue';
+    font-family: 'Mohave';
   }
 
 }
@@ -517,6 +517,7 @@ h1.category-title::before {
   margin-right: 8px;
   height: 15px;
   width: 14px;
+  background-repeat: no-repeat;
 }
 
 .menu-level-1>li.ext:hover>a,
@@ -637,7 +638,7 @@ h1.category-title::before {
   content: "Podobné produkty";
   display: flex;
   justify-content: center;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Mohave', sans-serif;
   font-weight: 500;
   color: #0C1116;
   text-transform: uppercase;
@@ -778,7 +779,7 @@ footer {
 }
 
 .custom-footer h4 {
-  font-family: "Bebas Neue";
+  font-family: "Mohave";
   color: #0C1116;
   font-size: 20px;
   padding-bottom: 20px;
@@ -1189,7 +1190,7 @@ h3,
 #filters::before {
   content: "Filtr produktů";
   font-size: 22px;
-  font-family: "Bebas Neue";
+  font-family: "Mohave";
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -2094,7 +2095,7 @@ summary {
 }
 
 .basic-description h3 {
-  font-family: 'Bebas Neue' !important;
+  font-family: 'Mohave' !important;
 }
 
 @media screen and (max-width: 991px) {
