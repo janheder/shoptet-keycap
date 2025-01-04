@@ -48,6 +48,7 @@ h1.category-title,
 
 .site-msg.information {
   background: #FC9D03;
+  background: rgba(233,68,0,0.6);
   color: #fff;
 }
 
