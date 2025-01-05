@@ -2317,6 +2317,10 @@ h1.category-title{
   display: flex;
   width: 100%;
 }
+.filter-section fieldset>div.advanced-filters-wrapper>div label{
+padding-top: 8px;
+padding-bottom: 8px;
+}
 .filter-section fieldset>div.advanced-filters-wrapper .advanced-parameter{
   padding: 0;
       height: 20px;
