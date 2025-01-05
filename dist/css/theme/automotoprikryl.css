@@ -2371,3 +2371,44 @@ padding-bottom: 8px;
 .add-to-cart {
   align-items: center;
 }
+.availability-value {
+  color: #6d6c79;
+}
+#description #relatedFiles  {
+  display: flex !important;
+order: 20;
+}
+#relatedFiles{
+flex-direction: column;
+padding: 0;
+margin-top: 40px;
+}
+#relatedFiles::before{
+content: "Dokumenty";
+    font-family: 'Mohave', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+width: 100%;
+font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  color: #0f172a;
+  width: 100%;
+}
+#relatedFiles li{
+ width: 100%;
+border: 1px solid #eee;
+display: flex;
+flex-direction: row;
+gap: 10px;
+padding: 0;
+}
+#relatedFiles li img{
+margin-left: 20px;
+}
+#relatedFiles li a{
+padding: 20px;
+padding-left: 0;
+width: 100%
+}
