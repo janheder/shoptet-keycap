@@ -2310,7 +2310,9 @@ h1.category-title{
 .variant-list {
   padding: 30px 0 0px 0;
 }
-
+.filter-section fieldset>div.advanced-filters-wrapper{
+  flex-direction: column;
+}
 .filter-section fieldset>div.advanced-filters-wrapper>div{
   display: flex;
   width: 100%;
