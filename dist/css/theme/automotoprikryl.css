@@ -2318,6 +2318,7 @@ h1.category-title{
   width: 100%;
   align-items: center;
 }
+
 .filter-section fieldset>div.advanced-filters-wrapper>div label{
 padding-top: 8px;
 padding-bottom: 8px;
@@ -2330,6 +2331,9 @@ padding-bottom: 8px;
 .filter-section fieldset>div.advanced-filters-wrapper .advanced-parameter span{
     height: 20px;
   width: 20px;
+}
+.filter-section fieldset>div.advanced-filters-wrapper .advanced-parameter span[style="background-color: #000000"]::after{
+  filter: invert(1);
 }
 .filter-section .advanced-parameter-inner.yes-before::after{
       background-size: 12px 12px;
