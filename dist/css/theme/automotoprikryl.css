@@ -304,7 +304,7 @@ h1.category-title,
 
 @media screen and (min-width: 992px) {
   #category-filter-hover .filter-section form {
-    max-height: 290px;
+    max-height: 270px;
     overflow-y: auto;
     overflow-x: hidden;
   }
@@ -1435,6 +1435,9 @@ h3,
   .branch-picker-wrapper {
     flex-wrap: wrap
   }
+  .removeable .p-name a {
+    font-size: 15px;
+  }
 }
 
 .branch-picker-wrapper .loader {
@@ -2299,4 +2302,58 @@ h1.category-title{
   .products-top{
     grid-gap: 0;
   }
+}
+
+.desktop .benefitBanner{
+  border: 0;
+}
+.variant-list {
+  padding: 30px 0 0px 0;
+}
+
+.filter-section fieldset>div.advanced-filters-wrapper>div{
+  display: flex;
+  width: 100%;
+}
+.filter-section fieldset>div.advanced-filters-wrapper .advanced-parameter{
+  padding: 0;
+      height: 20px;
+  width: 20px;
+}
+.filter-section fieldset>div.advanced-filters-wrapper .advanced-parameter span{
+    height: 20px;
+  width: 20px;
+}
+.filter-section .advanced-parameter-inner.yes-before::after{
+      background-size: 12px 12px;
+}
+.filter-section label .filter-count{
+  margin-right: 10px;
+}
+
+/* Define the scrollbar style */
+#category-filter-hover .filter-section form::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+/* Define the thumb style */
+#category-filter-hover .filter-section form::-webkit-scrollbar-thumb {
+  background: #859ab0;
+  border-radius: 3px;
+}
+/* Define the track style */
+#category-filter-hover .filter-section form::-webkit-scrollbar-track {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+    border-radius: 3px;
+}
+/* Define the button style */
+#category-filter-hover .filter-section form::-webkit-scrollbar-button {
+  background-color: #14406D;
+  border-radius: 3px;
+  display: none;
+}
+/* Define the button style when being hovered over */
+#category-filter-hover .filter-section form::-webkit-scrollbar-button:hover {
+  background-color: #999999;
 }
