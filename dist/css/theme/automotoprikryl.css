@@ -2365,20 +2365,20 @@ summary {
 
 /* Define the thumb style */
 #category-filter-hover .filter-section form::-webkit-scrollbar-thumb {
-  background: #859ab0;
+  background: #EEEEEE;
   border-radius: 3px;
 }
 
 /* Define the track style */
 #category-filter-hover .filter-section form::-webkit-scrollbar-track {
-  background-color: #ddd;
-  border: 1px solid #ccc;
+  background-color: #F7F7F8;
+  border: 1px solid #eee;
   border-radius: 3px;
 }
 
 /* Define the button style */
 #category-filter-hover .filter-section form::-webkit-scrollbar-button {
-  background-color: #14406D;
+  background-color: #EEEEEE;
   border-radius: 3px;
   display: none;
 }
