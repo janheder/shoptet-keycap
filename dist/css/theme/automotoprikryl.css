@@ -2600,3 +2600,8 @@ background: rgba(233, 68, 0, 0.6);
     grid-template-columns: 1fr;
 }
   }
+  @media screen and (max-width: 991px) {
+    .nav-search {
+        background-image: url(../../icons/search.svg);
+    }
+}
