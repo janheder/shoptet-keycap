@@ -2591,4 +2591,5 @@ background: rgba(233, 68, 0, 0.6);
 .type-category .subcategories+h4, .type-category .category-title+h4{
   font-weight: 500;
   font-size: 22px;
+  margin: 0;
 }
