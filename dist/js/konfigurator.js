@@ -195,19 +195,22 @@ function konfigurator236() {
             // Získáme aktuální URL
             let currentURL = window.location.href;
 
-            // Odstraníme předchozí výběr (pokud existuje)
-            const regex = /[?&]pv236=[^&]+/;
-            currentURL = currentURL.replace(regex, "");
+      // Odstraníme předchozí výběr (pokud existuje)
+      const regex = /[?&]pv236=[^&]+/;
+      currentURL = currentURL.replace(regex, '');
 
-            // Přidáme nový výběr do URL
-            const newURL = `${currentURL}${
-              currentURL.includes("?") ? "&" : "?"
-            }pv236=${inputId}`;
-
+      // Pokud URL obsahuje nějaké parametry (?), přidáme nový parametr pomocí &
+      const newURL = currentURL.includes('?')
+        ? `${currentURL}&pv236=${inputId}`
+        : `${currentURL}?pv236=${inputId}`;
+        
             // Přejdeme na novou URL
             window.history.pushState({ path: newURL }, "", newURL);
 
             console.log(`Nová URL: ${newURL}`);
+            // Načteme stránku znovu s novou URL
+            window.location.reload();
+
           } else {
             console.log(`Input s value ${selectedCombination} nebyl nalezen.`);
           }

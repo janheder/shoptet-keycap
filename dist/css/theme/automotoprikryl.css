@@ -2637,10 +2637,14 @@ background: rgba(233, 68, 0, 0.6);
   border: 1px solid #eee;
   font-size: 14px;
 }
+
 .filter-section .select-container + button{
       background: #14406D;
     border-radius: 3px;
   color: white;
   width: 100%;
   padding: 8px 20px;
+}
+.filter-section .select-container + button[disabled]{
+  background-color: #eee;
 }
