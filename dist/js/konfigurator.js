@@ -197,18 +197,18 @@ function konfigurator236() {
       let queryParams = new URLSearchParams(window.location.search); // Parametry z URL
 
       // Pokud parametr pv236 existuje, nahradíme ho novým ID, jinak ho přidáme
-      queryParams.set('pv236', inputId);
+      queryParams.set('pv236', inputId); // Nahradí nebo přidá parametr pv236
 
       // Sestavíme novou URL s aktualizovanými parametry
       const newURL = `${currentURL}?${queryParams.toString()}`;
 
-      // Změníme URL bez reloadu stránky
-      window.history.pushState({ path: currentURL }, '', currentURL);
+      // Změníme URL v prohlížeči bez reloadu stránky
+      window.history.pushState({ path: newURL }, '', newURL);
 
-      console.log(`Nová URL: ${currentURL}`);
+      console.log(`Nová URL: ${newURL}`);
 
-            // Načteme stránku znovu s novou URL
-            window.location.reload();
+      // Načteme stránku znovu s novou URL
+      window.location.href = newURL; // Tento krok načte stránku s novou URL
 
           } else {
             console.log(`Input s value ${selectedCombination} nebyl nalezen.`);
