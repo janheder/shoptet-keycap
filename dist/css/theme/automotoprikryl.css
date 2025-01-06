@@ -2623,3 +2623,22 @@ background: rgba(233, 68, 0, 0.6);
 .filter-section-parametric-id-236 form{
   display: none;
 }
+.filter-section .select-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.filter-section .select-container select{
+  height: 44px;
+  padding: 0 10px;
+  border: 1px solid #eee;
+  font-size: 14px;
+}
+.filter-section .select-container + button{
+      background: #14406D;
+    border-radius: 3px;
+  color: white;
+  width: 100%;
+  padding: 8px 20px;
+}
