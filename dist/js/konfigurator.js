@@ -194,9 +194,13 @@ function konfigurator236() {
 
       // Získáme základní URL
       let currentURL = window.location.origin + window.location.pathname; // Základní URL bez parametrů
+      let queryParams = new URLSearchParams(window.location.search); // Parametry z URL
 
-      // Vytvoříme novou URL s přidáním ?pv236 na správné místo
-      currentURL = `${currentURL}?pv236=${inputId}`;
+      // Pokud parametr pv236 existuje, nahradíme ho novým ID, jinak ho přidáme
+      queryParams.set('pv236', inputId);
+
+      // Sestavíme novou URL s aktualizovanými parametry
+      const newURL = `${currentURL}?${queryParams.toString()}`;
 
       // Změníme URL bez reloadu stránky
       window.history.pushState({ path: currentURL }, '', currentURL);
