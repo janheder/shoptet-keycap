@@ -2384,7 +2384,7 @@ padding: 0;
 margin-top: 40px;
 }
 #relatedFiles::before{
-content: "Dokumenty";
+content: "Ke stažení";
     font-family: 'Mohave', sans-serif;
     text-transform: uppercase;
     display: flex;
