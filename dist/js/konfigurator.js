@@ -199,14 +199,18 @@ function konfigurator236() {
       const regex = /[?&]pv236=[^&]+/;
       currentURL = currentURL.replace(regex, '');
 
-      // Přidáme nový parametr ?pv236= na začátek
-      // Pokud URL obsahuje již parametry, použijeme ?pv236= a připojíme & pro další parametry
+      // Zkontrolujeme, zda URL již obsahuje parametry
       if (currentURL.includes('?')) {
-        // Pokud URL již obsahuje nějaký parametr, přidáme nový na začátek
-        currentURL = currentURL.replace('?', `?pv236=${inputId}&`);
+        // Pokud URL již obsahuje nějaký parametr, přidáme nový na začátek (případně upravíme existující)
+        if (currentURL.includes('pv236=')) {
+          // Pokud už máme ?pv236=..., nahradíme hodnotu
+          currentURL = currentURL.replace(/pv236=[^&]+/, `pv236=${inputId}`);
+        } else {
+          // Pokud pv236 ještě není, přidáme ho
+          currentURL = currentURL.replace('?', `?pv236=${inputId}&`);
+        }
       } else {
         // Pokud URL žádný parametr neobsahuje, použijeme ?pv236=...
-        alert(currentURL);
         currentURL = `${currentURL}?pv236=${inputId}`;
       }
 
