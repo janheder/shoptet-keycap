@@ -2679,3 +2679,62 @@ padding-top: 5px;
   font-size: initial;
 text-transform: uppercase;
 }
+
+
+.order-complete-links{
+  margin-top: 20px;
+}
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table tr{
+  display: flex;
+  align-items:center;
+}
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table td{
+  padding: 10px 20px;
+}
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table td img{
+  display: flex;
+}
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table td.p-quantity{
+  display: inline-block;
+  white-space:nowrap;
+}
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table td.p-price{
+  white-space:nowrap;
+}
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table td.p-name{
+  width: 100%;
+}
+
+.in-dekujeme.ordering-process .recapitulation-table{
+  width: 100%;
+}
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .row {
+    grid-template-columns: 1fr;
+}
+
+.in-dekujeme.ordering-process .recapitulation-table tr:nth-child(odd) {
+    background: #fbfbfb;
+}
+.in-dekujeme.ordering-process .recapitulation-table td{
+  text-align:right;
+}
+.in-dekujeme.ordering-process .recapitulation-table th, .in-dekujeme.ordering-process .recapitulation-table td{
+  padding: 10px;
+}
+
+
+@media screen and (max-width: 991px) {
+.in-dekujeme.ordering-process .overall-wrapper .content-inner{
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  box-shadow: none;
+}
+  .in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table td.p-name{
+    font-size: 14px;
+  }
+  .in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table td.cart-p-image{
+    padding: 0;
+  }
+}
+
