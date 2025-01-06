@@ -207,11 +207,11 @@ function konfigurator236() {
         // Pokud v URL žádný parametr není, použijeme ?pv236=...
         currentURL = `${currentURL}?pv236=${inputId}`;
       }
+  // Změníme URL bez reloadu stránky
+  window.history.pushState({ path: currentURL }, '', currentURL);
 
-            // Přejdeme na novou URL
-            window.history.pushState({ path: newURL }, "", newURL);
+  console.log(`Nová URL: ${currentURL}`);
 
-            console.log(`Nová URL: ${newURL}`);
             // Načteme stránku znovu s novou URL
             window.location.reload();
 
