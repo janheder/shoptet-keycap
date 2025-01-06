@@ -2325,6 +2325,7 @@ summary {
 
 .filter-section fieldset>div.advanced-filters-wrapper {
   flex-direction: column;
+  padding: 0;
 }
 
 .filter-section fieldset>div.advanced-filters-wrapper>div {
@@ -2384,7 +2385,7 @@ summary {
 
 /* Define the button style */
 #category-filter-hover .filter-section form::-webkit-scrollbar-button {
-  background-color: #6F6F6F;
+  background-color: #bbc4cf;
   border-radius: 3px;
   display: none;
 }
@@ -2548,4 +2549,12 @@ summary {
 }
 .variant-list th {
   padding-bottom: 8px;
+}
+.section-dp-items div img{
+  height: 40px;
+  max-width: 130px;
+}
+.subcategories li a:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, .05);
+    z-index: 1;
 }
