@@ -2428,6 +2428,9 @@ width: 100%
 .section-dp{
   padding-bottom: 60px;
 }
+.section-dp:last-child{
+  padding-bottom: 0;
+}
 .section-dp-items{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
