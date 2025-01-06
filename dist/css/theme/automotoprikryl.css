@@ -2372,7 +2372,7 @@ summary {
 
 /* Define the thumb style */
 #category-filter-hover .filter-section form::-webkit-scrollbar-thumb {
-  background: #6F6F6F;
+  background-color: #bbc4cf;
   border-radius: 3px;
 }
 
