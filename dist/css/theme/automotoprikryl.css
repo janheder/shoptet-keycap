@@ -2593,3 +2593,9 @@ background: rgba(233, 68, 0, 0.6);
   font-size: 22px;
   margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .contact-grid,  .contact-grid.--3 {
+    grid-template-columns: 1fr;
+}
+  }
