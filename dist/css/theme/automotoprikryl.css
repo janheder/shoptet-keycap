@@ -2574,6 +2574,7 @@ summary {
 }
 .filter-section.filter-section-count{
   order: -1;
+  padding: 0;
 }
 .filter-total-count{
   display: none;
@@ -2581,6 +2582,7 @@ summary {
 .filter-section.filter-section-count #clear-filters{
   display: flex;
   margin: 0;
+  margin-bottom: 40px;
 }
 .filter-section.filter-section-count #clear-filters a{
 background: rgba(233, 68, 0, 0.6);
