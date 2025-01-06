@@ -2615,3 +2615,6 @@ background: rgba(233, 68, 0, 0.6);
     justify-content: center;
 }
 }
+.p-image .flag-discount .price-save{
+  background: #14406D;
+}
