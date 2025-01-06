@@ -2604,4 +2604,14 @@ background: rgba(233, 68, 0, 0.6);
     .nav-search {
         background-image: url(../../icons/search.svg);
     }
+    .ordering-process .header-top .navigation-buttons {
+      display: none;
+  }
+  
+  .ordering-process .header-top {
+    height: 52px;
+    top: 0;
+    position: relative;
+    justify-content: center;
+}
 }
