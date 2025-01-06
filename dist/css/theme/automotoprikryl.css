@@ -2647,4 +2647,5 @@ background: rgba(233, 68, 0, 0.6);
 }
 .filter-section .select-container + button[disabled]{
   background-color: #eee;
+  color: #6d6c79;
 }
