@@ -204,9 +204,9 @@ function konfigurator236() {
       if (currentURL.includes('?')) {
         // Pokud URL již obsahuje nějaký parametr, přidáme nový na začátek
         currentURL = currentURL.replace('?', `?pv236=${inputId}&`);
-        alert(currentURL);
       } else {
         // Pokud URL žádný parametr neobsahuje, použijeme ?pv236=...
+        alert(currentURL);
         currentURL = `${currentURL}?pv236=${inputId}`;
       }
 
