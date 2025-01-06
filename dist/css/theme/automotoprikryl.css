@@ -633,7 +633,7 @@ h1.category-title::before {
 }
 
 #productsAlternative {
-  padding: 80px 0;
+  padding: 80px 0 0 0;
 }
 
 #productsAlternative::before {
@@ -650,6 +650,7 @@ h1.category-title::before {
 
 .products-related-header {
   text-align: center;
+  padding: 80px 0 0 0;
   margin-bottom: 20px;
 }
 
