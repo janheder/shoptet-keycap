@@ -182,7 +182,7 @@ if (!filterSection) {
         // Najdeme input s odpovídajícím value
         const inputToCheck = filterSection.querySelector(`input[value="${selectedCombination}"]`);
         if (inputToCheck) {
-          const inputId = inputToCheck.id;  // Získáme ID inputu (např. pv[]1553)
+          const inputId = inputToCheck.id.replace(/[^\d]/g, '');  // Extrahujeme číslo z ID (např. 1553)
 
           // Získáme aktuální URL
           let currentURL = window.location.href;
