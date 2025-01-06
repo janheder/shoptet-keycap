@@ -504,6 +504,7 @@ h1.category-title::before {
   text-transform: none;
   font-size: 15px;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .p .p-tools .btn:hover,
@@ -2034,7 +2035,7 @@ summary {
 
 
 .p .price-final strong {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .p .prices .price-additional {
@@ -2048,6 +2049,9 @@ summary {
     padding: 0px 0 40px 0;
   }
 
+  .p .price-final strong {
+    font-size: 16px;
+  }
 
 
 
@@ -2343,6 +2347,8 @@ summary {
 .filter-section fieldset>div.advanced-filters-wrapper .advanced-parameter span {
   height: 20px;
   width: 20px;
+  border-radius: 50%;
+    overflow: hidden;
 }
 
 .filter-section fieldset>div.advanced-filters-wrapper .advanced-parameter span[style="background-color: #000000"]::after {
@@ -2365,7 +2371,7 @@ summary {
 
 /* Define the thumb style */
 #category-filter-hover .filter-section form::-webkit-scrollbar-thumb {
-  background: #EEEEEE;
+  background: #6F6F6F;
   border-radius: 3px;
 }
 
@@ -2378,7 +2384,7 @@ summary {
 
 /* Define the button style */
 #category-filter-hover .filter-section form::-webkit-scrollbar-button {
-  background-color: #EEEEEE;
+  background-color: #6F6F6F;
   border-radius: 3px;
   display: none;
 }
