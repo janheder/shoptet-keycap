@@ -192,25 +192,27 @@ function konfigurator236() {
           if (inputToCheck) {
             const inputId = inputToCheck.id.replace(/[^\d]/g, ""); // Extrahujeme číslo z ID (např. 1553)
 
-            // Získáme aktuální URL
-            let currentURL = window.location.href;
+      // Získáme aktuální URL
+      let currentURL = window.location.href;
 
-      // Odstraníme předchozí výběr (pokud existuje)
+      // Odstraníme předchozí výběr ?pv236=[nějaká hodnota] z URL (pokud existuje)
       const regex = /[?&]pv236=[^&]+/;
       currentURL = currentURL.replace(regex, '');
 
-      // Pokud URL obsahuje nějaké parametry, přidáme nový parametr na začátek
+      // Přidáme nový parametr ?pv236= na začátek
+      // Pokud URL obsahuje již parametry, použijeme ?pv236= a připojíme & pro další parametry
       if (currentURL.includes('?')) {
-        // Pokud je v URL už nějaký parametr, přidáme &pv236=...
+        // Pokud URL již obsahuje nějaký parametr, přidáme nový na začátek
         currentURL = currentURL.replace('?', `?pv236=${inputId}&`);
       } else {
-        // Pokud v URL žádný parametr není, použijeme ?pv236=...
+        // Pokud URL žádný parametr neobsahuje, použijeme ?pv236=...
         currentURL = `${currentURL}?pv236=${inputId}`;
       }
-  // Změníme URL bez reloadu stránky
-  window.history.pushState({ path: currentURL }, '', currentURL);
 
-  console.log(`Nová URL: ${currentURL}`);
+      // Změníme URL bez reloadu stránky
+      window.history.pushState({ path: currentURL }, '', currentURL);
+
+      console.log(`Nová URL: ${currentURL}`);
 
             // Načteme stránku znovu s novou URL
             window.location.reload();
