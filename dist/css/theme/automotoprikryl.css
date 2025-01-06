@@ -2567,3 +2567,24 @@ summary {
   display: none;
 }
 }
+#category-filter-hover{
+  display: flex;
+  flex-direction: column;
+}
+.filter-section.filter-section-count{
+  order: -1;
+}
+.filter-total-count{
+  display: none;
+}
+.filter-section.filter-section-count #clear-filters{
+  display: flex;
+  margin: 0;
+}
+.filter-section.filter-section-count #clear-filters a{
+background: rgba(233, 68, 0, 0.6);
+  color: white;
+  padding: 8px 20px;
+  width: 100%;
+  text-align:center;
+}
