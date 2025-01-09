@@ -2852,12 +2852,10 @@ background: #b4b0c5;
   order: 4;
 }
 .widget-parameter-wrapper .widget-parameter-list {
-  display: flex
-;
+  display: flex;
   padding: 0;
   margin: 0;
   margin-top: 10px;
-gap: 
 }
 .widget-parameter-wrapper li{
 font-size: 0;
