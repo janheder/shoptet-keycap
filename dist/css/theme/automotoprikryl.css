@@ -2913,3 +2913,21 @@ pointer-events: none;
     background: #222;
 }
 
+.contactSection__img{
+  display: none;
+}
+@media screen and (min-width: 992px) {
+.contactSection__img{
+  width: 180px;
+  margin-top: -45px;
+    display: flex;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+.contactSection__inner{
+  padding: 0 20px;
+}
+.contactSection__inner h2{
+  padding: 45px 0;
+}
+}
