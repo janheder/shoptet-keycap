@@ -2918,14 +2918,16 @@ pointer-events: none;
 }
 @media screen and (min-width: 992px) {
 .contactSection__img{
-  width: 180px;
+  width: 220px;
   margin-top: -45px;
-    display: flex;
+  display: flex;
   flex-shrink: 0;
-  margin-right: 20px;
-}
-.contactSection__inner{
   padding: 0 20px;
+  background: radial-gradient(rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 70%);
+}
+
+.contactSection__inner{
+  padding: 0 20px 0 0;
 }
 .contactSection__inner h2{
   padding: 45px 0;
