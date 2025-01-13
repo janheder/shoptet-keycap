@@ -49,7 +49,7 @@ if (productVideos) {
 
             // Vytvoření nového <a> elementu s class .p-thumbnail a onclick atributem
             var newThumbnail = document.createElement('a');
-            newThumbnail.classList.add('p-thumbnail');
+            newThumbnail.classList.add('p-thumbnail', '--video');
             newThumbnail.setAttribute('onclick', `swiffyslider.slideTo(sliderElement, "${newIndex}");`);
 
             // Přidání obrázku do nového <a> elementu
