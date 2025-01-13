@@ -571,7 +571,15 @@ h1.category-title::before {
 .removeable .p-name a.show-related {
   display: none;
 }
-
+.related{
+  display: flex;
+  flex-direction: column;
+}
+.related::before{
+  content: "Zakaznici s timto zbozim nakoupili";
+  padding: 20px 0 10px 0;
+  font-weight: 500;
+}
 
 
 .p-detail .browse-p {
