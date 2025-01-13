@@ -3116,3 +3116,24 @@ option:disabled {
   top: 50%;
   transform: translateY(-50%);
 }
+
+.p-thumbnail.--video{
+  position: relative;
+}
+.p-thumbnail.--video::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 40px;
+  height: 40px;
+  background: url(https://cdn.myshoptet.com/usr/www.velkoobchod-prikryl.cz/user/documents/upload/logo-yt.svg);
+    background-size: contain;
+}
+
+
+.mehub-bonus-product-detail-container{
+  order: 15;
+  margin: 30px 0 0 0 ; 
+}
