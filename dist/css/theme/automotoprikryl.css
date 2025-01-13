@@ -563,8 +563,9 @@ h1.category-title::before {
 }
 
 .removeable {
-  border: 1px solid #eee;
+  border: 1px solid #2c2c2c;
   padding: 15px;
+  z-index: 2;
 }
 
 .removeable .p-name a.show-related {
@@ -1922,7 +1923,7 @@ summary {
 }
 
 .related {
-  box-shadow: 0 3px 7px rgba(0, 0, 0, .08);
+
   display: flex;
   width: 100%;
   margin-top: -11px;
