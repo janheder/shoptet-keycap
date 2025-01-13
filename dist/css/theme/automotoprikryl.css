@@ -1822,7 +1822,7 @@ summary {
 }
 
 .p-detail-inner-header .p-code {
-  display: none;
+ 
 }
 
 .p-detail-inner-header h1 {
@@ -2986,7 +2986,7 @@ padding-top: 60px;
     width: 100%;
 }
 .c-doprava-content td {
-    padding: 10px 0 6px;
+    padding: 12px 0 4px 0; 
   text-align:left;
   font-size: 14px;
 }
@@ -3020,4 +3020,7 @@ padding: 30px 30px;
 }
 .section-dp-items > div{
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+.p-in-in .name span.product-appendix{
+  display: none;
 }
