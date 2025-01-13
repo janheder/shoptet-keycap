@@ -1951,7 +1951,7 @@ summary {
   align-items: center;
   gap: 10px;
   justify-content: space-between;
-  outline: 1px solid #eee;
+  outline: 1px solid #e5e5e5;
   padding: 8px;
 }
 
@@ -3032,4 +3032,12 @@ padding: 30px 30px;
 }
 .p-in-in .name span.product-appendix{
   display: none;
+}
+
+
+.removeable .cart-p-image a{
+  background: transparent;
+}
+.discount-coupon .btn{
+      background: #14406D;
 }
