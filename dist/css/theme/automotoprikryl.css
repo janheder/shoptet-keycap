@@ -576,7 +576,7 @@ h1.category-title::before {
   flex-direction: column;
 }
 .related::before{
-  content: "Zakaznici s timto zbozim nakoupili";
+  content: "Zákazníci s tímto zbožím nakoupili";
   padding: 20px 0 10px 0;
   font-weight: 500;
 }
