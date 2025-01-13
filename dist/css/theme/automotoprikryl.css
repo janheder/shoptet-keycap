@@ -3041,3 +3041,22 @@ padding: 30px 30px;
 .discount-coupon .btn{
       background: #14406D;
 }
+
+.search-whisperer{
+  z-index: 99;
+  background:white;
+}
+.search-whisperer.active{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, .05);
+    border: 1px solid #eee;
+}
+.search-whisperer .search-whisperer-products a:hover .p-info{
+  color: #222;
+}
+
+.search-whisperer-document.whisperer-trigger{
+  background: #fbfbfb;
+  padding: 12px;
+}
