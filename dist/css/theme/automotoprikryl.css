@@ -2566,8 +2566,8 @@ summary {
 }
 
 .section-dp-items div img {
-  height: 40px;
-  max-width: 130px;
+  height: 50px;
+  max-width: 150px;
 }
 
 .subcategories li a:hover {
@@ -2986,7 +2986,7 @@ padding-top: 60px;
     width: 100%;
 }
 .c-doprava-content td {
-    padding: 8px 0;
+    padding: 10px 0 6px;
   text-align:left;
   font-size: 14px;
 }
@@ -3012,6 +3012,8 @@ width: 100%;
 .section-dp-items h4{
   font-size: 20px;
   margin: 0;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #eee;
 }
 .section-dp-items div{
 padding: 30px 30px;
