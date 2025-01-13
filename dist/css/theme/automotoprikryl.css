@@ -563,7 +563,7 @@ h1.category-title::before {
 }
 
 .removeable {
-  border: 1px solid #2c2c2c;
+  border: 5px solid #f2f2f2;
   padding: 15px;
   z-index: 2;
 }
