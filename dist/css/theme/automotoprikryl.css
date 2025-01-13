@@ -913,6 +913,7 @@ footer {
   font-size: 32px;
   max-width: 420px;
   line-height: 1.4;
+  font-weight: 500;
 }
 
 .contactSection-content {
@@ -2930,6 +2931,41 @@ pointer-events: none;
   padding: 0 20px 0 0;
 }
 .contactSection__inner h2{
-  padding: 45px 0;
+  padding: 45px 0 40px 0;
 }
+}
+
+.newsletterSection__formGroup .newsletterSection__btn{
+  height: 48px;
+  padding: 0 16px;
+  line-height: 1.5;
+    font-size: 14px;
+}
+.newsletterSection__formGroup .form-control{
+    height: 48px;
+  padding: 0 18px;
+  font-size: 14px;
+}
+
+.contact-grid{
+  padding-bottom: 0;
+padding-top: 60px;
+}
+.contact-form{
+  padding: 20px;
+  margin: 0;
+}
+.contact-form::before{
+  content: none;
+}
+#formContact{
+  padding: 0;
+}
+
+.contact-prodejna img{
+  height: 100%;
+  object-fit:cover;
+}
+.contact-form p{
+  display: none;
 }
