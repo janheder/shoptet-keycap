@@ -714,6 +714,7 @@ h1.category-title::before {
 @media screen and (max-width: 575px) {
   .cart-content.summary-wrapper .next-step {
     flex-direction: column;
+    gap: 20px;
   }
 
   .cart-content.summary-wrapper .next-step .next-step-back {
@@ -3117,23 +3118,112 @@ option:disabled {
   transform: translateY(-50%);
 }
 
-.p-thumbnail.--video{
+.p-thumbnail.--video {
   position: relative;
 }
-.p-thumbnail.--video::after{
+
+.p-thumbnail.--video::after {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   background: url(https://cdn.myshoptet.com/usr/www.velkoobchod-prikryl.cz/user/documents/upload/logo-yt.svg);
-    background-size: contain;
+  background-size: contain;
 }
 
 
-.mehub-bonus-product-detail-container{
+.mehub-bonus-product-detail-container {
   order: 15;
-  margin: 30px 0 0 0 ; 
+  margin: 30px 0 0 0;
+}
+
+
+.mehub-bonus-product-detail-container .card {
+  border: #FC9D03;
+  background: white;
+  border: 1px solid #eee;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, .05) !important;
+}
+
+.mehub-bonus-product-detail-container .card a {
+  color: #14406D;
+  text-decoration: underline;
+}
+
+.mehub-bonus-product-detail-container .card b {
+  font-weight: 600;
+}
+
+.in-kosik.ordering-process .cart-inner::before {
+  margin-bottom: 30px;
+}
+
+.in-kosik .col-md-8 .cart-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 0;
+  margin-bottom: 40px;
+}
+
+.in-kosik .col-md-8 .cart-content .cart-table {
+  width: 100%;
+}
+
+.mehub-bonus-cart-container {
+  width: 50%
+}
+
+.mehub-bonus-cart-container h4 {
+  display: none;
+}
+
+.mehub-bonus-cart-container .card-title {
+  font-size: 15px;
+  padding: 0;
+}
+
+.mehub-bonus-cart-container .card-text {
+  font-size: 15px;
+  padding: 5px 0 0 0;
+  font-weight: 600;
+  color: #14406D;
+}
+
+.in-kosik .col-md-8 .cart-content .cart-summary {
+  width: 50%;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 20px;
+}
+
+.in-kosik .col-md-8 .cart-content .cart-summary .extras-wrapper {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.in-kosik .col-md-8 .cart-content .cart-summary .extras-wrapper .extra.discount {
+  padding-top: 10px;
+}
+
+.mehub-bonus-cart-container .card {
+  border: #FC9D03;
+  background: white;
+  border: 1px solid #eee;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, .05) !important;
+  color: #0C1116;
+  padding: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .mehub-bonus-cart-container {
+    width: 100%;
+  }
+
+  .in-kosik .col-md-8 .cart-content .cart-summary {
+    width: 100%;
+    padding-left: 0px;
+  }
 }
