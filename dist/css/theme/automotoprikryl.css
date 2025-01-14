@@ -567,6 +567,7 @@ h1.category-title::before {
   box-shadow: 0px 4px 15px rgba(233, 68, 0, 0.1) !important;
   padding: 15px;
   z-index: 2;
+  border-radius: 4px;
 }
 
 .removeable .p-name a.show-related {
@@ -2509,7 +2510,7 @@ summary {
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 @media screen and (max-width: 768px) {
@@ -3227,4 +3228,73 @@ option:disabled {
     width: 100%;
     padding-left: 0px;
   }
+}
+
+.breadcrumbs .appendix{
+  display: none;
+}
+
+.removeable .p-quantity .quantity .amount {
+  border: 1px solid #eee;
+}
+
+.order-summary .checkout-box .btn-block::after{
+content: none;
+}
+
+.order-summary .checkout-box{
+padding-left: 100px;
+padding-right: 10px;
+position: relative;
+padding-top: 25px;
+padding-bottom: 15px;
+}
+.order-summary .checkout-box::before{
+content: "";
+width: 80px;
+height: 100%;
+display: flex;
+position: absolute;
+left: 10px;
+bottom: 0;
+background-image: url(https://cdn.myshoptet.com/usr/www.velkoobchod-prikryl.cz/user/documents/upload/IMG_1064.png);
+    background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.order-summary .checkout-box .contact-box .tel::before{
+margin-right: 5px;
+}
+.order-summary .checkout-box .btn-block{
+font-family: 'Mohave', sans-serif;
+text-transform: uppercase;
+margin-bottom: 10px;
+font-size: 20px;
+}
+.order-summary .checkout-box .contact-box .mail, .order-summary .checkout-box .contact-box .tel{
+font-size: 14px;
+}
+.order-summary .checkout-box .contact-box .mail::before{
+height: 16px;
+width: 16px;
+}
+
+#checkoutContent fieldset.mehub-bonus-checkout-container{
+display: none;
+}
+.search-whisperer-documents{
+  display: none;
+}
+.search-whisperer .search-whisperer-products a{
+  border-bottom: 1px solid #eee;
+}
+.section-dp-items h4{
+  padding: 0;
+  border: 0;
+
+}
+.section-dp-items span{
+  font-size: 14px;
+  text-align:left;
+      color: #5A5E6A;
 }
