@@ -3438,4 +3438,6 @@ option:disabled {
    background: #eff6ff;
     color: #14406D;
 }
-
+.removeable td.p-discount.p-cell{
+  display: none;
+  }
