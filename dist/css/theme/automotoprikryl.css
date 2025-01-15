@@ -2273,8 +2273,8 @@ summary {
 
 @media screen and (max-width: 991px) {
   .p .flags.flags-extra {
-    top: 5px;
-    right: 5px;
+    top: -5px;
+    right: -5px;
   }
 }
 
@@ -3298,3 +3298,41 @@ display: none;
   text-align:left;
       color: #5A5E6A;
 }
+
+.news-item-detail .text{
+  font-size: 16px;
+}
+
+.pricing-table {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 20px 0;
+          
+        }
+        .pricing-column {
+            flex: 1;
+            border: 1px solid #e5e5e5;
+            padding: 20px;
+            margin: 0 10px;
+            text-align: center;
+
+          border-radius: 4px ;
+          margin-bottom: 40px;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+        }
+.pricing-column span{
+  font-size: 14px;
+      color: #4b5563;
+}
+        .pricing-column h3 {
+            margin-bottom: 20px;
+            font-size: 24px;
+                  font-weight: 600;
+        }
+        .pricing-column p {
+            margin-bottom: 0;
+          color: #E94400;
+           font-size: 15px;
+          font-weight: 500;
+        }
