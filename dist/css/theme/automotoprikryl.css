@@ -439,9 +439,6 @@ h1.category-title::before {
   width: 100%;
 }
 
-.hp-blog .news-item:nth-child(4) {
-  display: none;
-}
 
 .hp-blog-top {
   display: flex;
