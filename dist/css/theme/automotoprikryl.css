@@ -1288,10 +1288,14 @@ h3,
 }
 
 .subcategories li a {
-  outline: 1px solid #eee;
+  outline: none;
+  border: 1px solid #eee;
   border-radius: 4px;
 }
-
+.products-top .product {
+  outline: none;
+  border: 1px solid #eee;
+}
 .products-top {
   grid-gap: 10px;
 }
