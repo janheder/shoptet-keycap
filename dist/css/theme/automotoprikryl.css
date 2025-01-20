@@ -3252,7 +3252,7 @@ option:disabled {
 }
 
 .order-summary .checkout-box {
-  padding-left: 100px;
+  padding-left: 90px;
   padding-right: 10px;
   position: relative;
   padding-top: 25px;
@@ -3265,7 +3265,7 @@ option:disabled {
   height: 100%;
   display: flex;
   position: absolute;
-  left: 10px;
+  left: 0px;
   bottom: 0;
   background-image: url(https://www.velkoobchod-prikryl.cz/user/documents/upload/IMG_1044.png);
   background-size: contain;
@@ -3440,4 +3440,55 @@ option:disabled {
 }
 .removeable td.p-discount.p-cell{
   display: none;
+  }
+
+  .in-registrace .content-inner h1{
+    font-size: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .in-registrace .content-inner h1::before{
+    content: "Nakupujete u nás častěji? Rovnou se zaregistrujte";
+      font-size: 28px;
+      margin-bottom: 10px;
+  }
+  .in-registrace .content-inner h1::after{
+    content: "Automaticky se stanete členem věrnostního programu budete sbírat slevy za každý svůj nákup";
+      font-size: 15px;  
+    font-family: "Space Grotesk", sans-serif;
+    text-transform: none;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  
+  
+  .register-points .register-points__title {
+      width: 100%;
+      text-align: left;
+      font-size: 20px;
+  }
+  .register-points {
+      background-color: #fff;
+      border: 0;
+    margin: 0;
+      margin-bottom: 40px;
+      border: 1px solid #E7EEEC;
+      padding: 30px 20px 20px 20px;
+  }
+  .register-points span {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      padding: 8px 0;
+      position: relative;
+  }
+  .register-points span::before {
+      content: "";
+      height: 8px;
+      width: 8px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: rgba(233, 68, 0, 0.6);
+      display: flex;
+      margin-right: 10px;
   }
