@@ -73,7 +73,7 @@ if ($(".in-index").length){
 // LOAD HOMEPAGE NEWS
 // =============================================================================
 
-window.newsSelector = '.news-wrapper .news-item:nth-child(-n+3)';
+window.newsSelector = window.newsSelector || '.news-wrapper .news-item:nth-child(-n+3)';
 
 if ($(".in-index").length) {
     const loadNews = (html) => {
@@ -113,7 +113,6 @@ if ($(".in-index").length) {
             console.error("Error fetching /blog:", error);
         });
 }
-
 
 
 
