@@ -73,10 +73,12 @@ if ($(".in-index").length){
 // LOAD HOMEPAGE NEWS
 // =============================================================================
 
+window.newsSelector = '.news-wrapper .news-item:nth-child(-n+3)';
+
 if ($(".in-index").length) {
     const loadNews = (html) => {
         const nodes = new DOMParser().parseFromString(html, 'text/html');
-        const body = nodes.querySelectorAll('.news-wrapper .news-item:nth-child(-n+3)');
+        const body = nodes.querySelectorAll(window.newsSelector);
         const newsWrapper = document.querySelector('.in-index #newsWrapper');
 
         if (body.length > 0 && newsWrapper) {
@@ -111,6 +113,7 @@ if ($(".in-index").length) {
             console.error("Error fetching /blog:", error);
         });
 }
+
 
 
 
