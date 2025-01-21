@@ -1289,10 +1289,12 @@ h3,
   border: 1px solid #eee;
   border-radius: 4px;
 }
+
 .products-top .product {
   outline: none;
   border: 1px solid #eee;
 }
+
 .products-top {
   grid-gap: 10px;
 }
@@ -3360,136 +3362,164 @@ option:disabled {
   font-size: 15px;
   font-weight: 500;
 }
-.table.customer-orders{
+
+.table.customer-orders {
   margin-top: 30px;
 
 }
-.client-table-font{
+
+.client-table-font {
   font-size: 14px;
 
 }
-.client-table-font td{
+
+.client-table-font td {
   border: 1px solid #eee;
   padding: 5px 10px;
 }
-.table.customer-orders th{
-  line-height: 1.2;  
+
+.table.customer-orders th {
+  line-height: 1.2;
   padding-bottom: 10px;
 }
-.client-table-heading{
+
+.client-table-heading {
   display: none;
 }
-.mehub-bonus-profile-container{
+
+.mehub-bonus-profile-container {
   margin-top: 40px;
 }
-.mehub-bonus-profile-container .card{
+
+.mehub-bonus-profile-container .card {
   background: white;
   border: 1px solid #eee;
 }
-.mehub-bonus-profile-container .card .card-title{
-  text-align:center;
+
+.mehub-bonus-profile-container .card .card-title {
+  text-align: center;
 }
-.mehub-bonus-profile-container .card .card-text{
-  text-align:center;
+
+.mehub-bonus-profile-container .card .card-text {
+  text-align: center;
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-.customer-page #content .mehub-bonus-profile-container .card .card-text table{
+
+.customer-page #content .mehub-bonus-profile-container .card .card-text table {
   margin: 20px 0;
 }
-.mehub-bonus-profile-container .card .card-actions .btn{
+
+.mehub-bonus-profile-container .card .card-actions .btn {
   background: #eff6ff;
-    color: #14406D;
+  color: #14406D;
   height: 46px;
 }
+
 .customer-page #content .col-sm-12 {
   padding: 20px;
   border: 1px solid #eee;
   margin-bottom: 20px;
 }
-.customer-page #content table{
+
+.customer-page #content table {
   margin-bottom: 30px;
 }
-.customer-page #content table td{
-    border: 1px solid #eee;
+
+.customer-page #content table td {
+  border: 1px solid #eee;
   padding: 5px 10px;
 }
-.customer-page #content h1{
+
+.customer-page #content h1 {
   margin-bottom: 30px;
   position: relative;
   padding-bottom: 20px;
 }
+
 .customer-page #content h1::before {
   content: "";
-    height: 4px;
-    width: 40px;
-    display: inline-flex
-;
-    background: #d6bcfa;
-    position: absolute;
-    bottom: 0;
-    background: #E94400;
-    opacity: 0.5;
+  height: 4px;
+  width: 40px;
+  display: inline-flex;
+  background: #d6bcfa;
+  position: absolute;
+  bottom: 0;
+  background: #E94400;
+  opacity: 0.5;
 }
-.customer-page #content h2{
+
+.customer-page #content h2 {
   font-size: 22px;
 }
-.customer-page .sidebar ul li.logout .btn {
-   background: #eff6ff;
-    color: #14406D;
-}
-.removeable td.p-discount.p-cell{
-  display: none;
-  }
 
-  .in-registrace .content-inner h1{
-    font-size: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  .in-registrace .content-inner h1::before{
-    content: "Nakupujete u nás častěji? Rovnou se zaregistrujte";
-      font-size: 28px;
-      margin-bottom: 10px;
-  }
-  .in-registrace .content-inner h1::after{
-    content: "Automaticky se stanete členem věrnostního programu budete sbírat slevy za každý svůj nákup";
-      font-size: 15px;  
-    font-family: "Space Grotesk", sans-serif;
-    text-transform: none;
-    margin-bottom: 20px;
-    font-weight: 400;
-  }
-  
-  
-  .register-points .register-points__title {
-      width: 100%;
-      text-align: left;
-      font-size: 20px;
-  }
-  .register-points {
-      background-color: #fff;
-      border: 0;
-    margin: 0;
-      margin-bottom: 40px;
-      border: 1px solid #E7EEEC;
-      padding: 30px 20px 20px 20px;
-  }
-  .register-points span {
-      display: flex;
-      width: 100%;
-      align-items: center;
-      padding: 8px 0;
-      position: relative;
-  }
-  .register-points span::before {
-      content: "";
-      height: 8px;
-      width: 8px;
-      flex-shrink: 0;
-      border-radius: 50%;
-      background: rgba(233, 68, 0, 0.6);
-      display: flex;
-      margin-right: 10px;
-  }
+.customer-page .sidebar ul li.logout .btn {
+  background: #eff6ff;
+  color: #14406D;
+}
+
+.removeable td.p-discount.p-cell {
+  display: none;
+}
+
+.in-registrace .content-inner h1 {
+  font-size: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.in-registrace .content-inner h1::before {
+  content: "Nakupujete u nás častěji? Rovnou se zaregistrujte";
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.in-registrace .content-inner h1::after {
+  content: "Automaticky se stanete členem věrnostního programu budete sbírat slevy za každý svůj nákup";
+  font-size: 15px;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: none;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+
+.register-points .register-points__title {
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+}
+
+.register-points {
+  background-color: #fff;
+  border: 0;
+  margin: 0;
+  margin-bottom: 40px;
+  border: 1px solid #E7EEEC;
+  padding: 30px 20px 20px 20px;
+}
+
+.register-points span {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 8px 0;
+  position: relative;
+}
+
+.register-points span::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgba(233, 68, 0, 0.6);
+  display: flex;
+  margin-right: 10px;
+}
+
+summary::marker {
+  content: "";
+  display: none;
+}
