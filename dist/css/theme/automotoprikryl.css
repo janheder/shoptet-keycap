@@ -3523,3 +3523,28 @@ summary::marker {
   content: "";
   display: none;
 }
+
+details {
+  border: 1px solid #eee;
+}
+.hp-blog .news-wrapper {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: 100%;
+}
+.hp-blog .news-item .image a {
+  height: 260px;
+  display: flex
+}
+.register-points {
+
+  background-image: url(https://cdn.myshoptet.com/usr/www.velkoobchod-prikryl.cz/user/documents/upload/IMG_1064.png);
+  background-position: right 10px center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 575px) {
+  .register-points {
+      background-image: none;
+  }
+}
