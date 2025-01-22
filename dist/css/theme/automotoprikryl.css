@@ -3548,3 +3548,9 @@ details {
       background-image: none;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .hp-blog .news-wrapper {
+      grid-template-columns: 1fr;
+  }
+}
