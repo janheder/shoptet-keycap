@@ -3561,3 +3561,95 @@ details {
   align-items: center;
       color: #0C1116;
 }
+.customer-page #content .content-inner{
+  border: 1px solid #eee;
+}
+.customer-page .content-wrapper-in .sidebar{
+  margin-bottom: 60px;
+}
+.id-1022 #content article header h1{
+  display: none;
+}
+.storySection{
+  display: flex;
+  gap: 40px;
+  align-items:center;
+  position:relative;
+   z-index: 1;
+ 
+}
+.storySection.--top{
+  justify-content:space-between;
+}
+.storySection.--top .storySection__img{
+  width: 400px;
+}
+.storySection.--top .storySection__centerText{
+  max-width: 660px;
+}
+.storySection__centerText h1{
+  position:relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.storySection__centerText h1::after {
+    content: "";
+    background: #E94400;
+    opacity: 0.5;
+    height: 4px;
+    width: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.storySection.--top .btn{
+  margin-top: 20px;
+}
+.storySection.--support{
+  padding: 60px 0;
+}
+
+.storySection.--support::before {
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: #fafafa;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+}
+.storySection.--support .storySection__img{
+    width: 600px;
+}
+
+.storySection.--location{
+  padding: 60px 0 0 0;
+}
+.storySection.--location .storySection__img{
+    width: 500px;
+}
+.storySection.--points::before {
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: rgba(233, 68, 0, 0.6);
+    display: flex;
+    position: absolute;
+    z-index: -1;
+
+}
+.storySection.--points{
+    color:white;
+}
+.storySection.--points .benefitBanner{
+  width: 100%;
+}
+.storySection.--points img{
+  filter: invert(1) brightness(50);
+}
