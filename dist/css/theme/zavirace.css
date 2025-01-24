@@ -2103,3 +2103,16 @@ justify-content: flex-start;
       font-size: 15px;
   }
   }
+
+  
+#order-shipping-methods .show-tooltip,
+.payment-info .question-tooltip {
+  height: 16px;
+  width: 16px;
+  font-size: 12px;
+    background: #b4b0c5;
+}
+.payment-info {
+    flex-direction: row;
+    align-items: center;
+}
