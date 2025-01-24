@@ -2050,3 +2050,11 @@ justify-content: flex-start;
   height: var(--logistics-modal-height) !important;
   width: 100% !important;
 }
+
+@media screen and (max-width: 575px) {
+  .p .p-bottom>div{
+           flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+  }
+}
