@@ -1947,8 +1947,8 @@ grid-column-start: 2;
   line-height: 1.5;
 }
 .news-item-detail {
-    margin: 0 auto;
-    max-width: 100%;
+    margin: 0;
+
 }
 .item-custom.--ver3 .item-custom-content {
     max-width: 50%;
