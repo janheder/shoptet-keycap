@@ -2116,3 +2116,12 @@ justify-content: flex-start;
     flex-direction: row;
     align-items: center;
 }
+
+.type-page .content-inner table th,
+.type-page .content-inner table td{
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+}
+.type-page .content-inner h2{
+  font-size: 26px;
+}
