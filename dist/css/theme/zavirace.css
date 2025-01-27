@@ -2125,3 +2125,10 @@ justify-content: flex-start;
 .type-page .content-inner h2{
   font-size: 26px;
 }
+
+.cookiesSetting__bottom button{
+  border-radius: 0;
+}
+.cookiesSetting__bottom button.cookiesSetting__button--green{
+      background: #C4000A;
+}
