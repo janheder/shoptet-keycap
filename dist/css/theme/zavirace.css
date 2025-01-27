@@ -1132,13 +1132,13 @@ a {
   max-width: 480px;
   bottom: 1px;
   top: auto;
-  left: 60px;
+  right: 60px;
   background: white;
 }
 
 @media screen and (max-width: 991px) {
   .item-custom.--ver2 .item-custom-content {
-    left: 20px;
+    right: 20px;
     max-width: 60%;
     padding: 20px;
   }
