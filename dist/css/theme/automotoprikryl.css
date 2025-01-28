@@ -3653,3 +3653,23 @@ details {
 .storySection.--points img{
   filter: invert(1) brightness(50);
 }
+
+@media (min-width: 992px) {
+  body.ordering-process::after {
+      content: "";
+      height: 400px;
+      width: 100%;
+      display: flex;
+      background-image: url(https://www.velkoobchod-prikryl.cz/user/documents/upload/cart-bg3.png);
+      background-position: center bottom;
+    background-repeat:repeat-x;
+      background-size: contain;
+position:absolute;
+    bottom: 0;
+
+  }
+.ordering-process .content-wrapper {
+  min-height: calc(100vh - 138px);
+  padding-bottom: 400px;
+}
+}
