@@ -3547,6 +3547,10 @@ details {
   .register-points span{
     max-width: 50%;
   }
+  .register-points {
+    background-size: 50%;
+    background-position: bottom right;
+}
 }
 
 @media screen and (max-width: 991px) {
