@@ -3544,8 +3544,8 @@ details {
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 575px) {
-  .register-points {
-      background-image: none;
+  .register-points span{
+    max-width: 50%;
   }
 }
 
