@@ -3696,4 +3696,10 @@ position:absolute;
       width: 100%;
   }
   }
-  
+  @media screen and (max-width: 575px) {
+    .section-dp-items {
+        grid-template-columns: 1fr ;
+        gap: 10px;
+
+    }
+}
