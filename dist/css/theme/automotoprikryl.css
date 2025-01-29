@@ -3703,3 +3703,7 @@ position:absolute;
 
     }
 }
+
+.subcategories li a{
+  border-color: #999;
+}
