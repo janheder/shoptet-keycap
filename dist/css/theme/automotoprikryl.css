@@ -3704,6 +3704,6 @@ position:absolute;
     }
 }
 
-.subcategories li a{
-  border-color: #999;
+.subcategories li a, .products-block .p, .form-control, .customer-page #content table td, .cart-related-product, .removeable .p-quantity .quantity .amount{
+  border-color: #d9d9d9;
 }
