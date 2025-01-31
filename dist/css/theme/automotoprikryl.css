@@ -3737,3 +3737,58 @@ position:absolute;
   font-weight: 500;
     font-size: 14px;
 }
+
+.category-header>form, #filters h4, .p-image, .order-delivery-payment-form .radio-wrapper label{
+  border-color: #d9d9d9;
+}
+.products-top .product{
+border-radius: 6px;
+}
+
+#vyberte-jiny-darek{
+list-style: none;
+padding: 0;
+margin: 0;
+height: 260px;
+}
+#vyberte-jiny-darek li{
+display: flex;
+    flex-direction: row-reverse;
+align-items:center;
+width: 100%;
+flex-grow: 1;
+justify-content: flex-end;
+}
+.extras-wrapper #vyberte-jiny-darek{
+ height: auto;;
+}
+.extras-wrapper #vyberte-jiny-darek li{
+pointer-events: none;
+}
+#vyberte-jiny-darek li label{
+display: flex;
+align-items:center;
+}
+.free-gift-trigger{
+margin-top: -15px;
+margin-bottom: 30px;
+display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.free-gift-trigger::after{
+content: "dárek";
+}
+#cboxLoadedContent #vyberte-jiny-darek li{
+width: 100%;
+cursor: pointer;  
+flex-grow: 1;
+}
+#cboxLoadedContent #vyberte-jiny-darek li label{
+padding: 10px;  cursor: pointer; 
+}
+#cboxLoadedContent #vyberte-jiny-darek li label:hover{
+background: #eee;
+  width: 100%;
+flex-grow: 1;
+}
