@@ -3709,12 +3709,7 @@ position:absolute;
 }
 
 .free-gift{
-  border: 1px solid rgba(233, 68, 0, 0.5);
-  background: rgba(233, 68, 0, 0.02) ;
-  padding: 10px 15px;
-  margin-bottom: 20px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 15px rgba(233, 68, 0, 0.1) !important;
+
 }
 .free-gifts-img-hover{
   display: none;
@@ -3725,6 +3720,12 @@ position:absolute;
   mix-blend-mode: multiply;
 }
 .free-gifts-wrapper{
+  border: 1px solid rgba(233, 68, 0, 0.5);
+  background: rgba(233, 68, 0, 0.02) ;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 15px rgba(233, 68, 0, 0.1) !important;
     display: flex;
   align-items:center;
 }
