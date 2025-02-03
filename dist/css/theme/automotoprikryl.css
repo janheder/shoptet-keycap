@@ -3864,3 +3864,10 @@ details {
   padding: 2px 4px;
   border-radius: 3px;
 }
+.p .prices span {
+  color: #6D6C79;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1;
+  text-decoration: line-through;
+}
