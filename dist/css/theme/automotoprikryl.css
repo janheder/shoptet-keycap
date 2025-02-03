@@ -3527,15 +3527,18 @@ summary::marker {
 details {
   border: 1px solid #eee;
 }
+
 .hp-blog .news-wrapper {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   width: 100%;
 }
+
 .hp-blog .news-item .image a {
   height: 260px;
   display: flex
 }
+
 .register-points {
 
   background-image: url(https://cdn.myshoptet.com/usr/www.velkoobchod-prikryl.cz/user/documents/upload/IMG_1064.png);
@@ -3543,252 +3546,321 @@ details {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 @media screen and (max-width: 575px) {
-  .register-points span{
+  .register-points span {
     max-width: 50%;
   }
+
   .register-points {
     background-size: 50%;
     background-position: bottom right;
-}
+  }
 }
 
 @media screen and (max-width: 991px) {
   .hp-blog .news-wrapper {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
-.benefitBanner__link{
+.benefitBanner__link {
   display: flex;
   justify-content: center;
   align-items: center;
-      color: #0C1116;
+  color: #0C1116;
 }
-.customer-page #content .content-inner{
+
+.customer-page #content .content-inner {
   border: 1px solid #eee;
 }
-.customer-page .content-wrapper-in .sidebar{
+
+.customer-page .content-wrapper-in .sidebar {
   margin-bottom: 60px;
 }
-.id-1022 #content article header h1{
+
+.id-1022 #content article header h1 {
   display: none;
 }
-.storySection{
+
+.storySection {
   display: flex;
   gap: 40px;
-  align-items:center;
-  position:relative;
-   z-index: 1;
- 
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
 }
-.storySection.--top{
-  justify-content:space-between;
+
+.storySection.--top {
+  justify-content: space-between;
 }
-.storySection.--top .storySection__img{
+
+.storySection.--top .storySection__img {
   width: 400px;
 }
-.storySection.--top .storySection__centerText{
+
+.storySection.--top .storySection__centerText {
   max-width: 660px;
 }
-.storySection__centerText h1{
-  position:relative;
+
+.storySection__centerText h1 {
+  position: relative;
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
+
 .storySection__centerText h1::after {
-    content: "";
-    background: #E94400;
-    opacity: 0.5;
-    height: 4px;
-    width: 120px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  content: "";
+  background: #E94400;
+  opacity: 0.5;
+  height: 4px;
+  width: 120px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
-.storySection.--top .btn{
+
+.storySection.--top .btn {
   margin-top: 20px;
 }
-.storySection.--support{
+
+.storySection.--support {
   padding: 60px 0;
 }
 
 .storySection.--support::before {
-    content: "";
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    height: 100%;
-    background: #fafafa;
-    display: flex;
-    position: absolute;
-    z-index: -1;
-}
-.storySection.--support .storySection__img{
-    width: 600px;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background: #fafafa;
+  display: flex;
+  position: absolute;
+  z-index: -1;
 }
 
-.storySection.--location{
+.storySection.--support .storySection__img {
+  width: 600px;
+}
+
+.storySection.--location {
   padding: 60px 0 0 0;
 }
-.storySection.--location .storySection__img{
-    width: 500px;
+
+.storySection.--location .storySection__img {
+  width: 500px;
 }
+
 .storySection.--points::before {
-    content: "";
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    height: 100%;
-    background: rgba(233, 68, 0, 0.6);
-    display: flex;
-    position: absolute;
-    z-index: -1;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background: rgba(233, 68, 0, 0.6);
+  display: flex;
+  position: absolute;
+  z-index: -1;
 
 }
-.storySection.--points{
-    color:white;
+
+.storySection.--points {
+  color: white;
 }
-.storySection.--points .benefitBanner{
+
+.storySection.--points .benefitBanner {
   width: 100%;
 }
-.storySection.--points img{
+
+.storySection.--points img {
   filter: invert(1) brightness(50);
 }
 
 @media (min-width: 992px) {
   body.ordering-process::after {
-      content: "";
-      height: 400px;
-      width: 100%;
-      display: flex;
-      background-image: url(https://www.velkoobchod-prikryl.cz/user/documents/upload/cart-bg3.png);
-      background-position: center bottom;
-    background-repeat:repeat-x;
-      background-size: contain;
-position:absolute;
+    content: "";
+    height: 400px;
+    width: 100%;
+    display: flex;
+    background-image: url(https://www.velkoobchod-prikryl.cz/user/documents/upload/cart-bg3.png);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: absolute;
     bottom: 0;
 
   }
-.ordering-process .content-wrapper {
-  min-height: calc(100vh - 138px);
-  padding-bottom: 400px;
-}
+
+  .ordering-process .content-wrapper {
+    min-height: calc(100vh - 138px);
+    padding-bottom: 400px;
+  }
 }
 
 
 @media screen and (max-width: 991px) {
   .storySection {
-      flex-direction:column;
+    flex-direction: column;
   }
-    .storySection.--top .storySection__centerText {
-      max-width: 100%;
-  }
-    .storySection.--support .storySection__img {
-      max-width: 600px;
-      width: 100%;
-      flex-shrink: 0;
-  }
-    .storySection.--location .storySection__img {
-          max-width: 600px;
-      width: 100%;
-  }
-  }
-  @media screen and (max-width: 575px) {
-    .section-dp-items {
-        grid-template-columns: 1fr ;
-        gap: 10px;
 
-    }
+  .storySection.--top .storySection__centerText {
+    max-width: 100%;
+  }
+
+  .storySection.--support .storySection__img {
+    max-width: 600px;
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  .storySection.--location .storySection__img {
+    max-width: 600px;
+    width: 100%;
+  }
 }
 
-.subcategories li a, .products-block .p, .form-control, .customer-page #content table td, .cart-related-product, .removeable .p-quantity .quantity .amount, .products-top .product{
+@media screen and (max-width: 575px) {
+  .section-dp-items {
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+  }
+}
+
+.subcategories li a,
+.products-block .p,
+.form-control,
+.customer-page #content table td,
+.cart-related-product,
+.removeable .p-quantity .quantity .amount,
+.products-top .product {
   border-color: #d9d9d9;
 }
 
-.free-gift{
+.free-gift {}
 
-}
-.free-gifts-img-hover{
+.free-gifts-img-hover {
   display: none;
 }
-.free-gift img{
+
+.free-gift img {
   height: 60px;
   margin-right: 10px;
   mix-blend-mode: multiply;
 }
-.free-gifts-wrapper{
+
+.free-gifts-wrapper {
   border: 1px solid rgba(233, 68, 0, 0.5);
-  background: rgba(233, 68, 0, 0.02) ;
+  background: rgba(233, 68, 0, 0.02);
   padding: 10px 15px;
   margin-bottom: 20px;
   border-radius: 4px;
   box-shadow: 0px 4px 15px rgba(233, 68, 0, 0.1) !important;
-    display: flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
 }
-.free-gift-name::before{
+
+.free-gift-name::before {
   content: "Dárek";
   display: flex;
   color: #E94400;
   text-transform: uppercase;
   font-weight: 500;
-    font-size: 14px;
+  font-size: 14px;
 }
 
-.category-header>form, #filters h4, .p-image, .order-delivery-payment-form .radio-wrapper label{
+.category-header>form,
+#filters h4,
+.p-image,
+.order-delivery-payment-form .radio-wrapper label {
   border-color: #d9d9d9;
 }
-.products-top .product{
-border-radius: 6px;
+
+.products-top .product {
+  border-radius: 6px;
 }
 
-#vyberte-jiny-darek{
-list-style: none;
-padding: 0;
-margin: 0;
-height: 260px;
+#vyberte-jiny-darek {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 260px;
 }
-#vyberte-jiny-darek li{
-display: flex;
-    flex-direction: row-reverse;
-align-items:center;
-width: 100%;
-flex-grow: 1;
-justify-content: flex-end;
+
+#vyberte-jiny-darek li {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+  justify-content: flex-end;
 }
-.extras-wrapper #vyberte-jiny-darek{
- height: auto;;
+
+.extras-wrapper #vyberte-jiny-darek {
+  height: auto;
+  ;
 }
-.extras-wrapper #vyberte-jiny-darek li{
-pointer-events: none;
+
+.extras-wrapper #vyberte-jiny-darek li {
+  pointer-events: none;
 }
-#vyberte-jiny-darek li label{
-display: flex;
-align-items:center;
+
+#vyberte-jiny-darek li label {
+  display: flex;
+  align-items: center;
 }
-.free-gift-trigger{
-margin-top: -15px;
-margin-bottom: 30px;
-display: flex;
+
+.free-gift-trigger {
+  margin-top: -15px;
+  margin-bottom: 30px;
+  display: flex;
   flex-direction: row;
   gap: 5px;
 }
-.free-gift-trigger::after{
-content: "dárek";
+
+.free-gift-trigger::after {
+  content: "dárek";
 }
-#cboxLoadedContent #vyberte-jiny-darek li{
-width: 100%;
-cursor: pointer;  
-flex-grow: 1;
-}
-#cboxLoadedContent #vyberte-jiny-darek li label{
-padding: 10px;  cursor: pointer; 
-}
-#cboxLoadedContent #vyberte-jiny-darek li label:hover{
-background: #eee;
+
+#cboxLoadedContent #vyberte-jiny-darek li {
   width: 100%;
-flex-grow: 1;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+#cboxLoadedContent #vyberte-jiny-darek li label {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#cboxLoadedContent #vyberte-jiny-darek li label:hover {
+  background: #eee;
+  width: 100%;
+  flex-grow: 1;
+}
+
+
+.p-final-price-wrapper .price-standard {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.p-final-price-wrapper .price-standard span {
+  text-decoration: line-through;
+}
+
+.p-final-price-wrapper .price-standard span.price-save {
+  display: flex;
+  text-decoration: none;
+  background: #14406D;
+  color: white;
+  padding: 0;
+  margin-right: 5px;
+  padding: 2px 4px;
+  border-radius: 3px;
 }
