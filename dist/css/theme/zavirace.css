@@ -2175,3 +2175,16 @@ justify-content: flex-start;
   display: none;
 }
 }
+
+.order-complete-links{
+  gap: 20px;
+  display: flex;
+  flex-direction:column;
+}
+.suspend-redirect div{
+  text-align:center;
+  margin: 20px 0;
+}
+.reca-payment-wrap{
+    text-align:center;
+}
