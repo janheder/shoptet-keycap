@@ -2169,3 +2169,9 @@ justify-content: flex-start;
 .in-kosik .cart-summary h4{
   display: none;
 }
+
+@media screen and (min-width: 992px) {
+.menu-level-1 .menu-item-29{
+  display: none;
+}
+}
