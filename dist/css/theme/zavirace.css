@@ -2135,6 +2135,43 @@ justify-content: flex-start;
 }
 
 
+.in-kosik .cart-summary h4{
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+.menu-level-1 .menu-item-29{
+  display: none;
+}
+}
+
+.order-complete-links{
+  gap: 20px;
+  display: flex;
+  flex-direction:column;
+}
+.suspend-redirect div{
+  text-align:center;
+  margin: 20px 0;
+}
+.reca-payment-wrap{
+    text-align:center;
+}
+
+
+.cog-cognito{
+  margin: 0 !important;
+  margin-top: 60px !important;
+}
+.kontakty__infoTitle {
+    color: #5D5C5C;
+}
+
+.p-in-in .name{
+  color: #5D5C5C;
+}
+
+
 .free-gift {}
 
 .free-gifts-img-hover {
@@ -2166,25 +2203,80 @@ justify-content: flex-start;
   font-weight: 500;
   font-size: 14px;
 }
-.in-kosik .cart-summary h4{
-  display: none;
-}
 
-@media screen and (min-width: 992px) {
-.menu-level-1 .menu-item-29{
+.free-gift #vyberte-jiny-darek{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+    
+}
+.free-gift #vyberte-jiny-darek li{
   display: none;
+  list-style: none;
 }
-}
-
-.order-complete-links{
-  gap: 20px;
+.free-gift #vyberte-jiny-darek li.active{
   display: flex;
-  flex-direction:column;
 }
-.suspend-redirect div{
-  text-align:center;
-  margin: 20px 0;
+.free-gift #vyberte-jiny-darek li input{
+  appearance:none;
 }
-.reca-payment-wrap{
-    text-align:center;
+.free-gift #vyberte-jiny-darek li label{
+  display: flex;
+}
+.free-gift #vyberte-jiny-darek .free-gift-label{
+  display: flex;
+  align-items:center;
+}
+
+.free-gift-trigger{
+  margin-bottom: 30px;
+  font-size: 0;
+}
+.free-gift-trigger::after{
+  content: "Vybrat jiný dárek";
+    font-size: 15px;
+}
+.free-gifts-wrapper form{
+  display: flex;
+}
+
+#cboxContent #vyberte-jiny-darek{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#cboxContent #vyberte-jiny-darek li{
+  list-style: none;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+#cboxContent #vyberte-jiny-darek li label{
+    display: flex;
+  gap: 20px;
+    cursor: pointer;
+}
+#cboxContent #vyberte-jiny-darek li label:hover{
+  background:#f4f4f4;
+}
+#cboxContent #vyberte-jiny-darek li .free-gift-label{
+  text-align:left;
+      display: flex;
+  align-items: center;
+}
+
+.in-kosik #colorbox,
+.in-kosik #cboxWrapper,
+.in-kosik  #cboxContent,
+.in-kosik #cboxLoadedContent{
+  width: 100% !important;
+ height: 100% !important;
+
+}
+.in-kosik #colorbox{  
+  max-width: 800px;
+    top: 50% !important;
+  left: 50% !important;
+  height: 400px !important;
+  transform: translate(-50%,-50%);
 }
