@@ -2326,3 +2326,18 @@ width: 100px;
 .in-dekujeme.ordering-process .for-free{
   color: #C4000A;
 }
+
+.cart-content.summary-wrapper .price-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-size: 14px;
+  gap: 5px 20px;
+  background: #F7F7F8;
+}
+.order-summary-item.price .price-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.order-summary-item.price .price-wrapper .price.price-primary, .order-summary-item.price .price-wrapper .price.price-secondary {
+  text-align: right;
+}
