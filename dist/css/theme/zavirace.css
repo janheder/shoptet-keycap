@@ -2273,13 +2273,18 @@ justify-content: flex-start;
  height: 100% !important;
 
 }
-.in-kosik #colorbox{  
-  max-width: 800px;
-    top: 50% !important;
-  left: 50% !important;
-  height: 400px !important;
-  transform: translate(-50%,-50%);
-}
+
+@media screen and (min-width: 992px) {
+  .in-kosik #colorbox{  
+    max-width: 800px;
+      top: 50% !important;
+    left: 50% !important;
+    height: 400px !important;
+    transform: translate(-50%,-50%);
+  }
+  
+  }
+  
 
 
 .cart-item-gift{
