@@ -2341,3 +2341,8 @@ width: 100px;
 .order-summary-item.price .price-wrapper .price.price-primary, .order-summary-item.price .price-wrapper .price.price-secondary {
   text-align: right;
 }
+
+.swiffy-slider .slider-nav{
+  height: 40px;
+  top: 155px;
+}
