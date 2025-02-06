@@ -2296,3 +2296,33 @@ justify-content: flex-start;
     left: 0;
     background: #fff;
 }
+
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table tr{
+  width: 100%;
+  display: flex;
+  
+}
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table  td.cart-p-image{
+width: 100px;
+  border: 0;
+  flex-shrink: 0;
+
+}
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table  td.p-name{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content:center;
+}
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table  td.p-name br{
+  display: none;
+}
+.in-dekujeme.ordering-process .content-inner .recapitulation-wrapper .cart-table td.p-price.p-cell{
+    display: flex;
+  flex-direction: column;
+  justify-content:center;
+      text-align: right;
+}
+.in-dekujeme.ordering-process .for-free{
+  color: #C4000A;
+}
