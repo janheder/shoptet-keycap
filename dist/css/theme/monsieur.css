@@ -112,12 +112,13 @@ h1.category-title,
 }
 
 #footer {
-    background: #313231;
-    color: white;
+    background: #F7F4F1;
+    color: #0B0B0B;
 }
 
 #footer a {
-    color: white;
+    color: #404040;
+    font-size: 16px;
 }
 
 .nav-user {
@@ -423,9 +424,10 @@ body.--searchActive .search {
 
 .custom-footer h4 {
     margin: 0;
-    color: #9F9F9F;
-    font-size: 15px;
+    color: #0B0B0B;
+    font-size: 16px;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .custom-footer h4::before {
