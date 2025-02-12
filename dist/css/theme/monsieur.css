@@ -1188,7 +1188,8 @@ body.--searchActive .search {
 .before-carousel .banners-row {
     display: grid;
     grid-template-columns: 2fr 1fr;
-
+    background: white;
+    padding: 10px;
 }
 
 .next-to-carousel-banners {
