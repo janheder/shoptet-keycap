@@ -1,7 +1,7 @@
 body {
     font-family: "Afacad", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 a {
@@ -103,7 +103,7 @@ h1.category-title,
 }
 
 .menu-level-1>li>a b {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .benefitBanner__content {
@@ -115,7 +115,9 @@ h1.category-title,
 .nav-search {
     background-image: url(../../icons/search-white.svg);  
 }
-
+.form-control{
+    font-size: 17px;
+}
 
 
 .carousel {
@@ -404,7 +406,7 @@ body.--searchActive .search {
 .footer-bottom {
     border: 0;
     position: relative;
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 0;
 }
 
