@@ -1205,3 +1205,9 @@ body.--searchActive .search {
 .next-to-carousel-banners .banner-wrapper {
     width: 100%;
 }
+
+.footer-links-icons .footer-icons{
+    display: flex;
+    gap: 20px;
+    align-items:center;
+  }
