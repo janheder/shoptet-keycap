@@ -198,14 +198,14 @@ h1.category-title,
 
 .hp-about-content h2 {
     margin-bottom: 40px;
-    color: #313231;
-    font-size: 30px;
+    color: #fff;
+    font-size: 34px;
     line-height: 1.5;
 }
 
 .hp-about-content p {
     font-weight: 400;
-    color: #8A8A8A;
+    color: #fff;
     font-size: 18px;
 }
 
@@ -358,32 +358,9 @@ body.--searchActive .search {
     border-bottom: 1px solid #E5E5E5;
 }
 
-.next-to-carousel-banners .banner-wrapper a.homeCategories-single {
-    height: 280px;
-    background-color: #313231;
-    padding: 20px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    font-size: 30px;
-    font-family: "Playfair display";
-    color: white;
-    border-radius: 0;
-    background-size: cover;
-    position: relative;
-}
 
-.next-to-carousel-banners .banner-wrapper a.homeCategories-single.--saty {
-    background-image: url("https://www.712.cz/user/documents/upload/cat-saty.png");
-}
 
-.next-to-carousel-banners .banner-wrapper a.homeCategories-single.--overaly {
-    background-image: url("https://www.712.cz/user/documents/upload/cat-overaly.png");
-}
 
-.next-to-carousel-banners .banner-wrapper a.homeCategories-single.--komplety {
-    background-image: url("https://www.712.cz/user/documents/upload/cat-komplety.png");
-}
 
 .hp-about {
     position: relative;
@@ -397,7 +374,9 @@ body.--searchActive .search {
     transform: translateX(-50%);
     width: 100vw;
     height: 100%;
-    background: #FAFAFA;
+    background-color: #283457;
+    background-image: url("https://www.monsieur.cz/user/documents/upload/bg-about.png");
+    background-size: cover;
     display: flex;
     position: absolute;
     z-index: -1;
@@ -841,9 +820,6 @@ body.--searchActive .search {
     justify-content: flex-start;
 }
 
-.hp-about {
-    border-bottom: 1px solid #e5e5e5;
-}
 
 .custom-footer__instagram {
     position: relative;
