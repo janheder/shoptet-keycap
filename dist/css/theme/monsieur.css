@@ -184,15 +184,15 @@ h1.category-title,
 
 .hp-about {
     display: flex;
-    padding: 80px 0 0 0;
+    padding: 80px 0 80px 0;
     gap: 40px;
     align-items: center;
     justify-content: space-between;
 }
 
 .hp-about-content {
-    max-width: 420px;
-    padding-bottom: 60px;
+    max-width: 580px;
+    padding-bottom: 0px;
 }
 
 
