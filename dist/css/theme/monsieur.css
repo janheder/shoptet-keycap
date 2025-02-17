@@ -292,9 +292,6 @@ body.--searchActive .search {
     }
 }
 
-.user-action .container {
-    max-width: 1920px;
-}
 
 .order-delivery-payment-form .radio-wrapper label,
 .form-control {
@@ -1467,4 +1464,59 @@ body.--searchActive .search {
     padding: 4px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, .08);
 
+}
+.hp-blog-top {
+    margin-bottom: 40px;
+}
+.news-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    width: 100%;
+}
+.news-item {
+    border-radius: 0px;
+    overflow: hidden;
+    transition: .3s ease transform;
+}
+.news-item time{
+  position:relative;
+  top: auto;
+  left: auto;
+  right: auto;
+    background: none;
+  order: -1;
+  text-align:center;
+    font-size: 16px;
+}
+.news-item .title{
+    position:relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  background: none;
+    text-align:center;
+  padding-top: 0;
+  font-size: 24px;
+}
+.news-item .text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+.news-item .image a {
+    height: 380px;
+
+}
+
+.type-product .benefitBanner.position--benefitProduct{
+   order: 999;
+}
+.type-product #content {
+    padding-bottom: 0px;
+}
+.news-item:nth-child(3){
+  display: none;
 }
