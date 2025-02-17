@@ -1520,3 +1520,10 @@ body.--searchActive .search {
 .news-item:nth-child(3){
   display: none;
 }
+.nav-user:hover, .nav-user:active, .nav-user:focus {
+    background-color: rgba(255,255,255,0.1);
+}
+.menu-level-1>li>a:hover, .menu-level-1>li>a:active, .menu-level-1>li>a:focus {
+    background-color: rgba(255,255,255,0.1);
+  color: white;
+}
