@@ -1785,3 +1785,119 @@ body.--searchActive .search {
   .news-item .image a:hover img {
       opacity: 1;
   }
+  .order-delivery-payment-form .radio-wrapper input:checked+label {
+    background: #fff;
+    border: 1px solid #C79655;
+    background: transparent;
+    box-shadow: 0px 4px 15px rgba(199, 150, 85, .2);
+    z-index: 2;
+}
+.cart-widget-product-name strong a {
+    font-size: 16px;
+}
+.cart-widget-product-name span {
+    font-size: 16px;
+}
+
+.homepageCats{
+  padding-top: 80px;
+  position:relative;
+}
+.in-index .homepageCats::before {
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 50%;
+    background: #F7F4F1;
+    display: flex
+;
+    position: absolute;
+    z-index: -1;
+}
+.homepageCats h2{
+      font-size: 34px;
+      text-align: center;
+    padding: 0px 0 30px 0;
+}
+
+.homepageCats-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.homepageCats-main{
+  
+}
+.homepageCats-main h3{
+  color: white;
+  margin: 0;
+        font-size: 32px;
+}
+.homepageCats-main a{
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+align-items:flex-end;
+
+  background-color: #0B0B0B;
+background-image: url(https://www.monsieur.cz/user/documents/upload/hp-cat.png);
+  background-size: cover;
+}
+.homepageCats-main a div{
+  display: flex;
+    justify-content: space-between;
+  align-items:center;
+  width: 100%;
+    padding: 30px 40px;
+}
+.homepageCats-secondary{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.homepageCats-secondary a{
+  border: 1px solid #C79655;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  font-family: 'Abhaya Libre', sans-serif;
+  color: #0B0B0B;
+  font-size: 22px;
+  padding: 50px 20px 50px 20px;
+      background: #fff;;
+}
+.homepageCats-secondary a span{
+  height: 100px;
+  width: 100px;
+    display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.homepageCats-secondary a img{
+
+}
+.homepageCats-secondary a:last-child{
+  grid-column: 1 / span 2;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.homepageCats-secondary a:last-child div{
+    display: flex;
+  flex-direction: column;
+width: 100%;
+    align-items: center;
+  font-size: 28px;
+ 
+}
+.homepageCats-secondary a:last-child div span{
+  width: auto;
+  height: 46px;
+   margin-top: 15px;
+  margin-bottom: 0;
+}
