@@ -1723,7 +1723,7 @@ h1.category-title {
       aspect-ratio: initial;
     }
   }
-  
+
 
 .hp-about-content .btn,
 .hp-blog-top .btn {
@@ -1994,3 +1994,115 @@ h1.category-title {
           width: 100%;
       }
   }
+
+
+@media screen and (max-width: 991px) {
+    .footereLogos {
+      flex-direction: column;
+      padding: 40px 0;
+      gap: 40px;
+      align-items: center;
+    }
+  
+    .footereLogos h3 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .contactSection__inner {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+  
+    .contactSection__inner h2 {
+      max-width: 100%;
+      text-align: center;
+      font-size: 24px;
+    }
+  
+    #socialSection {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 0;
+    }
+  
+    .socialSection__wrap {
+      gap: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    #footerLinks {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .socialSection__wrap a {
+      flex-direction: column;
+      font-size: 14px;
+      text-align: center;
+      gap: 10px;
+    }
+  
+  
+    .socialSection__wrap a img {
+      margin: 0;
+      gap: 10px;
+    }
+  
+    #socialSection {
+      gap: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .contactSection-single {
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .contactSection-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .contactSection-content a {
+      padding: 0;
+      text-align: center;
+    }
+  
+    .contactSection-content a span {
+      font-size: 17px;
+    }
+  
+    .contactSection__inner {
+      padding: 25px 20px;
+      gap: 20px;
+    }
+  
+    .p-detail-inner-header h1 {
+      font-size: 26px;
+    }
+  
+    #socialSection {
+      padding: 25px 0;
+    }
+  
+    .socialSection__wrap {
+      gap: 15px;
+    }
+  
+    .p-in-in .name span {
+      font-size: 14px;
+    }
+  
+    .p .availability {
+      font-size: 14px;
+    }
+  
+  }
+  
