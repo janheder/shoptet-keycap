@@ -144,7 +144,6 @@ h1.category-title,
 }
 
 #footer a {
-    color: #404040;
     font-size: 16px;
 }
 
@@ -1289,6 +1288,7 @@ body.--searchActive .search {
     color: white;
     max-width: 420px;
     margin: 0;
+    font-size: 34px;
 }
 
 #contactSection .contactSection-content {
@@ -1557,7 +1557,7 @@ h1.category-title {
 
 #socialSection h2 {
     margin: 0;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 500;
 
 }
@@ -1600,8 +1600,8 @@ h1.category-title {
     #footerMain {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 40px 0;
-        gap: 30px;
+        padding: 20px 0 40px 0;
+        gap: 20px;
     }
     .footer-links-wrap {
         flex-direction: column;
