@@ -8,8 +8,7 @@ if (productVideos) {
     var thumbnailsInner = document.querySelector('.p-thumbnails-inner > div');
 
     if (videoBlocks.length > 0 && sliderContainer && thumbnailsInner) {
-        var existingThumbnails = thumbnailsInner.querySelectorAll('.p-thumbnail');
-        var currentIndex = existingThumbnails.length + 1;
+        var existingSlides = sliderContainer.children.length;
         
         videoBlocks.forEach((element, index) => {
             if (element.tagName.toLowerCase() === 'iframe') {
@@ -43,12 +42,12 @@ if (productVideos) {
                     // Vytvoření náhledového obrázku
                     var newThumbnail = document.createElement('a');
                     newThumbnail.classList.add('p-thumbnail', '--video');
-                    newThumbnail.setAttribute('onclick', `swiffyslider.slideTo(sliderElement, '${currentIndex}');`);
+                    newThumbnail.setAttribute('onclick', `swiffyslider.slideTo(sliderElement, '${existingSlides}');`);
                     newThumbnail.innerHTML = `<img src="${thumbnailUrl}" alt="Video Thumbnail">`;
                     
                     // Přidání nového thumbnailu do .p-thumbnails-inner > div
                     thumbnailsInner.appendChild(newThumbnail);
-                    currentIndex++;
+                    existingSlides++;
                 }
             }
         });
