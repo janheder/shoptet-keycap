@@ -1592,7 +1592,7 @@ h1.category-title {
     gap: 60px;
 }
 
-.newsletterSection__form filedset{
+.newsletterSection__form fieldset{
     width: 100%;
 }
 
@@ -2171,4 +2171,9 @@ h1.category-title {
   .homepageCats-secondary a:last-child img{
     display: none;
   }
+}
+@media screen and (max-width: 991px) {
+    .homepageCats-main a div{
+        flex-direction: column;
+    }
 }
