@@ -1587,11 +1587,14 @@ h1.category-title {
 
 #footerMain {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 6fr 5fr;
     padding: 60px 0;
     gap: 60px;
 }
 
+.newsletterSection__form filedset{
+    width: 100%;
+}
 
 .footer-links-wrap {
     display: flex;
