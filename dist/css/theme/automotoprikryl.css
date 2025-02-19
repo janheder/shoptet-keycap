@@ -3871,3 +3871,10 @@ details {
   line-height: 1;
   text-decoration: line-through;
 }
+.next-step-back{
+  background: transparent;
+}
+.next-step-back:hover{
+    background: transparent;
+      color: #6d6c79;
+}
