@@ -2155,3 +2155,13 @@ h1.category-title {
     flex-direction: row;
     align-items: center;
 }
+
+@media screen and (max-width: 575px) {
+.homepageCats-secondary a:last-child{
+    padding: 20px;
+  }
+  
+  .homepageCats-secondary a:last-child img{
+    display: none;
+  }
+}

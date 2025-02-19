@@ -3878,3 +3878,12 @@ details {
     background: transparent;
       color: #6d6c79;
 }
+.order-summary-item{
+  text-align:center;
+}
+.order-complete-links{
+text-align:center;
+}
+.order-complete-links > p:last-child{
+display: none;
+}
