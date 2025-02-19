@@ -475,7 +475,9 @@ body.--searchActive .search {
 
 .formNewsletterWidget {}
 
-.newsletterSection__form {}
+.newsletterSection__form {
+
+}
 
 .newsletterSection__formGroup .validator-msg-holder {
     margin: 0;
@@ -484,6 +486,8 @@ body.--searchActive .search {
 .newsletterSection__formGroup {
     background: white;
     padding: 2px;
+    max-width: 100%;
+    width: 100%;
 }
 
 .newsletterSection__formGroup .form-control {
@@ -2108,7 +2112,7 @@ h1.category-title {
     .socialSection__wrap {
         gap: 15px;
     }
-
+    .newsletterSection__formGroup
     .p-in-in .name span {
         font-size: 14px;
     }
