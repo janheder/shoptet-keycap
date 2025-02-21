@@ -13,3 +13,80 @@ if ($("#checkoutSidebar .cart-item-gift").length){
         .then(loadPicImages)
         .then($("img").unveil())
 }
+
+
+/****************prislusenstvi********************/
+
+const targetSpan = Array.from(document.querySelectorAll('#navigation-2'))
+                        .find(span => span.textContent.includes('Dveřní zavírače'));
+                        
+// Najdeme aktivní prvek navigace, který obsahuje "Podlahové zavírače"
+const isPodlahove = Array.from(document.querySelectorAll('#navigation-3'))
+    .some(span => span.textContent.includes('Podlahové'));
+
+// Najdeme aktivní prvek navigace, který obsahuje "Příslušenství k podlahovým zavíračům"
+const isPrislusenstviPodlahove = Array.from(document.querySelectorAll('#navigation-3'))
+    .some(span => span.textContent.includes('Příslušenství k podlahovým zavíračům'));
+
+if (targetSpan) {
+
+    // Nastavíme URL a nadpis podle podmínky
+    let url, headingText;
+
+    if (isPrislusenstviPodlahove) {
+        url = '/prislusenstvi-k-podlahovym-zaviracum-2';
+        headingText = 'Příslušenství k podlahovým zavíračům';
+    } else if (isPodlahove) {
+        url = '/prislusenstvi-k-podlahovym-zaviracum-2';
+        headingText = 'Příslušenství k podlahovým zavíračům';
+    } else {
+        url = '/prislusenstvi-k-hornim-zaviracum';
+        headingText = 'Příslušenství k horním zavíračům';
+    }
+
+    // Pomocí fetch načteme obsah stránky
+    fetch(url)
+      .then(response => response.text())
+      .then(html => {
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = html;
+
+        const productsElement = tempDiv.querySelector('#products');
+
+        if (productsElement) {
+          const productsChildren = Array.from(productsElement.children);
+          const newProductsElement = document.createElement('div');
+          newProductsElement.id = 'products';
+          newProductsElement.classList.add('products-block');
+
+          const limitedProducts = productsChildren.slice(0, Math.min(4, productsChildren.length));
+          limitedProducts.forEach(child => newProductsElement.appendChild(child));
+
+          const containerDiv = document.createElement('div');
+          containerDiv.classList.add('dalsi-prislusenstvi');
+
+          const headerDiv = document.createElement('div');
+          headerDiv.classList.add('dalsi-prislusenstvi-header');
+
+          const heading = document.createElement('h2');
+          heading.textContent = headingText;
+          headerDiv.appendChild(heading);
+
+          const moreLink = document.createElement('a');
+          moreLink.href = url;
+          moreLink.textContent = 'Více příslušenství';
+          headerDiv.appendChild(moreLink);
+
+          containerDiv.appendChild(headerDiv);
+          containerDiv.appendChild(newProductsElement);
+
+          document.querySelector('#description').insertAdjacentElement('afterend', containerDiv);
+
+          $("img").unveil();
+        }
+      })
+      .catch(error => {
+        console.error('Chyba při načítání obsahu:', error);
+      });
+
+}
