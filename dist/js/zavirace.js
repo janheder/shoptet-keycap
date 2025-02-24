@@ -90,3 +90,69 @@ if (targetSpan) {
       });
 
 }
+
+
+/****************prislusenstvi antipanikove********************/
+
+const targetSpan2 = Array.from(document.querySelectorAll('#navigation-2'))
+                        .find(span => span.textContent.includes('Antipanikové kování'));
+
+// Ověříme, zda je aktivní některá z těchto kategorií
+const isAntipanikovaHrazda = Array.from(document.querySelectorAll('#navigation-3'))
+    .some(span => 
+        span.textContent.includes('Kyvné hrazdy') ||
+        span.textContent.includes('Tlačné hrazdy') ||
+        span.textContent.includes('Příslušenství k antipanikovým hrazdám')
+    );
+
+if (targetSpan2) {
+    // Vždy načítáme produkty z Příslušenství k antipanikovým hrazdám
+    const url = '/prislusenstvi-k-antipanikovym-hrazdam';
+    const headingText = 'Příslušenství k antipanikovým hrazdám';
+
+    // Pomocí fetch načteme obsah stránky
+    fetch(url)
+      .then(response => response.text())
+      .then(html => {
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = html;
+
+        const productsElement = tempDiv.querySelector('#products');
+
+        if (productsElement) {
+          const productsChildren = Array.from(productsElement.children);
+          const newProductsElement = document.createElement('div');
+          newProductsElement.id = 'products';
+          newProductsElement.classList.add('products-block');
+
+          const limitedProducts = productsChildren.slice(0, Math.min(4, productsChildren.length));
+          limitedProducts.forEach(child => newProductsElement.appendChild(child));
+
+          const containerDiv = document.createElement('div');
+          containerDiv.classList.add('dalsi-prislusenstvi');
+
+          const headerDiv = document.createElement('div');
+          headerDiv.classList.add('dalsi-prislusenstvi-header');
+
+          const heading = document.createElement('h2');
+          heading.textContent = headingText;
+          headerDiv.appendChild(heading);
+
+          const moreLink = document.createElement('a');
+          moreLink.href = url;
+          moreLink.textContent = 'Více příslušenství';
+          headerDiv.appendChild(moreLink);
+
+          containerDiv.appendChild(headerDiv);
+          containerDiv.appendChild(newProductsElement);
+
+          document.querySelector('#description').insertAdjacentElement('afterend', containerDiv);
+
+          $("img").unveil();
+        }
+      })
+      .catch(error => {
+        console.error('Chyba při načítání obsahu:', error);
+      });
+}
+
