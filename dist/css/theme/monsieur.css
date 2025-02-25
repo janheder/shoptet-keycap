@@ -2206,3 +2206,8 @@ h1.category-title {
 .cart-content .consents {
     font-size: 16px;
 }
+@media screen and (max-width: 991px) {
+    .menu-level-1>li>a {
+        color: #0f172a;
+    }
+}
