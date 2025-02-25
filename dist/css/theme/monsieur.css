@@ -1693,7 +1693,6 @@ h1.category-title {
 .next-to-carousel-banners .banner-wrapper {
     width: 100%;
     padding: 0;
-    aspect-ratio: 2 /1;
 }
 
 .next-to-carousel-banners .banner-wrapper {
@@ -2176,4 +2175,34 @@ h1.category-title {
     .homepageCats-main a div{
         flex-direction: column;
     }
+}
+.login-widget .password-helper a {
+    font-size: 16px;
+  text-transform: uppercase;
+}
+#checkoutContent .co-contact-information h4+.form-group label::before {
+    content: none;
+}
+#checkoutContent .co-contact-information h4+.form-group label::after{
+      content: none;
+}
+
+#checkoutContent .co-contact-information h4+.form-group{
+    border: 0;
+  padding: 0;
+  max-width: 520px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#checkoutContent .co-contact-information h4+.form-group label{
+  font-size: 17px;
+    padding: 0;
+  border: 0;
+  background: transparent;
+}
+.form-group input[type=checkbox]+label {
+    font-size: 17px !important;
+}
+.cart-content .consents {
+    font-size: 16px;
 }
