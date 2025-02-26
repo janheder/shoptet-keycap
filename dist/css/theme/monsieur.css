@@ -1697,13 +1697,15 @@ h1.category-title {
 
 .next-to-carousel-banners .banner-wrapper {
     overflow: hidden;
-    position: relative;
+    position: relative;    
+    aspect-ratio: 1 / 2;
 }
 
 .next-to-carousel-banners .banner-wrapper a {
     object-fit: cover;
     height: 100%;
     width: 100%;
+
 }
 
 @media screen and (max-width: 991px) {
