@@ -3887,3 +3887,37 @@ text-align:center;
 .order-complete-links > p:last-child{
 display: none;
 }
+
+#checkoutContent fieldset.mehub-bonus-checkout-container{
+  display: flex;
+  margin-bottom: 40px;
+  order: -1;
+}
+#checkoutContent .co-contact-information h4+.form-group label::before {
+    content: none;
+}
+#checkoutContent .co-contact-information h4+.form-group label::after{
+      content: none;
+}
+
+#checkoutContent .co-contact-information h4+.form-group{
+    border: 0;
+  padding: 0;
+  max-width: 520px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#checkoutContent .co-contact-information h4+.form-group label{
+  font-size: 17px;
+    padding: 0;
+  border: 0;
+  background: transparent;
+}
+.cart-content {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.template-11 .mehub-bonus-checkout-container h4::before{
+  content: none;
+}
