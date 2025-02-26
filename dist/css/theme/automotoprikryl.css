@@ -3874,7 +3874,7 @@ details {
 .next-step-back{
   background: transparent;
 }
-.next-step-back:hover{
+.next-step-back:hover, .next-step-back:active, .next-step-back:focus{
     background: transparent;
       color: #6d6c79;
 }

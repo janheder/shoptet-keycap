@@ -156,3 +156,75 @@ if (targetSpan2) {
       });
 }
 
+
+
+/****************prislusenstvi zástrče********************/
+
+
+const targetSpan3 = Array.from(document.querySelectorAll('#navigation-2'))
+                        .find(span => span.textContent.includes('Dveřní kování'));
+
+
+// Funkce pro kontrolu, zda je aktivní určité kategorie
+function isCategoryActive(selector, keywords) {
+    return Array.from(document.querySelectorAll(selector))
+        .some(span => keywords.some(keyword => span.textContent.includes(keyword)));
+}
+
+// Ověříme, zda jsme v podkategoriích Zástrče nebo Příslušenství k zástrčím
+const isZastrceOrPrislusenstvi = isCategoryActive('#navigation-3', [
+    'Zástrče',
+    'Příslušenství k zástrčím'
+]);
+
+
+if (targetSpan3) {
+    // Načítáme produkty z Příslušenství k zástrčím
+    const url = '/prislusenstvi-k-zastrcim';
+    const headingText = 'Příslušenství k zástrčím';
+
+    // Pomocí fetch načteme obsah stránky
+    fetch(url)
+      .then(response => response.text())
+      .then(html => {
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = html;
+
+        const productsElement = tempDiv.querySelector('#products');
+
+        if (productsElement) {
+          const productsChildren = Array.from(productsElement.children);
+          const newProductsElement = document.createElement('div');
+          newProductsElement.id = 'products';
+          newProductsElement.classList.add('products-block');
+
+          const limitedProducts = productsChildren.slice(0, Math.min(4, productsChildren.length));
+          limitedProducts.forEach(child => newProductsElement.appendChild(child));
+
+          const containerDiv = document.createElement('div');
+          containerDiv.classList.add('dalsi-prislusenstvi');
+
+          const headerDiv = document.createElement('div');
+          headerDiv.classList.add('dalsi-prislusenstvi-header');
+
+          const heading = document.createElement('h2');
+          heading.textContent = headingText;
+          headerDiv.appendChild(heading);
+
+          const moreLink = document.createElement('a');
+          moreLink.href = url;
+          moreLink.textContent = 'Více příslušenství';
+          headerDiv.appendChild(moreLink);
+
+          containerDiv.appendChild(headerDiv);
+          containerDiv.appendChild(newProductsElement);
+
+          document.querySelector('#description').insertAdjacentElement('afterend', containerDiv);
+
+          $("img").unveil();
+        }
+      })
+      .catch(error => {
+        console.error('Chyba při načítání obsahu:', error);
+      });
+}
