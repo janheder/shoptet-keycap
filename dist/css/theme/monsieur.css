@@ -2213,3 +2213,7 @@ h1.category-title {
         color: #0f172a;
     }
 }
+.before-carousel .banners-row {
+    background: white;
+  outline: 10px solid white;
+}
