@@ -2352,3 +2352,6 @@ width: 100px;
   height: 40px;
   top: 155px;
 }
+.p .p-bottom>div {
+  flex-wrap: nowrap;
+}
