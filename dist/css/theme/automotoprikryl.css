@@ -3180,6 +3180,7 @@ option:disabled {
   flex-wrap: wrap;
   gap: 20px 0;
   margin-bottom: 40px;
+  flex-direction: row;
 }
 
 .in-kosik .col-md-8 .cart-content .cart-table {
