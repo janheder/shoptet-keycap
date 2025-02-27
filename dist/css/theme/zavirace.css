@@ -2369,3 +2369,26 @@ width: 100px;
 .p .price-final strong {
 display: inline-block;
 }
+#relatedFiles{
+  display: flex !important;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#relatedFiles::before{
+  content: "Související soubory";
+    margin-bottom: 25px;
+    position: relative;
+  color: #5D5C5C;
+      font-size: 24px;
+    font-weight: 500;
+  width: 100%;
+}
+#relatedFiles li{
+      background: #FBFBFB;
+}
+#relatedFiles li a{
+  padding-top: 10px;
+}
