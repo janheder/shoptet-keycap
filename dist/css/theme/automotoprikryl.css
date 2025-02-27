@@ -3922,3 +3922,17 @@ display: none;
 .template-11 .mehub-bonus-checkout-container h4::before{
   content: none;
 }
+.removeable .p-total .price-final{
+  flex-direction: row;
+  gap: 10px;
+}
+.removeable .p-total .price-final .discount-tag{
+      display: flex;
+    text-decoration: none;
+    background: #14406D;
+    color: white;
+    padding: 0;
+    padding: 1px 4px;
+    border-radius: 3px;
+  font-size: 12px;
+}
