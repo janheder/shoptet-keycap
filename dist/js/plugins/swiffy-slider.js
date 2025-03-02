@@ -47,22 +47,26 @@ const swiffyslider = function() {
             const noloop = sliderElement.classList.contains("slider-nav-noloop");
             const nodelay = sliderElement.classList.contains("slider-nav-nodelay");
             const slides = container.children;
-            const gapWidth = parseInt(window.getComputedStyle(container).columnGap);
-            const scrollStep = slides[0].offsetWidth + gapWidth;
+            const gapWidth = parseInt(window.getComputedStyle(container).columnGap) || 0;
+            const scrollStep = slides[0].clientWidth + gapWidth; // Použití clientWidth místo offsetWidth
             let scrollLeftPosition = next ?
                 container.scrollLeft + scrollStep :
                 container.scrollLeft - scrollStep;
+        
             if (fullpage) {
                 scrollLeftPosition = next ?
-                    container.scrollLeft + container.offsetWidth :
-                    container.scrollLeft - container.offsetWidth;
+                    container.scrollLeft + container.clientWidth :
+                    container.scrollLeft - container.clientWidth;
             }
-            if (container.scrollLeft < 1 && !next && !noloop) {
-                scrollLeftPosition = (container.scrollWidth - container.offsetWidth);
+        
+            // **Oprava podmínky pro looping**
+            if (container.scrollLeft <= 0 && !next && !noloop) {
+                scrollLeftPosition = container.scrollWidth - container.clientWidth; // Oprava pro 60% šířku
             }
-            if (container.scrollLeft >= (container.scrollWidth - container.offsetWidth) && next && !noloop) {
+            if (container.scrollLeft >= (container.scrollWidth - container.clientWidth - 1) && next && !noloop) {
                 scrollLeftPosition = 0;
             }
+        
             container.scroll({
                 left: scrollLeftPosition,
                 behavior: nodelay ? "auto" : "smooth"
