@@ -2223,3 +2223,13 @@ h1.category-title {
 .carousel .item a {
     width: 100%;
 }
+@media screen and (max-width: 575px) {
+.homepageCats-main h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.homepageCats-secondary a{
+    text-align: center;
+}
+}
