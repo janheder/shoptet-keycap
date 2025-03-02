@@ -2258,3 +2258,12 @@ h1.category-title {
         height: 280px;
     }
 }
+
+
+@media screen and (max-width: 991px) {
+    .before-carousel .banners-row{
+        display: grid;
+        grid-template-columns: 850fr 44fr; 
+    }
+
+}
