@@ -1698,7 +1698,7 @@ h1.category-title {
 .next-to-carousel-banners .banner-wrapper {
     overflow: hidden;
     position: relative;    
-    aspect-ratio: 1 / 2;
+    aspect-ratio: 2 / 1;
 }
 
 .next-to-carousel-banners .banner-wrapper a {
