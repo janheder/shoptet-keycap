@@ -2392,3 +2392,6 @@ display: inline-block;
 #relatedFiles li a{
   padding-top: 10px;
 }
+#carousel.swiffy-slider .slider-nav {
+  top: 48%;
+}
