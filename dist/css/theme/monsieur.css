@@ -2260,7 +2260,7 @@ h1.category-title {
 }
 
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 991px) {
     .before-carousel .banners-row{
         display: grid;
         grid-template-columns: 850fr 44fr; 
