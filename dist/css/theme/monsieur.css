@@ -475,9 +475,7 @@ body.--searchActive .search {
 
 .formNewsletterWidget {}
 
-.newsletterSection__form {
-
-}
+.newsletterSection__form {}
 
 .newsletterSection__formGroup .validator-msg-holder {
     margin: 0;
@@ -1024,6 +1022,10 @@ body.--searchActive .search {
 
     .carousel {
         padding-top: 10px;
+    }
+
+    .before-carousel::before {
+        content: none;
     }
 }
 
@@ -1593,7 +1595,7 @@ h1.category-title {
     gap: 60px;
 }
 
-.newsletterSection__form fieldset{
+.newsletterSection__form fieldset {
     width: 100%;
 }
 
@@ -1698,7 +1700,7 @@ h1.category-title {
 
 .next-to-carousel-banners .banner-wrapper {
     overflow: hidden;
-    position: relative;    
+    position: relative;
     aspect-ratio: 2 / 1;
 }
 
@@ -2117,8 +2119,8 @@ h1.category-title {
     .socialSection__wrap {
         gap: 15px;
     }
-    .newsletterSection__formGroup
-    .p-in-in .name span {
+
+    .newsletterSection__formGroup .p-in-in .name span {
         font-size: 14px;
     }
 
@@ -2166,78 +2168,93 @@ h1.category-title {
 }
 
 @media screen and (max-width: 575px) {
-.homepageCats-secondary a:last-child{
-    padding: 20px;
-  }
-  
-  .homepageCats-secondary a:last-child img{
-    display: none;
-  }
+    .homepageCats-secondary a:last-child {
+        padding: 20px;
+    }
+
+    .homepageCats-secondary a:last-child img {
+        display: none;
+    }
 }
+
 @media screen and (max-width: 991px) {
-    .homepageCats-main a div{
+    .homepageCats-main a div {
         flex-direction: column;
     }
 }
+
 .login-widget .password-helper a {
     font-size: 16px;
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
+
 #checkoutContent .co-contact-information h4+.form-group label::before {
     content: none;
 }
-#checkoutContent .co-contact-information h4+.form-group label::after{
-      content: none;
+
+#checkoutContent .co-contact-information h4+.form-group label::after {
+    content: none;
 }
 
-#checkoutContent .co-contact-information h4+.form-group{
+#checkoutContent .co-contact-information h4+.form-group {
     border: 0;
-  padding: 0;
-  max-width: 520px;
-  flex-direction: column;
-  align-items: flex-start;
-}
-#checkoutContent .co-contact-information h4+.form-group label{
-  font-size: 17px;
     padding: 0;
-  border: 0;
-  background: transparent;
+    max-width: 520px;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
+#checkoutContent .co-contact-information h4+.form-group label {
+    font-size: 17px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
 .form-group input[type=checkbox]+label {
     font-size: 17px !important;
 }
+
 .cart-content .consents {
     font-size: 16px;
 }
+
 @media screen and (max-width: 991px) {
     .menu-level-1>li>a {
         color: #0f172a;
     }
 }
+
 .before-carousel .banners-row {
     background: white;
-  outline: 10px solid white;
+    outline: 10px solid white;
 }
+
 .carousel-inner {
     border-radius: 0px;
 }
+
 .carousel .item a {
     width: 100%;
 }
+
 @media screen and (max-width: 575px) {
-.homepageCats-main h3 {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-.homepageCats-secondary a{
-    text-align: center;
-}
-.hp-blog-top{
-    flex-direction: column;
-    gap: 20px;
-}
-.news-item .image a {
-    height: 280px;
-}
+    .homepageCats-main h3 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .homepageCats-secondary a {
+        text-align: center;
+    }
+
+    .hp-blog-top {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .news-item .image a {
+        height: 280px;
+    }
 }
