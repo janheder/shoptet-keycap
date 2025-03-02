@@ -961,6 +961,7 @@ body.--searchActive .search {
 
     .hp-about {
         padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .hp-about-content {
@@ -2231,5 +2232,12 @@ h1.category-title {
 }
 .homepageCats-secondary a{
     text-align: center;
+}
+.hp-blog-top{
+    flex-direction: column;
+    gap: 20px;
+}
+.news-item .image a {
+    height: 280px;
 }
 }
