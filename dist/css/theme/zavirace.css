@@ -2395,3 +2395,12 @@ display: inline-block;
 #carousel.swiffy-slider .slider-nav {
   top: 48%;
 }
+#tab-content > #relatedFiles {
+  display: none !important;
+}
+.basic-description #relatedFiles {
+  margin-top: 40px;
+}
+#relatedFiles li a{
+  text-align:center;
+}
