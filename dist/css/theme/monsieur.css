@@ -2356,3 +2356,11 @@ h1.category-title {
     height: var(--logistics-modal-height) !important;
     width: 100% !important;
   }
+  .user-action .login-widget {
+    display: none;
+  }
+  
+  body.--navUserActive .user-action .login-widget {
+    display: flex;
+  }
+  
