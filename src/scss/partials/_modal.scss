@@ -28,7 +28,7 @@
     #cboxOverlay{
         z-index: 20;
     }
-    #colorbox{
+    #colorbox {
         z-index: 21;
         bottom: 0 !important;
         width: 100% !important;
@@ -37,9 +37,11 @@
         position: fixed !important;
         height: 90vh !important;
         transform: translateY(100%);
-        transition: 0.2s ease transform;
-        display: flex !important;
+        transition: .2s ease transform;
         opacity: 1 !important;
+    }
+    #colorbox:not(.logistics-modal) {
+        display: flex !important;
     }
     #colorbox[style*="display: block"]{
         transform: translateY(0%);
