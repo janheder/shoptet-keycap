@@ -2288,7 +2288,7 @@ h1.category-title {
 .cart-content.summary-wrapper .price-wrapper {
     display: grid;
     grid-template-columns: 1fr auto;
-
+    font-size: 15px;
     gap: 5px 20px;
     background: #F7F7F8;
 }
@@ -2375,4 +2375,133 @@ body.--navUserActive .user-action .login-widget {
 }
 #checkoutContent .co-contact-information label[for="login"] + div{
         display: none !important;
+}
+
+.cart-summary h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+.in-kosik .col-md-8 .cart-content {
+    display: flex
+;
+    flex-wrap: wrap;
+    gap: 40px 0;
+    margin-bottom: 40px;
+    flex-direction: row;
+}
+.in-kosik .col-md-8 .cart-content .cart-summary {
+    width: 50%;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
+}
+.cart-content {
+    margin: 0;
+    display: flex
+;
+    flex-direction: column;
+}
+.mehub-bonus-product-detail-container {
+  order: 15;
+  margin: 30px 0 0 0;
+}
+
+
+.mehub-bonus-product-detail-container .card {
+  border: #FC9D03;
+  background: white;
+  border: 1px solid #eee;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, .05) !important;
+}
+
+.mehub-bonus-product-detail-container .card a {
+  color: #14406D;
+  text-decoration: underline;
+}
+
+.mehub-bonus-product-detail-container .card b {
+  font-weight: 600;
+}
+
+.mehub-bonus-cart-container {
+  width: 50%
+}
+
+.mehub-bonus-cart-container h4 {
+  display: none;
+}
+
+.mehub-bonus-cart-container .card-title {
+  font-size: 15px;
+  padding: 0;
+}
+
+.mehub-bonus-cart-container .card-text {
+  font-size: 15px;
+  padding: 5px 0 0 0;
+  font-weight: 600;
+  color: #14406D;
+}
+
+.mehub-bonus-cart-container .card {
+  border: #FC9D03;
+  background: white;
+  border: 1px solid #eee;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, .05) !important;
+  color: #0C1116;
+  padding: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .mehub-bonus-cart-container {
+    width: 100%;
+  }
+
+}
+
+#checkoutContent fieldset.mehub-bonus-checkout-container {
+  display: none;
+}
+
+.mehub-bonus-profile-container {
+  margin-top: 40px;
+}
+
+.mehub-bonus-profile-container .card {
+  background: white;
+  border: 1px solid #eee;
+}
+
+.mehub-bonus-profile-container .card .card-title {
+  text-align: center;
+}
+
+.mehub-bonus-profile-container .card .card-text {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer-page #content .mehub-bonus-profile-container .card .card-text table {
+  margin: 20px 0;
+}
+
+.mehub-bonus-profile-container .card .card-actions .btn {
+  background: #eff6ff;
+  color: #14406D;
+  height: 46px;
+}
+.template-11 .mehub-bonus-checkout-container h4::before{
+  content: none;
+}
+
+#checkoutContent fieldset.mehub-bonus-checkout-container{
+  display: flex;
+  margin-bottom: 40px;
+  order: -1;
+}
+
+.cart-content.summary-wrapper .price-wrapper .price-primary {
+    font-size: 20px;
 }
