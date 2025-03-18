@@ -2369,3 +2369,10 @@ body.--navUserActive .user-action .login-widget {
         content: none;
     }
 }
+
+#checkoutContent .co-contact-information label[for="login"]{
+    display: none !important;
+}
+#checkoutContent .co-contact-information label[for="login"] + div{
+        display: none !important;
+}

@@ -3936,3 +3936,10 @@ display: none;
     border-radius: 3px;
   font-size: 12px;
 }
+
+#checkoutContent .co-contact-information label[for="login"]{
+  display: none !important;
+}
+#checkoutContent .co-contact-information label[for="login"] + div{
+      display: none !important;
+}
