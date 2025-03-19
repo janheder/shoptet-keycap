@@ -526,3 +526,41 @@ strong {
     aspect-ratio: 4/3;
     object-fit: cover;
 }
+
+
+/* změna shoptet 19.3.2025| úpravy počtu položek design */
+
+.add-to-cart .quantity{
+    flex-shrink: 0;
+    width: 100%;
+}
+.add-to-cart .quantity label{
+    width: 100%;
+}
+.add-to-cart .increase span, .add-to-cart .decrease span{
+    display: none;
+}
+.add-to-cart .increase, .add-to-cart .decrease{
+    border: 0;
+    background: transparent;
+}
+
+
+.removeable .p-quantity .quantity .increase, .removeable .p-quantity .quantity .decrease{
+        border: 0;
+    background: transparent;
+}
+.removeable .p-quantity .increase span, 
+.removeable .p-quantity .decrease span{
+    display: none;
+}
+.removeable .p-quantity .quantity {
+    width: 110px;
+}
+.removeable .p-quantity .quantity label{
+       width: 100%;
+}
+
+.cart-widget-product-amount button{
+    display: none;
+}
