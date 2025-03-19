@@ -290,7 +290,7 @@ if ($(".type-detail").length){
     }
     
     /* call functions after order modal loaded */
-    document.addEventListener('ShoptetCartUpdated', function () {
+    document.addEventListener('ShoptetCartAddCartItem', function () {
         advanceOrderCustom();
     },{
         passive: true
