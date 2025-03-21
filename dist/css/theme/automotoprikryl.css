@@ -4085,3 +4085,25 @@ flex-wrap: wrap;
   padding-right: 35px;
       font-size: 14px;
 }
+.select-and-breadcrumbs {
+  border-bottom: 5px #5477a4 solid;
+  background: #eff6ff;
+  }
+  .select-and-breadcrumbs:before{
+      content: "Konfigurátor";
+      width: 100%;
+      font-size: 22px;
+      font-family: "Mohave";
+      text-transform: uppercase;
+      font-weight: 500;
+  }
+  .select-and-breadcrumbs select{
+      border: #5477a4 2px solid;
+  }
+  .select-and-breadcrumbs .breadcrumbs>span span{
+      color: black;
+      border: 2px solid white;
+  }
+  .select-and-breadcrumbs .breadcrumbs>span{
+      border: 0;
+  }
