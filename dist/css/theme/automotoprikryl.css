@@ -4107,3 +4107,7 @@ flex-wrap: wrap;
   .select-and-breadcrumbs .breadcrumbs>span{
       border: 0;
   }
+
+  .in-kosik .col-md-8 .cart-content .cart-summary .extras-wrapper .extras-col:nth-child(2) .extra.delivery span{
+    color: #E94400;
+}
