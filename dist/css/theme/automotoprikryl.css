@@ -3865,6 +3865,7 @@ details {
   padding: 2px 4px;
   border-radius: 3px;
 }
+
 .p .prices span {
   color: #6D6C79;
   font-weight: 500;
@@ -3872,74 +3873,166 @@ details {
   line-height: 1;
   text-decoration: line-through;
 }
-.next-step-back{
+
+.next-step-back {
   background: transparent;
 }
-.next-step-back:hover, .next-step-back:active, .next-step-back:focus{
-    background: transparent;
-      color: #6d6c79;
-}
-.order-summary-item{
-  text-align:center;
-}
-.order-complete-links{
-text-align:center;
-}
-.order-complete-links > p:last-child{
-display: none;
+
+.next-step-back:hover,
+.next-step-back:active,
+.next-step-back:focus {
+  background: transparent;
+  color: #6d6c79;
 }
 
-#checkoutContent fieldset.mehub-bonus-checkout-container{
+.order-summary-item {
+  text-align: center;
+}
+
+.order-complete-links {
+  text-align: center;
+}
+
+.order-complete-links>p:last-child {
+  display: none;
+}
+
+#checkoutContent fieldset.mehub-bonus-checkout-container {
   display: flex;
   margin-bottom: 40px;
   order: -1;
 }
+
 #checkoutContent .co-contact-information h4+.form-group label::before {
-    content: none;
-}
-#checkoutContent .co-contact-information h4+.form-group label::after{
-      content: none;
+  content: none;
 }
 
-#checkoutContent .co-contact-information h4+.form-group{
-    border: 0;
+#checkoutContent .co-contact-information h4+.form-group label::after {
+  content: none;
+}
+
+#checkoutContent .co-contact-information h4+.form-group {
+  border: 0;
   padding: 0;
   max-width: 520px;
   flex-direction: column;
   align-items: flex-start;
 }
-#checkoutContent .co-contact-information h4+.form-group label{
+
+#checkoutContent .co-contact-information h4+.form-group label {
   font-size: 17px;
-    padding: 0;
+  padding: 0;
   border: 0;
   background: transparent;
 }
+
 .cart-content {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
-.template-11 .mehub-bonus-checkout-container h4::before{
+
+.template-11 .mehub-bonus-checkout-container h4::before {
   content: none;
 }
-.removeable .p-total .price-final{
+
+.removeable .p-total .price-final {
   flex-direction: row;
   gap: 10px;
 }
-.removeable .p-total .price-final .discount-tag{
-      display: flex;
-    text-decoration: none;
-    background: #14406D;
-    color: white;
-    padding: 0;
-    padding: 1px 4px;
-    border-radius: 3px;
+
+.removeable .p-total .price-final .discount-tag {
+  display: flex;
+  text-decoration: none;
+  background: #14406D;
+  color: white;
+  padding: 0;
+  padding: 1px 4px;
+  border-radius: 3px;
   font-size: 12px;
 }
 
-#checkoutContent .co-contact-information label[for="login"]{
+#checkoutContent .co-contact-information label[for="login"] {
   display: none !important;
 }
-#checkoutContent .co-contact-information label[for="login"] + div{
-      display: none !important;
+
+#checkoutContent .co-contact-information label[for="login"]+div {
+  display: none !important;
+}
+
+.in-kosik .col-md-8 .cart-content .cart-summary .extras-wrapper .extras-col:nth-child(2) {
+  margin-top: 20px;
+}
+
+.in-kosik .col-md-8 .cart-content .cart-summary .extras-wrapper .extras-col:nth-child(2) .extras-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.in-kosik .col-md-8 .cart-content .cart-summary .extras-wrapper .extras-col:nth-child(2) .extra {
+  border: 1px solid #e5e5e5;
+  padding: 10px 20px;
+}
+
+.extras-wrapper #vyberte-jiny-darek li input {
+  opacity: 0;
+  display: none;
+}
+
+.extras-wrapper #vyberte-jiny-darek li.active {}
+
+.menu-level-2>li.menu-item-1055>div>a {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu-level-2>li.menu-item-1055>div>a::after {
+  content: "Přejít na konfigurátor";
+  background: #eff6ff;
+  color: #14406D;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  font-family: "Space Grotesk", sans-serif;
+  margin-top: 5px;
+}
+.select-and-breadcrumbs {
+  gap: 10px;
+flex-wrap: wrap;
+}
+.select-and-breadcrumbs .breadcrumbs{
+  display: flex;
+  gap: 10px
+}
+.select-and-breadcrumbs .breadcrumbs>span{
+  height: 46px;
+}
+.select-and-breadcrumbs .breadcrumbs>span span{
+  display: flex;
+  align-items:center;
+  padding: 5px 15px;
+  font-size: 14px;
+}
+.select-and-breadcrumbs .breadcrumbs > span span.navigation-bullet{
+  display: none;
+}
+.select-and-breadcrumbs .breadcrumbs>span a{
+  padding: 0;
+}
+.select-and-breadcrumbs .breadcrumbs>span a span{
+  color: black;
+}
+.select-and-breadcrumbs select{
+  padding: 0 20px;
+  background: white;
+  appearance: none;
+      -webkit-appearance: none;
+  background-image: url(https://heder.pages.dev/icons/arrow-down.svg);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  border-radius: 0;
+  padding-right: 35px;
+      font-size: 14px;
 }
