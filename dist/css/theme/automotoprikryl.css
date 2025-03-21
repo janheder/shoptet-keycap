@@ -3997,6 +3997,55 @@ details {
   font-family: "Space Grotesk", sans-serif;
   margin-top: 5px;
 }
+
+
+.p-short-description {
+  height: auto;
+  overflow: hidden;
+}
+.menu-level-2>li.menu-item-1055 .menu-level-3 {
+  display: none;
+}
+.select-and-breadcrumbs {
+  display: flex;
+  background: #F7F7F8;
+  padding: 20px;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.select-and-breadcrumbs #navigation-first,
+.select-and-breadcrumbs #navigation-1 {
+  display: none;
+}
+
+.select-and-breadcrumbs .navigation-bullet {
+  display: none;
+}
+
+.select-and-breadcrumbs a::after {
+  content: none !important;
+}
+
+.select-and-breadcrumbs .breadcrumbs>span {
+  border: 1px solid #d9d9d9;
+  height: 40px ;
+  display: inline-flex;
+}
+
+.select-and-breadcrumbs .breadcrumbs{
+  margin: 0;
+  padding: 0;
+}
+.select-and-breadcrumbs .breadcrumbs>span a{
+  background: white;
+  display: flex;
+  align-items:center;
+}
+.type-category .subcategories.hidden{
+  display: none;
+}
+
 .select-and-breadcrumbs {
   gap: 10px;
 flex-wrap: wrap;
