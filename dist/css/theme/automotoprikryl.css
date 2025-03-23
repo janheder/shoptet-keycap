@@ -4111,3 +4111,9 @@ flex-wrap: wrap;
   .in-kosik .col-md-8 .cart-content .cart-summary .extras-wrapper .extras-col:nth-child(2) .extra.delivery span{
     color: #E94400;
 }
+
+#shippingAddressBox{
+  height: 48px;
+  padding: 0 15px;
+  width: 100%;
+}
