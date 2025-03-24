@@ -4117,3 +4117,6 @@ flex-wrap: wrap;
   padding: 0 15px;
   width: 100%;
 }
+.in-kosik .col-md-8 .cart-content .cart-summary .extras-wrapper .extras-col:nth-child(2) .extra.gift{
+  display: none;
+}
