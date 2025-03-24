@@ -4120,3 +4120,24 @@ flex-wrap: wrap;
 .in-kosik .col-md-8 .cart-content .cart-summary .extras-wrapper .extras-col:nth-child(2) .extra.gift{
   display: none;
 }
+
+.select-and-breadcrumbs select{
+  height: 48px;
+}
+@media screen and (max-width: 575px) {
+  .select-and-breadcrumbs {
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+  .select-and-breadcrumbs .breadcrumbs{
+    flex-direction: column
+  }
+  .select-and-breadcrumbs .breadcrumbs>span a {
+    padding: 0;
+    width: 100%;
+}
+  .select-and-breadcrumbs .breadcrumbs>span span{
+    width: 100%;
+  }
+}
