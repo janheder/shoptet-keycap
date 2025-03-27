@@ -2404,3 +2404,11 @@ display: inline-block;
 #relatedFiles li a{
   text-align:center;
 }
+
+.user-action .login-widget {
+  display: none;
+}
+
+body.--navUserActive .user-action .login-widget {
+  display: flex;
+}
