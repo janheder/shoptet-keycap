@@ -325,7 +325,7 @@ if ($(".type-index, .type-category").length){
         var priceSingle = $(this).closest(".p").find(".price-final strong").html();
         var priceTotal = parseFloat(priceSingle.replace(/ /g, ''))*amount;
 
-        document.addEventListener('ShoptetCartUpdated', function () {
+        document.addEventListener('ShoptetCartAddCartItem', function () {
             $("body").addClass("--advancedModal");
             $(".advancedModal__content").html("");
         
