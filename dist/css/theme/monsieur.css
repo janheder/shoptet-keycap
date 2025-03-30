@@ -2505,3 +2505,33 @@ body.--navUserActive .user-action .login-widget {
 .cart-content.summary-wrapper .price-wrapper .price-primary {
     font-size: 20px;
 }
+
+@media screen and (min-width: 992px) {
+.menu-level-1 > li > a b {
+    position: relative;
+    display: inline-block;
+    padding: 10px 0;
+  }
+  .menu-level-1 > li > a:hover{
+      background: transparent;
+  }
+  .menu-level-1 > li > a b::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: #C79655; 
+    transition: width 0.3s ease; 
+  }
+  
+  /* Efekt při najetí */
+  .menu-level-1 > li > a:hover b::after {
+    width: 100%;
+  }
+  
+  .nav-search:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
