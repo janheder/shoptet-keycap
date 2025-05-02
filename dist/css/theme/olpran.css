@@ -306,6 +306,7 @@ body.--advancedModal{
     align-items: center;
     justify-content: center;
     backface-visibility: hidden;
+    background: rgba(0,0,0,0.4);
 }
 .advancedModal__inner{
     background: white;
