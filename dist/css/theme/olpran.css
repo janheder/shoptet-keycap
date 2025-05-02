@@ -281,9 +281,9 @@ body.ordering-process .cart-inner .col-md-4 {
 }
 
 .contactSection-content a span {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .contactSection__img {
@@ -622,7 +622,7 @@ body.--advancedModal {
 
     body.ordering-process .cart-inner .col-md-4 {
         width: 30%;
-        margin-top: calc(var(--base-horizontal-gap2-half) + 10rem);
+        margin-top: calc(var(--base-horizontal-gap2-half) + 12rem);
     }
 
     body.ordering-process .next-step {
@@ -1045,4 +1045,16 @@ details[open] p {
         font-weight: 700;
         color: var(--color-primary);
     }
+}
+
+@media (min-width: 480px) {
+
+    .js-validator-msg,
+    .validator-msg {
+        margin-left: 0px;
+    }
+}
+
+.order-button-suffix {
+    font-weight: 400;
 }
