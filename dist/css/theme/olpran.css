@@ -662,6 +662,8 @@ body.--advancedModal {
         flex-direction: column;
         padding: 30px;
         margin-bottom: 10px;
+        border-radius: var(--border-radius-sml);
+        overflow: hidden;
     }
 
     .ordering-process .co-box-additional {
@@ -669,7 +671,9 @@ body.--advancedModal {
     }
 
     .radio-wrapper {
-        padding: 10px 0;
+        padding: 20px 0;
+        margin: 0;
+        border-bottom: 1px solid #E5E5E5;
     }
 }
 
@@ -1199,6 +1203,7 @@ body.ordering-process .cart-content h4 {
           width: auto;
           height: 46px;
           border-radius: 23px;
+          padding: 0 15px;
   }
   #header .navigation-buttons a[data-target=login]{
     height: 46px;
@@ -1324,7 +1329,7 @@ body.ordering-process .cart-content h4 {
 }
 .languagesMenu__flags{
     border: 0;
-    background:white;
+    background:transparent;
     font-size: 16px;
     height: 46px;
     border-radius: 23px;
