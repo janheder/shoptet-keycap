@@ -1339,3 +1339,191 @@ body.ordering-process .cart-content h4 {
       line-height: 1;
       padding-top: 2px;
 }
+.contactSection-single img{
+    width: 42px;
+}.contactSection-content a span{
+    white-space:nowrap;
+}
+@media (max-width: 1200px) {
+    .contactSection__inner h2 {
+font-size: 30px;
+    max-width: 420px;
+
+}
+}
+@media (min-width: 768px) {
+    .type-product .shp-tabs-wrapper .extended-description .detail-parameters tr{
+    display: table-row !important;
+}
+ .type-product .shp-tabs-wrapper .extended-description  .textbtn{
+    display: none;
+}
+
+}
+
+.p-detail-inner .p-info-wrapper .p-short-description h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.p-detail-inner .p-info-wrapper .p-short-description p:nth-of-type(1) ~ * {
+  display: none;
+}
+
+ .p-detail-inner .shipping-options{
+     background: white;        
+     border: 1px solid white;
+ }
+  .p-detail-inner .shipping-options:hover{
+         background: white;
+         border: 1px solid var(--color-secondary);
+  }
+ .p-detail-inner .shipping-options{
+     color: var(--color-primary);
+ }
+ .p-detail-inner .shipping-options::before,
+ .p-detail-inner .shipping-options::after{
+background: var(--color-primary);;
+ }
+ .p-detail-inner .btn.add-to-cart-button{
+          background-color: #f1b143;
+          border: 0;
+          border-radius: 25px !important;
+ }
+ .p-detail-info .flag{
+     padding: 7px 12px;
+     font-size: 14px;
+ }
+ .p-detail-info .flags{
+     margin-bottom: 10px;
+ }
+  .p-detail-info .flag-action{
+      
+  }
+  
+  
+
+@media screen and (max-width: 991px) {
+
+
+  .contactSection__inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .contactSection__inner h2 {
+    max-width: 100%;
+    text-align: center;
+    font-size: 24px;
+  }
+
+
+}
+@media (max-width: 767px) {
+  .contactSection__inner {
+    border-radius: 0;
+    margin: 0 -10px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .contactSection-single {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .contactSection-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contactSection-content a {
+    padding: 0;
+    text-align: center;
+  }
+
+  .contactSection-content a span {
+    font-size: 17px;
+  }
+
+  .contactSection__inner {
+    padding: 25px 20px;
+    gap: 20px;
+  }
+
+
+}
+.type-product .banner-discovermore {
+   display: none;
+}
+@media (max-width: 767px) {
+    .type-product .shp-tabs-wrapper .extended-description {
+
+    order: -1;
+}
+.type-product .shp-tabs-wrapper .basic-description{
+    order: 2;
+}
+.type-product .shp-tabs-wrapper .description-inner{
+    display: flex;
+}
+    .discount-coupon form input {
+        margin: 0;
+    }
+        .content-wrapper.container .row.cart-row>div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 991px){
+        body.ordering-process .cart-inner .col-md-8 {
+        width: 100%;
+        padding-right: 0px;
+    }
+    body.ordering-process .cart-inner .col-md-4{
+        width: 100%;
+        margin-top: 20px;
+    }
+    body.ordering-process #content-wrapper{
+        padding: 0;
+    }
+    body.ordering-process #content{
+        width: 100%;
+    }
+    .content-wrapper.container .row.cart-row > #checkoutContent{
+        background: white;
+        padding: 20px;
+    }
+    body.ordering-process .content-wrapper.container .row.cart-row{
+        padding: 0;
+    }
+    body.ordering-process ol.cart-header{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #E5E5E5;
+    }
+    body.ordering-process .radio-wrapper {
+    padding: 15px 0;
+    border: none;
+    margin: 0;       
+    border-bottom: 1px solid #E5E5E5;
+}
+}
+
+
+.type-product .benefitBanner.position--benefitProduct {
+        order: 100;
+    }
+    
+    @media (max-width: 767px) {
+    #navigation .navigation-in.menu .menu-level-1 {
+        padding: 0;
+        gap: 0;
+    }
+    #navigation .navigation-in.menu .menu-level-1 li a{
+        padding: 20px 0;
+        border-bottom: 1px solid #E5E5E5;
+         color: var(--color-primary);
+    }
+}
