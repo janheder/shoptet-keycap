@@ -79,12 +79,12 @@
 
 .type-category .banner-custom-main {
     position: relative;
-    height: 280px;
+    height: 240px;
 }
 
 @media (min-width: 1920px) {
     .type-category .banner-custom-main {
-        height: 360px;
+        height: 340px;
     }
 }
 
@@ -332,6 +332,8 @@ body.--advancedModal {
     width: 100%;
     max-width: 900px;
     overflow-y: auto;
+    border-radius: 20px;
+    overflow: hidden;
     max-height: 100vh;
 }
 
@@ -354,9 +356,7 @@ body.--advancedModal {
     padding: 50px 60px 40px 60px;
 }
 
-.advancedProduct-name {
-    font-weight: 700;
-}
+
 
 .advancedModal__buttons {
     padding: 50px 60px;
@@ -371,6 +371,7 @@ body.--advancedModal {
     background: white;
     font-size: 15px;
     margin-right: 10px;
+    border: 1px solid var(--color-primary);
 }
 
 .advancedModal__buttons .btn {
@@ -517,7 +518,7 @@ body.--advancedModal {
 
 .advancedProduct-name {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
     border-bottom: 1px solid gray;
     padding-bottom: 30px;
 }
@@ -527,7 +528,7 @@ body.--advancedModal {
     justify-content: space-between;
     border-bottom: 1px solid gray;
     padding: 12px 0;
-    color: gray;
+    color: var(--color-primary);
     font-size: 14px;
     align-items: center;
 }
@@ -561,11 +562,12 @@ body.--advancedModal {
     font-size: 19px;
     font-weight: 500;
     padding-top: 30px;
-    color: gray;
+    color: var(--color-primary);
 }
 
 .advancedProduct-priceTotal span {
-    color: red;
+    color: var(--color-primary);
+    font-weight: 600;
 }
 
 @media screen and (max-width: 767px) {
@@ -634,6 +636,7 @@ body.--advancedModal {
         display: flex;
         padding: 30px;
         flex-direction: column;
+        margin-top :0;
     }
 
     body.ordering-process .cart-table tr {
@@ -759,8 +762,8 @@ select {
 }
 
 .cart-item img {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     flex-shrink: 0;
     object-fit: cover;
 
@@ -1008,7 +1011,7 @@ details[open] p {
     body.ordering-process ol.cart-header li.active {
         padding: 10px 20px;
         background-color: var(--color-secondary);
-        border-radius: 20px;
+        border-radius: 22px;
         color: white;
     }
 
@@ -1057,4 +1060,33 @@ details[open] p {
 
 .order-button-suffix {
     font-weight: 400;
+}
+
+.subscribe-form input[type=email].form-control{
+    margin: 0;
+}
+.banner-categories__content{
+    color: white;
+}
+.banner-categories__content .h3{
+    color: white;
+    display:flex;
+    margin-bottom: 20px;
+}
+.payment-logo img{
+    max-height: 32px;
+}
+body.ordering-process .cart-content h4{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+@media (min-width: 480px) {
+    .phone-combined-input {
+        max-width: 480px;
+    }
+    #checkoutContent .form-group>input.form-control,
+    #checkoutContent .form-group>select
+    {
+        max-width: 480px;
+    }
 }
