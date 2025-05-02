@@ -169,3 +169,34 @@ if ($(".type-index, .type-category").length){
     });
 }
 
+// =============================================================================
+// FAQ
+// =============================================================================
+
+$(document).ready(function () {
+    $('#faqSearch').on('keyup', function () {
+        let searchQuery = $(this).val().trim().toLowerCase();
+
+        if (searchQuery === '') {
+            // Reset: Show all and close all details
+            $('#FaqResult *').show();
+            $('#FaqResult details').attr("open", false);
+            return;
+        }
+
+        // Escape special characters for regex
+        let escapedQuery = searchQuery.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+        let regex = new RegExp(escapedQuery, 'i'); // Case-insensitive matching
+
+        $('#FaqResult details').each(function () {
+            let detailsText = $(this).text().toLowerCase();
+            let matches = regex.test(detailsText);
+
+            if (matches) {
+                $(this).show().attr("open", true); // Show and expand matching details
+            } else {
+                $(this).hide().attr("open", false); // Hide non-matching details
+            }
+        });
+    });
+});
