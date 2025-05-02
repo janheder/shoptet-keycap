@@ -46,6 +46,27 @@ if ($(".in-index").length) {
 
 
 // =============================================================================
+// load cart images 
+// =============================================================================
+
+if ($("#checkoutSidebar .cart-item").length){
+    const loadPicImages = (html) => {
+        let nodes = new DOMParser().parseFromString(html, 'text/html');
+        let body = nodes.querySelectorAll('.cart-p-image a');
+        let num = nodes.querySelectorAll('.cart-p-image a').length;
+        for(let i = 0; i < num; i++) {
+            document.querySelector('#checkoutSidebar .cart-item:nth-child('+ (i+1) +')').prepend(body[i]);
+        }
+        $("img").unveil();
+    };
+    fetch("/kosik/")
+        .then((response) => response.text())
+        .then(loadPicImages)
+        .then($("img").unveil())
+}
+
+
+// =============================================================================
 // ADVANCED ORCDER SUMMARY
 // =============================================================================
 
