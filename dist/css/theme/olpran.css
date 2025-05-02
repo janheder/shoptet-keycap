@@ -636,7 +636,7 @@ body.--advancedModal {
         display: flex;
         padding: 30px;
         flex-direction: column;
-        margin-top :0;
+        margin-top: 0;
     }
 
     body.ordering-process .cart-table tr {
@@ -1062,31 +1062,130 @@ details[open] p {
     font-weight: 400;
 }
 
-.subscribe-form input[type=email].form-control{
+.subscribe-form input[type=email].form-control {
     margin: 0;
 }
-.banner-categories__content{
+
+.banner-categories__content {
     color: white;
 }
-.banner-categories__content .h3{
+
+.banner-categories__content .h3 {
     color: white;
-    display:flex;
+    display: flex;
     margin-bottom: 20px;
 }
-.payment-logo img{
+
+.payment-logo img {
     max-height: 32px;
 }
-body.ordering-process .cart-content h4{
+
+body.ordering-process .cart-content h4 {
     font-size: 24px;
     margin-bottom: 30px;
 }
+
 @media (min-width: 480px) {
     .phone-combined-input {
         max-width: 480px;
     }
+
     #checkoutContent .form-group>input.form-control,
-    #checkoutContent .form-group>select
-    {
+    #checkoutContent .form-group>select {
         max-width: 480px;
+    }
+}
+
+.subscribe-form input[type=email].form-control {
+    margin: 0;
+}
+
+.banner-categories__content {
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    padding-top: 60px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.banner-categories__content .h3 {
+    color: white;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.banner-categories a {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0;
+}
+
+.benefitBanner:before {
+    content: none;
+}
+
+.benefitBanner.position--benefitHomepage {
+    padding: 38px var(--base-padding);
+    background: #86b89f;
+    border-radius: var(--border-radius-mid);
+    max-width: 1392px;
+}
+
+.payment-logo img {
+    max-height: 32px;
+}
+
+body.ordering-process .cart-content h4 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 480px) {
+    .phone-combined-input {
+        max-width: 480px;
+    }
+
+    #checkoutContent .form-group>input.form-control,
+    #checkoutContent .form-group>select {
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .carousel-inner {
+        border-radius: 0;
+    }
+
+    .banner-custom-main {
+        height: 345px;
+    }
+
+    .benefitBanner.position--benefitHomepage {
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .top-navigation-bar .container,
+    #header .header-top {
+        max-width: 1392px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .banner-photoslider {
+        margin: 20px 0;
     }
 }
