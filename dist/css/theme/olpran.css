@@ -148,23 +148,6 @@ body.ordering-process .next-step .btn.btn-conversion {
     border-radius: 25px;
 }
 
-.banner-custom-main div h2,
-.h1,
-h1 {
-    font-size: 62px;
-}
-
-#colorbox h1,
-.basic-description h1,
-.h2,
-.h4.homepage-group-title,
-.in-login h1,
-.news-item-detail h1,
-.sidebar:before,
-h2,
-h4.homepage-group-title {
-    font-size: 42px;
-}
 
 @media (min-width: 768px) {
     .header-top .navigation-buttons .login {
@@ -182,7 +165,24 @@ h4.homepage-group-title {
     #header .header-cta {
         display: none;
     }
-
+    .banner-custom-main div h2,
+    .h1,
+    h1 {
+        font-size: 62px;
+    }
+    
+    #colorbox h1,
+    .basic-description h1,
+    .h2,
+    .h4.homepage-group-title,
+    .in-login h1,
+    .news-item-detail h1,
+    .sidebar:before,
+    h2,
+    h4.homepage-group-title {
+        font-size: 42px;
+    }
+    
 }
 
 @media (min-width: 768px) {
