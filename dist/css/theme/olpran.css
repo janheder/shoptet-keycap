@@ -1599,3 +1599,39 @@ body.ordering-process .next-step .btn.btn-conversion {
     background-color: #f1b143;
     border-color: #f1b143;
 }
+
+@media (min-width: 768px) {
+    body.ordering-process ol.cart-header {
+        position: relative;
+        padding: 50px 0;
+        border: 0;
+        gap: 50px;
+    }
+    body.ordering-process ol.cart-header::before {
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+    display: flex
+;
+    position: absolute;
+    z-index: -1;
+}
+body.ordering-process .content-wrapper.container .row.cart-row{
+    padding-top: 0;
+}
+    body.ordering-process .cart-inner .col-md-4 {
+        width: 30%;
+        margin-top: calc(var(--base-horizontal-gap2-half) + 15rem);
+    }
+    body.ordering-process ol.cart-header li a span:before, body.ordering-process ol.cart-header li strong span:before{
+        background: var(--color-bg);
+    
+    }
+}
+.ordering-process .cart-item>div.cart-item-name{
+    flex-grow: 1;
+}
