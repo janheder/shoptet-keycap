@@ -224,6 +224,7 @@ body.ordering-process .cart-inner .col-md-4 {
 }
 
 #contactSection {
+    display: flex;
     position: relative;
     background-color: var(--color-secondary);
     margin-bottom: 40px;
