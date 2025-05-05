@@ -476,6 +476,7 @@ body.--advancedModal {
 .advancedProduct-img img {
     max-height: 220px;
     max-width: 220px;
+    object-fit: contain;
 }
 
 .advancedProduct-img .flags {
@@ -597,7 +598,7 @@ body.--advancedModal {
     }
 
     .advancedProduct-img img {
-        max-height: 140px;
+        max-height: 180px;
     }
 
     .advancedProduct-name {
@@ -1635,4 +1636,48 @@ body.ordering-process .content-wrapper.container .row.cart-row{
 }
 .ordering-process .cart-item>div.cart-item-name{
     flex-grow: 1;
+}
+.advancedModal__buttons .btn{
+    height: 50px;
+    border-radius: 25px;
+}
+
+@media (max-width: 767px) {
+    .type-product .shp-tabs-wrapper .basic-description {
+        width: 100%;
+    }
+        .content-wrapper.container .row>div {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .type-product .shp-tabs-wrapper .extended-description:before{
+        left: -15px;
+
+    }
+    .p-detail-info .flags{
+        margin: 0;
+    }
+    .p-detail-info .flag{
+        font-size: 12px;
+    }
+    .co-basic-information .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    body.ordering-process .next-step {
+    margin-top: 30px;
+}
+
+.benefitBanner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.benefitBanner.position--benefitHomepage 
+.benefitBanner__item+.benefitBanner__item:before{
+    content: none;
+}
+.benefitBanner {
+        padding: 30px 0;
+        min-height: auto;
+    }
 }
