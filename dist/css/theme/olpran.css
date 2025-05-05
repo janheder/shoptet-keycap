@@ -1681,3 +1681,35 @@ body.ordering-process .content-wrapper.container .row.cart-row{
         min-height: auto;
     }
 }
+
+@media (max-width: 767px) {
+    .category-top .banner-custom-main>div {
+        gap: 0px;
+    }
+   .category-top .banner-custom-main>div h1{
+        margin: 10px 0 30px 0;
+    }
+    .flags.flags-extra{
+        dislpay: flex;
+        flex-direction:  column;
+    }
+    .flags.flags-extra .flag {
+    width: 75px !important;
+    height: 75px !important;
+    font-size: 13px !important;
+    border-radius: 50% !important;
+           display: flex !important;
+        flex-direction: column !important;
+        gap: 5px;
+        margin: 0 !important;
+}    
+.flag.flag-discount .price-standard{
+       font-size: 11px;
+}
+.flag.flag-discount .price-save{
+        font-size: 15px !important;
+}
+.flag.flag-freeshipping .flag-text{
+     font-size: 12px !important;
+}
+}
