@@ -1785,3 +1785,12 @@ body.ordering-process .radio-wrapper.inactive-child{
     margin-bottom: 10px;
     border-radius: 6px;
 }
+.advancedModal__buttons .btn {
+    background-color: #f1b143;
+    border: 0;
+    border-radius: 26px !important;
+    height: 52px;
+}
+.advancedModal__buttons .btn:hover{
+    color: white;
+}
