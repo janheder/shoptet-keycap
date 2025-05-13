@@ -1778,3 +1778,10 @@ body.ordering-process .radio-wrapper.active{
 body.ordering-process .radio-wrapper.inactive-child{
     opacity: 0.5;
 }
+
+.checkout-box-wrapper .contact-box{
+    padding: 20px !important;
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
