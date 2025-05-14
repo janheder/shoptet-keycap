@@ -602,7 +602,7 @@ $(document).ready(function() {
 
 
 // Check if element with class "pagination" exists
-var pagination = document.querySelector('.pagination');
+var pagination = document.querySelector('.type-category .pagination');
 
 if (pagination !== null) {
     function refactorPagi() {
