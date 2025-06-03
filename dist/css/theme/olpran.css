@@ -1823,7 +1823,7 @@ body.ordering-process .radio-wrapper.inactive-child{
     body.--searchActive #header .search{
         display: flex;
         position: fixed;
-        top: 100px;
+        top: 115px;
     }
 
 }
