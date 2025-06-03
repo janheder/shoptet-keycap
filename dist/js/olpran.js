@@ -200,3 +200,16 @@ $(document).ready(function () {
         });
     });
 });
+
+
+
+
+/* add search and user icons to header area */
+$(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle"></div><div class="nav-user" id="js-userToggle">Uživatel</div>');
+
+
+/* toggle control of responsive search */
+$("#js-searchToggle").click(function(){
+    $("body").toggleClass("--searchActive");
+    $(".header-top .search .form-control").focus(); 
+});
