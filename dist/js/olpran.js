@@ -205,7 +205,7 @@ $(document).ready(function () {
 
 
 /* add search and user icons to header area */
-$(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle"></div><div class="nav-user" id="js-userToggle">Uživatel</div>');
+$(".navigation-buttons").prepend('<div class="nav-search" id="js-searchToggle">');
 
 
 /* toggle control of responsive search */
