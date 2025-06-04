@@ -1880,6 +1880,32 @@ body.admin-logged{
         overflow: hidden;
         position: relative;
     }
-
+    .carousel .banner-photoslider{
+        margin: 0;
+    }
+    .carousel .banner-photoslider__inner{
+        padding: 0;
+            height: 100% !important;
+    }
+    .carousel .banner-photoslider__track{
+        margin: 0;
+            height: 100% !important;
+    }
+    .carousel  .carousel-inner .item > span{
+        height: 100% !important;
+        display: flex;
+    }
+    .carousel .splide__pagination,
+    .carousel .splide__counter{
+        display: none;
+    }
+    .carousel .splide__arrows{
+        bottom: 20px;
+        right: 20px;
+        height: 24px;
+    }
+    .splide__arrow--next::before, .splide__arrow--prev::before{
+        filter: brightness(10);
+    }
 }
 
