@@ -1830,3 +1830,56 @@ body.ordering-process .radio-wrapper.inactive-child{
 
 
 
+body.admin-logged{
+
+    .banners-row {
+        display: flex;
+        flex-wrap: nowrap;
+        aspect-ratio: 140/53;
+        margin-top: 20px;
+        gap: 10px;
+    }
+    .banners-row .col-sm-8 {
+       display: flex;
+        flex-wrap: nowrap;
+        aspect-ratio: 140/53;
+        margin-top: 20px;
+        gap: 10px;
+        display: flex;
+           flex-direction: row;
+           max-width: 1400px;
+           margin: 0 auto;
+           margin-top: 20px;
+    }
+    .banners-row .col-sm-4 {
+        width: auto;
+        aspect-ratio: 44 / 53;
+     
+    }
+    .carousel{
+            aspect-ratio: 17 / 9;
+        width: auto;  
+        margin: 0;
+        padding: 0;
+    }
+    .next-to-carousel-banners {
+    display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        gap: 10px;
+        height: 100%;
+    }
+    .next-to-carousel-banners .banner-wrapper {
+        width: 100%;
+        padding: 0;
+        aspect-ratio: 44 / 26;
+    }
+    .next-to-carousel-banners .banner-wrapper
+     {
+        overflow: hidden;
+        position: relative;
+    }
+
+}
+
