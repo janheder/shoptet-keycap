@@ -216,6 +216,3 @@ $("#js-searchToggle").click(function(){
 
 
 
-$(document).ready(function () {
-    $("#banner-categories").insertBefore(".position--benefitHomepage");
-});
