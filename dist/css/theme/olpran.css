@@ -1854,7 +1854,7 @@ body.admin-logged{
     .banners-row .col-sm-4 {
         width: auto;
         aspect-ratio: 44 / 53;
-     
+     display: flex;
     }
     .carousel{
             aspect-ratio: 17 / 9;
