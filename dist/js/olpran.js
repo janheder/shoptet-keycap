@@ -213,3 +213,9 @@ $("#js-searchToggle").click(function(){
     $("body").toggleClass("--searchActive");
     $(".header-top .search .form-control").focus(); 
 });
+
+
+
+$(document).ready(function () {
+    $("#banner-categories").insertBefore(".position--benefitHomepage");
+});
