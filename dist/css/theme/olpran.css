@@ -1910,3 +1910,6 @@ body.admin-logged{
     }
 }
 
+.filter-section-boolean.open, .filter-section:not(.filter-section-boolean).open form{
+    overflow-y: auto;
+}
