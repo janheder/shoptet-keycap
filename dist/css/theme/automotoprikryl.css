@@ -4147,3 +4147,31 @@ flex-wrap: wrap;
 gap: 1px;
   }
 }
+
+.p-info-wrapper .detail-parameters{
+  padding-top: 30px;
+}
+.p-info-wrapper .detail-parameters .surcharge-list{
+  display: flex;
+  flex-direction: column;
+}
+.p-info-wrapper .detail-parameters .surcharge-list th{
+      padding-bottom: 8px;
+  color: #5D5C5C;
+  font-weight: 500;
+}
+.p-info-wrapper .detail-parameters .surcharge-list select{
+ width: 360px;
+  font-weight: 400;
+  max-width: 100%;
+  background: #fff;
+  height: 48px;
+  padding: 0 15px;
+  border: 1px solid #f0f0f0;
+  -webkit-appearance: none;
+  background-image: url(../icons/arrow-down.svg);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  border-radius: 0; 
+}
