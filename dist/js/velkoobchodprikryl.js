@@ -48,7 +48,7 @@ productCartPrices();
 
 
 
-/* doplnkove parametry checkbox
+/* doplnkove parametry checkbox*/
 
     $(function () {
         const $row = $('tr.surcharge-list');
@@ -94,14 +94,14 @@ productCartPrices();
       
         // Synchronizuj změny checkboxu s selectem
         $label.find('input').on('change', function () {
-          if (this.checked) {
-            $select.val(value).trigger('change');
-          } else {
-            $select.val('').trigger('change');
-          }
-        });
+            if (this.checked) {
+              $select.val(value)[0].dispatchEvent(new Event('change', { bubbles: true }));
+            } else {
+              $select.val('')[0].dispatchEvent(new Event('change', { bubbles: true }));
+            }
+          });
       
         // Přidej label do custom td
         $customTd.append($label);
       });
-      */
+      
