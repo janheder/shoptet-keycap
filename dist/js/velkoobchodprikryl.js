@@ -49,60 +49,60 @@ productCartPrices();
 
 
 
-    $(function () {
-        const $row = $('tr.surcharge-list');
-        const $select = $row.find('select.parameter-id-290');
-      
-        if ($select.length === 0) return;
-      
-        // Label text z th
-        const labelText = $row.find('th').contents().filter(function() {
-          return this.nodeType === 3; // text node
-        }).text().trim();
-      
-        // Najdi první option, která není výchozí (data-choose)
-        const $option = $select.find('option').not('[data-choose]').first();
-        if ($option.length === 0) return;
-      
-        const value = $option.val();
-        const price = $option.data('surcharge-final-price');
-        const priceText = price !== undefined ? `+${price} Kč` : '';
-      
-        // Schovej původní select (ale nech ho v DOM)
-        $select.hide();
-      
-        // Najdi nebo vytvoř <td class="custom-checkbox-cell">
-        let $customTd = $row.find('td.custom-checkbox-cell');
-        if ($customTd.length === 0) {
-          $customTd = $('<td class="custom-checkbox-cell"></td>');
-          $row.append($customTd);
-        }
-        $customTd.empty();
-      
-        // Vytvoř checkbox label
-        const $label = $(`
-          <label>
-            <input type="checkbox" name="${$select.attr('name')}" value="${value}">
-            <span>${labelText}</span>
-            <span>${priceText}</span>
-          </label>
-        `);
-      
-        // Nastav checkbox podle selectu
-        if ($option.is(':selected')) {
-          $label.find('input').prop('checked', true);
-        }
-      
-        // Synchronizuj změny checkboxu s selectem
-        $label.find('input').on('change', function () {
-          if (this.checked) {
-            $select.val(value).trigger('change');
-          } else {
-            $select.val('').trigger('change');
-          }
-        });
-      
-        // Přidej label do custom td
-        $customTd.append($label);
-      });
-      
+
+/* doplnkove parametry checkbox*/
+
+const $row = $('tr.surcharge-list');
+const $select = $row.find('select.parameter-id-290');
+
+if ($select.length === 0) return;
+
+// Label text z th
+const labelText = $row.find('th').contents().filter(function() {
+    return this.nodeType === 3; // text node
+}).text().trim();
+
+// Najdi první option, která není výchozí (data-choose)
+const $option = $select.find('option').not('[data-choose]').first();
+if ($option.length === 0) return;
+
+const value = $option.val();
+const price = $option.data('surcharge-final-price');
+const priceText = price !== undefined ? `+${price} Kč` : '';
+
+// Schovej původní select (ale nech ho v DOM)
+$select.hide();
+
+// Najdi nebo vytvoř <td class="custom-checkbox-cell">
+let $customTd = $row.find('td.custom-checkbox-cell');
+if ($customTd.length === 0) {
+    $customTd = $('<td class="custom-checkbox-cell"></td>');
+    $row.append($customTd);
+}
+$customTd.empty();
+
+// Vytvoř checkbox label
+const $label = $(`
+    <label>
+    <input type="checkbox" name="${$select.attr('name')}" value="${value}">
+    <span>${labelText}</span>
+    <span>${priceText}</span>
+    </label>
+`);
+
+// Nastav checkbox podle selectu
+if ($option.is(':selected')) {
+    $label.find('input').prop('checked', true);
+}
+
+// Synchronizuj změny checkboxu s selectem
+$label.find('input').on('change', function () {
+    if (this.checked) {
+    $select.val(value).trigger('change');
+    } else {
+    $select.val('').trigger('change');
+    }
+});
+
+// Přidej label do custom td
+$customTd.append($label);

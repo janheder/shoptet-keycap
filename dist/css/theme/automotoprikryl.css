@@ -4197,5 +4197,13 @@ gap: 1px;
   cursor: pointer;
 }
 .p-info-wrapper .detail-parameters .surcharge-list td.custom-checkbox-cell input{
-  margin-right: 5px;
+  margin-right: 10px;
+}
+.p-info-wrapper .detail-parameters .surcharge-list td.custom-checkbox-cell label span:last-child{
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+      color: #D61818;
+  font-size: 15px;
+  font-weight: 500;
 }
