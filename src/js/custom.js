@@ -275,7 +275,17 @@ if ($(".type-detail").length){
         }
         var amount = parseFloat($(".p-detail-inner .add-to-cart .amount").val());
     
-        var priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
+
+               // Získání ceny podle přítomnosti .calculated-price
+               var priceSingle;
+               if ($(".p-detail-inner .calculated-price").length) {
+                   priceSingle = $(".p-detail-inner .calculated-price").html();
+               } else {
+                   priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
+               }
+
+
+
         var priceTotal = parseFloat(priceSingle.replace(/ /g, ''))*amount;
     
         $(".advancedModal__content").prepend('<div class="advancedProduct">' +
