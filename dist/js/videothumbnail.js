@@ -56,7 +56,7 @@ if (productVideos) {
     }
 
 
-
+/*
     // Nový blok pro případ, kdy #productSlider NEexistuje
     if (!document.querySelector('#productSlider')) {
         var productVideos = document.querySelector('#productVideos');
@@ -102,7 +102,7 @@ if (productVideos) {
             console.warn('Nebyl nalezen #productVideos nebo .p-image-wrapper pro zobrazení videí bez #productSlider.');
         }
     }
-
+*/
 
 
 }
