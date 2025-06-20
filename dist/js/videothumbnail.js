@@ -86,7 +86,8 @@ $(function() {
   
         // Přidej slider navigační tlačítka
         $slider.append('<button type="button" class="slider-nav" aria-label="Previous"></button><button type="button" class="slider-nav slider-nav-next" aria-label="Next"></button>');
-  
+        
+
         // Vlož slider jako první do .p-image-wrapper
         $imageWrapper.prepend($slider);
   
@@ -157,6 +158,7 @@ $(function() {
   
         // Skrytí původního hlavního obrázku
         $(".product-top .p-image").attr('style', 'display: none !important');
+        window.swiffyslider.init();
       }
     }
   });
