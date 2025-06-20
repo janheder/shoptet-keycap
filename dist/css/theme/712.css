@@ -1234,3 +1234,6 @@ text-decoration: underline;
   height: var(--logistics-modal-height) !important;
   width: 100% !important;
 }
+.payment-logo img{
+        max-height: 30px;
+}
