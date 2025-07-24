@@ -70,7 +70,6 @@ if ($("#checkoutSidebar .cart-item").length){
 // ADVANCED ORCDER SUMMARY
 // =============================================================================
 
-
 if ($(".type-detail").length){
 
     $("body").append('<div class="advancedModal"><div class="advancedModal__inner"><h2 class="advancedModal__title">Zboží bylo přidáno do košíku</h2><div class="advancedModal__content"></div><div class="advancedModal__buttons"><a href="#" class="btn btn-ghost" id="advancedModalBack">Zpět do obchodu</a><a href="/kosik" class="btn">Přejít do košíku</a></div></div></div>');
@@ -94,8 +93,25 @@ if ($(".type-detail").length){
         }
         var amount = parseFloat($(".p-detail-inner .add-to-cart .amount").val());
     
-        var priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
-        var priceTotal = parseFloat(priceSingle.replace(/ /g, ''))*amount;
+
+    // Získání ceny podle přítomnosti .calculated-price
+    var priceSingleRaw;
+    if ($(".p-detail-inner .calculated-price").length) {
+        priceSingleRaw = $(".p-detail-inner .calculated-price").html();
+    } else {
+        priceSingleRaw = $(".p-detail-inner .p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
+    }
+
+
+    // Vyčištění ceny: odstranění měny, mezer, tisícových oddělovačů, nahrazení čárky tečkou
+    var priceSingle = parseFloat(
+        priceSingleRaw
+            .replace(/[^0-9,.\s]/g, "")     // odstraní měny a ostatní znaky kromě čísel, tečky, čárky a mezer
+            .replace(/\s/g, "")             // odstraní mezery (oddělovače tisíců)
+            .replace(",", ".")              // nahradí čárku za tečku (evropský formát)
+    );
+
+    var priceTotal = priceSingle * amount;
     
         $(".advancedModal__content").prepend('<div class="advancedProduct">' +
         '<div class="advancedProduct-img">' + img + '</div>' +
