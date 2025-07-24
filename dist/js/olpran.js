@@ -117,6 +117,12 @@ function advanceOrderCustom() {
 
     var priceTotal = priceSingle * amount;
 
+    // Formátování ceny podle potřeby: s nebo bez desetinných míst
+    var formattedPriceTotal = Number.isInteger(priceTotal)
+        ? priceTotal.toLocaleString("cs-CZ", { maximumFractionDigits: 0 })
+        : priceTotal.toLocaleString("cs-CZ", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+
     $(".advancedModal__content").prepend(
         '<div class="advancedProduct">' +
             '<div class="advancedProduct-img">' + img + '</div>' +
@@ -125,10 +131,7 @@ function advanceOrderCustom() {
                 '<div class="advancedProduct-stock">Dostupnost<span>' + stock + '</span></div>' +
                 '<div class="advancedProduct-amount">Počet kusů<span>' + amount + 'x</span></div>' +
                 '<div class="advancedProduct-priceTotal">Celková cena<span>' +
-                    priceTotal.toLocaleString("cs-CZ", {
-                        minimumFractionDigits: 2,
-                        maximumFractionDigits: 2
-                    }) + ' ' + currency +
+                    formattedPriceTotal + ' ' + currency +
                 '</span></div>' +
             '</div>' +
         '</div>'
