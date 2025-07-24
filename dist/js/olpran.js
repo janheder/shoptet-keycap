@@ -164,33 +164,57 @@ if ($(".type-index, .type-category").length){
 
     
     /* call functions after order modal loaded */
-    $(".add-to-cart-button").on('click',function(){
+$(".add-to-cart-button").on('click', function () {
+    var $product = $(this).closest(".p");
 
-        var img = $(this).closest(".p").find(".image").html();
-        var name = $(this).closest(".p").find(".name").html();
-        var stock = $(this).closest(".p").find(".availability").html();
+    var img = $product.find(".image").html();
+    var name = $product.find(".name").html();
+    var stock = $product.find(".availability").html();
 
-        var amount = parseFloat($(this).closest(".p").find("input[name='amount']").val());
+    var amount = parseFloat($product.find("input[name='amount']").val());
 
-        var priceSingle = $(this).closest(".p").find(".price-final strong").html();
-        var priceTotal = parseFloat(priceSingle.replace(/ /g, ''))*amount;
+    var priceSingleRaw = $product.find(".price-final strong").html();
 
-        document.addEventListener('ShoptetCartAddCartItem', function () {
-            $("body").addClass("--advancedModal");
-            $(".advancedModal__content").html("");
-        
-            $(".advancedModal__content").prepend('<div class="advancedProduct">' +
-            '<div class="advancedProduct-img">' + img + '</div>' +
-            '<div class="advancedProduct-content">' +
-            '<div class="advancedProduct-name">' + name + '</div>' +
-            '<div class="advancedProduct-stock">Dostupnost<span>' + stock + '</span></div>' +
-            '<div class="advancedProduct-amount">Počet kusů<span>' + amount + 'x</span></div>' +
-            '<div class="advancedProduct-priceTotal">Celková cena<span>' + priceTotal + ' Kč</span></div>' +
-            '</div></div>');
-        },{
-            passive: true
-        });
+    // Extrakce měny
+    var currencyMatch = priceSingleRaw.match(/([^\d\s,.\u00A0]+)/g);
+    var currency = currencyMatch ? currencyMatch.join(" ").trim() : "";
+
+    // Parsování ceny
+    var priceSingle = parseFloat(
+        priceSingleRaw
+            .replace(/[^0-9,.\s]/g, "") // odstraní měny a jiné znaky
+            .replace(/\s/g, "")         // odstraní mezery
+            .replace(",", ".")          // čárka → tečka
+    );
+
+    var priceTotal = priceSingle * amount;
+
+    // Formátování podle desetinné části
+    var formattedPriceTotal = Number.isInteger(priceTotal)
+        ? priceTotal.toLocaleString("cs-CZ", { maximumFractionDigits: 0 })
+        : priceTotal.toLocaleString("cs-CZ", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    // Otevření modalu po přidání do košíku
+    document.addEventListener('ShoptetCartAddCartItem', function () {
+        $("body").addClass("--advancedModal");
+        $(".advancedModal__content").html("");
+
+        $(".advancedModal__content").prepend(
+            '<div class="advancedProduct">' +
+                '<div class="advancedProduct-img">' + img + '</div>' +
+                '<div class="advancedProduct-content">' +
+                    '<div class="advancedProduct-name">' + name + '</div>' +
+                    '<div class="advancedProduct-stock">Dostupnost<span>' + stock + '</span></div>' +
+                    '<div class="advancedProduct-amount">Počet kusů<span>' + amount + 'x</span></div>' +
+                    '<div class="advancedProduct-priceTotal">Celková cena<span>' + formattedPriceTotal + ' ' + currency + '</span></div>' +
+                '</div>' +
+            '</div>'
+        );
+    }, {
+        passive: true
     });
+});
+
 
 
     $('.advancedModal').on('click',function(e){
