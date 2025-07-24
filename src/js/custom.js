@@ -276,17 +276,24 @@ if ($(".type-detail").length){
         var amount = parseFloat($(".p-detail-inner .add-to-cart .amount").val());
     
 
-               // Získání ceny podle přítomnosti .calculated-price
-               var priceSingle;
-               if ($(".p-detail-inner .calculated-price").length) {
-                   priceSingle = $(".p-detail-inner .calculated-price").html();
-               } else {
-                   priceSingle = $(".p-detail-inner .p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
-               }
+    // Získání ceny podle přítomnosti .calculated-price
+    var priceSingleRaw;
+    if ($(".p-detail-inner .calculated-price").length) {
+        priceSingleRaw = $(".p-detail-inner .calculated-price").html();
+    } else {
+        priceSingleRaw = $(".p-detail-inner .p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
+    }
 
 
+    // Vyčištění ceny: odstranění měny, mezer, tisícových oddělovačů, nahrazení čárky tečkou
+    var priceSingle = parseFloat(
+        priceSingleRaw
+            .replace(/[^0-9,.\s]/g, "")     // odstraní měny a ostatní znaky kromě čísel, tečky, čárky a mezer
+            .replace(/\s/g, "")             // odstraní mezery (oddělovače tisíců)
+            .replace(",", ".")              // nahradí čárku za tečku (evropský formát)
+    );
 
-        var priceTotal = parseFloat(priceSingle.replace(/ /g, ''))*amount;
+    var priceTotal = priceSingle * amount;
     
         $(".advancedModal__content").prepend('<div class="advancedProduct">' +
         '<div class="advancedProduct-img">' + img + '</div>' +
