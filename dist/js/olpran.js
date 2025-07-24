@@ -215,8 +215,6 @@ $(".add-to-cart-button").on('click', function () {
     });
 });
 
-
-
     $('.advancedModal').on('click',function(e){
         if (e.target !== this)
         return;

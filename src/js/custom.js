@@ -261,22 +261,23 @@ if ($(".type-detail").length){
         $(".advancedModal__inner").append('<div id="productsRelated"><h3 class="advancedModal__relatedTitle">Související produkty</h3><div class="products-block">' + related + '</div></div>');
     }
     
-    function advanceOrderCustom() {
-    
-        $("body").addClass("--advancedModal");
-        $(".advancedModal__content").html("");
-    
-        var img = $(".p-detail-inner .p-image-wrapper a").html();
-        var name = $(".p-detail-inner .p-detail-inner-header h1").html();
-        if($(".p-detail-inner .parameter-dependent").length){
-            var stock = $(".p-detail-inner .availability-value .parameter-dependent:not(.noDisplay) span").html();
-        }else{
-            var stock = $(".p-detail-inner .availability-value").html();
-        }
-        var amount = parseFloat($(".p-detail-inner .add-to-cart .amount").val());
-    
+function advanceOrderCustom() {
+    $("body").addClass("--advancedModal");
+    $(".advancedModal__content").html("");
 
-    // Získání ceny podle přítomnosti .calculated-price
+    var img = $(".p-detail-inner .p-image-wrapper a").html();
+    var name = $(".p-detail-inner .p-detail-inner-header h1").html();
+
+    var stock;
+    if ($(".p-detail-inner .parameter-dependent").length) {
+        stock = $(".p-detail-inner .availability-value .parameter-dependent:not(.noDisplay) span").html();
+    } else {
+        stock = $(".p-detail-inner .availability-value").html();
+    }
+
+    var amount = parseFloat($(".p-detail-inner .add-to-cart .amount").val());
+
+    // Získání syrové ceny z HTML
     var priceSingleRaw;
     if ($(".p-detail-inner .calculated-price").length) {
         priceSingleRaw = $(".p-detail-inner .calculated-price").html();
@@ -284,27 +285,41 @@ if ($(".type-detail").length){
         priceSingleRaw = $(".p-detail-inner .p-final-price-wrapper .price-final-holder:not(.noDisplay)").html();
     }
 
+    // Extrahování měny z ceny (vše kromě číslic, teček, čárek a mezer)
+    var currencyMatch = priceSingleRaw.match(/([^\d\s,.\u00A0]+)/g);
+    var currency = currencyMatch ? currencyMatch.join(" ").trim() : "";
 
-    // Vyčištění ceny: odstranění měny, mezer, tisícových oddělovačů, nahrazení čárky tečkou
+    // Vyčištění a převod ceny na číslo
     var priceSingle = parseFloat(
         priceSingleRaw
-            .replace(/[^0-9,.\s]/g, "")     // odstraní měny a ostatní znaky kromě čísel, tečky, čárky a mezer
-            .replace(/\s/g, "")             // odstraní mezery (oddělovače tisíců)
-            .replace(",", ".")              // nahradí čárku za tečku (evropský formát)
+            .replace(/[^0-9,.,]/g, "")  // odstraní vše kromě číslic, čárky a tečky
+            .replace(/\s/g, "")         // odstraní mezery
+            .replace(",", ".")          // převede čárku na tečku
     );
 
     var priceTotal = priceSingle * amount;
-    
-        $(".advancedModal__content").prepend('<div class="advancedProduct">' +
-        '<div class="advancedProduct-img">' + img + '</div>' +
-        '<div class="advancedProduct-content">' +
-        '<h4 class="advancedProduct-name">' + name + '</h4>' +
-        '<div class="advancedProduct-stock">Dostupnost<span>' + stock + '</span></div>' +
-        '<div class="advancedProduct-amount">Počet kusů<span>' + amount + 'x</span></div>' +
-        '<div class="advancedProduct-priceTotal">Celková cena<span>' + priceTotal + ' Kč</span></div>' +
-        '</div></div>');
-        
-    }
+
+    // Formátování ceny podle potřeby: s nebo bez desetinných míst
+    var formattedPriceTotal = Number.isInteger(priceTotal)
+        ? priceTotal.toLocaleString("cs-CZ", { maximumFractionDigits: 0 })
+        : priceTotal.toLocaleString("cs-CZ", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+
+    $(".advancedModal__content").prepend(
+        '<div class="advancedProduct">' +
+            '<div class="advancedProduct-img">' + img + '</div>' +
+            '<div class="advancedProduct-content">' +
+                '<h4 class="advancedProduct-name">' + name + '</h4>' +
+                '<div class="advancedProduct-stock">Dostupnost<span>' + stock + '</span></div>' +
+                '<div class="advancedProduct-amount">Počet kusů<span>' + amount + 'x</span></div>' +
+                '<div class="advancedProduct-priceTotal">Celková cena<span>' +
+                    formattedPriceTotal + ' ' + currency +
+                '</span></div>' +
+            '</div>' +
+        '</div>'
+    );
+}
+
     
     /* call functions after order modal loaded */
     document.addEventListener('ShoptetCartAddCartItem', function () {
@@ -331,34 +346,56 @@ if ($(".type-index, .type-category").length){
 
     
     /* call functions after order modal loaded */
-    $(".add-to-cart-button").on('click',function(){
+$(".add-to-cart-button").on('click', function () {
+    var $product = $(this).closest(".p");
 
-        var img = $(this).closest(".p").find(".image").html();
-        var name = $(this).closest(".p").find(".name").html();
-        var stock = $(this).closest(".p").find(".availability").html();
+    var img = $product.find(".image").html();
+    var name = $product.find(".name").html();
+    var stock = $product.find(".availability").html();
 
-        var amount = parseFloat($(this).closest(".p").find("input[name='amount']").val());
+    var amount = parseFloat($product.find("input[name='amount']").val());
 
-        var priceSingle = $(this).closest(".p").find(".price-final strong").html();
-        var priceTotal = parseFloat(priceSingle.replace(/ /g, ''))*amount;
+    var priceSingleRaw = $product.find(".price-final strong").html();
 
-        document.addEventListener('ShoptetCartAddCartItem', function () {
-            $("body").addClass("--advancedModal");
-            $(".advancedModal__content").html("");
-        
-            $(".advancedModal__content").prepend('<div class="advancedProduct">' +
-            '<div class="advancedProduct-img">' + img + '</div>' +
-            '<div class="advancedProduct-content">' +
-            '<div class="advancedProduct-name">' + name + '</div>' +
-            '<div class="advancedProduct-stock">Dostupnost<span>' + stock + '</span></div>' +
-            '<div class="advancedProduct-amount">Počet kusů<span>' + amount + 'x</span></div>' +
-            '<div class="advancedProduct-priceTotal">Celková cena<span>' + priceTotal + ' Kč</span></div>' +
-            '</div></div>');
-        },{
-            passive: true
-        });
+    // Extrakce měny
+    var currencyMatch = priceSingleRaw.match(/([^\d\s,.\u00A0]+)/g);
+    var currency = currencyMatch ? currencyMatch.join(" ").trim() : "";
+
+    // Parsování ceny
+    var priceSingle = parseFloat(
+        priceSingleRaw
+            .replace(/[^0-9,.\s]/g, "") // odstraní měny a jiné znaky
+            .replace(/\s/g, "")         // odstraní mezery
+            .replace(",", ".")          // čárka → tečka
+    );
+
+    var priceTotal = priceSingle * amount;
+
+    // Formátování podle desetinné části
+    var formattedPriceTotal = Number.isInteger(priceTotal)
+        ? priceTotal.toLocaleString("cs-CZ", { maximumFractionDigits: 0 })
+        : priceTotal.toLocaleString("cs-CZ", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    // Otevření modalu po přidání do košíku
+    document.addEventListener('ShoptetCartAddCartItem', function () {
+        $("body").addClass("--advancedModal");
+        $(".advancedModal__content").html("");
+
+        $(".advancedModal__content").prepend(
+            '<div class="advancedProduct">' +
+                '<div class="advancedProduct-img">' + img + '</div>' +
+                '<div class="advancedProduct-content">' +
+                    '<div class="advancedProduct-name">' + name + '</div>' +
+                    '<div class="advancedProduct-stock">Dostupnost<span>' + stock + '</span></div>' +
+                    '<div class="advancedProduct-amount">Počet kusů<span>' + amount + 'x</span></div>' +
+                    '<div class="advancedProduct-priceTotal">Celková cena<span>' + formattedPriceTotal + ' ' + currency + '</span></div>' +
+                '</div>' +
+            '</div>'
+        );
+    }, {
+        passive: true
     });
-
+});
 
     $('.advancedModal').on('click',function(e){
         if (e.target !== this)
