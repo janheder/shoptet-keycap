@@ -655,60 +655,6 @@ $(document).ready(function() {
 // =============================================================================
 
 
-// Check if element with class "pagination" exists
-var pagination = document.querySelector('.type-category .pagination');
-
-if (pagination !== null) {
-    function refactorPagi() {
-        var pagination = document.querySelector('.pagination');
-        var current = parseInt(pagination.querySelector('.current').textContent);
-        var max = parseInt(pagination.lastElementChild.textContent);
-
-        // Získání aktuální URL a odstranění všech případných výskytů '/strana-X'
-        var currentUrl = window.location.href;
-        var queryIndex = currentUrl.indexOf('?');
-        var baseUrl = queryIndex === -1 ? currentUrl : currentUrl.slice(0, queryIndex);
-        baseUrl = baseUrl.replace(/\/strana-\d+/g, ''); // Odstranění všech '/strana-X' v URL
-        var queryParams = queryIndex === -1 ? '' : currentUrl.slice(queryIndex);
-
-        // Vyčištění obsahu paginace
-        while (pagination.firstChild) {
-            pagination.removeChild(pagination.firstChild);
-        }
-
-        for (var i = 1; i <= max; i++) {
-            if (i === current) {
-                pagination.insertAdjacentHTML('beforeend', "<strong class='current'>" + i + "</strong>");
-            } else if ((current - i) > 2 || (i - current) > 1) {
-                if (i === 1 || i === max) {
-                    pagination.insertAdjacentHTML('beforeend', "<a href='" + baseUrl + "/strana-" + i + queryParams + "'>" + i + "</a>");
-                } else {
-                    pagination.insertAdjacentHTML('beforeend', "<a class='hidden' href='" + baseUrl + "/strana-" + i + queryParams + "'>" + i + "</a>");
-                }
-            } else {
-                pagination.insertAdjacentHTML('beforeend', "<a href='" + baseUrl + "/strana-" + i + queryParams + "'>" + i + "</a>");
-            }
-        }
-
-        if (current !== max) {
-            pagination.insertAdjacentHTML('beforeend', "<a href='" + baseUrl + "/strana-" + (current + 1) + queryParams + "' class='next'>></a>");
-        }
-        if (current !== 1) {
-            pagination.insertAdjacentHTML('afterbegin', "<a href='" + baseUrl + "/strana-" + (current - 1) + queryParams + "' class='previous'><</a>");
-        }
-    }
-
-    refactorPagi();
-
-    document.addEventListener('ShoptetDOMPageContentLoaded', function () {
-        refactorPagi();
-    }, { passive: true });
-
-    document.addEventListener('ShoptetDOMPageMoreProductsLoaded', function () {
-        refactorPagi();
-    }, { passive: true });
-}
-
 
 
 // =============================================================================
