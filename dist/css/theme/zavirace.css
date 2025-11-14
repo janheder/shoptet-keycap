@@ -2461,3 +2461,26 @@ body.--navUserActive .user-action .login-widget {
 .listingControls .itemsTotal{
     display: none;
 }
+.listSorting__controls{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #E5E5E5;
+    width: 100%;
+}
+.listSorting__controls button.listSorting__control{
+    background: transparent;
+    border: 0;
+    padding: 10px 20px;
+}
+.listSorting__controls  button.listSorting__control.listSorting__control--current{
+    color:#C4000A;
+}
+
+
+
+
+
+.products-top-wrapper .button-wrapper{
+    display: none;
+}
