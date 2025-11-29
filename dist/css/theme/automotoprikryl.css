@@ -4279,3 +4279,13 @@ gap: 1px;
 .products-top-wrapper .button-wrapper{
     display: none;
 }
+
+.p-thumbnails-wrapper-videos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.p-final-price-wrapper .price-standard span.price-save{
+        display: none;
+}
