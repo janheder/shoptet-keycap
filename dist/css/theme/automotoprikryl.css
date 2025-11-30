@@ -4289,3 +4289,15 @@ gap: 1px;
 .p-final-price-wrapper .price-standard span.price-save{
         display: none;
 }
+
+
+.product-top .p-image {
+     display: flex !important; 
+}
+.product-top .p-image #wrap{
+    display: none !important;
+}
+#productSlider + .p-image{ 
+    padding: 0 !important;
+border: 0 !important;
+}
