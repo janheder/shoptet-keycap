@@ -4301,3 +4301,7 @@ gap: 1px;
     padding: 0 !important;
 border: 0 !important;
 }
+h1.category-title::before {
+    max-height: 36px;
+    top: 10px;
+}
