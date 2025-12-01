@@ -4305,3 +4305,6 @@ h1.category-title::before {
     max-height: 36px;
     top: 10px;
 }
+.p-detail-info .product-appendix{
+    margin-top: 5px;
+}
