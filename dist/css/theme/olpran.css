@@ -1,4 +1,4 @@
-/*
+
 @media (min-width: 768px) {
     .top-navigation-bar {
         display: flex;
@@ -1914,4 +1914,3 @@ body.admin-logged{
 .filter-section-boolean.open, .filter-section:not(.filter-section-boolean).open form{
     overflow-y: auto;
 }
-    */
