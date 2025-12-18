@@ -50,6 +50,14 @@ body {
     #header .navigation-wrapper {
         position: relative;
     }
+        body.prepare #header .navigation-wrapper {
+        position: relative;
+        transition: transform .7s;
+    }
+    body.unvisible #header .navigation-wrapper{
+         position: relative;
+         transform: none;
+    } 
 }
 @media (min-width: 768px) {
     #navigation {
@@ -335,13 +343,170 @@ a.btn.btn-conversion,
     align-items: center;
     display: flex;
     align-self: center;
-    left: auto;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
+.breadcrumbs span>a, .breadcrumbs span>span {
+    display: block;
+    font-size: 1.5rem;
+    min-height: 30px;
+    padding: 8px 17px;
+    position: relative;
+}
+.product-top{
+position: relative;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 80fr 60fr;
+    grid-gap: 50px;
+    row-gap: 0px;
+}
+@media (min-width: 1200px) {
+    .col-lg-6.p-image-wrapper, .col-lg-6.p-info-wrapper {
+        width: 100%;
+    }
+    .col-lg-6.p-image-wrapper{
+        padding: 0;
+    }
+}
+.p-info-wrapper{
+    background: var(--jh-light);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.p-detail-inner-header h1{
+    font-size: 3.4rem;
+    margin-top: 0;
+    font-weight: 500;
+}
+.p-info-wrapper .add-to-cart{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+     position: relative;
 
+}
+.p-detail .add-to-cart .quantity{
+    border-radius :0;
+      height: 58px;
+      width: 100px;
+}
+.p-info-wrapper .quantity input{
+    height: 100%;
+}
+.p-info-wrapper .add-to-cart .btn{
+    height: 58px;
+    flex-grow: 1;
+}
+.p-info-wrapper .p-short-description{
+    color: var(--jh-gray);
+    font-size: 1.5rem;
+}
+.p-info-wrapper .p-short-description p{
+    margin: 0;
+}
 
-
-
+.p-info-wrapper .availability-value{
+    text-transform: uppercase;
+        font-size: 1.7rem;
+        margin: 0;
+        margin-top: 40px;
+}
+.p-image-wrapper .p-image{
+    border: 1px solid var(--jh-border);
+    margin :0;
+}
+.p-image-wrapper  .p-thumbnails-wrapper{
+    margin-top: 20px;
+}
+.p-info-wrapper .detail-parameters{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 30px;
+}
+.p-info-wrapper .variant-list{
+    display: flex;
+    flex-direction: column;
+}
+.p-info-wrapper .variant-list th{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+.p-info-wrapper .variant-list select{
+    height: 50px;
+    width: 100%;
+    max-width: 420px;
+    font-size: 1.7rem;
+    padding: 0 20px;
+    border-radius: 0;
+    border: 1px solid var(--jh-border) !important;
+}
+.p-info-wrapper .p-final-price-wrapper {
+    position: relative;
+       margin-top: 40px;
+    padding-top: 40px;
+    border-top:3px solid var(--jh-white);
+}
+.p-info-wrapper .p-final-price-wrapper::before{
+    content: none;
+    background: var(--jh-red);
+    color: var(--jh-white);
+    padding: 6px 10px;
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+.p-info-wrapper .p-final-price-wrapper::before{
+    content: "Sleva 10% s kódem VANOCE10";
+}
+.p-info-wrapper p[data-testid="productCardDescr"]{
+    display: none;
+}
+.p-detail-info .flag{
+    border-radius: 0;
+}
+.shp-tabs-wrapper {
+    background-color: var(--jh-white);
+    border-radius: 0;
+    padding: 30px 0;
+}
+.p-detail-info .p-code{
+    font-size: 1.3rem;
+}
+.p-info-wrapper .p-detail-inner-header{
+    order: 20;
+}
+.p-info-wrapper .p-detail-info{
+       order: 10;
+       flex-direction: row;
+       align-items:center;
+       justify-content: space-between;
+}
+.p-detail-info .flags{
+    padding: 0;
+}
+.p-info-wrapper .p-short-description{
+          order: 30;
+}
+.p-info-wrapper .availability-value{
+    order: 40;
+}
+.p-info-wrapper .detail-parameters{
+    order: 50;
+}
+.p-info-wrapper .p-final-price-wrapper{
+    order: 60;
+}
+.p-info-wrapper .add-to-cart{
+    order: 70;
+}
+.p-info-wrapper .social-buttons-wrapper{
+      order: 999;
+}
 /* ========================================================================== */
 /* NEW Advanced order MODAL */
 /* ========================================================================== */
