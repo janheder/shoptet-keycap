@@ -1,45 +1,3 @@
-(function waitForjQuery() {
-  if (typeof jQuery === 'undefined') {
-    return setTimeout(waitForjQuery, 50); // zkus za 50ms znovu
-  }
-
-  (function($){
-    const originalDetach = $.fn.detach;
-    const originalAppendTo = $.fn.appendTo;
-    const originalInsertBefore = $.fn.insertBefore;
-
-    const blocked = [
-      '#navigation',
-      '.navigation-wrapper .menu-helper',
-      '.responsive-tools > a[data-target="navigation"]',
-      '.search'
-    ];
-
-    function isBlocked(el) {
-      return blocked.some(sel => $(el).is(sel) || $(el).closest(sel).length);
-    }
-
-    $.fn.detach = function() {
-      if (isBlocked(this)) return this;
-      return originalDetach.apply(this, arguments);
-    };
-
-    $.fn.appendTo = function(target) {
-      if (isBlocked(this)) return this;
-      return originalAppendTo.apply(this, arguments);
-    };
-
-    $.fn.insertBefore = function(target) {
-      if (isBlocked(this)) return this;
-      return originalInsertBefore.apply(this, arguments);
-    };
-  })(jQuery);
-
-})();
-
-
-
-
 /* add hamburger menu icon on mobile */
 $(".header-top").prepend('<div class="navigation-buttons-left"><div class="nav-menu-toggle" id="js-menuToggle"><span></span></div><div class="nav-search" id="js-searchToggle"></div>');
 
@@ -113,3 +71,79 @@ if (target) {
 } else {
   console.log('Element .site-name-wrapper nebyl nalezen');
 }
+
+
+
+
+
+// =============================================================================
+// REFACTORED PAGINATION (NEW HTML STRUCTURE, LI WITH CLASSES)
+// =============================================================================
+
+document.addEventListener('DOMContentLoaded', function () {
+    var paginationNav = document.querySelector('.type-category .pagination');
+
+    if (paginationNav !== null) {
+        function refactorPagi() {
+            var paginationList = paginationNav.querySelector('.pagination__list');
+            if (!paginationList) return;
+
+            // Aktuální stránka
+            var currentEl = paginationList.querySelector('.pagination__currentPage');
+            var current = parseInt(currentEl ? currentEl.textContent : '1');
+
+            // Maximální stránka
+            var lastLink = paginationList.querySelector('a.pagination__link--last');
+            var max = lastLink ? parseInt(lastLink.textContent) : current;
+
+            // URL bez /strana-X
+            var currentUrl = window.location.href;
+            var queryIndex = currentUrl.indexOf('?');
+            var baseUrl = queryIndex === -1 ? currentUrl : currentUrl.slice(0, queryIndex);
+            baseUrl = baseUrl.replace(/\/strana-\d+/g, '');
+            var queryParams = queryIndex === -1 ? '' : currentUrl.slice(queryIndex);
+
+            // Vyčištění listu
+            while (paginationList.firstChild) {
+                paginationList.removeChild(paginationList.firstChild);
+            }
+
+            for (var i = 1; i <= max; i++) {
+                var li = document.createElement('li');
+                li.classList.add('pagination__link');
+
+                if ((current - i) > 2 || (i - current) > 1) {
+                    if (i !== 1 && i !== max) li.classList.add('hidden');
+                }
+
+                if (i === current) {
+                    li.innerHTML = "<strong class='pagination__currentPage' aria-current='page'>" + i + "</strong>";
+                } else {
+                    li.innerHTML = "<a href='" + baseUrl + "/strana-" + i + queryParams + "'>" + i + "</a>";
+                }
+
+                paginationList.appendChild(li);
+            }
+
+            if (current > 1) {
+                var prevLi = document.createElement('li');
+                prevLi.classList.add('pagination__link');
+                prevLi.innerHTML = "<a href='" + baseUrl + "/strana-" + (current - 1) + queryParams + "' aria-label='Předchozí, strana " + (current - 1) + "'><</a>";
+                paginationList.insertBefore(prevLi, paginationList.firstChild);
+            }
+
+            if (current < max) {
+                var nextLi = document.createElement('li');
+                nextLi.classList.add('pagination__link');
+                nextLi.innerHTML = "<a href='" + baseUrl + "/strana-" + (current + 1) + queryParams + "' aria-label='Následující, strana " + (current + 1) + "'>></a>";
+                paginationList.appendChild(nextLi);
+            }
+        }
+
+        refactorPagi();
+
+        document.addEventListener('ShoptetDOMPageContentLoaded', refactorPagi, { passive: true });
+        document.addEventListener('ShoptetDOMPageMoreProductsLoaded', refactorPagi, { passive: true });
+    }
+});
+
