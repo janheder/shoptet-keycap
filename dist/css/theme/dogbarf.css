@@ -267,6 +267,9 @@ a.toggle-filters {
     flex-grow: 1;
     align-items: center;
     display: flex;
+        border-left: 1px solid var(--jh-border);
+        padding-left: 30px;
+        height: 100px;
 }
 
 .header-tel-img {
@@ -452,8 +455,7 @@ a.toggle-filters {
     }
 
     .site-name-wrapper {
-        border-right: 1px solid var(--jh-border);
-        padding-right: 30px;
+        padding-right: 0px;
     }
 
     .top-navigation-menu {
@@ -747,6 +749,11 @@ a.toggle-filters {
         font-size: 0;
     }
 }
+
+.shp-tabs-row.responsive-nav{
+   display: none; 
+}
+
 
 /* ========================================================================== */
 /* 5. PRODUCT LIST (CATALOG) */
