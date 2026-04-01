@@ -2484,3 +2484,7 @@ body.--navUserActive .user-action .login-widget {
 .products-top-wrapper .button-wrapper{
     display: none;
 }
+
+.order-summary .checkout-box .btn-block.toggle-contacts{
+    pointer-events: none;
+}
