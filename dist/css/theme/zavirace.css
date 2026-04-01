@@ -2488,3 +2488,7 @@ body.--navUserActive .user-action .login-widget {
 .order-summary .checkout-box .btn-block.toggle-contacts{
     pointer-events: none;
 }
+
+.order-summary .checkout-box .btn-block::after {
+    content: "Rádi vám pomůžeme. Po-Pá 7:30-16:00.";
+  }
