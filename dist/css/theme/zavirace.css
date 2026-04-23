@@ -2507,3 +2507,48 @@ body.--navUserActive .user-action .login-widget {
 .p .p-tools .btn[type="submit"]::before{
     content: none;
 }
+
+.p .flags.flags-extra .flag-discount{
+    position: relative;
+    right: 0px;
+    top: 0px;
+    padding: 0 5px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: #d61818 !important;
+    border-radius: 6px;
+    order: 0;
+}
+
+.p .flags.flags-extra .flag.flag-freeshipping{
+     order: 1;
+}
+
+.product-top .p-image .flag.flag-freeshipping{
+  display: none;
+}
+.product-top .flag.flag-freeshipping .flag-text::before{
+    content: "Doprava";
+    padding-right: 3px;
+}
+.p-detail-info .flag.flag-freeshipping{
+    background: #EEEEEE;
+    padding: 0px 5px;
+}
+.p-detail-info .flag.flag-freeshipping .flag-text{
+    display: flex;
+
+}
+.p-detail-info{
+    display: flex;
+    gap: 5px;
+}
+
+.p-detail-info .flag.flag-freeshipping ~ .flag.flag-freeshipping{
+    display: none !important;
+}
