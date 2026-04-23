@@ -2552,3 +2552,9 @@ body.--navUserActive .user-action .login-widget {
 .p-detail-info .flag.flag-freeshipping ~ .flag.flag-freeshipping{
     display: none !important;
 }
+
+.pagination strong {
+
+    border-radius: 50%;
+
+}
