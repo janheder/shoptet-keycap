@@ -2492,3 +2492,18 @@ body.--navUserActive .user-action .login-widget {
 .order-summary .checkout-box .btn-block::after {
     content: "Rádi vám pomůžeme. Po-Pá 7:30-16:00.";
   }
+
+  .p .p-tools .btn[type="submit"]{
+        background: #C4000A;
+    color: white;
+    transition: 0.3s ease all;
+        height: 34px;
+    padding: 0 15px;
+    border: 0;
+    text-transform: none;
+    font-size: 14px;
+
+}
+.p .p-tools .btn[type="submit"]::before{
+    content: none;
+}
